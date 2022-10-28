@@ -4,13 +4,11 @@ using UnityEngine;
 
 public class phantomAi : enemyBase
 {
-    [SerializeField] int viewAngle;
-    [SerializeField] int viewRange;
+    [Header("----- Phantom stats -----")]
+    [Range(25, 60)][SerializeField] int viewAngle;
+    [Range(1, 20)][SerializeField] int viewRange;
     [Range(.25f, 1f)][SerializeField] float sizeRandMin;
     [Range(1f, 2f)] [SerializeField] float sizeRandMax;
-
-    Vector3 playerDir;
-    float angle;
 
     private void Start()
     {
@@ -26,9 +24,7 @@ public class phantomAi : enemyBase
     // Update is called once per frame
     void Update()
     {
-
-        playerDir = gameManager.instance.player.transform.position - transform.position;
-        angle = Vector3.Angle(transform.forward, playerDir);
+        base.Update();
 
         anim.SetFloat("locomotion", Mathf.Lerp(anim.GetFloat("locomotion"), agent.velocity.normalized.magnitude, Time.deltaTime * 3));
 
@@ -43,8 +39,6 @@ public class phantomAi : enemyBase
             if(agent.destination != target)
                 agent.destination = target;
         }
-
-        
     }
 
     public override void findTarget()

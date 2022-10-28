@@ -15,6 +15,8 @@ public class enemyBase : MonoBehaviour, IDamage
     [SerializeField] int HP;
 
     protected float originalSpeed;
+    protected Vector3 playerDir;
+    protected float angle;
 
     // Start is called before the first frame update
     protected void Start()
@@ -25,6 +27,12 @@ public class enemyBase : MonoBehaviour, IDamage
         agent.SetDestination(target);
 
         originalSpeed = agent.speed;
+    }
+
+    protected void Update()
+    {
+        playerDir = gameManager.instance.player.transform.position - transform.position;
+        angle = Vector3.Angle(transform.forward, playerDir);
     }
 
     public virtual void findTarget() { }
