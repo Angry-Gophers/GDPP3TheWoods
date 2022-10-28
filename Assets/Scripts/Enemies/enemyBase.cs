@@ -14,19 +14,17 @@ public class enemyBase : MonoBehaviour, IDamage
     [Header("----- Stats -----")]
     [SerializeField] int HP;
 
+    protected float originalSpeed;
+
     // Start is called before the first frame update
-    void Start()
+    protected void Start()
     {
         agent = GetComponent<NavMeshAgent>();
         anim = GetComponent<Animator>();
         findTarget();
         agent.SetDestination(target);
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        originalSpeed = agent.speed;
     }
 
     public virtual void findTarget() { }
@@ -34,6 +32,9 @@ public class enemyBase : MonoBehaviour, IDamage
     public void takeDamage(int dmg)
     {
         HP -= dmg;
+
+        agent.speed = 0;
+        anim.SetTrigger("gotHit");
 
         if (HP <= 0)
             death();

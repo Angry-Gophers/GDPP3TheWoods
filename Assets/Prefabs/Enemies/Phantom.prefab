@@ -6557,6 +6557,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   eyes: {fileID: 8149738876329117822}
   HP: 5
+  viewAngle: 45
+  viewRange: 5
+  sizeRandMin: 0.75
+  sizeRandMax: 1.25
+  speedRandMin: 0.75
+  speedRandMax: 1.25
 --- !u!195 &8149738876329093798
 NavMeshAgent:
   m_ObjectHideFlags: 0
