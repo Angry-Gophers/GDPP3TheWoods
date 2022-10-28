@@ -1,0 +1,167 @@
+fileFormatVersion: 2
+guid: 12e9e0884cb29d943810889886f94c2c
+timeCreated: 1484824035
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Cabin_Chimney
+    100002: Cabin_Door
+    100004: Cabin_Floor
+    100006: Cabin_Log
+    100008: Cabin_Porch
+    100010: Cabin_Porch_Roofed
+    100012: Cabin_Roof_End_1
+    100014: Cabin_Roof_End_2
+    100016: Cabin_Roof_Middle
+    100018: Cabin_Stairs
+    100020: Cabin_Stairs_Big
+    100022: Cabin_Wall
+    100024: Cabin_Wall_Door
+    100026: Cabin_Wall_Window
+    100028: Cabin_Window_Plain
+    100030: Cabin_Window_Wood
+    100032: Glass
+    100034: Handle
+    100036: //RootNode
+    400000: Cabin_Chimney
+    400002: Cabin_Door
+    400004: Cabin_Floor
+    400006: Cabin_Log
+    400008: Cabin_Porch
+    400010: Cabin_Porch_Roofed
+    400012: Cabin_Roof_End_1
+    400014: Cabin_Roof_End_2
+    400016: Cabin_Roof_Middle
+    400018: Cabin_Stairs
+    400020: Cabin_Stairs_Big
+    400022: Cabin_Wall
+    400024: Cabin_Wall_Door
+    400026: Cabin_Wall_Window
+    400028: Cabin_Window_Plain
+    400030: Cabin_Window_Wood
+    400032: Glass
+    400034: Handle
+    400036: //RootNode
+    2300000: Cabin_Chimney
+    2300002: Cabin_Door
+    2300004: Cabin_Floor
+    2300006: Cabin_Log
+    2300008: Cabin_Porch
+    2300010: Cabin_Porch_Roofed
+    2300012: Cabin_Roof_End_1
+    2300014: Cabin_Roof_End_2
+    2300016: Cabin_Roof_Middle
+    2300018: Cabin_Stairs
+    2300020: Cabin_Stairs_Big
+    2300022: Cabin_Wall
+    2300024: Cabin_Wall_Door
+    2300026: Cabin_Wall_Window
+    2300028: Cabin_Window_Plain
+    2300030: Cabin_Window_Wood
+    2300032: Glass
+    2300034: Handle
+    3300000: Cabin_Chimney
+    3300002: Cabin_Door
+    3300004: Cabin_Floor
+    3300006: Cabin_Log
+    3300008: Cabin_Porch
+    3300010: Cabin_Porch_Roofed
+    3300012: Cabin_Roof_End_1
+    3300014: Cabin_Roof_End_2
+    3300016: Cabin_Roof_Middle
+    3300018: Cabin_Stairs
+    3300020: Cabin_Stairs_Big
+    3300022: Cabin_Wall
+    3300024: Cabin_Wall_Door
+    3300026: Cabin_Wall_Window
+    3300028: Cabin_Window_Plain
+    3300030: Cabin_Window_Wood
+    3300032: Glass
+    3300034: Handle
+    4300000: Cabin_Stairs_Big
+    4300002: Cabin_Stairs
+    4300004: Cabin_Wall_Door
+    4300006: Cabin_Wall_Window
+    4300008: Cabin_Log
+    4300010: Cabin_Floor
+    4300012: Cabin_Wall
+    4300014: Cabin_Window_Plain
+    4300016: Cabin_Window_Wood
+    4300018: Glass
+    4300020: Cabin_Chimney
+    4300022: Cabin_Roof_End_2
+    4300024: Cabin_Roof_End_1
+    4300026: Cabin_Roof_Middle
+    4300028: Cabin_Porch_Roofed
+    4300030: Cabin_Porch
+    4300032: Cabin_Door
+    4300034: Handle
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1.2
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
