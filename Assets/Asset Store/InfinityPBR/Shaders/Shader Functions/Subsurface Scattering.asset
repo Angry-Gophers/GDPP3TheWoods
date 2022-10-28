@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b2425a2284af743826c689403a4924, type: 3}
+  m_Name: Subsurface Scattering
+  m_EditorClassIdentifier: 
+  m_functionInfo: "// Made with Amplify Shader Editor\n// Available at the Unity Asset
+    Store - http://u3d.as/y3X \n/*ASEBEGIN\nVersion=18104\n0;584;1367;416;21.53519;809.4522;2.031435;True;False\nNode;AmplifyShaderEditor.ViewDirInputsCoordNode;17;1035.926,-720.0369;Float;False;World;False;0;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3\nNode;AmplifyShaderEditor.PosVertexDataNode;154;-157.3591,-249.4513;Inherit;False;0;0;5;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4\nNode;AmplifyShaderEditor.ObjectToWorldMatrixNode;155;-171.5858,-329.0014;Inherit;False;0;1;FLOAT4x4;0\nNode;AmplifyShaderEditor.RangedFloatNode;79;1894.571,-496.7677;Inherit;False;Property;_SSSIntensity;SSS
+    Intensity;4;0;Create;True;0;0;False;0;False;0;0;0;5;0;1;FLOAT;0\nNode;AmplifyShaderEditor.ColorNode;84;1724.22,-418.5893;Inherit;False;Property;_SSSColor;SSS
+    Color;1;1;[HDR];Create;True;0;0;False;0;False;1,1,1,1;1,1,1,1;True;0;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4\nNode;AmplifyShaderEditor.SaturateNode;21;1383.474,-595.123;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;23;406.9861,-503.409;Inherit;False;2;2;0;FLOAT3;0,0,0;False;1;FLOAT;0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;26;1729.506,-571.9994;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.RangedFloatNode;82;1244.297,-492.0058;Inherit;False;Property;_SSSPower;SSS
+    Power;3;0;Create;True;0;0;False;0;False;1;1;0;10;0;1;FLOAT;0\nNode;AmplifyShaderEditor.PowerNode;22;1549.655,-594.375;Inherit;False;False;2;0;FLOAT;0;False;1;FLOAT;1;False;1;FLOAT;0\nNode;AmplifyShaderEditor.LengthOpNode;160;1383.617,-413.7666;Inherit;False;1;0;FLOAT3;0,0,0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;169;2255.429,-594.8934;Inherit;False;4;4;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT3;0,0,0;False;3;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;158;65.92798,-272.4551;Inherit;False;2;2;0;FLOAT4x4;0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1;False;1;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.NegateNode;19;1085.164,-571.036;Inherit;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.WorldSpaceLightDirHlpNode;15;666.4814,-658.3578;Inherit;False;True;1;0;FLOAT;0;False;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3\nNode;AmplifyShaderEditor.SimpleAddOpNode;16;934.8824,-571.1873;Inherit;False;2;2;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.ComponentMaskNode;170;1724.504,-248.6102;Inherit;False;True;True;True;False;1;0;COLOR;0,0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.FunctionInput;45;34.44175,-508.3988;Inherit;False;Normal;3;0;False;1;0;FLOAT3;0,0,1;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.WorldNormalVector;24;196.1183,-503.1651;Inherit;False;True;1;0;FLOAT3;0,0,1;False;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3\nNode;AmplifyShaderEditor.FunctionSwitch;110;568.2624,-508.5162;Inherit;False;SSS
+    Mode;False;0;2;-1;SSS World Normal;SSS Vertex Length;Object;-1;9;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;2;FLOAT;0;False;3;FLOAT;0;False;4;FLOAT;0;False;5;FLOAT;0;False;6;FLOAT;0;False;7;FLOAT;0;False;8;FLOAT;0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.DotProductOpNode;20;1243.014,-594.6169;Inherit;False;2;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionSwitch;167;1892.48,-599.6995;Inherit;False;SSS
+    Mode;False;0;2;-1;SSS World Normal;SSS Vertex Length;Instance;110;9;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;4;FLOAT;0;False;5;FLOAT;0;False;6;FLOAT;0;False;7;FLOAT;0;False;8;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.ComponentMaskNode;86;1958.563,-419.122;Inherit;False;True;True;True;False;1;0;COLOR;0,0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.SamplerNode;152;1410.406,-248.1714;Inherit;True;Property;_ThicknessMap;Thickness
+    Map;0;0;Create;True;0;0;False;1;Header(SubSurface Scattering);False;-1;None;None;True;0;False;white;Auto;False;Object;-1;Auto;Texture2D;6;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4\nNode;AmplifyShaderEditor.FunctionInput;104;1967.479,-248.675;Inherit;False;Thickness
+    Map;3;1;True;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.RangedFloatNode;78;111.6397,-354.7587;Inherit;False;Property;_SSSDistortion;SSS
+    Distortion;2;0;Create;True;0;0;False;0;False;1;1;0;2.5;0;1;FLOAT;0\nNode;AmplifyShaderEditor.NormalizeNode;159;228.3106,-272.4551;Inherit;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.FunctionOutput;100;2404.63,-595.6783;Inherit;False;True;-1;Out;0;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nWireConnection;21;0;20;0\nWireConnection;23;0;24;0\nWireConnection;23;1;78;0\nWireConnection;26;0;22;0\nWireConnection;26;1;160;0\nWireConnection;22;0;21;0\nWireConnection;22;1;82;0\nWireConnection;160;0;154;0\nWireConnection;169;0;167;0\nWireConnection;169;1;79;0\nWireConnection;169;2;86;0\nWireConnection;169;3;104;0\nWireConnection;158;0;155;0\nWireConnection;158;1;154;0\nWireConnection;19;0;16;0\nWireConnection;16;0;15;0\nWireConnection;16;1;110;0\nWireConnection;170;0;152;0\nWireConnection;24;0;45;0\nWireConnection;110;0;23;0\nWireConnection;110;1;159;0\nWireConnection;20;0;17;0\nWireConnection;20;1;19;0\nWireConnection;167;0;22;0\nWireConnection;167;1;26;0\nWireConnection;86;0;84;0\nWireConnection;104;0;170;0\nWireConnection;159;0;158;0\nWireConnection;100;0;169;0\nASEEND*/\n//CHKSM=90FFA02BAE0B70EA30CBF9136E8FCC848EC78115"
+  m_functionName: 
+  m_description: 'source:
+
+    http://wiki.amplify.pt/index.php?title=Unity_Products:Amplify_Shader_Editor/Tutorials/SSS_For_Foliage
+
+
+    https://medium.com/dotcrossdot/subsurface-scattering-d092ab72aab'
+  m_additionalIncludes:
+    m_additionalIncludes: []
+    m_outsideIncludes: []
+  m_additionalPragmas:
+    m_additionalPragmas: []
+    m_outsidePragmas: []
+  m_additionalDirectives:
+    m_validData: 0
+    m_isDirty: 0
+    m_moduleName: ' Additional Directives'
+    m_independentModule: 1
+    m_additionalDirectives: []
+    m_shaderFunctionDirectives: []
+    m_nativeDirectives: []
+    m_nativeDirectivesIndex: -1
+    m_nativeDirectivesFoldout: 0
+    m_directivesSaveItems: []
+  m_nodeCategory: 3
+  m_customNodeCategory: 
+  m_previewPosition: 0
+  m_hidden: 0

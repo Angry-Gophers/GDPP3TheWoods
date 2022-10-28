@@ -7,6 +7,7 @@ public class enemyBase : MonoBehaviour, IDamage
 {
     [Header("----- Componenets -----")]
     [SerializeField] protected GameObject eyes;
+    protected Animator anim;
     protected NavMeshAgent agent;
     protected Vector3 target;
 
@@ -17,6 +18,7 @@ public class enemyBase : MonoBehaviour, IDamage
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
+        anim = GetComponent<Animator>();
         findTarget();
         agent.SetDestination(target);
     }
