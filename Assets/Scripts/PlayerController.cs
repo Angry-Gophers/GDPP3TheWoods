@@ -2,15 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : MonoBehaviour, IDamage
 {
     [Header("---Components---")]
     [SerializeField] CharacterController controller;
     [Header("---Player Stats---")]
+    [SerializeField] int HP;
     [SerializeField] float playerSpeed;
     [SerializeField] float jumpHeight;
     [SerializeField] int jumpMax;
     [SerializeField] float gravityValue;
+    [SerializeField] int hpOriginal;
     [Header("---Player Weapon Stats---")]
     [SerializeField] int shootDmg;
     [SerializeField] float shootDist;
@@ -23,6 +25,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        HP = hpOriginal;
         
     }
 
@@ -78,5 +81,15 @@ public class PlayerController : MonoBehaviour
         }
         
         
+    }
+
+    public void takeDamage(int dmg)
+    {
+        HP -= dmg;
+        if(HP <= 0)
+        {
+            Debug.Log("You Died");
+        }
+
     }
 }

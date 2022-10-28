@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4986807549941971955}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -62,10 +62,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 4986807549941971955}
+  HP: 0
   playerSpeed: 10
   jumpHeight: 10
   jumpMax: 1
   gravityValue: 25
+  hpOriginal: 0
   shootDmg: 20
   shootDist: 6
   shootRate: 3
