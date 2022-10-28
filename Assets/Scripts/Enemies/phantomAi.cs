@@ -10,15 +10,14 @@ public class phantomAi : enemyBase
     [Range(.25f, 1f)][SerializeField] float sizeRandMin;
     [Range(1f, 2f)] [SerializeField] float sizeRandMax;
 
-    Vector3 playerDis;
 
     private void Start()
     {
         base.Start();
 
+        //Sets each phantom to a random size, and set its speed based on how big it is
         float size = Random.Range(sizeRandMin, sizeRandMax);
         gameObject.transform.transform.localScale = new Vector3 (size, size, size);
-
         agent.speed *= 1 / size;
         originalSpeed = agent.speed;
     }
@@ -28,18 +27,18 @@ public class phantomAi : enemyBase
     {
         base.Update();
 
+        //Set walk animation speed
         anim.SetFloat("locomotion", Mathf.Lerp(anim.GetFloat("locomotion"), agent.velocity.normalized.magnitude, Time.deltaTime * 3));
-        playerDis = gameManager.instance.player.transform.position - transform.position;
-        angle = Vector3.Angle(transform.forward, playerDis);
 
         //Target the player or the fire depending on line of sight
         if (canSeePlayer())
         {
-            targetDir = playerDis;
+            targetDir = playerDir;
 
             agent.SetDestination(gameManager.instance.player.transform.position);
         }
         else
+        //Otherwise target the fire
         {
             if(agent.destination != target)
                 agent.destination = target;
@@ -47,9 +46,12 @@ public class phantomAi : enemyBase
             targetDir = target - transform.position;
         }
 
+        //If the enemy is too close for the agent to rotate, then make it face the target
         if(agent.stoppingDistance >= agent.remainingDistance)
         {
             faceTarget();
+
+            //Attack if able
             if (!isAttacking)
             {
                 StartCoroutine(attack());
@@ -57,16 +59,18 @@ public class phantomAi : enemyBase
         }
     }
 
+    //Find the fireplace
     public override void findTarget()
     {
         target = GameObject.FindGameObjectWithTag("Fire").transform.position;
     }
 
+    //Checks if player is in line of sight
     bool canSeePlayer()
     {
         RaycastHit hit;
 
-        if(Physics.Raycast(eyes.transform.position, playerDis, out hit, viewRange))
+        if(Physics.Raycast(eyes.transform.position, playerDir, out hit, viewRange))
         {
             if (hit.collider.CompareTag("Player") && angle <= viewAngle)
                 return true;
@@ -77,6 +81,7 @@ public class phantomAi : enemyBase
             return false;
     }
 
+    //Rotates the gameobject when the agent won't
     void faceTarget()
     {
         targetDir.y = 0;
@@ -84,14 +89,16 @@ public class phantomAi : enemyBase
         transform.rotation = Quaternion.Lerp(transform.rotation, rotation, Time.deltaTime * 4);
     }
 
+    //Melee attack
     IEnumerator attack()
     {
         isAttacking = true;
 
+        //Shoots a raycast and checks if the hit object can be damaged
         RaycastHit hit;
         if(Physics.Raycast(transform.position, transform.forward, out hit, range))
         {
-            if (hit.collider.GetComponent<IDamage>() != null)
+            if (hit.collider.GetComponent<IDamage>() != null && hit.collider.tag != "Enemy")
                 hit.collider.GetComponent<IDamage>().takeDamage(damage);
         }
 
