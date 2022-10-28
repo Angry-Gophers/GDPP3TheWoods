@@ -6509,6 +6509,7 @@ GameObject:
   - component: {fileID: 8149738876322572716}
   - component: {fileID: 8109863787321157460}
   - component: {fileID: 8110690428603391752}
+  - component: {fileID: 972276110}
   m_Layer: 0
   m_Name: Phantom
   m_TagString: Enemy
@@ -6557,12 +6558,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   eyes: {fileID: 8149738876329117822}
   HP: 5
+  attackSpeed: 1
+  damage: 2
+  range: 3
   viewAngle: 45
   viewRange: 5
   sizeRandMin: 0.75
   sizeRandMax: 1.25
-  speedRandMin: 0.75
-  speedRandMax: 1.25
 --- !u!195 &8149738876329093798
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -7439,6 +7441,20 @@ MonoBehaviour:
   weeperExplosion: {fileID: 128886, guid: 0984faffd3d714a43bae3ea7c24c6f8d, type: 3}
   spell1Pos: {fileID: 8149738876329361828}
   spell3Pos: {fileID: 8149738876329323226}
+--- !u!136 &972276110
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8149738876329093800}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 1.75
+  m_Direction: 1
+  m_Center: {x: 0, y: 1, z: 0.1}
 --- !u!1 &8149738876329093906
 GameObject:
   m_ObjectHideFlags: 0
