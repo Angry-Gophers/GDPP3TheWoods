@@ -38,7 +38,6 @@ public class phantomAi : enemyBase
             targetDir = playerDis;
 
             agent.SetDestination(gameManager.instance.player.transform.position);
-            faceTarget();
         }
         else
         {
@@ -46,13 +45,15 @@ public class phantomAi : enemyBase
                 agent.destination = target;
 
             targetDir = target - transform.position;
-
-            faceTarget();
         }
 
-        if(agent.stoppingDistance >= agent.remainingDistance && !isAttacking)
+        if(agent.stoppingDistance >= agent.remainingDistance)
         {
-            StartCoroutine(attack());
+            faceTarget();
+            if (!isAttacking)
+            {
+                StartCoroutine(attack());
+            }
         }
     }
 
