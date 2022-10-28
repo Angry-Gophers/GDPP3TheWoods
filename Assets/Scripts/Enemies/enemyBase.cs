@@ -12,9 +12,15 @@ public class enemyBase : MonoBehaviour, IDamage
     protected Vector3 target;
 
     [Header("----- Stats -----")]
-    [SerializeField] int HP;
+    [Range(1,50)][SerializeField] int HP;
+    [Range(.1f, 5f)] [SerializeField] protected float attackSpeed;
+    [Range(1, 10)] [SerializeField] protected int damage;
+    [Range(1, 10)] [SerializeField] protected int range;
 
     protected float originalSpeed;
+    protected Vector3 targetDir;
+    protected float angle;
+    protected bool isAttacking;
 
     // Start is called before the first frame update
     protected void Start()
@@ -25,6 +31,10 @@ public class enemyBase : MonoBehaviour, IDamage
         agent.SetDestination(target);
 
         originalSpeed = agent.speed;
+    }
+
+    protected void Update()
+    {
     }
 
     public virtual void findTarget() { }
