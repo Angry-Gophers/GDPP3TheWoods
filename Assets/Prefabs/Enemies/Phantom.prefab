@@ -81,7 +81,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eyes: {fileID: 8554163384407065718}
-  HP: 0
+  HP: 5
 --- !u!195 &8554163385345444130
 NavMeshAgent:
   m_ObjectHideFlags: 0

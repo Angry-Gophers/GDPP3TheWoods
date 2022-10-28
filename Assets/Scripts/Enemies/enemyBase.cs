@@ -31,6 +31,15 @@ public class enemyBase : MonoBehaviour, IDamage
 
     public void takeDamage(int dmg)
     {
+        HP -= dmg;
 
+        if (HP <= 0)
+            death();
+    }
+
+    void death()
+    {
+        agent.enabled = false;
+        Destroy(gameObject);
     }
 }
