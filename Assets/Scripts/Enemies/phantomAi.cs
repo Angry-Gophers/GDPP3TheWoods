@@ -9,6 +9,9 @@ public class phantomAi : enemyBase
     [Range(.25f, 1f)][SerializeField] float sizeRandMin;
     [Range(1f, 2f)] [SerializeField] float sizeRandMax;
 
+    Vector3 playerDir;
+    float angle;
+
     private void Start()
     {
         base.Start();
@@ -23,12 +26,17 @@ public class phantomAi : enemyBase
     // Update is called once per frame
     void Update()
     {
+
+        playerDir = gameManager.instance.player.transform.position - transform.position;
+        angle = Vector3.Angle(transform.forward, playerDir);
+
         anim.SetFloat("locomotion", Mathf.Lerp(anim.GetFloat("locomotion"), agent.velocity.normalized.magnitude, Time.deltaTime * 3));
 
         //Target the player or the fire depending on line of sight
         if (canSeePlayer())
         {
             agent.SetDestination(gameManager.instance.player.transform.position);
+            facePlayer();
         }
         else
         {
@@ -46,9 +54,6 @@ public class phantomAi : enemyBase
 
     bool canSeePlayer()
     {
-        Vector3 playerDir = gameManager.instance.player.transform.position - transform.position;
-        float angle = Vector3.Angle(transform.forward, playerDir);
-
         RaycastHit hit;
 
         if(Physics.Raycast(eyes.transform.position, playerDir, out hit, viewRange))
@@ -60,8 +65,14 @@ public class phantomAi : enemyBase
         }
         else
             return false;
-
     }
     
     void attack() { }
+
+    void facePlayer()
+    {
+        playerDir.y = 0;
+        Quaternion rotation = Quaternion.LookRotation(playerDir);
+        transform.rotation = Quaternion.Lerp(transform.rotation, rotation, Time.deltaTime * 4);
+    }
 }
