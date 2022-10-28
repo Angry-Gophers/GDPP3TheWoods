@@ -12,11 +12,15 @@ public class enemyBase : MonoBehaviour, IDamage
     protected Vector3 target;
 
     [Header("----- Stats -----")]
-    [SerializeField] int HP;
+    [Range(1,50)][SerializeField] int HP;
+    [Range(.1f, 5f)] [SerializeField] protected float attackSpeed;
+    [Range(1, 10)] [SerializeField] protected int damage;
+    [Range(1, 10)] [SerializeField] protected int range;
 
     protected float originalSpeed;
-    protected Vector3 playerDir;
+    protected Vector3 targetDir;
     protected float angle;
+    protected bool isAttacking;
 
     // Start is called before the first frame update
     protected void Start()
@@ -31,8 +35,6 @@ public class enemyBase : MonoBehaviour, IDamage
 
     protected void Update()
     {
-        playerDir = gameManager.instance.player.transform.position - transform.position;
-        angle = Vector3.Angle(transform.forward, playerDir);
     }
 
     public virtual void findTarget() { }
