@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/The Cabin.unity
+- path: Assets/Scenes/Kyles.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
