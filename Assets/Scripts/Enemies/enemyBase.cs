@@ -56,6 +56,7 @@ public class enemyBase : MonoBehaviour, IDamage
     void death()
     {
         agent.enabled = false;
+        spawnManager.instance.enemyDeath();
         Destroy(gameObject);
     }
 }
