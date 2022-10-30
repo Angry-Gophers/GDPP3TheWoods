@@ -61,17 +61,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 337fe410b89757548b5f6130913d726c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   controller: {fileID: 4986807549941971955}
   HP: 0
+=======
+  playerController: {fileID: 4986807549941971955}
+>>>>>>> db93141a5228f168b4e020f5daf5690d1b4c0c85
   playerSpeed: 10
   jumpHeight: 10
-  jumpMax: 1
+  maxJumps: 0
   gravityValue: 25
+<<<<<<< HEAD
   hpOriginal: 0
+=======
+  startingPistol: {fileID: 0}
+>>>>>>> db93141a5228f168b4e020f5daf5690d1b4c0c85
   shootDmg: 20
   shootDist: 6
+  reloadTime: 0
   shootRate: 3
   isShooting: 0
+  isReloading: 0
+  weaponType: 0
+  gunModel: {fileID: 0}
+  gunListStats: []
 --- !u!143 &4986807549941971955
 CharacterController:
   m_ObjectHideFlags: 0

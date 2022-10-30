@@ -19,6 +19,7 @@ public class enemyBase : MonoBehaviour, IDamage
 
     protected float originalSpeed;
     protected Vector3 targetDir;
+    protected Vector3 playerDir;
     protected float angle;
     protected bool isAttacking;
 
@@ -35,6 +36,8 @@ public class enemyBase : MonoBehaviour, IDamage
 
     protected void Update()
     {
+        playerDir = gameManager.instance.player.transform.position - transform.position;
+        angle = Vector3.Angle(transform.forward, playerDir);
     }
 
     public virtual void findTarget() { }
@@ -50,9 +53,10 @@ public class enemyBase : MonoBehaviour, IDamage
             death();
     }
 
-    void death()
+    public void death()
     {
         agent.enabled = false;
+        spawnManager.instance.enemyDeath();
         Destroy(gameObject);
     }
 }
