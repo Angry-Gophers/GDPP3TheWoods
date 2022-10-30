@@ -11,7 +11,7 @@ public class gameManager : MonoBehaviour
     // public GameObject spawnPosition;
 
     //  [Header("----- UI -----")]
-    //  public GameObject pauseMenu;
+     public GameObject pauseMenu;
     //  public GameObject playerDeadMenu;
     //  public GameObject shopWindow;
     //  public GameObject menuCurrentlyOpen;
@@ -29,7 +29,7 @@ public class gameManager : MonoBehaviour
     //  public TextMeshProUGUI bandageTracker;
 
     public bool isPaused;
-    void Start()
+    void Awake()
     {
         instance = this;
         player = GameObject.FindGameObjectWithTag("Player");
@@ -42,7 +42,7 @@ public class gameManager : MonoBehaviour
         if (Input.GetButtonDown("Cancel")) // check for deadMenu and shopMenu
         {
             isPaused = !isPaused;
-            //pauseMenu.SetActive(isPaused);
+            pauseMenu.SetActive(isPaused);
 
             if (isPaused)
             {
