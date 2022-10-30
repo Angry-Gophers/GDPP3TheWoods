@@ -1756,10 +1756,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 331724386fbc7524aacb9d707c2d8d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  horSens: 0
-  vertSens: 0
-  lookLockVertMax: 0
-  lookLockVertMin: 0
+  horSens: 300
+  vertSens: 300
+  lookLockVertMax: 75
+  lookLockVertMin: -75
   isInvert: 0
 --- !u!1 &8772912456067868573
 GameObject:
@@ -2175,6 +2175,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerController: {fileID: 8772912456516511137}
+  trap: {fileID: 0}
+  maxTraps: 2
+  trapsHeld: 2
   HP: 0
   playerSpeed: 15
   jumpHeight: 10

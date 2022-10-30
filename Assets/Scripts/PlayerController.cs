@@ -6,6 +6,9 @@ public class PlayerController : MonoBehaviour, IDamage
 {
     [Header("---Components---")]
     [SerializeField] CharacterController playerController;
+    [SerializeField] GameObject trap;
+    [SerializeField] int maxTraps;
+    public int trapsHeld;
     [Header("---Player Stats---")]
     [SerializeField] int HP;
     [SerializeField] float playerSpeed;
@@ -45,6 +48,7 @@ public class PlayerController : MonoBehaviour, IDamage
         jump();
         StartCoroutine(shoot());
         // call weaponSwapping(); if they aren't shooting or reloading
+        placeTrap();
     }
 
     // Gets the weapon type
@@ -194,4 +198,30 @@ public class PlayerController : MonoBehaviour, IDamage
         }
 
     }
+
+    void placeTrap()
+    {
+        if(Input.GetKeyDown(KeyCode.E) && trapsHeld > 0)
+        {
+            RaycastHit hit;
+            if(Physics.Raycast(Camera.main.ViewportPointToRay(new Vector2(0.5f,0.5f)), out hit, 6.0f))
+            {
+                if(hit.collider.GetComponent<IDamage>() == null)
+                {
+                    trapsHeld--;
+                    Instantiate(trap, hit.point, trap.transform.rotation);
+                    
+                }
+            }
+            
+        }
+    }
+
+    public void pickUpTrap()
+    {
+        
+            trapsHeld++;
+      
+    }
+
 }
