@@ -382,6 +382,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7170590089698178010, guid: a5f3d9083fd3d2c45a4d697ee9be98b5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7170590089698178012, guid: a5f3d9083fd3d2c45a4d697ee9be98b5, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -495,6 +499,10 @@ PrefabInstance:
     - target: {fileID: 2489011951206859278, guid: 3f91b855f9b25d54e934eadc3f573f99, type: 3}
       propertyPath: m_Name
       value: ShopEssentials
+      objectReference: {fileID: 0}
+    - target: {fileID: 2489011951206859278, guid: 3f91b855f9b25d54e934eadc3f573f99, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5518417655274446027, guid: 3f91b855f9b25d54e934eadc3f573f99, type: 3}
       propertyPath: m_Pivot.x
