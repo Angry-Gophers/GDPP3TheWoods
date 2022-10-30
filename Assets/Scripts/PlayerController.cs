@@ -22,6 +22,9 @@ public class PlayerController : MonoBehaviour, IDamage
     [SerializeField] float shootDist;
     [SerializeField] float reloadTime;
     [SerializeField] float shootRate;// Kyle- I may not do it this way this time, I am looking at using an enum or attached ScriptableObject
+    [Header("---Currency---")]
+    [SerializeField] int ectoplasm;
+    [SerializeField] int antlers;
     public bool isShooting = false;
     public bool isReloading = false;
     public GunType weaponType;
@@ -224,4 +227,16 @@ public class PlayerController : MonoBehaviour, IDamage
       
     }
 
+    public void pickedUp(int type)
+    {
+        switch (type)
+        {
+            case 1:
+                ectoplasm++;
+                break;
+            case 2:
+                antlers++;
+                break;
+        }
+    }
 }
