@@ -5,11 +5,15 @@ using UnityEngine;
 public class enemyDrops : MonoBehaviour
 {
     [SerializeField] int type;
+    [SerializeField] List<AudioClip> audio;
+    [SerializeField] float audioVol;
+
+    AudioSource aud;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        aud = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -23,6 +27,9 @@ public class enemyDrops : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             other.GetComponent<PlayerController>().pickedUp(type);
+
+            aud.PlayOneShot(audio[Random.Range(0, audio.Count)], audioVol);
+
             Destroy(gameObject);
         }
     }
