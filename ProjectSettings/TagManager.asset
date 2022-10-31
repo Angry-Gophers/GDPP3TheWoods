@@ -7,11 +7,12 @@ TagManager:
   - Enemy
   - Fire
   - SpawnPos
+  - InteractiveObject
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Interact
   - Water
   - UI
   - 
