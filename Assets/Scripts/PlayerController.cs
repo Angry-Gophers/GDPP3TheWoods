@@ -2,21 +2,29 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : MonoBehaviour, IDamage
 {
     [Header("---Components---")]
     [SerializeField] CharacterController playerController;
+    [SerializeField] GameObject trap;
+    [SerializeField] int maxTraps;
+    public int trapsHeld;
     [Header("---Player Stats---")]
+    [SerializeField] int HP;
     [SerializeField] float playerSpeed;
     [SerializeField] float jumpHeight;
     [SerializeField] int maxJumps;
     [SerializeField] float gravityValue;
+    [SerializeField] int hpOriginal;
     [Header("---Player Weapon Stats---")]
     [SerializeField] RayCastWeapon startingPistol;
     [SerializeField] int shootDmg;
     [SerializeField] float shootDist;
     [SerializeField] float reloadTime;
     [SerializeField] float shootRate;// Kyle- I may not do it this way this time, I am looking at using an enum or attached ScriptableObject
+    [Header("---Currency---")]
+    [SerializeField] int ectoplasm;
+    [SerializeField] int antlers;
     public bool isShooting = false;
     public bool isReloading = false;
     public GunTypes weaponType;
@@ -29,6 +37,8 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        HP = hpOriginal;
+        
         gunListStats.Add(startingPistol);
         selectedGun = gunListStats.Count - 1;
         weaponType = GetCurrentWeaponType(startingPistol);
@@ -41,6 +51,7 @@ public class PlayerController : MonoBehaviour
         jump();
         StartCoroutine(shoot());
         // call weaponSwapping(); if they aren't shooting or reloading
+        placeTrap();
     }
 
     // Gets the weapon type
@@ -178,6 +189,54 @@ public class PlayerController : MonoBehaviour
             {
                 hit.collider.GetComponent<IDamage>().takeDamage(shootDmg);
             }
+        }
+    }
+
+    public void takeDamage(int dmg)
+    {
+        HP -= dmg;
+        if(HP <= 0)
+        {
+            Debug.Log("You Died");
+        }
+
+    }
+
+    void placeTrap()
+    {
+        if(Input.GetKeyDown(KeyCode.E) && trapsHeld > 0)
+        {
+            RaycastHit hit;
+            if(Physics.Raycast(Camera.main.ViewportPointToRay(new Vector2(0.5f,0.5f)), out hit, 6.0f))
+            {
+                if(hit.collider.GetComponent<IDamage>() == null)
+                {
+                    trapsHeld--;
+                    Instantiate(trap, hit.point, trap.transform.rotation);
+                    
+                }
+            }
+            
+        }
+    }
+
+    public void pickUpTrap()
+    {
+        
+            trapsHeld++;
+      
+    }
+
+    public void pickedUp(int type)
+    {
+        switch (type)
+        {
+            case 1:
+                ectoplasm++;
+                break;
+            case 2:
+                antlers++;
+                break;
         }
     }
 }
