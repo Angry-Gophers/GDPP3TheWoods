@@ -6,11 +6,12 @@ TagManager:
   tags:
   - Enemy
   - Fire
+  - InteractiveObject
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Interact
   - Water
   - UI
   - 
