@@ -3,7 +3,10 @@ guid: 337fe410b89757548b5f6130913d726c
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - playerController: {instanceID: 0}
+  - startingPistol: {fileID: 11400000, guid: dc15facdd18fe1740b6a3785f2b3c1d6, type: 2}
+  - gunModel: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

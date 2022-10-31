@@ -7,14 +7,22 @@ public class enemyBase : MonoBehaviour, IDamage
 {
     [Header("----- Componenets -----")]
     [SerializeField] protected GameObject eyes;
+    [SerializeField] GameObject drop;
     protected Animator anim;
     protected NavMeshAgent agent;
     protected Vector3 target;
 
     [Header("----- Stats -----")]
-    [SerializeField] int HP;
+    [Range(1,50)][SerializeField] int HP;
+    [Range(.1f, 5f)] [SerializeField] protected float attackSpeed;
+    [Range(1, 10)] [SerializeField] protected int damage;
+    [Range(1, 10)] [SerializeField] protected int range;
 
     protected float originalSpeed;
+    protected Vector3 targetDir;
+    protected Vector3 playerDir;
+    protected float angle;
+    protected bool isAttacking;
 
     // Start is called before the first frame update
     protected void Start()
@@ -25,6 +33,12 @@ public class enemyBase : MonoBehaviour, IDamage
         agent.SetDestination(target);
 
         originalSpeed = agent.speed;
+    }
+
+    protected void Update()
+    {
+        playerDir = gameManager.instance.player.transform.position - transform.position;
+        angle = Vector3.Angle(transform.forward, playerDir);
     }
 
     public virtual void findTarget() { }
@@ -40,9 +54,15 @@ public class enemyBase : MonoBehaviour, IDamage
             death();
     }
 
-    void death()
+    public void death()
     {
         agent.enabled = false;
+
+        int temp = Random.Range(0, 2);
+        if (temp == 0)
+            Instantiate(drop, transform.position, transform.rotation);
+
+        spawnManager.instance.enemyDeath();
         Destroy(gameObject);
     }
 }
