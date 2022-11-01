@@ -142,7 +142,10 @@ public class spawnManager : MonoBehaviour
 
         for(int i = 0; i < enemies.Count; i++)
         {
-            enemies[i].GetComponent<enemyBase>().death();
+            if(enemies[i] != null)
+                enemies[i].GetComponent<enemyBase>().death();
+            else
+                enemies.Remove(enemies[i]);
         }
 
         startWave();
