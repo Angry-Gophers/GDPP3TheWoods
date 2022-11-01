@@ -2178,7 +2178,7 @@ MonoBehaviour:
   trap: {fileID: 0}
   maxTraps: 2
   trapsHeld: 2
-  HP: 0
+  HP: 10
   playerSpeed: 15
   jumpHeight: 10
   maxJumps: 1
@@ -2189,6 +2189,8 @@ MonoBehaviour:
   shootDist: 0
   reloadTime: 0
   shootRate: 0
+  ectoplasm: 0
+  antlers: 0
   isShooting: 0
   isReloading: 0
   weaponType: 0
