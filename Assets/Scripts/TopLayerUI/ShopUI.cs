@@ -70,19 +70,64 @@ namespace TheWoods.TopLayer
             {
                 if (button.name == item.ItemName)
                 {
-                    button.enabled = isEnabled;
+                    button.interactable = isEnabled;
                 }
             }
         }
-        // Check if they can afford the item before allowing the button to be visible
-        // Buy new guns
-        // Check current guns first// only display unowned guns
-        // Buy bandages
-        // Check current bandages // only display if they can hold more
-        // Buy traps
-        // Check current traps // only display if they can hold more
-        // Anything else?
-        // Update if successful purchase
-        // Unsuccessful error message
+        
+        public void GetTrap()
+        {
+            gameManager.instance.playerScript.trapsHeld++;
+            for(int x = 0; x < store.Count; x++)
+            {
+                if(store[x].ItemName == "Trap")
+                {
+                    gameManager.instance.playerScript.antlers -= store[x].AntlerCost;
+                    gameManager.instance.playerScript.antlers -= store[x].EctoplasmCost;
+                }
+            }
+            CanBuy();
+            //update HUD display
+        }
+
+        public void GetBandage()
+        {
+            gameManager.instance.playerScript.bandagesHeld++;
+            for (int x = 0; x < store.Count; x++)
+            {
+                if (store[x].ItemName == "Bandage")
+                {
+                    gameManager.instance.playerScript.antlers -= store[x].AntlerCost;
+                    gameManager.instance.playerScript.antlers -= store[x].EctoplasmCost;
+                }
+            }
+            CanBuy();
+            //update HUD
+        }
+
+        public void GetCandle()
+        {
+            gameManager.instance.playerScript.candlesHeld++;
+            for (int x = 0; x < store.Count; x++)
+            {
+                if (store[x].ItemName == "Candle")
+                {
+                    gameManager.instance.playerScript.antlers -= store[x].AntlerCost;
+                    gameManager.instance.playerScript.antlers -= store[x].EctoplasmCost;
+                }
+            }
+            CanBuy();
+            //update HUD
+        }
+
+        public void CloseShop()
+        {
+            gameManager.instance.shopWindow.SetActive(false);
+        }
+
+        public void OpengunShop()
+        {
+            gameManager.instance.gunShopWindow.SetActive(true);
+        }
     }
 }

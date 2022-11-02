@@ -9,6 +9,8 @@ public class PlayerController : MonoBehaviour, IDamage
     [SerializeField] GameObject trap;
     [SerializeField] int maxTraps;
     public int trapsHeld;
+    public int bandagesHeld;
+    public int candlesHeld;
     [Header("---Player Stats---")]
     [SerializeField] int HP;
     [SerializeField] float playerSpeed;

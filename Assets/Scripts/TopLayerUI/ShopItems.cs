@@ -1,5 +1,4 @@
-using UnityEngine;
-public class ShopItems : ScriptableObject
+public class ShopItems
 {
     public string ItemName { get;  set; }
     public int AntlerCost { get;  set; }
