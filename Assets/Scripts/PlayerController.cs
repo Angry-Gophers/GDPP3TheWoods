@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour, IDamage
     [SerializeField] int maxJumps;
     [SerializeField] float gravityValue;
     [SerializeField] int hpOriginal;
+    [SerializeField] int interactRange;
     [Header("---Player Weapon Stats---")]
     [SerializeField] RayCastWeapon startingPistol;
     [SerializeField] int shootDmg;
@@ -52,6 +53,7 @@ public class PlayerController : MonoBehaviour, IDamage
         movement();
         jump();
         StartCoroutine(shoot());
+        interact();
         // call weaponSwapping(); if they aren't shooting or reloading
         placeTrap();
     }
@@ -239,6 +241,22 @@ public class PlayerController : MonoBehaviour, IDamage
             case 2:
                 antlers++;
                 break;
+        }
+    }
+
+    void interact()
+    {
+        if (Input.GetButtonDown("Interact"))
+        {
+
+            RaycastHit hit;
+            if (Physics.Raycast(Camera.main.ViewportPointToRay(new Vector2(0.5f, 0.5f)), out hit, interactRange))
+            {
+                if (hit.collider.CompareTag("Fire") && !spawnManager.instance.inWave)
+                {
+                    spawnManager.instance.startWave();
+                }
+            }
         }
     }
 }
