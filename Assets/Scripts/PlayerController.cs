@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour, IDamage
     [Header("---Components---")]
     [SerializeField] CharacterController playerController;
     [SerializeField] GameObject trap;
-    [SerializeField] int maxTraps;
+    public int maxTraps;
     public int trapsHeld;
     [Header("---Player Stats---")]
     [SerializeField] int HP;
@@ -199,6 +199,13 @@ public class PlayerController : MonoBehaviour, IDamage
         {
             Debug.Log("You Died");
         }
+        else if(HP < hpOriginal / 2)
+        {
+            StartCoroutine(heal());
+
+        }
+
+        
 
     }
 
@@ -238,5 +245,12 @@ public class PlayerController : MonoBehaviour, IDamage
                 antlers++;
                 break;
         }
+    }
+
+    IEnumerator heal()
+    {
+        yield return new WaitForSeconds(5.0f);
+        HP = hpOriginal / 2;
+        Debug.Log("Healed");
     }
 }

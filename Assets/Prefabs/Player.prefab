@@ -2125,6 +2125,7 @@ GameObject:
   - component: {fileID: 8772912456516511151}
   - component: {fileID: 8772912456516511136}
   - component: {fileID: 8772912456516511137}
+  - component: {fileID: 4688098432156840423}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -2189,6 +2190,8 @@ MonoBehaviour:
   shootDist: 0
   reloadTime: 0
   shootRate: 0
+  ectoplasm: 0
+  antlers: 0
   isShooting: 0
   isReloading: 0
   weaponType: 0
@@ -2212,6 +2215,25 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4688098432156840423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8772912456516511138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fbcc26d3cdfad743abee87da6b48ba5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rayLength: 5
+  layerMaskInteract:
+    serializedVersion: 2
+    m_Bits: 0
+  excludeLayerName: 
+  openDoorKey: 323
+  crosshair: {fileID: 0}
 --- !u!1 &8772912456516642811
 GameObject:
   m_ObjectHideFlags: 0
