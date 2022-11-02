@@ -1,4 +1,7 @@
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 // add using statement for the gameManager layer
 // add TextMeshPro stuff
 // please create namespaces for each folder for an appropriate layer
@@ -16,41 +19,70 @@ namespace TheWoods.TopLayer
 {
     public class ShopUI : MonoBehaviour
     {
-        //What this class needs to know
-            // How many antlers, ectoplasm, bandages, traps the player has
-            // What weapons the player currently owns
-            // Is it currently time to shop?
-            // How much time is left to shop?
-        // ^^ all available through the gameManager
-        // What this class has to update
-            // Player HUD values, Player antlers and ectoplasm, current weapons useable/ in storage?
-        // This class needs to access the gameManager for the playerScript values in it's instance
-        // This class is essentially button functions unrelated to other menu buttons
-
-
-        // Buttons buttons buttons 
-        // Start is called before the first frame update
+        public List<ShopItems> store { get; set; }
+        [SerializeField] public List<Button> storeButtons = new List<Button>();
         void Start()
         {
-            // I think this needs to track time( if not it will be an event)
+            store = new List<ShopItems>() {
+              new ShopItems() {
+                ItemName = "Bandage",
+                AntlerCost = 0,
+                EctoplasmCost = 10
+              },
+              new ShopItems() {
+                ItemName = "Trap",
+                AntlerCost = 1,
+                EctoplasmCost = 20
+              },
+              new ShopItems() {
+                ItemName = "Candle",
+                AntlerCost = 5,
+                EctoplasmCost = 30
+              }
+            };
+            CanBuy();
+
         }
 
         // Update is called once per frame
         void Update()
         {
-            // if they can buy something, allow visibility of the button
-                // Update the HUD and currency and weapons with the right method
-            // else close the Shop if time is up, player closes it, etc
+        }
+
+        private void CanBuy()
+        {
+            foreach (ShopItems item in store)
+            {
+                if (gameManager.instance.playerScript.antlers >= item.AntlerCost && gameManager.instance.playerScript.ectoplasm >= item.EctoplasmCost)
+                {
+                    EnabledButton(item, true);
+                }
+                else
+                {
+                    EnabledButton(item, false);
+                }
+            }
+        }
+
+        private void EnabledButton(ShopItems item, bool isEnabled)
+        {
+            foreach (Button button in storeButtons)
+            {
+                if (button.name == item.ItemName)
+                {
+                    button.enabled = isEnabled;
+                }
+            }
         }
         // Check if they can afford the item before allowing the button to be visible
-            // Buy new guns
-                // Check current guns first// only display unowned guns
-            // Buy bandages
-                // Check current bandages // only display if they can hold more
-            // Buy traps
-                // Check current traps // only display if they can hold more
-            // Anything else?
+        // Buy new guns
+        // Check current guns first// only display unowned guns
+        // Buy bandages
+        // Check current bandages // only display if they can hold more
+        // Buy traps
+        // Check current traps // only display if they can hold more
+        // Anything else?
         // Update if successful purchase
-            // Unsuccessful error message
+        // Unsuccessful error message
     }
 }
