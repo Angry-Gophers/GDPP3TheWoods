@@ -7,7 +7,7 @@ public class enemyBase : MonoBehaviour, IDamage
 {
     [Header("----- Componenets -----")]
     [SerializeField] protected GameObject eyes;
-    [SerializeField] GameObject drop;
+    [SerializeField] protected GameObject drop;
     protected Animator anim;
     protected NavMeshAgent agent;
     protected Vector3 target;
@@ -70,12 +70,12 @@ public class enemyBase : MonoBehaviour, IDamage
             death();
     }
 
-    public void death()
+    public virtual void death()
     {
         agent.enabled = false;
 
         int temp = Random.Range(0, 2);
-        if (temp == 0 && drop != null)
+        if (temp == 0 && drop != null && spawnManager.instance.inWave)
             Instantiate(drop, transform.position, transform.rotation);
 
         spawnManager.instance.enemyDeath();
