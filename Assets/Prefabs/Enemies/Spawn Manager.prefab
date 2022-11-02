@@ -45,11 +45,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnList: []
+  eliteSpawnList: []
   enemies: []
   phantom: {fileID: 8149738876329093800, guid: f3aa48999e97a904c9cf7b45bdb06265, type: 3}
+  elites:
+  - {fileID: 3243034810219371087, guid: ba4e602437e19b544ad0153d4ac0f399, type: 3}
   wave: 0
   enemyLimit: 10
   maxLimit: 20
   spawnRate: 5
   atTheSameTime: 1
-  waveLength: 20
+  eliteLimit: 1
+  maxElites: 5
+  eliteRate: 10
+  waveLength: 180

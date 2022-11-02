@@ -6,8 +6,10 @@ public class spawnManager : MonoBehaviour
 {
     [Header("----- Components -----")]
     [SerializeField] List<GameObject> spawnList = new List<GameObject>();
+    [SerializeField] List<GameObject> eliteSpawnList = new List<GameObject>();
     [SerializeField] List<GameObject> enemies = new List<GameObject>();
     [SerializeField] GameObject phantom;
+    [SerializeField] List<GameObject> elites;
     public static spawnManager instance;
 
     [Header("----- Wave stats -----")]
@@ -16,20 +18,31 @@ public class spawnManager : MonoBehaviour
     [SerializeField] int maxLimit;
     [SerializeField] float spawnRate;
     [SerializeField] int atTheSameTime;
+    [SerializeField] int eliteLimit;
+    [SerializeField] int maxElites;
+    [SerializeField] float eliteRate;
     [SerializeField] int waveLength;
 
     int enemiesInScene;
+    int elitesInScene;
     bool spawning;
+    bool eliteSpawn;
     bool firstSpawn;
 
     void Start()
     {
         instance = this;
         GameObject[] locations = GameObject.FindGameObjectsWithTag("SpawnPos");
+        GameObject[] eliteLocals = GameObject.FindGameObjectsWithTag("ElitePos");
 
-        for(int i = 0; i < locations.Length; i++)
+        for (int i = 0; i < locations.Length; i++)
         {
             spawnList.Add(locations[i]);
+        }
+
+        for (int i = 0; i < eliteLocals.Length; i++)
+        {
+            eliteSpawnList.Add(eliteLocals[i]);
         }
 
         startWave();
@@ -39,6 +52,9 @@ public class spawnManager : MonoBehaviour
     {
         if (enemiesInScene < enemyLimit && !spawning)
             StartCoroutine(spawnMore());
+
+        if (elitesInScene < eliteLimit && !eliteSpawn && wave != 1)
+            StartCoroutine(spawnElite());
     }
 
     void startWave()
@@ -48,20 +64,26 @@ public class spawnManager : MonoBehaviour
         firstSpawn = true;
 
         //Increase difficulty
-        if(wave % 3 == 0)
+        if (wave % 3 == 0)
         {
-            if(spawnRate > 1)
+            if (spawnRate > 1)
                 spawnRate -= .5f;
 
             if (atTheSameTime < 5)
                 atTheSameTime++;
+
+            if (eliteRate > 3)
+                eliteRate -= 0.5f;
+
+            if (eliteLimit < maxElites)
+                eliteLimit++;
         }
 
         if (wave != 1 && enemyLimit < maxLimit)
             enemyLimit += 2;
 
         //Spawn an enemy at every position
-        for(int i = 0;i < spawnList.Count; i++)
+        for (int i = 0; i < spawnList.Count; i++)
         {
             spawnEnemy(i);
         }
@@ -75,9 +97,9 @@ public class spawnManager : MonoBehaviour
         spawning = true;
         int spawned = 0;
 
-        while(spawned < atTheSameTime && !firstSpawn)
+        while (spawned < atTheSameTime && !firstSpawn)
         {
-            spawnEnemy(Random.Range(0, spawnList.Count)); 
+            spawnEnemy(Random.Range(0, spawnList.Count));
             spawned++;
         }
 
@@ -85,6 +107,18 @@ public class spawnManager : MonoBehaviour
 
         yield return new WaitForSeconds(spawnRate);
         spawning = false;
+    }
+
+    IEnumerator spawnElite()
+    {
+        eliteSpawn = true;
+
+        elitesInScene++;
+        GameObject local = eliteSpawnList[Random.Range(0, eliteSpawnList.Count)];
+        Instantiate(elites[Random.Range(0, elites.Count)], local.transform.position, local.transform.rotation);
+
+        yield return new WaitForSeconds(eliteRate);
+        eliteSpawn = false;
     }
 
     public void enemyDeath()
@@ -108,7 +142,10 @@ public class spawnManager : MonoBehaviour
 
         for(int i = 0; i < enemies.Count; i++)
         {
-            enemies[i].GetComponent<enemyBase>().death();
+            if(enemies[i] != null)
+                enemies[i].GetComponent<enemyBase>().death();
+            else
+                enemies.Remove(enemies[i]);
         }
 
         startWave();
