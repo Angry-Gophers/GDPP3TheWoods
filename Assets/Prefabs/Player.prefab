@@ -2179,7 +2179,7 @@ MonoBehaviour:
   trap: {fileID: 0}
   maxTraps: 2
   trapsHeld: 2
-  HP: 0
+  HP: 10
   playerSpeed: 15
   jumpHeight: 10
   maxJumps: 1
