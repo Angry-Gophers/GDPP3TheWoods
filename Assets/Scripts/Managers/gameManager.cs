@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class gameManager : MonoBehaviour
 {
@@ -16,6 +17,8 @@ public class gameManager : MonoBehaviour
     public GameObject shopWindow;
     public GameObject gunShopWindow;
     public GameObject playerDeadMenu;
+    public GameObject nextWaveText;
+    public TextMeshProUGUI waveText;
     //  public GameObject menuCurrentlyOpen;
     //  public GameObject playerDamageFlash;
     //  public Image playerHPBar;
