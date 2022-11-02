@@ -1198,8 +1198,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Wendigo killed
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 90002a30397c0de4285d067a48b27af4, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 90002a30397c0de4285d067a48b27af4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1333,8 +1333,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Ectoplasm Collected
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 90002a30397c0de4285d067a48b27af4, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 90002a30397c0de4285d067a48b27af4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1846,8 +1846,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Haints killed
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 90002a30397c0de4285d067a48b27af4, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 90002a30397c0de4285d067a48b27af4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2081,6 +2081,18 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4908967521983333195, guid: 7366155a048f7a042b3463e90f4f80d2, type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 5521325048526276330, guid: 7366155a048f7a042b3463e90f4f80d2, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5767641548297482927, guid: 7366155a048f7a042b3463e90f4f80d2, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 58.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7366155a048f7a042b3463e90f4f80d2, type: 3}
 --- !u!224 &1524027535 stripped
@@ -2148,8 +2160,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Night 1
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 90002a30397c0de4285d067a48b27af4, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 90002a30397c0de4285d067a48b27af4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2407,8 +2419,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 90002a30397c0de4285d067a48b27af4, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 90002a30397c0de4285d067a48b27af4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2618,8 +2630,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Continue
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 90002a30397c0de4285d067a48b27af4, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 90002a30397c0de4285d067a48b27af4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2753,8 +2765,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Antlers Collected
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 90002a30397c0de4285d067a48b27af4, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 90002a30397c0de4285d067a48b27af4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2888,8 +2900,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Summary
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 90002a30397c0de4285d067a48b27af4, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 90002a30397c0de4285d067a48b27af4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4422,6 +4434,8 @@ MonoBehaviour:
   trap: {fileID: 0}
   maxTraps: 2
   trapsHeld: 2
+  bandagesHeld: 0
+  candlesHeld: 0
   HP: 0
   playerSpeed: 15
   jumpHeight: 10
