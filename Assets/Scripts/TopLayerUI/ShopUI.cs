@@ -1,3 +1,5 @@
+
+using System.Collections.Generic;
 using UnityEngine;
 // add using statement for the gameManager layer
 // add TextMeshPro stuff
@@ -17,25 +19,53 @@ namespace TheWoods.TopLayer
     public class ShopUI : MonoBehaviour
     {
         //What this class needs to know
-            // How many antlers, ectoplasm, bandages, traps the player has
-            // What weapons the player currently owns
-            // Is it currently time to shop?
-            // How much time is left to shop?
+        // How much time is left to shop?
         // ^^ all available through the gameManager
         // What this class has to update
-            // Player HUD values, Player antlers and ectoplasm, current weapons useable/ in storage?
+        // Player HUD values, Player antlers and ectoplasm, current weapons useable/ in storage?
         // This class needs to access the gameManager for the playerScript values in it's instance
         // This class is essentially button functions unrelated to other menu buttons
-
-
-        // Buttons buttons buttons 
-        // Start is called before the first frame update
-        void Start()
+        // defining struct
+        public struct ShopItems
         {
-            // I think this needs to track time( if not it will be an event)
+            public string ItemName
+            {
+                get { return ItemName; }
+                set { ItemName = value; }
+            }
+            // creates property
+            public int ItemCostAntlers
+            {
+                get { return ItemCostAntlers; }
+                set { ItemCostAntlers = value; }
+            }
+            public int ItemCostEctoplasm
+            {
+                get { return ItemCostEctoplasm; }
+                set { ItemCostEctoplasm = value; }
+            }
         }
-
-        // Update is called once per frame
+        public List<ShopItems> ShopItemList { get; set; }
+        public void Start()
+        {
+            ShopItemList = new List<ShopItems>() {
+              new ShopItems() {
+                ItemName = "Bandage",
+                ItemCostAntlers = 0,
+                ItemCostEctoplasm = 10
+              },
+              new ShopItems() {
+                ItemName = "Trap",
+                ItemCostAntlers = 1,
+                ItemCostEctoplasm = 20
+              },
+              new ShopItems() {
+                ItemName = "Candle",
+                ItemCostAntlers = 5,
+                ItemCostEctoplasm = 30
+              }
+            };
+        }
         void Update()
         {
             // if they can buy something, allow visibility of the button
@@ -52,5 +82,21 @@ namespace TheWoods.TopLayer
             // Anything else?
         // Update if successful purchase
             // Unsuccessful error message
+        public bool AbleToBuy()
+        {
+                if(gameManager.instance.playerScript.antlers >= item.ItemCostAntlers && gameManager.instance.playerScript.ectoplasm >= item.ItemCostEctoplasm)
+                {
+                    //enable the buttons on the panel
+                    return true;
+                }
+            return false;
+        }
+        public void DisplayButtons()
+        {
+            foreach (ShopItems item in ShopItemList)
+            {
+                buttonInQuestion.setActive = AbleToBuy();
+            }
+        }
     }
 }
