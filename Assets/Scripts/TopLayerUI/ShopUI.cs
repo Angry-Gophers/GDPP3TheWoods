@@ -1,6 +1,7 @@
-
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 // add using statement for the gameManager layer
 // add TextMeshPro stuff
 // please create namespaces for each folder for an appropriate layer
@@ -18,85 +19,113 @@ namespace TheWoods.TopLayer
 {
     public class ShopUI : MonoBehaviour
     {
-        //What this class needs to know
-        // How much time is left to shop?
-        // ^^ all available through the gameManager
-        // What this class has to update
-        // Player HUD values, Player antlers and ectoplasm, current weapons useable/ in storage?
-        // This class needs to access the gameManager for the playerScript values in it's instance
-        // This class is essentially button functions unrelated to other menu buttons
-        // defining struct
-        public struct ShopItems
+        public List<ShopItems> store { get; set; }
+        [SerializeField] public List<Button> storeButtons = new List<Button>();
+        void Start()
         {
-            public string ItemName
-            {
-                get { return ItemName; }
-                set { ItemName = value; }
-            }
-            // creates property
-            public int ItemCostAntlers
-            {
-                get { return ItemCostAntlers; }
-                set { ItemCostAntlers = value; }
-            }
-            public int ItemCostEctoplasm
-            {
-                get { return ItemCostEctoplasm; }
-                set { ItemCostEctoplasm = value; }
-            }
-        }
-        public List<ShopItems> ShopItemList { get; set; }
-        public void Start()
-        {
-            ShopItemList = new List<ShopItems>() {
+            store = new List<ShopItems>() {
               new ShopItems() {
                 ItemName = "Bandage",
-                ItemCostAntlers = 0,
-                ItemCostEctoplasm = 10
+                AntlerCost = 0,
+                EctoplasmCost = 10
               },
               new ShopItems() {
                 ItemName = "Trap",
-                ItemCostAntlers = 1,
-                ItemCostEctoplasm = 20
+                AntlerCost = 1,
+                EctoplasmCost = 20
               },
               new ShopItems() {
                 ItemName = "Candle",
-                ItemCostAntlers = 5,
-                ItemCostEctoplasm = 30
+                AntlerCost = 5,
+                EctoplasmCost = 30
               }
             };
+            CanBuy();
+
         }
         void Update()
         {
-            // if they can buy something, allow visibility of the button
-                // Update the HUD and currency and weapons with the right method
-            // else close the Shop if time is up, player closes it, etc
         }
-        // Check if they can afford the item before allowing the button to be visible
-            // Buy new guns
-                // Check current guns first// only display unowned guns
-            // Buy bandages
-                // Check current bandages // only display if they can hold more
-            // Buy traps
-                // Check current traps // only display if they can hold more
-            // Anything else?
-        // Update if successful purchase
-            // Unsuccessful error message
-        public bool AbleToBuy()
+
+        private void CanBuy()
         {
-                if(gameManager.instance.playerScript.antlers >= item.ItemCostAntlers && gameManager.instance.playerScript.ectoplasm >= item.ItemCostEctoplasm)
-                {
-                    //enable the buttons on the panel
-                    return true;
-                }
-            return false;
-        }
-        public void DisplayButtons()
-        {
-            foreach (ShopItems item in ShopItemList)
+            foreach (ShopItems item in store)
             {
-                buttonInQuestion.setActive = AbleToBuy();
+                if (gameManager.instance.playerScript.antlers >= item.AntlerCost && gameManager.instance.playerScript.ectoplasm >= item.EctoplasmCost)
+                {
+                    EnabledButton(item, true);
+                }
+                else
+                {
+                    EnabledButton(item, false);
+                }
             }
+        }
+
+        private void EnabledButton(ShopItems item, bool isEnabled)
+        {
+            foreach (Button button in storeButtons)
+            {
+                if (button.name == item.ItemName)
+                {
+                    button.interactable = isEnabled;
+                }
+            }
+        }
+        
+        public void GetTrap()
+        {
+            gameManager.instance.playerScript.trapsHeld++;
+            for(int x = 0; x < store.Count; x++)
+            {
+                if(store[x].ItemName == "Trap")
+                {
+                    gameManager.instance.playerScript.antlers -= store[x].AntlerCost;
+                    gameManager.instance.playerScript.antlers -= store[x].EctoplasmCost;
+                }
+            }
+            CanBuy();
+            //update HUD display
+        }
+
+        public void GetBandage()
+        {
+            gameManager.instance.playerScript.bandagesHeld++;
+            for (int x = 0; x < store.Count; x++)
+            {
+                if (store[x].ItemName == "Bandage")
+                {
+                    gameManager.instance.playerScript.antlers -= store[x].AntlerCost;
+                    gameManager.instance.playerScript.antlers -= store[x].EctoplasmCost;
+                }
+            }
+            CanBuy();
+            //update HUD
+        }
+
+        public void GetCandle()
+        {
+            gameManager.instance.playerScript.candlesHeld++;
+            for (int x = 0; x < store.Count; x++)
+            {
+                if (store[x].ItemName == "Candle")
+                {
+                    gameManager.instance.playerScript.antlers -= store[x].AntlerCost;
+                    gameManager.instance.playerScript.antlers -= store[x].EctoplasmCost;
+                }
+            }
+            CanBuy();
+            //update HUD
+        }
+
+        public void CloseShop()
+        {
+            gameManager.instance.shopWindow.SetActive(false);
+        }
+
+        public void OpengunShop()
+        {
+            gameManager.instance.gunShopWindow.SetActive(true);
         }
     }
 }

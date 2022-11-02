@@ -7,11 +7,15 @@ TagManager:
   - Enemy
   - Fire
   - SpawnPos
+  - InteractiveObject
+  - ElitePos
+  - Shop
+  - Gun Shop
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Interact
   - Water
   - UI
   - 
