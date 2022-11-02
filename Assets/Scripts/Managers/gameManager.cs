@@ -13,8 +13,9 @@ public class gameManager : MonoBehaviour
 
     [Header("----- UI -----")]
     public GameObject pauseMenu;
+    public GameObject shopWindow;
+    public GameObject gunShopWindow;
     public GameObject playerDeadMenu;
-    //  public GameObject shopWindow;
     //  public GameObject menuCurrentlyOpen;
     //  public GameObject playerDamageFlash;
     //  public Image playerHPBar;
@@ -35,6 +36,8 @@ public class gameManager : MonoBehaviour
         instance = this;
         player = GameObject.FindGameObjectWithTag("Player");
         playerScript = player.GetComponent<PlayerController>();
+        shopWindow = GameObject.FindGameObjectWithTag("Shop");
+        gunShopWindow = GameObject.FindGameObjectWithTag("Gun Shop");
     }
 
     // Update is called once per frame

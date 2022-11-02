@@ -9,6 +9,8 @@ TagManager:
   - SpawnPos
   - InteractiveObject
   - ElitePos
+  - Shop
+  - Gun Shop
   layers:
   - Default
   - TransparentFX
