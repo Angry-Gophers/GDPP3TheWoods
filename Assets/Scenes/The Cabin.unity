@@ -2081,6 +2081,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4908967521983333195, guid: 7366155a048f7a042b3463e90f4f80d2, type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7366155a048f7a042b3463e90f4f80d2, type: 3}
 --- !u!224 &1524027535 stripped
@@ -4422,6 +4426,8 @@ MonoBehaviour:
   trap: {fileID: 0}
   maxTraps: 2
   trapsHeld: 2
+  bandagesHeld: 0
+  candlesHeld: 0
   HP: 0
   playerSpeed: 15
   jumpHeight: 10
