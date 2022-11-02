@@ -9,6 +9,8 @@ public class PlayerController : MonoBehaviour, IDamage
     [SerializeField] GameObject trap;
     public int maxTraps;
     public int trapsHeld;
+    public int bandagesHeld;
+    public int candlesHeld;
     [Header("---Player Stats---")]
     [SerializeField] int HP;
     [SerializeField] float playerSpeed;
@@ -16,6 +18,7 @@ public class PlayerController : MonoBehaviour, IDamage
     [SerializeField] int maxJumps;
     [SerializeField] float gravityValue;
     [SerializeField] int hpOriginal;
+    [SerializeField] int interactRange;
     [Header("---Player Weapon Stats---")]
     [SerializeField] RayCastWeapon startingPistol;
     [SerializeField] int shootDmg;
@@ -23,8 +26,8 @@ public class PlayerController : MonoBehaviour, IDamage
     [SerializeField] float reloadTime;
     [SerializeField] float shootRate;// Kyle- I may not do it this way this time, I am looking at using an enum or attached ScriptableObject
     [Header("---Currency---")]
-    [SerializeField] int ectoplasm;
-    [SerializeField] int antlers;
+    [SerializeField] public int ectoplasm;
+    [SerializeField] public int antlers;
     public bool isShooting = false;
     public bool isReloading = false;
     public GunTypes weaponType;
@@ -50,6 +53,7 @@ public class PlayerController : MonoBehaviour, IDamage
         movement();
         jump();
         StartCoroutine(shoot());
+        interact();
         // call weaponSwapping(); if they aren't shooting or reloading
         placeTrap();
     }
@@ -252,5 +256,19 @@ public class PlayerController : MonoBehaviour, IDamage
         yield return new WaitForSeconds(5.0f);
         HP = hpOriginal / 2;
         Debug.Log("Healed");
+    void interact()
+    {
+        if (Input.GetButtonDown("Interact"))
+        {
+
+            RaycastHit hit;
+            if (Physics.Raycast(Camera.main.ViewportPointToRay(new Vector2(0.5f, 0.5f)), out hit, interactRange))
+            {
+                if (hit.collider.CompareTag("Fire") && !spawnManager.instance.inWave)
+                {
+                    spawnManager.instance.startWave();
+                }
+            }
+        }
     }
 }

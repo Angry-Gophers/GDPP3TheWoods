@@ -2179,12 +2179,15 @@ MonoBehaviour:
   trap: {fileID: 0}
   maxTraps: 2
   trapsHeld: 2
+  bandagesHeld: 0
+  candlesHeld: 0
   HP: 10
   playerSpeed: 15
   jumpHeight: 10
   maxJumps: 1
   gravityValue: 25
   hpOriginal: 10
+  interactRange: 5
   startingPistol: {fileID: 0}
   shootDmg: 0
   shootDist: 0
