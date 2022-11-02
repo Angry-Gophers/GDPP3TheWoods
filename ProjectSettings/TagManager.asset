@@ -8,6 +8,7 @@ TagManager:
   - Fire
   - SpawnPos
   - InteractiveObject
+  - ElitePos
   layers:
   - Default
   - TransparentFX

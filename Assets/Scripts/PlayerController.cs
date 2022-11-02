@@ -27,7 +27,7 @@ public class PlayerController : MonoBehaviour, IDamage
     [SerializeField] int antlers;
     public bool isShooting = false;
     public bool isReloading = false;
-    public GunType weaponType;
+    public GunTypes weaponType;
     [SerializeField] GameObject gunModel;
     Vector3 playervelocity;
     int timesJumped;
@@ -55,9 +55,9 @@ public class PlayerController : MonoBehaviour, IDamage
     }
 
     // Gets the weapon type
-    GunType GetCurrentWeaponType(RayCastWeapon gun)
+    GunTypes GetCurrentWeaponType(RayCastWeapon gun)
     {
-        return gunListStats[selectedGun].type;
+        return gunListStats[selectedGun].GunType;
     }
     
     void movement()
@@ -87,7 +87,7 @@ public class PlayerController : MonoBehaviour, IDamage
     }
     IEnumerator shoot()
     {
-        if(weaponType == GunType.SemiAuto)
+        if(weaponType == GunTypes.SemiAuto)
         {
             if (Input.GetButtonDown("Shoot") && !isShooting)
             {
@@ -98,7 +98,7 @@ public class PlayerController : MonoBehaviour, IDamage
                 isShooting = false;
             }
         }
-        else if(weaponType == GunType.Auto)
+        else if(weaponType == GunTypes.Auto)
         {
             if (Input.GetButton("Shoot") && !isShooting)
             {
@@ -108,7 +108,7 @@ public class PlayerController : MonoBehaviour, IDamage
                 yield return new WaitForSeconds(.017f);
                 isShooting = false;
             }
-        }else if(weaponType == GunType.Burst)
+        }else if(weaponType == GunTypes.Burst)
         {
             if (Input.GetButton("Shoot") && !isShooting)
             {
@@ -118,7 +118,7 @@ public class PlayerController : MonoBehaviour, IDamage
                 yield return new WaitForSeconds(.3f);
                 isShooting = false;
             }
-        }else if(weaponType == GunType.Single)
+        }else if(weaponType == GunTypes.Single)
         {
             if (Input.GetButtonDown("Shoot") && !isShooting)
             {
@@ -171,12 +171,12 @@ public class PlayerController : MonoBehaviour, IDamage
     void swapGunStats(RayCastWeapon stats)
     {
         GetCurrentWeaponType(stats);
-        shootDmg = stats.damage;
-        shootDist = stats.range;
-        reloadTime = stats.reloadSpeed;
+        shootDmg = stats.GunDamage;
+        shootDist = stats.GunRange;
+        reloadTime = stats.GunReloadSpeed;
         //gunFireSound = stats.fireSound;
-        gunModel.GetComponent<MeshFilter>().sharedMesh = stats.designModel.GetComponent<MeshFilter>().sharedMesh;
-        gunModel.GetComponent<MeshRenderer>().sharedMaterial = stats.designModel.GetComponent<MeshRenderer>().sharedMaterial;
+        gunModel.GetComponent<MeshFilter>().sharedMesh = stats.GunDesignModel.GetComponent<MeshFilter>().sharedMesh;
+        gunModel.GetComponent<MeshRenderer>().sharedMaterial = stats.GunDesignModel.GetComponent<MeshRenderer>().sharedMaterial;
         //gameManager.instance.updateAmmoCount(stats.bullets, stats.reserveAmmo);
     }
 

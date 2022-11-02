@@ -28,7 +28,8 @@ public class enemyDrops : MonoBehaviour
         {
             other.GetComponent<PlayerController>().pickedUp(type);
 
-            aud.PlayOneShot(audio[Random.Range(0, audio.Count)], audioVol);
+            if(audio.Count > 0)
+                aud.PlayOneShot(audio[Random.Range(0, audio.Count)], audioVol);
 
             Destroy(gameObject);
         }
