@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class gameManager : MonoBehaviour
 {
@@ -10,9 +11,9 @@ public class gameManager : MonoBehaviour
     public PlayerController playerScript;
     // public GameObject spawnPosition;
 
-    //  [Header("----- UI -----")]
-     public GameObject pauseMenu;
-    //  public GameObject playerDeadMenu;
+    [Header("----- UI -----")]
+    public GameObject pauseMenu;
+    public GameObject playerDeadMenu;
     //  public GameObject shopWindow;
     //  public GameObject menuCurrentlyOpen;
     //  public GameObject playerDamageFlash;
