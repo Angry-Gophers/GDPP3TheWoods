@@ -906,6 +906,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6344215849434670703, guid: 2dd0cd94464adc047bac783bfea51306, type: 3}
+      propertyPath: lookVertMax
+      value: 75
+      objectReference: {fileID: 0}
+    - target: {fileID: 6344215849434670703, guid: 2dd0cd94464adc047bac783bfea51306, type: 3}
+      propertyPath: lookVertMin
+      value: -75
+      objectReference: {fileID: 0}
     - target: {fileID: 6344215850549535716, guid: 2dd0cd94464adc047bac783bfea51306, type: 3}
       propertyPath: m_Name
       value: Player

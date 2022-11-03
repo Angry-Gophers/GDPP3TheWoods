@@ -127,17 +127,13 @@ public class PlayerController : MonoBehaviour, IDamage
         }
     }
 
-<<<<<<< HEAD
     IEnumerator heal()
     {
         yield return new WaitForSeconds(5.0f);
         HP = hpOriginal / 2;
         Debug.Log("Healed");
     }
-    void interact()
-=======
     public void Interact()
->>>>>>> c6a8ef92f4b2b513f372d0e1059f3e35c0d60453
     {
         if (Input.GetButtonDown("Interact"))
         {
