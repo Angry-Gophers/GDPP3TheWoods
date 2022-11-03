@@ -69,6 +69,7 @@ public class spawnManager : MonoBehaviour
         firstSpawn = true;
 
         gameManager.instance.waveText.text = "Wave: " + wave;
+        gameManager.instance.anim.SetTrigger("NewWave");
 
         //Increase difficulty
         if (wave % 3 == 0)
