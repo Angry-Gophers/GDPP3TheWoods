@@ -17,6 +17,11 @@ public class DoorRaycast : MonoBehaviour
 
     private const string interactableTag = "InteractiveObject";
 
+    private void Start()
+    {
+        //crosshair = GameObject.FindGameObjectWithTag("Reticle").GetComponent<Image>();
+    }
+
     private void Update()
     {
         RaycastHit hit;
