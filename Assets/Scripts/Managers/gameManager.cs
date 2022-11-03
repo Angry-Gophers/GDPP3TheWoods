@@ -21,6 +21,8 @@ public class gameManager : MonoBehaviour
     public GameObject nextWaveText;
     public TextMeshProUGUI waveText;
     public Animator anim;
+    public TextMeshProUGUI shopEcto;
+    public TextMeshProUGUI shopAntler;
     //  public GameObject menuCurrentlyOpen;
     //  public GameObject playerDamageFlash;
     public Image playerHPBar;
@@ -41,14 +43,12 @@ public class gameManager : MonoBehaviour
         instance = this;
         player = GameObject.FindGameObjectWithTag("Player");
         playerScript = player.GetComponent<PlayerController>();
-        shopWindow = GameObject.FindGameObjectWithTag("Shop");
-        gunShopWindow = GameObject.FindGameObjectWithTag("Gun Shop");
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Cancel") && playerDeadMenu.activeSelf != true) // check for deadMenu and shopMenu
+        if (Input.GetButtonDown("Cancel") && playerDeadMenu.activeSelf != true && shopWindow.activeSelf != true) // check for deadMenu and shopMenu
         {
             isPaused = !isPaused;
             pauseMenu.SetActive(isPaused);
@@ -80,5 +80,15 @@ public class gameManager : MonoBehaviour
     public void updatePlayerHUD()
     {
         // ammo, bandages, boards, traps, fire health, anything else? night time left? 
+    }
+
+    public void ShopUI()
+    {
+        cursorLockPause();
+
+        shopEcto.text = "Ectoplasm: " + playerScript.ectoplasm;
+        shopAntler.text = "Antlers: " + playerScript.antlers;
+
+        shopWindow.SetActive(true);
     }
 }
