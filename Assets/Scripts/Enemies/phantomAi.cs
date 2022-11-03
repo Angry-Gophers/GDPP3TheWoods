@@ -30,6 +30,8 @@ public class phantomAi : enemyBase
             {
                 if (agent.destination != target)
                     agent.destination = target;
+
+                targetDir = target - transform.position;
             }
 
             //Rotate to face the target
@@ -66,6 +68,8 @@ public class phantomAi : enemyBase
     public override IEnumerator attack()
     {
         isAttacking = true;
+
+        anim.SetTrigger("cast3");
 
         //Shoots a raycast and checks if the hit object can be damaged
         RaycastHit hit;

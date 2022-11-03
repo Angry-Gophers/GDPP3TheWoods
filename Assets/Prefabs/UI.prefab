@@ -190,6 +190,7 @@ RectTransform:
   - {fileID: 352893004347399164}
   - {fileID: 2980387295509691894}
   - {fileID: 2980387294454912945}
+  - {fileID: 4908967521983333195}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -268,6 +269,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2980387294253901849}
+  - component: {fileID: 84033849331313494}
   - component: {fileID: 2980387294253901844}
   - component: {fileID: 2980387294253901847}
   - component: {fileID: 2980387294253901846}
@@ -299,6 +301,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -16.3}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &84033849331313494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2980387294253901848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdb2ef6c83b50274c8321a86e6be9916, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!222 &2980387294253901844
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -380,7 +394,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2980387294253901847}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 84033849331313494}
+        m_TargetAssemblyTypeName: buttonFunctions, Assembly-CSharp
+        m_MethodName: restart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2980387294454912946
 GameObject:
   m_ObjectHideFlags: 0
@@ -915,11 +941,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2980387295610125607}
+  - component: {fileID: 6381063535279247967}
   - component: {fileID: 2980387295610125602}
   - component: {fileID: 2980387295610125605}
   - component: {fileID: 2980387295610125604}
   m_Layer: 5
-  m_Name: Restart (1)
+  m_Name: Quit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -946,6 +973,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -38.1}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &6381063535279247967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2980387295610125606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdb2ef6c83b50274c8321a86e6be9916, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!222 &2980387295610125602
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1027,7 +1066,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2980387295610125605}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6381063535279247967}
+        m_TargetAssemblyTypeName: buttonFunctions, Assembly-CSharp
+        m_MethodName: quit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2980387295908859706
 GameObject:
   m_ObjectHideFlags: 0
@@ -1254,6 +1305,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2980387296111378230}
+  - component: {fileID: 7589561769117089247}
   - component: {fileID: 2980387296111378229}
   - component: {fileID: 2980387296111378228}
   - component: {fileID: 2980387296111378231}
@@ -1285,6 +1337,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 5.9}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &7589561769117089247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2980387296111378233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdb2ef6c83b50274c8321a86e6be9916, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!222 &2980387296111378229
 CanvasRenderer:
   m_ObjectHideFlags: 0
