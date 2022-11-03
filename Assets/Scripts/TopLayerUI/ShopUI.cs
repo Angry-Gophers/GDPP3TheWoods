@@ -83,7 +83,7 @@ namespace TheWoods.TopLayer
                 if(store[x].ItemName == "Trap")
                 {
                     gameManager.instance.playerScript.antlers -= store[x].AntlerCost;
-                    gameManager.instance.playerScript.antlers -= store[x].EctoplasmCost;
+                    gameManager.instance.playerScript.ectoplasm -= store[x].EctoplasmCost;
                 }
             }
             CanBuy();
@@ -98,7 +98,7 @@ namespace TheWoods.TopLayer
                 if (store[x].ItemName == "Bandage")
                 {
                     gameManager.instance.playerScript.antlers -= store[x].AntlerCost;
-                    gameManager.instance.playerScript.antlers -= store[x].EctoplasmCost;
+                    gameManager.instance.playerScript.ectoplasm -= store[x].EctoplasmCost;
                 }
             }
             CanBuy();
@@ -113,7 +113,7 @@ namespace TheWoods.TopLayer
                 if (store[x].ItemName == "Candle")
                 {
                     gameManager.instance.playerScript.antlers -= store[x].AntlerCost;
-                    gameManager.instance.playerScript.antlers -= store[x].EctoplasmCost;
+                    gameManager.instance.playerScript.ectoplasm -= store[x].EctoplasmCost;
                 }
             }
             CanBuy();

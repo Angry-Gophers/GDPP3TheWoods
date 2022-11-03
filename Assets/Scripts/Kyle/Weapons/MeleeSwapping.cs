@@ -1,35 +1,29 @@
 using UnityEngine;
 
-public class WeaponSwapping : MonoBehaviour
+public class MeleeSwapping : MonoBehaviour
 {
     public int selectedWeapon = 0;
 
-
-    public void Start()
-    {
-        SelectGun();
-    }
-
     public void Update()
     {
-        if (gameManager.instance.gunContainer.activeSelf)
-            SwitchGun();
+        if(gameManager.instance.meleeContainer.activeSelf)
+            SwitchMelee();
     }
 
 
-    public void SelectGun()
+    public void SelectMelee()
     {
         int i = 0;
-        foreach(Transform gun in transform)
+        foreach (Transform melee in transform)
         {
-            if(i == selectedWeapon)
-                gun.gameObject.SetActive(true);
+            if (i == selectedWeapon)
+                melee.gameObject.SetActive(true);
             else
-                gun.gameObject.SetActive(false);
+               melee.gameObject.SetActive(false);
             i++;
         }
     }
-    public void SwitchGun()
+    public void SwitchMelee()
     {
 
         int prevWeapon = selectedWeapon;
@@ -56,9 +50,9 @@ public class WeaponSwapping : MonoBehaviour
             }
         }
 
-        if(prevWeapon != selectedWeapon)
+        if (prevWeapon != selectedWeapon)
         {
-            SelectGun();
+            SelectMelee();
         }
     }
 }
