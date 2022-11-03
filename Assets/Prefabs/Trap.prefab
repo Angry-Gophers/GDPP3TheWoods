@@ -344,7 +344,6 @@ GameObject:
   - component: {fileID: 4587464124403575556}
   - component: {fileID: 4587464124011672191}
   - component: {fileID: 4587464124011672450}
-  - component: {fileID: 1019504705}
   m_Layer: 0
   m_Name: Trap
   m_TagString: Untagged
@@ -382,7 +381,7 @@ Animator:
   m_GameObject: {fileID: 4587464124396280022}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 783417723d42d4a4b9f24630ad3a45ec, type: 3}
-  m_Controller: {fileID: 9100000, guid: 6c4b5d0fcd5536642b1204b17b94d3a4, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -403,7 +402,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 12.8
+  m_Radius: 53.91
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &4587464124011672450
 MonoBehaviour:
@@ -417,19 +416,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3995f956a78fe44caea1103b76476ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1019504705
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4587464124396280022}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3554f3aa213221f4c9667ce05741c516, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  anim: {fileID: 4587464124403575556}
 --- !u!1 &4587464124396280024
 GameObject:
   m_ObjectHideFlags: 0
