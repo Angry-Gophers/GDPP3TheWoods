@@ -11,6 +11,8 @@ TagManager:
   - ElitePos
   - Shop
   - Gun Shop
+  - FxTemporaire
+  - Shop Car
   layers:
   - Default
   - TransparentFX
