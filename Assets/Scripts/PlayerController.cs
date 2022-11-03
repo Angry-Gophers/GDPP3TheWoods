@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour, IDamage
     [Header("---Components---")]
     [SerializeField] CharacterController playerController;
     [SerializeField] GameObject trap;
-    [SerializeField] int maxTraps;
+    public int maxTraps;
     public int trapsHeld;
     public int bandagesHeld;
     public int candlesHeld;
@@ -37,6 +37,7 @@ public class PlayerController : MonoBehaviour, IDamage
         jump();
         Interact();
         placeTrap();
+        PickTrap();
     }
     
     void movement()
@@ -78,6 +79,13 @@ public class PlayerController : MonoBehaviour, IDamage
             gameManager.instance.deadText.text = "You have died";
             gameManager.instance.cursorLockPause();
         }
+        else if(HP < hpOriginal / 2)
+        {
+            StartCoroutine(heal());
+
+        }
+
+        
 
     }
 
@@ -119,6 +127,12 @@ public class PlayerController : MonoBehaviour, IDamage
         }
     }
 
+    IEnumerator heal()
+    {
+        yield return new WaitForSeconds(5.0f);
+        HP = hpOriginal / 2;
+        Debug.Log("Healed");
+    }
     public void Interact()
     {
         if (Input.GetButtonDown("Interact"))
@@ -138,5 +152,44 @@ public class PlayerController : MonoBehaviour, IDamage
                 }
             }
         }
+    }
+    void PickTrap()
+    {
+        RaycastHit hit;
+        if (Physics.Raycast(Camera.main.ViewportPointToRay(new Vector2(0.5f, 0.5f)), out hit, 6.0f))
+        {
+            if (hit.collider.GetComponent<pickUpTrap>())
+            {
+                if (gameManager.instance.playerScript.trapsHeld < gameManager.instance.playerScript.maxTraps)
+                {
+                    gameManager.instance.instruction.SetActive(true);
+
+                    if (Input.GetButton("Interact"))
+                    {
+                        pickUpTrap();
+                        hit.collider.GetComponent<pickUpTrap>().pickedUp();
+                        gameManager.instance.trapsFullInstruction.SetActive(false);
+                        gameManager.instance.instruction.SetActive(false);
+
+
+
+                    }
+
+                }
+                else if (gameManager.instance.playerScript.trapsHeld >= gameManager.instance.playerScript.maxTraps)
+                {
+                    gameManager.instance.trapsFullInstruction.SetActive(true);
+
+                }
+            }
+            else
+            {
+                gameManager.instance.trapsFullInstruction.SetActive(false);
+                gameManager.instance.instruction.SetActive(false);
+
+            }
+
+        }
+
     }
 }
