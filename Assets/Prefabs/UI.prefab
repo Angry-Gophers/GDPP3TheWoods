@@ -524,7 +524,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.3301887, g: 0.3301887, b: 0.3301887, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3516,6 +3516,9 @@ MonoBehaviour:
   deadText: {fileID: 1585223003864894739}
   nextWaveText: {fileID: 4619616057809737401}
   waveText: {fileID: 151396705217614253}
+  anim: {fileID: 1175272330}
+  playerHPBar: {fileID: 181234119}
+  fire: {fileID: 826255539}
   isPaused: 0
 --- !u!1 &2980387295610125606
 GameObject:
