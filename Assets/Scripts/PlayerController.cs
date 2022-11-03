@@ -256,6 +256,7 @@ public class PlayerController : MonoBehaviour, IDamage
         yield return new WaitForSeconds(5.0f);
         HP = hpOriginal / 2;
         Debug.Log("Healed");
+    }
     void interact()
     {
         if (Input.GetButtonDown("Interact"))
