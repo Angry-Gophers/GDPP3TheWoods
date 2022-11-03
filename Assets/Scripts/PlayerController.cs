@@ -56,6 +56,7 @@ public class PlayerController : MonoBehaviour, IDamage
         interact();
         // call weaponSwapping(); if they aren't shooting or reloading
         placeTrap();
+        PickTrap();
     }
 
     // Gets the weapon type
@@ -273,5 +274,44 @@ public class PlayerController : MonoBehaviour, IDamage
                 }
             }
         }
+    }
+    void PickTrap()
+    {
+        RaycastHit hit;
+        if (Physics.Raycast(Camera.main.ViewportPointToRay(new Vector2(0.5f, 0.5f)), out hit, 6.0f))
+        {
+            if (hit.collider.GetComponent<pickUpTrap>())
+            {
+                if (gameManager.instance.playerScript.trapsHeld < gameManager.instance.playerScript.maxTraps)
+                {
+                    gameManager.instance.instruction.SetActive(true);
+
+                    if (Input.GetButton("Interact"))
+                    {
+                        pickUpTrap();
+                        hit.collider.GetComponent<pickUpTrap>().pickedUp();
+                        gameManager.instance.trapsFullInstruction.SetActive(false);
+                        gameManager.instance.instruction.SetActive(false);
+
+
+
+                    }
+
+                }
+                else if (gameManager.instance.playerScript.trapsHeld >= gameManager.instance.playerScript.maxTraps)
+                {
+                    gameManager.instance.trapsFullInstruction.SetActive(true);
+
+                }
+            }
+            else
+            {
+                gameManager.instance.trapsFullInstruction.SetActive(false);
+                gameManager.instance.instruction.SetActive(false);
+
+            }
+
+        }
+
     }
 }
