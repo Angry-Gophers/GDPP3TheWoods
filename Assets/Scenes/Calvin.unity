@@ -750,7 +750,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1670646363782949918, guid: e615e31f463d295489a64d00746ccd5f, type: 3}
       propertyPath: waveLength
-      value: 10
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 1670646363782949919, guid: e615e31f463d295489a64d00746ccd5f, type: 3}
       propertyPath: m_RootOrder

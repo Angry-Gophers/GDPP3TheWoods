@@ -23,8 +23,8 @@ public class gameManager : MonoBehaviour
     public Animator anim;
     //  public GameObject menuCurrentlyOpen;
     //  public GameObject playerDamageFlash;
-    //  public Image playerHPBar;
-    //  public Image fire;
+    public Image playerHPBar;
+    public Image fire;
     //  public Image ammo;
     //  public Image traps;
     //  public Image boards;

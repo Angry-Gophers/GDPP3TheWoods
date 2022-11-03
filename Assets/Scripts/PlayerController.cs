@@ -69,6 +69,9 @@ public class PlayerController : MonoBehaviour, IDamage
     public void TakeDamage(int dmg)
     {
         HP -= dmg;
+
+        gameManager.instance.playerHPBar.fillAmount = (float)HP / (float) hpOriginal;
+
         if(HP <= 0)
         {
             gameManager.instance.playerDeadMenu.active = true;
@@ -132,6 +135,7 @@ public class PlayerController : MonoBehaviour, IDamage
                 if (hit.collider.CompareTag("Shop Car") && !spawnManager.instance.inWave)
                 {
                     gameManager.instance.shopWindow.SetActive(true);
+                    Debug.Log("Shop");
                 }
             }
         }

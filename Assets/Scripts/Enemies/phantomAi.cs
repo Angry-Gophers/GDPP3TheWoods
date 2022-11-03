@@ -13,7 +13,7 @@ public class phantomAi : enemyBase
     {
         base.Update();
 
-        if (HP > 0)
+        if (HP > 0 && agent.enabled == true)
         {
             //Set walk animation speed
             anim.SetFloat("locomotion", Mathf.Lerp(anim.GetFloat("locomotion"), agent.velocity.normalized.magnitude, Time.deltaTime * 3));
