@@ -8,8 +8,9 @@ public class spawnManager : MonoBehaviour
     [SerializeField] List<GameObject> spawnList = new List<GameObject>();
     [SerializeField] List<GameObject> eliteSpawnList = new List<GameObject>();
     [SerializeField] List<GameObject> enemies = new List<GameObject>();
+    [SerializeField] List<GameObject> elites = new List<GameObject>();
     [SerializeField] GameObject phantom;
-    [SerializeField] List<GameObject> elites;
+    [SerializeField] List<GameObject> eliteTypes;
     public static spawnManager instance;
 
     [Header("----- Wave stats -----")]
@@ -28,6 +29,7 @@ public class spawnManager : MonoBehaviour
     bool spawning;
     bool eliteSpawn;
     bool firstSpawn;
+    public bool inWave;
 
     void Start()
     {
@@ -50,18 +52,24 @@ public class spawnManager : MonoBehaviour
 
     void Update()
     {
-        if (enemiesInScene < enemyLimit && !spawning)
-            StartCoroutine(spawnMore());
+        if (inWave)
+        {
+            if (enemiesInScene < enemyLimit && !spawning)
+                StartCoroutine(spawnMore());
 
-        if (elitesInScene < eliteLimit && !eliteSpawn && wave != 1)
-            StartCoroutine(spawnElite());
+            if (elitesInScene < eliteLimit && !eliteSpawn && wave != 1)
+                StartCoroutine(spawnElite());
+        }
     }
 
-    void startWave()
+    public void startWave()
     {
         //Increment wave
         wave++;
         firstSpawn = true;
+
+        gameManager.instance.waveText.text = "Wave: " + wave;
+        gameManager.instance.anim.SetTrigger("NewWave");
 
         //Increase difficulty
         if (wave % 3 == 0)
@@ -112,10 +120,24 @@ public class spawnManager : MonoBehaviour
     IEnumerator spawnElite()
     {
         eliteSpawn = true;
+        bool temp = false;
 
         elitesInScene++;
         GameObject local = eliteSpawnList[Random.Range(0, eliteSpawnList.Count)];
-        Instantiate(elites[Random.Range(0, elites.Count)], local.transform.position, local.transform.rotation);
+        GameObject spawned = Instantiate(eliteTypes[Random.Range(0, eliteTypes.Count)], local.transform.position, local.transform.rotation);
+
+        for (int i = 0; i < elites.Count; i++)
+        {
+            if (elites[i] == null)
+            {
+                elites[i] = spawned;
+                temp = true;
+                break;
+            }
+        }
+
+        if (!temp)
+            elites.Add(spawned);
 
         yield return new WaitForSeconds(eliteRate);
         eliteSpawn = false;
@@ -131,23 +153,44 @@ public class spawnManager : MonoBehaviour
         if(enemiesInScene < enemyLimit)
         {
             enemiesInScene++;
+            bool temp = false;
             GameObject spawned = Instantiate(phantom, spawnList[location].transform.position, spawnList[location].transform.rotation);
-            enemies.Add(spawned);
+            
+            for(int i = 0; i < enemies.Count; i++)
+            {
+                if(enemies[i] == null)
+                {
+                    enemies[i] = spawned;
+                    temp = true;
+                    break;
+                }
+            }
+
+            if(!temp)
+                enemies.Add(spawned);
         }
     }
 
     IEnumerator waveTimer()
     {
+        inWave = true;
+        gameManager.instance.nextWaveText.active = false;
+
         yield return new WaitForSeconds(waveLength);
 
-        for(int i = 0; i < enemies.Count; i++)
+        gameManager.instance.nextWaveText.active = true;
+        inWave = false;
+
+        for (int i = 0; i < enemies.Count; i++)
         {
             if(enemies[i] != null)
                 enemies[i].GetComponent<enemyBase>().death();
-            else
-                enemies.Remove(enemies[i]);
         }
 
-        startWave();
+        for (int i = 0; i < elites.Count; i++)
+        {
+            if (elites[i] != null)
+                elites[i].GetComponent<enemyBase>().death();
+        }
     }
 }

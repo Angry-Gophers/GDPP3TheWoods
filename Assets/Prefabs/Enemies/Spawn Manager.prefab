@@ -47,8 +47,9 @@ MonoBehaviour:
   spawnList: []
   eliteSpawnList: []
   enemies: []
+  elites: []
   phantom: {fileID: 8149738876329093800, guid: f3aa48999e97a904c9cf7b45bdb06265, type: 3}
-  elites:
+  eliteTypes:
   - {fileID: 3243034810219371087, guid: ba4e602437e19b544ad0153d4ac0f399, type: 3}
   wave: 0
   enemyLimit: 10
@@ -58,4 +59,5 @@ MonoBehaviour:
   eliteLimit: 1
   maxElites: 5
   eliteRate: 10
-  waveLength: 180
+  waveLength: 60
+  inWave: 0

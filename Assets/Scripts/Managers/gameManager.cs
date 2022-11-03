@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class gameManager : MonoBehaviour
 {
@@ -12,9 +14,13 @@ public class gameManager : MonoBehaviour
 
     [Header("----- UI -----")]
     public GameObject pauseMenu;
-    //  public GameObject playerDeadMenu;
     public GameObject shopWindow;
     public GameObject gunShopWindow;
+    public GameObject playerDeadMenu;
+    public TextMeshProUGUI deadText;
+    public GameObject nextWaveText;
+    public TextMeshProUGUI waveText;
+    public Animator anim;
     //  public GameObject menuCurrentlyOpen;
     //  public GameObject playerDamageFlash;
     //  public Image playerHPBar;
@@ -28,8 +34,8 @@ public class gameManager : MonoBehaviour
     //  public TextMeshProUGUI boardsTracker;
     //  public TextMeshProUGUI trapsTracker;
     //  public TextMeshProUGUI bandageTracker;
-
     public bool isPaused;
+
     void Awake()
     {
         instance = this;
@@ -42,7 +48,7 @@ public class gameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Cancel")) // check for deadMenu and shopMenu
+        if (Input.GetButtonDown("Cancel") && playerDeadMenu.activeSelf != true) // check for deadMenu and shopMenu
         {
             isPaused = !isPaused;
             pauseMenu.SetActive(isPaused);

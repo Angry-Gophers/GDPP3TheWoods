@@ -25,7 +25,7 @@ public class fireplace : MonoBehaviour, IDamage
         
     }
 
-    public void takeDamage(int dmg)
+    public void TakeDamage(int dmg)
     {
         if (HP > 0)
         {
@@ -35,7 +35,9 @@ public class fireplace : MonoBehaviour, IDamage
         }
         else
         {
-            Debug.Log("Fire is out");
+            gameManager.instance.playerDeadMenu.active = true;
+            gameManager.instance.deadText.text = "The fire has gone out";
+            gameManager.instance.cursorLockPause();
         }
     }
 }

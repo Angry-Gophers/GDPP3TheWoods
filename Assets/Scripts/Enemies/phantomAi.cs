@@ -30,6 +30,8 @@ public class phantomAi : enemyBase
             {
                 if (agent.destination != target)
                     agent.destination = target;
+
+                targetDir = target - transform.position;
             }
 
             //Rotate to face the target
@@ -67,15 +69,31 @@ public class phantomAi : enemyBase
     {
         isAttacking = true;
 
+        anim.SetTrigger("cast3");
+
         //Shoots a raycast and checks if the hit object can be damaged
         RaycastHit hit;
         if(Physics.Raycast(transform.position, transform.forward, out hit, range))
         {
             if (hit.collider.GetComponent<IDamage>() != null && hit.collider.tag != "Enemy")
-                hit.collider.GetComponent<IDamage>().takeDamage(damage);
+                hit.collider.GetComponent<IDamage>().TakeDamage(damage);
         }
 
         yield return new WaitForSeconds(attackSpeed);
         isAttacking = false;
+    }
+
+    public override void death()
+    {
+        agent.enabled = false;
+
+        int temp = Random.Range(0, 2);
+        if (temp == 0 && drop != null && spawnManager.instance.inWave)
+            Instantiate(drop, transform.position, transform.rotation);
+
+        spawnManager.instance.enemyDeath();
+
+        anim.SetTrigger("death");
+        Destroy(gameObject, 7);
     }
 }
