@@ -541,6 +541,12 @@ MonoBehaviour:
   maxJumps: 1
   gravityValue: 25
   hpOriginal: 10
+  interactRange: 5
+  startingPistol: {fileID: 0}
+  shootDmg: 0
+  shootDist: 0
+  reloadTime: 0
+  shootRate: 0
   ectoplasm: 0
   antlers: 0
 --- !u!143 &8772912456516511137

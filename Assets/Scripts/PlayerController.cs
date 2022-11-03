@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour, IDamage
     [SerializeField] int maxJumps;
     [SerializeField] float gravityValue;
     [SerializeField] int hpOriginal;
+    [SerializeField] int interactRange;
     [Header("---Currency---")]
     [SerializeField] public int ectoplasm;
     [SerializeField] public int antlers;
@@ -34,6 +35,7 @@ public class PlayerController : MonoBehaviour, IDamage
     {
         movement();
         jump();
+        interact();
         placeTrap();
     }
     
@@ -69,7 +71,9 @@ public class PlayerController : MonoBehaviour, IDamage
         HP -= dmg;
         if(HP <= 0)
         {
-            Debug.Log("You Died");
+            gameManager.instance.playerDeadMenu.active = true;
+            gameManager.instance.deadText.text = "You have died";
+            gameManager.instance.cursorLockPause();
         }
 
     }
@@ -109,6 +113,22 @@ public class PlayerController : MonoBehaviour, IDamage
             case 2:
                 antlers++;
                 break;
+        }
+    }
+
+    void interact()
+    {
+        if (Input.GetButtonDown("Interact"))
+        {
+
+            RaycastHit hit;
+            if (Physics.Raycast(Camera.main.ViewportPointToRay(new Vector2(0.5f, 0.5f)), out hit, interactRange))
+            {
+                if (hit.collider.CompareTag("Fire") && !spawnManager.instance.inWave)
+                {
+                    spawnManager.instance.startWave();
+                }
+            }
         }
     }
 }

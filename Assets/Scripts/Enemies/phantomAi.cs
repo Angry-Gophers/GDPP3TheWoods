@@ -82,4 +82,18 @@ public class phantomAi : enemyBase
         yield return new WaitForSeconds(attackSpeed);
         isAttacking = false;
     }
+
+    public override void death()
+    {
+        agent.enabled = false;
+
+        int temp = Random.Range(0, 2);
+        if (temp == 0 && drop != null && spawnManager.instance.inWave)
+            Instantiate(drop, transform.position, transform.rotation);
+
+        spawnManager.instance.enemyDeath();
+
+        anim.SetTrigger("death");
+        Destroy(gameObject, 7);
+    }
 }
