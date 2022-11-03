@@ -201,7 +201,9 @@ public class PlayerController : MonoBehaviour, IDamage
         HP -= dmg;
         if(HP <= 0)
         {
-            Debug.Log("You Died");
+            gameManager.instance.playerDeadMenu.active = true;
+            gameManager.instance.deadText.text = "You have died";
+            gameManager.instance.cursorLockPause();
         }
         else if(HP < hpOriginal / 2)
         {
