@@ -1,6 +1,6 @@
 using UnityEngine;
 [CreateAssetMenu]
-public class MeleeWeapon : ScriptableObject
+public class Melee : ScriptableObject
 {
     // Weapon Values
     public string Name;
