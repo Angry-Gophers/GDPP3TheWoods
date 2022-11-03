@@ -571,7 +571,7 @@ GameObject:
   - component: {fileID: 7049469740910473532}
   m_Layer: 0
   m_Name: collision
-  m_TagString: Untagged
+  m_TagString: Shop Car
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -625,7 +625,7 @@ GameObject:
   - component: {fileID: 7049469740910473534}
   m_Layer: 0
   m_Name: collision
-  m_TagString: Untagged
+  m_TagString: Shop Car
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
