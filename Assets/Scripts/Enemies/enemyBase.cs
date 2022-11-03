@@ -59,7 +59,7 @@ public class enemyBase : MonoBehaviour, IDamage
 
     public virtual IEnumerator attack() { yield return null; }
 
-    public void takeDamage(int dmg)
+    public void TakeDamage(int dmg)
     {
         HP -= dmg;
 
