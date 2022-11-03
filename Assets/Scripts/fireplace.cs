@@ -32,6 +32,7 @@ public class fireplace : MonoBehaviour, IDamage
             HP -= dmg;
             float ratio = (float)HP / maxHP;
             fireLight.intensity = intensity * ratio;
+            gameManager.instance.fire.fillAmount = ratio;
         }
         else
         {

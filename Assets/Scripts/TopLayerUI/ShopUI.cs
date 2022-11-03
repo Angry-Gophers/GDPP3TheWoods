@@ -123,6 +123,7 @@ namespace TheWoods.TopLayer
         public void CloseShop()
         {
             gameManager.instance.shopWindow.SetActive(false);
+            gameManager.instance.cursorUnlockUnpause();
         }
 
         public void OpengunShop()

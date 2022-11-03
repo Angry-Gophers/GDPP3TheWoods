@@ -11,6 +11,7 @@ public class enemyBase : MonoBehaviour, IDamage
     protected Animator anim;
     protected NavMeshAgent agent;
     protected Vector3 target;
+    Collider col;
 
     [Header("----- Stats -----")]
     [Range(1,50)][SerializeField] protected int HP;
@@ -31,6 +32,7 @@ public class enemyBase : MonoBehaviour, IDamage
     {
         agent = GetComponent<NavMeshAgent>();
         anim = GetComponent<Animator>();
+        col = GetComponent<Collider>();
         findTarget();
         agent.SetDestination(target);
 
@@ -50,8 +52,11 @@ public class enemyBase : MonoBehaviour, IDamage
             angle = Vector3.Angle(transform.forward, playerDir);
 
             //Check to see if in range for an attack
-            if (agent.stoppingDistance >= agent.remainingDistance && !isAttacking)
-                StartCoroutine(attack());
+            if (agent.enabled == true)
+            {
+                if (agent.stoppingDistance >= agent.remainingDistance && !isAttacking)
+                    StartCoroutine(attack());
+            }
         }
     }
 
@@ -72,6 +77,7 @@ public class enemyBase : MonoBehaviour, IDamage
 
     public virtual void death()
     {
+        col.enabled = false;
         agent.enabled = false;
 
         int temp = Random.Range(0, 2);
