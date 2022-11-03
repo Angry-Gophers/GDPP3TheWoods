@@ -35,7 +35,7 @@ public class PlayerController : MonoBehaviour, IDamage
     {
         movement();
         jump();
-        interact();
+        Interact();
         placeTrap();
     }
     
@@ -116,7 +116,7 @@ public class PlayerController : MonoBehaviour, IDamage
         }
     }
 
-    void interact()
+    public void Interact()
     {
         if (Input.GetButtonDown("Interact"))
         {
@@ -127,6 +127,11 @@ public class PlayerController : MonoBehaviour, IDamage
                 if (hit.collider.CompareTag("Fire") && !spawnManager.instance.inWave)
                 {
                     spawnManager.instance.startWave();
+                }
+
+                if (hit.collider.CompareTag("Shop Car") && !spawnManager.instance.inWave)
+                {
+                    gameManager.instance.shopWindow.SetActive(true);
                 }
             }
         }

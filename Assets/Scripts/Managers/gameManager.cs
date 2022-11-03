@@ -47,7 +47,7 @@ public class gameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Cancel") && playerDeadMenu.active != true) // check for deadMenu and shopMenu
+        if (Input.GetButtonDown("Cancel") && playerDeadMenu.activeSelf != true) // check for deadMenu and shopMenu
         {
             isPaused = !isPaused;
             pauseMenu.SetActive(isPaused);
