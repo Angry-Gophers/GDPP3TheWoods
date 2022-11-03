@@ -72,7 +72,7 @@ public class phantomAi : enemyBase
         if(Physics.Raycast(transform.position, transform.forward, out hit, range))
         {
             if (hit.collider.GetComponent<IDamage>() != null && hit.collider.tag != "Enemy")
-                hit.collider.GetComponent<IDamage>().takeDamage(damage);
+                hit.collider.GetComponent<IDamage>().TakeDamage(damage);
         }
 
         yield return new WaitForSeconds(attackSpeed);

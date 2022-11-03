@@ -1,47 +1,37 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class CameraControls : MonoBehaviour
 {
     [SerializeField] float horSens;
     [SerializeField] float vertSens;
-    [SerializeField] float lookLockVertMax;
-    [SerializeField] float lookLockVertMin;
+    [SerializeField] float lookVertMax;
+    [SerializeField] float lookVertMin;
     float xRotation;
-    public bool isInvert;
-    // Start is called before the first frame update
+    bool invert = true;
     void Start()
     {
+        // Lock cursor to center and make invisible
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-        
     }
-
-    // Update is called once per frame
     void LateUpdate()
     {
-        //Mouse input
+        // Camera input
         float mouseX = Input.GetAxis("Mouse X") * Time.deltaTime * horSens;
         float mouseY = Input.GetAxis("Mouse Y") * Time.deltaTime * vertSens;
-        if (isInvert)
-        {
-            xRotation += mouseY;
-        }
-        else
+        if (invert)
         {
             xRotation -= mouseY;
         }
-
-        //Clamp XRotation
-        xRotation = Mathf.Clamp(xRotation, lookLockVertMin, lookLockVertMax);
-
-        //Rotate on xAxis
+        else
+        {
+            xRotation += mouseY;
+        }
+        // Clamp xRotation
+        xRotation = Mathf.Clamp(xRotation, lookVertMin, lookVertMax);
+        // Rotate camera
         transform.localRotation = Quaternion.Euler(xRotation, 0, 0);
-
-        //Rotate Player
+        // Rotate player
         transform.parent.Rotate(Vector3.up * mouseX);
-        
-        
     }
 }

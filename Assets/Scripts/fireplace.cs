@@ -25,7 +25,7 @@ public class fireplace : MonoBehaviour, IDamage
         
     }
 
-    public void takeDamage(int dmg)
+    public void TakeDamage(int dmg)
     {
         if (HP > 0)
         {

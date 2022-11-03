@@ -28,7 +28,6 @@ public class gameManager : MonoBehaviour
     //  public TextMeshProUGUI boardsTracker;
     //  public TextMeshProUGUI trapsTracker;
     //  public TextMeshProUGUI bandageTracker;
-
     public bool isPaused;
     void Awake()
     {
