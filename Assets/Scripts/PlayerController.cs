@@ -148,8 +148,7 @@ public class PlayerController : MonoBehaviour, IDamage
 
                 if (hit.collider.CompareTag("Shop Car") && !spawnManager.instance.inWave)
                 {
-                    gameManager.instance.shopWindow.SetActive(true);
-                    Debug.Log("Shop");
+                    gameManager.instance.ShopUI();
                 }
             }
         }
