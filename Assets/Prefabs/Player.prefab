@@ -50,12 +50,13 @@ MonoBehaviour:
   damage: 5
   range: 50
   fireRate: 2
-  gunMesh: {fileID: 2067300736}
-  gunRenderer: {fileID: 2067300735}
+  magazine: 12
+  bullets: 12
+  reserveAmmo: 60
+  reloadSpeed: 2
+  isReloading: 0
   fpsCam: {fileID: 8772912456061192417}
-  isShooting: 0
   muzzleFlash: {fileID: 19800000, guid: 03a4a1935a9f4454c861dfa0aa6df562, type: 3}
-  weaponType: 0
 --- !u!33 &2067300736
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -204,12 +205,13 @@ MonoBehaviour:
   damage: 10
   range: 100
   fireRate: 30
-  gunMesh: {fileID: 3631985624884092183}
-  gunRenderer: {fileID: 5353183741606516808}
+  magazine: 30
+  bullets: 30
+  reserveAmmo: 240
+  reloadSpeed: 1.5
+  isReloading: 0
   fpsCam: {fileID: 8772912456061192417}
-  isShooting: 0
   muzzleFlash: {fileID: 19800000, guid: 03a4a1935a9f4454c861dfa0aa6df562, type: 3}
-  weaponType: 0
 --- !u!33 &3631985624884092183
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -310,12 +312,13 @@ MonoBehaviour:
   damage: 20
   range: 75
   fireRate: 0.5
-  gunMesh: {fileID: 2644455384008688120}
-  gunRenderer: {fileID: 8670764519904780619}
+  magazine: 3
+  bullets: 3
+  reserveAmmo: 30
+  reloadSpeed: 2
+  isReloading: 0
   fpsCam: {fileID: 8772912456061192417}
-  isShooting: 0
   muzzleFlash: {fileID: 19800000, guid: 03a4a1935a9f4454c861dfa0aa6df562, type: 3}
-  weaponType: 0
 --- !u!33 &2644455384008688120
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -478,6 +481,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8772912456516511150}
   - component: {fileID: 8772912456516511151}
+  - component: {fileID: 1373897108345965323}
   - component: {fileID: 8772912456516511136}
   - component: {fileID: 8772912456516511137}
   m_Layer: 0
@@ -517,6 +521,25 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1373897108345965323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8772912456516511138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fbcc26d3cdfad743abee87da6b48ba5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rayLength: 5
+  layerMaskInteract:
+    serializedVersion: 2
+    m_Bits: 0
+  excludeLayerName: 
+  openDoorKey: 323
+  crosshair: {fileID: 0}
 --- !u!114 &8772912456516511136
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -542,11 +565,6 @@ MonoBehaviour:
   gravityValue: 25
   hpOriginal: 10
   interactRange: 5
-  startingPistol: {fileID: 0}
-  shootDmg: 0
-  shootDist: 0
-  reloadTime: 0
-  shootRate: 0
   ectoplasm: 0
   antlers: 0
 --- !u!143 &8772912456516511137

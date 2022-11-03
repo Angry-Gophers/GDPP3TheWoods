@@ -20,6 +20,7 @@ public class gameManager : MonoBehaviour
     public TextMeshProUGUI deadText;
     public GameObject nextWaveText;
     public TextMeshProUGUI waveText;
+    public Animator anim;
     //  public GameObject menuCurrentlyOpen;
     //  public GameObject playerDamageFlash;
     //  public Image playerHPBar;
