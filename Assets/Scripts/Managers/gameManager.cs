@@ -22,10 +22,11 @@ public class gameManager : MonoBehaviour
     public TextMeshProUGUI waveText;
     public GameObject instruction;
     public GameObject trapsFullInstruction;
+    public Animator anim;
     //  public GameObject menuCurrentlyOpen;
     //  public GameObject playerDamageFlash;
-    //  public Image playerHPBar;
-    //  public Image fire;
+    public Image playerHPBar;
+    public Image fire;
     //  public Image ammo;
     //  public Image traps;
     //  public Image boards;
@@ -35,7 +36,6 @@ public class gameManager : MonoBehaviour
     //  public TextMeshProUGUI boardsTracker;
     //  public TextMeshProUGUI trapsTracker;
     //  public TextMeshProUGUI bandageTracker;
-
     public bool isPaused;
 
     void Awake()
@@ -50,7 +50,7 @@ public class gameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Cancel") && playerDeadMenu.active != true) // check for deadMenu and shopMenu
+        if (Input.GetButtonDown("Cancel") && playerDeadMenu.activeSelf != true) // check for deadMenu and shopMenu
         {
             isPaused = !isPaused;
             pauseMenu.SetActive(isPaused);

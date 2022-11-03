@@ -25,13 +25,14 @@ public class fireplace : MonoBehaviour, IDamage
         
     }
 
-    public void takeDamage(int dmg)
+    public void TakeDamage(int dmg)
     {
         if (HP > 0)
         {
             HP -= dmg;
             float ratio = (float)HP / maxHP;
             fireLight.intensity = intensity * ratio;
+            gameManager.instance.fire.fillAmount = ratio;
         }
         else
         {

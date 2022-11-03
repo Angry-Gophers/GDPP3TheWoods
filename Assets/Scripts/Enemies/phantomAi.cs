@@ -13,7 +13,7 @@ public class phantomAi : enemyBase
     {
         base.Update();
 
-        if (HP > 0)
+        if (HP > 0 && agent.enabled == true)
         {
             //Set walk animation speed
             anim.SetFloat("locomotion", Mathf.Lerp(anim.GetFloat("locomotion"), agent.velocity.normalized.magnitude, Time.deltaTime * 3));
@@ -76,7 +76,7 @@ public class phantomAi : enemyBase
         if(Physics.Raycast(transform.position, transform.forward, out hit, range))
         {
             if (hit.collider.GetComponent<IDamage>() != null && hit.collider.tag != "Enemy")
-                hit.collider.GetComponent<IDamage>().takeDamage(damage);
+                hit.collider.GetComponent<IDamage>().TakeDamage(damage);
         }
 
         yield return new WaitForSeconds(attackSpeed);
