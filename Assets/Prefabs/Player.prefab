@@ -27,8 +27,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2067300733}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.803, y: -0.413, z: 1.331}
-  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
+  m_LocalPosition: {x: 0.281, y: -0.458, z: 0.769}
+  m_LocalScale: {x: 0.39683, y: 0.39683, z: 0.39683}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6156371145413105775}
@@ -182,8 +182,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1766434909138367922}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.803, y: -0.413, z: 1.651}
-  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
+  m_LocalPosition: {x: 0.31, y: -0.572, z: 0.817}
+  m_LocalScale: {x: 0.36589, y: 0.36589, z: 0.36589}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 235790860586011434}
@@ -289,8 +289,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3353230135195554793}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.803, y: -0.413, z: 2.429}
-  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
+  m_LocalPosition: {x: 0.225, y: -0.413, z: 0.766}
+  m_LocalScale: {x: 0.310205, y: 0.310205, z: 0.310205}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6995418693591040072}
@@ -396,7 +396,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8772912456061192421}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.744, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -536,9 +536,9 @@ MonoBehaviour:
   rayLength: 5
   layerMaskInteract:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   excludeLayerName: 
-  openDoorKey: 323
+  openDoorKey: 102
   crosshair: {fileID: 0}
 --- !u!114 &8772912456516511136
 MonoBehaviour:
