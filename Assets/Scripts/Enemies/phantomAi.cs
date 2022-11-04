@@ -85,6 +85,7 @@ public class phantomAi : enemyBase
 
     public override void death()
     {
+        col.enabled = false;
         agent.enabled = false;
 
         int temp = Random.Range(0, 2);

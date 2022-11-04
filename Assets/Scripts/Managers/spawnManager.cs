@@ -183,7 +183,7 @@ public class spawnManager : MonoBehaviour
 
         for (int i = 0; i < enemies.Count; i++)
         {
-            if(enemies[i] != null)
+            if(enemies[i] != null && enemies[i].GetComponent<enemyBase>().HP > 0)
                 enemies[i].GetComponent<enemyBase>().death();
         }
 
