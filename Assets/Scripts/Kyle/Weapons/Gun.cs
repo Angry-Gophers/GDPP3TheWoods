@@ -10,6 +10,7 @@ public class Gun : MonoBehaviour
     [SerializeField] public int magazine;
     [SerializeField] public int bullets;
     [SerializeField] public int reserveAmmo;
+    [SerializeField] public int maxReserve;
     [SerializeField] public float reloadSpeed;
     [SerializeField] AudioSource aud;
     [SerializeField] AudioClip shotAud;
@@ -27,7 +28,7 @@ public class Gun : MonoBehaviour
         {
             Shoot();
         }
-        else if(bullets == 0 && !isReloading)
+        else if(bullets == 0 && !isReloading && reserveAmmo > 0)
         {
             StartCoroutine(ReloadGun());
         }
@@ -55,7 +56,7 @@ public class Gun : MonoBehaviour
         }
             
         gameManager.instance.reloadText.active = false;
-        gameManager.instance.UpdatePlayerHUD(bullets, reserveAmmo);
+        gameManager.instance.UpdatePlayerHUD();
         isReloading = false;
     }
 
@@ -82,7 +83,7 @@ public class Gun : MonoBehaviour
             }
         }
 
-        gameManager.instance.UpdatePlayerHUD(bullets, reserveAmmo);
+        gameManager.instance.UpdatePlayerHUD();
     }
 
     public void FiredBulletRay()
@@ -93,5 +94,12 @@ public class Gun : MonoBehaviour
             if (hit.collider.GetComponent<IDamage>() != null && !hit.collider.CompareTag("Fire"))
                 hit.collider.GetComponent<IDamage>().TakeDamage(damage);
         }
+    }
+
+    public void restockAmmo()
+    {
+        bullets = magazine;
+        reserveAmmo = maxReserve;
+        gameManager.instance.UpdatePlayerHUD();
     }
 }

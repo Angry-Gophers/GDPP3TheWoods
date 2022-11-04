@@ -3,11 +3,12 @@ using UnityEngine;
 public class WeaponSwapping : MonoBehaviour
 {
     public int selectedWeapon = 0;
-    GameObject weapon;
-
+    public GameObject weapon;
+    public static WeaponSwapping instance;
 
     public void Start()
     {
+        instance = this;
         SelectGun();
     }
 
@@ -17,6 +18,10 @@ public class WeaponSwapping : MonoBehaviour
             SwitchGun();
     }
 
+    public void Restock()
+    {
+        weapon.GetComponent<Gun>().restockAmmo();
+    }
 
     public void SelectGun()
     {
@@ -27,7 +32,7 @@ public class WeaponSwapping : MonoBehaviour
             {
                 gun.gameObject.SetActive(true);
                 weapon = gun.gameObject;
-                gameManager.instance.UpdatePlayerHUD(gun.GetComponent<Gun>().bullets, gun.GetComponent<Gun>().reserveAmmo);
+                gameManager.instance.UpdatePlayerHUD();
             }
             else
                 gun.gameObject.SetActive(false);

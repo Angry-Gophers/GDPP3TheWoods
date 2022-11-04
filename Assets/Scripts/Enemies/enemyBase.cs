@@ -8,6 +8,7 @@ public class enemyBase : MonoBehaviour, IDamage
     [Header("----- Componenets -----")]
     [SerializeField] protected GameObject eyes;
     [SerializeField] protected GameObject drop;
+    [SerializeField] protected Transform dropTrans;
     protected Animator anim;
     protected NavMeshAgent agent;
     protected Vector3 target;
@@ -20,6 +21,7 @@ public class enemyBase : MonoBehaviour, IDamage
     [Range(1, 10)] [SerializeField] protected int range;
     [Range(.25f, 1f)] [SerializeField] float sizeRandMin;
     [Range(1f, 2f)] [SerializeField] float sizeRandMax;
+    [SerializeField] int corpseTime;
 
     protected float originalSpeed;
     protected Vector3 targetDir;
@@ -64,12 +66,11 @@ public class enemyBase : MonoBehaviour, IDamage
 
     public virtual IEnumerator attack() { yield return null; }
 
-    public void TakeDamage(int dmg)
+    public virtual void TakeDamage(int dmg)
     {
         HP -= dmg;
 
         agent.speed = 0;
-        anim.SetTrigger("gotHit");
         agent.speed = originalSpeed;
 
         if (HP <= 0)
@@ -83,10 +84,10 @@ public class enemyBase : MonoBehaviour, IDamage
 
         int temp = Random.Range(0, 2);
         if (temp == 0 && drop != null && spawnManager.instance.inWave)
-            Instantiate(drop, transform.position, transform.rotation);
+            Instantiate(drop, dropTrans.position, dropTrans.rotation);
 
         spawnManager.instance.enemyDeath();
-        Destroy(gameObject);
+        Destroy(gameObject, corpseTime);
     }
 
 

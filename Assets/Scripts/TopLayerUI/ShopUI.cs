@@ -41,7 +41,6 @@ namespace TheWoods.TopLayer
               }
             };
             CanBuy();
-
         }
 
         // Update is called once per frame
