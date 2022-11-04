@@ -24,8 +24,8 @@ public class gameManager : MonoBehaviour
     public TextMeshProUGUI deadText;
     public GameObject nextWaveText;
     public TextMeshProUGUI waveText;
-    public GameObject instruction;
-    public GameObject trapsFullInstruction;
+    //public GameObject instruction;
+    //public GameObject trapsFullInstruction;
     public Animator anim;
     public TextMeshProUGUI shopEcto;
     public TextMeshProUGUI shopAntler;
