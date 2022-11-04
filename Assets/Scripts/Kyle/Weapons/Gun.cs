@@ -11,7 +11,13 @@ public class Gun : MonoBehaviour
     [SerializeField] public int bullets;
     [SerializeField] public int reserveAmmo;
     [SerializeField] public float reloadSpeed;
+    [SerializeField] AudioSource aud;
+    [SerializeField] AudioClip shotAud;
+    [SerializeField] float shotVol;
+    [SerializeField] AudioClip reloadAud;
+    [SerializeField] float reloadVol;
     public bool isReloading;
+    public bool fullAuto;
     public Camera fpsCam;
     public ParticleSystem muzzleFlash;
     private float nextTimeToFire = 0f;
@@ -32,7 +38,10 @@ public class Gun : MonoBehaviour
     {
         if (reserveAmmo <= 0) yield return new WaitForEndOfFrame();
         isReloading = true;
-        Debug.Log("Reloading Weapon");
+
+        gameManager.instance.reloadText.active = true;
+        aud.PlayOneShot(reloadAud, reloadVol);
+
         yield return new WaitForSeconds(reloadSpeed);
         if(reserveAmmo >= magazine)
         {
@@ -45,18 +54,35 @@ public class Gun : MonoBehaviour
             reserveAmmo = 0;
         }
             
+        gameManager.instance.reloadText.active = false;
+        gameManager.instance.UpdatePlayerHUD(bullets, reserveAmmo);
         isReloading = false;
     }
 
     public void Shoot()
     {
+        if (!fullAuto)
+        {
             if (Input.GetButtonDown("Shoot") && Time.time >= nextTimeToFire)
             {
                 nextTimeToFire = Time.time + 1f / fireRate;
                 FiredBulletRay();
-                Debug.Log("Shot a bullet");
+                aud.PlayOneShot(shotAud, shotVol);
                 bullets--;
             }
+        }
+        else
+        {
+            if (Input.GetButton("Shoot") && Time.time >= nextTimeToFire)
+            {
+                nextTimeToFire = Time.time + 1f / fireRate;
+                FiredBulletRay();
+                aud.PlayOneShot(shotAud, shotVol);
+                bullets--;
+            }
+        }
+
+        gameManager.instance.UpdatePlayerHUD(bullets, reserveAmmo);
     }
 
     public void FiredBulletRay()
@@ -64,7 +90,7 @@ public class Gun : MonoBehaviour
         muzzleFlash.Play();
         RaycastHit hit;
         if(Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range)){
-            if (hit.collider.GetComponent<IDamage>() != null)
+            if (hit.collider.GetComponent<IDamage>() != null && !hit.collider.CompareTag("Fire"))
                 hit.collider.GetComponent<IDamage>().TakeDamage(damage);
         }
     }

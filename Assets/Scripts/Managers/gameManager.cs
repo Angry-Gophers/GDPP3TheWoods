@@ -31,6 +31,7 @@ public class gameManager : MonoBehaviour
     public Animator anim;
     public TextMeshProUGUI shopEcto;
     public TextMeshProUGUI shopAntler;
+    public GameObject reloadText;
     //  public GameObject menuCurrentlyOpen;
     //  public GameObject playerDamageFlash;
     public Image playerHPBar;
@@ -40,7 +41,7 @@ public class gameManager : MonoBehaviour
     //  public Image boards;
     //  public Image bandages;
     //  public TextMeshProUGUI fireHealthText;
-    //  public TextMeshProUGUI ammoTracker;
+    public TextMeshProUGUI ammoTracker;
     //  public TextMeshProUGUI boardsTracker;
     //  public TextMeshProUGUI trapsTracker;
     //  public TextMeshProUGUI bandageTracker;
@@ -105,9 +106,10 @@ public class gameManager : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
     }
 
-    public void updatePlayerHUD()
+    public void UpdatePlayerHUD(int inMag, int inReserve)
     {
         // ammo, bandages, boards, traps, fire health, anything else? night time left? 
+        ammoTracker.text = inMag + " / " + inReserve;
     }
 
     public void ShopUI()

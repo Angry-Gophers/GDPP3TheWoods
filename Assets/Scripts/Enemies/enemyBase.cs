@@ -11,10 +11,10 @@ public class enemyBase : MonoBehaviour, IDamage
     protected Animator anim;
     protected NavMeshAgent agent;
     protected Vector3 target;
-    Collider col;
+    protected Collider col;
 
     [Header("----- Stats -----")]
-    [Range(1,50)][SerializeField] protected int HP;
+    [Range(1,50)]public int HP;
     [Range(.1f, 5f)] [SerializeField] protected float attackSpeed;
     [Range(1, 10)] [SerializeField] protected int damage;
     [Range(1, 10)] [SerializeField] protected int range;
@@ -70,6 +70,7 @@ public class enemyBase : MonoBehaviour, IDamage
 
         agent.speed = 0;
         anim.SetTrigger("gotHit");
+        agent.speed = originalSpeed;
 
         if (HP <= 0)
             death();

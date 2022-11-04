@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7049469740908037390}
   - component: {fileID: 7049469740899019518}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Shop Car
   m_TagString: Shop Car
   m_Icon: {fileID: 0}
@@ -68,7 +68,7 @@ GameObject:
   - component: {fileID: 7049469740908037392}
   - component: {fileID: 7049469740905137456}
   - component: {fileID: 7049469740906268660}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Truck_body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -154,7 +154,7 @@ GameObject:
   - component: {fileID: 7049469740908037394}
   - component: {fileID: 7049469740905137464}
   - component: {fileID: 7049469740906268668}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Truck_wheel001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -237,7 +237,7 @@ GameObject:
   - component: {fileID: 7049469740908037396}
   - component: {fileID: 7049469740905137466}
   - component: {fileID: 7049469740906268670}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Truck_wheel002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -320,7 +320,7 @@ GameObject:
   - component: {fileID: 7049469740908037398}
   - component: {fileID: 7049469740905137458}
   - component: {fileID: 7049469740906268662}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Truck_Cargo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -403,7 +403,7 @@ GameObject:
   - component: {fileID: 7049469740908037400}
   - component: {fileID: 7049469740905137460}
   - component: {fileID: 7049469740906268664}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Truck_driveShaft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -486,7 +486,7 @@ GameObject:
   - component: {fileID: 7049469740908037402}
   - component: {fileID: 7049469740905137462}
   - component: {fileID: 7049469740906268666}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Truck_Glass
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -569,7 +569,7 @@ GameObject:
   - component: {fileID: 7049469740908037404}
   - component: {fileID: 7049469740905137468}
   - component: {fileID: 7049469740910473532}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: collision
   m_TagString: Shop Car
   m_Icon: {fileID: 0}
@@ -623,7 +623,7 @@ GameObject:
   - component: {fileID: 7049469740908037406}
   - component: {fileID: 7049469740905137470}
   - component: {fileID: 7049469740910473534}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: collision
   m_TagString: Shop Car
   m_Icon: {fileID: 0}
