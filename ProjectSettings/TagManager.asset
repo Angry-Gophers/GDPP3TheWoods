@@ -13,6 +13,8 @@ TagManager:
   - Gun Shop
   - FxTemporaire
   - Shop Car
+  - Reticle
+  - Gun Contain
   layers:
   - Default
   - TransparentFX

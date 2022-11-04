@@ -51,6 +51,7 @@ public class gameManager : MonoBehaviour
         instance = this;
         player = GameObject.FindGameObjectWithTag("Player");
         playerScript = player.GetComponent<PlayerController>();
+        gunContainer = GameObject.FindGameObjectWithTag("Gun Contain");
     }
 
     // Update is called once per frame

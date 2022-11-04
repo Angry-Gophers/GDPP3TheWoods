@@ -212,7 +212,7 @@ MonoBehaviour:
   rayLength: 5
   layerMaskInteract:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   excludeLayerName: 
   openDoorKey: 102
   crosshair: {fileID: 0}
@@ -223,6 +223,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1843558416500715094}
     m_Modifications:
+    - target: {fileID: 250815241723360738, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
+      propertyPath: fpsCam
+      value: 
+      objectReference: {fileID: 6344215849434670609}
     - target: {fileID: 2432689943061614955, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -291,9 +295,21 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.021395981
       objectReference: {fileID: 0}
+    - target: {fileID: 4248781450569676725, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
+      propertyPath: fpsCam
+      value: 
+      objectReference: {fileID: 6344215849434670609}
+    - target: {fileID: 4442245107239736861, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
+      propertyPath: fpsCam
+      value: 
+      objectReference: {fileID: 6344215849434670609}
     - target: {fileID: 4602604415946921758, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
       propertyPath: m_Name
       value: GunContainer
+      objectReference: {fileID: 0}
+    - target: {fileID: 4602604415946921758, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
+      propertyPath: m_TagString
+      value: Gun Contain
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
