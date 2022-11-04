@@ -21,13 +21,11 @@ public class gameManager : MonoBehaviour
     public GameObject shopWindow;
     public GameObject gunShopWindow;
     public GameObject playerDeadMenu;
-    public GameObject cam;
-    public CameraControls cameraControlsScript;
     public TextMeshProUGUI deadText;
     public GameObject nextWaveText;
     public TextMeshProUGUI waveText;
-    public GameObject instruction;
-    public GameObject trapsFullInstruction;
+    //public GameObject instruction;
+    //public GameObject trapsFullInstruction;
     public Animator anim;
     public TextMeshProUGUI shopEcto;
     public TextMeshProUGUI shopAntler;
@@ -55,8 +53,6 @@ public class gameManager : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
         playerScript = player.GetComponent<PlayerController>();
         gunContainer = GameObject.FindGameObjectWithTag("Gun Contain");
-        cam = GameObject.FindGameObjectWithTag("Camera");
-        cameraControlsScript = cam.GetComponent<CameraControls>();
     }
 
     // Update is called once per frame

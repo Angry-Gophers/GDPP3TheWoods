@@ -12,7 +12,6 @@ public class OptionsMenu : MonoBehaviour
     }
     public void InvertCamera()
     {
-        gameManager.instance.cameraControlsScript.invert = !gameManager.instance.cameraControlsScript.invert;
         
     }
 }
