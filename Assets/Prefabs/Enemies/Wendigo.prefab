@@ -225,6 +225,37 @@ Transform:
   m_Father: {fileID: 7406788329557083958}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &900877513555797679
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7322673467256483033}
+  m_Layer: 0
+  m_Name: Drop Pos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7322673467256483033
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 900877513555797679}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.03, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2759090662542033141}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &933066153331146097
 GameObject:
   m_ObjectHideFlags: 0
@@ -869,6 +900,7 @@ GameObject:
   - component: {fileID: 2759090662542033141}
   - component: {fileID: -3586091710040100142}
   - component: {fileID: 1268880644}
+  - component: {fileID: 1408138620549137004}
   m_Layer: 0
   m_Name: Wendigo
   m_TagString: Enemy
@@ -890,6 +922,7 @@ Transform:
   m_Children:
   - {fileID: 2040772839796689761}
   - {fileID: 8908661634934386356}
+  - {fileID: 7322673467256483033}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -907,12 +940,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   eyes: {fileID: 1224120926107867303}
   drop: {fileID: 4965894441874429130, guid: 5bc90c76bcad79f439670cc088f70c97, type: 3}
+  dropTrans: {fileID: 7322673467256483033}
   HP: 15
   attackSpeed: 0.74
   damage: 2
   range: 4
   sizeRandMin: 0.8
   sizeRandMax: 1.2
+  corpseTime: 0
 --- !u!195 &1268880644
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -935,6 +970,20 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!136 &1408138620549137004
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3243034810219371087}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.3
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!1 &3263109623421837958
 GameObject:
   m_ObjectHideFlags: 0

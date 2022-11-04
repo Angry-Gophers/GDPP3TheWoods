@@ -179,6 +179,7 @@ MonoBehaviour:
   interactRange: 5
   ectoplasm: 0
   antlers: 0
+  ammoCost: 10
 --- !u!143 &6344215850549535718
 CharacterController:
   m_ObjectHideFlags: 0
@@ -254,6 +255,10 @@ PrefabInstance:
     - target: {fileID: 250815241723360738, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
       propertyPath: reloadVol
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 250815241723360738, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
+      propertyPath: maxReserve
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 2432689943061614955, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
       propertyPath: m_RootOrder
@@ -332,12 +337,20 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4248781450569676725, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
+      propertyPath: fireRate
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4248781450569676725, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
       propertyPath: reloadAud
       value: 
       objectReference: {fileID: 8300000, guid: d0b46c22a793a674db105f27b2a618ef, type: 3}
     - target: {fileID: 4248781450569676725, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
       propertyPath: reloadVol
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4248781450569676725, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
+      propertyPath: maxReserve
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 4442245107239736861, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
       propertyPath: aud
@@ -374,6 +387,10 @@ PrefabInstance:
     - target: {fileID: 4442245107239736861, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
       propertyPath: reloadVol
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4442245107239736861, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
+      propertyPath: maxReserve
+      value: 240
       objectReference: {fileID: 0}
     - target: {fileID: 4602604415946921758, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
       propertyPath: m_Name

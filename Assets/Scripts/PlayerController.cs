@@ -22,6 +22,7 @@ public class PlayerController : MonoBehaviour, IDamage
     [Header("---Currency---")]
     [SerializeField] public int ectoplasm;
     [SerializeField] public int antlers;
+    [SerializeField] int ammoCost;
     Vector3 playervelocity;
     int timesJumped;
     // Start is called before the first frame update
@@ -149,6 +150,19 @@ public class PlayerController : MonoBehaviour, IDamage
                 if (hit.collider.CompareTag("Shop Car") && !spawnManager.instance.inWave)
                 {
                     gameManager.instance.ShopUI();
+                }
+
+                if(hit.collider.CompareTag("Ammo Box"))
+                {
+                    if (ectoplasm >= ammoCost)
+                    {
+                        ectoplasm -= ammoCost;
+                        WeaponSwapping.instance.Restock();
+                    }
+                    else
+                    {
+                        StartCoroutine(gameManager.instance.NotEnough());
+                    }
                 }
             }
         }
