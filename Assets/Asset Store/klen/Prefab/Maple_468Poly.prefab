@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 4983459625728690}
   - component: {fileID: 95281746182461094}
   - component: {fileID: -5649193981466722931}
+  - component: {fileID: -4438408774211710480}
   m_Layer: 0
   m_Name: Maple_468Poly
   m_TagString: Untagged
@@ -100,7 +101,15 @@ MeshCollider:
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
+  m_Mesh: {fileID: 4300000, guid: 6b2a786dcc3080a438c2c49b139812fe, type: 3}
+--- !u!33 &-4438408774211710480
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1374047868157654}
+  m_Mesh: {fileID: 4300000, guid: 6b2a786dcc3080a438c2c49b139812fe, type: 3}
 --- !u!1 &1641525649987348
 GameObject:
   m_ObjectHideFlags: 0
