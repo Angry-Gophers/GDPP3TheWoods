@@ -7,10 +7,12 @@ public class PlayerController : MonoBehaviour, IDamage
     [Header("---Components---")]
     [SerializeField] CharacterController playerController;
     [SerializeField] GameObject trap;
+    
     public int maxTraps;
     public int trapsHeld;
     public int bandagesHeld;
     public int candlesHeld;
+
     [Header("---Player Stats---")]
     [SerializeField] int HP;
     [SerializeField] float playerSpeed;
@@ -24,6 +26,7 @@ public class PlayerController : MonoBehaviour, IDamage
     [SerializeField] public int antlers;
     [SerializeField] int ammoCost;
     Vector3 playervelocity;
+
     int timesJumped;
     // Start is called before the first frame update
     void Start()
