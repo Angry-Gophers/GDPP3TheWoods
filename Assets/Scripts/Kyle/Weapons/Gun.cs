@@ -17,6 +17,8 @@ public class Gun : MonoBehaviour
     [SerializeField] float shotVol;
     [SerializeField] AudioClip reloadAud;
     [SerializeField] float reloadVol;
+    public bool isLongGun;
+    [SerializeField] Animator anim;
     public bool isReloading;
     public bool fullAuto;
     public Camera fpsCam;
@@ -69,6 +71,7 @@ public class Gun : MonoBehaviour
                 nextTimeToFire = Time.time + 1f / fireRate;
                 FiredBulletRay();
                 aud.PlayOneShot(shotAud, shotVol);
+                anim.SetTrigger("Shoot");
                 bullets--;
             }
         }
@@ -79,6 +82,8 @@ public class Gun : MonoBehaviour
                 nextTimeToFire = Time.time + 1f / fireRate;
                 FiredBulletRay();
                 aud.PlayOneShot(shotAud, shotVol);
+                anim.SetTrigger("Shoot");
+
                 bullets--;
             }
         }
