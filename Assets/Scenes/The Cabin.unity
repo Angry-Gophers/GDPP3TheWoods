@@ -463,6 +463,10 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 6344215850549535719, guid: 2dd0cd94464adc047bac783bfea51306, type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 213287706}
+    - target: {fileID: 6344215850549535719, guid: 2dd0cd94464adc047bac783bfea51306, type: 3}
       propertyPath: crosshair
       value: 
       objectReference: {fileID: 524049311}
