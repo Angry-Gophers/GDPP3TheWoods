@@ -85,15 +85,15 @@ public class phantomAi : enemyBase
 
     public override void death()
     {
-        agent.enabled = false;
-
-        int temp = Random.Range(0, 2);
-        if (temp == 0 && drop != null && spawnManager.instance.inWave)
-            Instantiate(drop, transform.position, transform.rotation);
-
-        spawnManager.instance.enemyDeath();
+        base.death();
 
         anim.SetTrigger("death");
-        Destroy(gameObject, 7);
+    }
+
+    public override void TakeDamage(int dmg)
+    {
+        base.TakeDamage(dmg);
+
+        anim.SetTrigger("gotHit");
     }
 }

@@ -22,6 +22,7 @@ public class PlayerController : MonoBehaviour, IDamage
     [Header("---Currency---")]
     [SerializeField] public int ectoplasm;
     [SerializeField] public int antlers;
+    [SerializeField] int ammoCost;
     Vector3 playervelocity;
     int timesJumped;
     // Start is called before the first frame update
@@ -150,6 +151,19 @@ public class PlayerController : MonoBehaviour, IDamage
                 {
                     gameManager.instance.ShopUI();
                 }
+
+                if(hit.collider.CompareTag("Ammo Box"))
+                {
+                    if (ectoplasm >= ammoCost)
+                    {
+                        ectoplasm -= ammoCost;
+                        WeaponSwapping.instance.Restock();
+                    }
+                    else
+                    {
+                        StartCoroutine(gameManager.instance.NotEnough());
+                    }
+                }
             }
         }
     }
@@ -162,14 +176,14 @@ public class PlayerController : MonoBehaviour, IDamage
             {
                 if (gameManager.instance.playerScript.trapsHeld < gameManager.instance.playerScript.maxTraps)
                 {
-                    gameManager.instance.instruction.SetActive(true);
+                    //gameManager.instance.instruction.SetActive(true);
 
                     if (Input.GetButton("Interact"))
                     {
                         pickUpTrap();
                         hit.collider.GetComponent<pickUpTrap>().pickedUp();
-                        gameManager.instance.trapsFullInstruction.SetActive(false);
-                        gameManager.instance.instruction.SetActive(false);
+                       // gameManager.instance.trapsFullInstruction.SetActive(false);
+                       // gameManager.instance.instruction.SetActive(false);
 
 
 
@@ -178,14 +192,14 @@ public class PlayerController : MonoBehaviour, IDamage
                 }
                 else if (gameManager.instance.playerScript.trapsHeld >= gameManager.instance.playerScript.maxTraps)
                 {
-                    gameManager.instance.trapsFullInstruction.SetActive(true);
+                    //gameManager.instance.trapsFullInstruction.SetActive(true);
 
                 }
             }
             else
             {
-                gameManager.instance.trapsFullInstruction.SetActive(false);
-                gameManager.instance.instruction.SetActive(false);
+               // gameManager.instance.trapsFullInstruction.SetActive(false);
+                //gameManager.instance.instruction.SetActive(false);
 
             }
 

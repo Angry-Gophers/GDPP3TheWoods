@@ -24,11 +24,16 @@ public class gameManager : MonoBehaviour
     public TextMeshProUGUI deadText;
     public GameObject nextWaveText;
     public TextMeshProUGUI waveText;
-    public GameObject instruction;
-    public GameObject trapsFullInstruction;
+    //public GameObject instruction;
+    //public GameObject trapsFullInstruction;
     public Animator anim;
     public TextMeshProUGUI shopEcto;
     public TextMeshProUGUI shopAntler;
+    public TextMeshProUGUI heldEcto;
+    public TextMeshProUGUI heldAntlers;
+    public GameObject reloadText;
+    public GameObject interactText;
+    public GameObject notEnoughText;
     //  public GameObject menuCurrentlyOpen;
     //  public GameObject playerDamageFlash;
     public Image playerHPBar;
@@ -38,7 +43,7 @@ public class gameManager : MonoBehaviour
     //  public Image boards;
     //  public Image bandages;
     //  public TextMeshProUGUI fireHealthText;
-    //  public TextMeshProUGUI ammoTracker;
+    public TextMeshProUGUI ammoTracker;
     //  public TextMeshProUGUI boardsTracker;
     //  public TextMeshProUGUI trapsTracker;
     //  public TextMeshProUGUI bandageTracker;
@@ -101,9 +106,12 @@ public class gameManager : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
     }
 
-    public void updatePlayerHUD()
+    public void UpdatePlayerHUD()
     {
         // ammo, bandages, boards, traps, fire health, anything else? night time left? 
+        ammoTracker.text = WeaponSwapping.instance.weapon.GetComponent<Gun>().bullets + " / " + WeaponSwapping.instance.weapon.GetComponent<Gun>().reserveAmmo;
+        heldEcto.text = "Ectoplasm: " + playerScript.ectoplasm;
+        heldAntlers.text = "Antlers: " + playerScript.antlers;
     }
 
     public void ShopUI()
@@ -114,5 +122,14 @@ public class gameManager : MonoBehaviour
         shopAntler.text = "Antlers: " + playerScript.antlers;
 
         shopWindow.SetActive(true);
+    }
+
+    public IEnumerator NotEnough()
+    {
+        notEnoughText.SetActive(true);
+
+        yield return new WaitForSeconds(2);
+
+        notEnoughText.SetActive(false);
     }
 }

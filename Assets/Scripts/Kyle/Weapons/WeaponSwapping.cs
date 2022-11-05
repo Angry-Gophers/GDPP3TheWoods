@@ -3,10 +3,12 @@ using UnityEngine;
 public class WeaponSwapping : MonoBehaviour
 {
     public int selectedWeapon = 0;
-
+    public GameObject weapon;
+    public static WeaponSwapping instance;
 
     public void Start()
     {
+        instance = this;
         SelectGun();
     }
 
@@ -16,14 +18,22 @@ public class WeaponSwapping : MonoBehaviour
             SwitchGun();
     }
 
+    public void Restock()
+    {
+        weapon.GetComponent<Gun>().restockAmmo();
+    }
 
     public void SelectGun()
     {
         int i = 0;
         foreach(Transform gun in transform)
         {
-            if(i == selectedWeapon)
+            if (i == selectedWeapon)
+            {
                 gun.gameObject.SetActive(true);
+                weapon = gun.gameObject;
+                gameManager.instance.UpdatePlayerHUD();
+            }
             else
                 gun.gameObject.SetActive(false);
             i++;
@@ -31,34 +41,36 @@ public class WeaponSwapping : MonoBehaviour
     }
     public void SwitchGun()
     {
+        if (weapon.GetComponent<Gun>().isReloading == false)
+        {
+            int prevWeapon = selectedWeapon;
+            if (Input.GetAxis("Mouse ScrollWheel") > 0f)
+            {
+                if (selectedWeapon >= transform.childCount - 1)
+                {
+                    selectedWeapon = 0;
+                }
+                else
+                {
+                    selectedWeapon++;
+                }
+            }
+            if (Input.GetAxis("Mouse ScrollWheel") < 0f)
+            {
+                if (selectedWeapon <= 0)
+                {
+                    selectedWeapon = transform.childCount - 1;
+                }
+                else
+                {
+                    selectedWeapon--;
+                }
+            }
 
-        int prevWeapon = selectedWeapon;
-        if (Input.GetAxis("Mouse ScrollWheel") > 0f)
-        {
-            if (selectedWeapon >= transform.childCount - 1)
+            if (prevWeapon != selectedWeapon)
             {
-                selectedWeapon = 0;
+                SelectGun();
             }
-            else
-            {
-                selectedWeapon++;
-            }
-        }
-        if (Input.GetAxis("Mouse ScrollWheel") < 0f)
-        {
-            if (selectedWeapon <= 0)
-            {
-                selectedWeapon = transform.childCount - 1;
-            }
-            else
-            {
-                selectedWeapon--;
-            }
-        }
-
-        if(prevWeapon != selectedWeapon)
-        {
-            SelectGun();
         }
     }
 }

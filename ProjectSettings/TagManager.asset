@@ -15,6 +15,7 @@ TagManager:
   - Shop Car
   - Reticle
   - Gun Contain
+  - Ammo Box
   layers:
   - Default
   - TransparentFX

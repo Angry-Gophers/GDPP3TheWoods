@@ -31,6 +31,8 @@ public class enemyDrops : MonoBehaviour
             if(audio.Count > 0)
                 aud.PlayOneShot(audio[Random.Range(0, audio.Count)], audioVol);
 
+            gameManager.instance.UpdatePlayerHUD();
+
             Destroy(gameObject);
         }
     }
