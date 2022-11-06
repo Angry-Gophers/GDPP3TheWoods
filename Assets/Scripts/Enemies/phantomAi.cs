@@ -18,50 +18,26 @@ public class phantomAi : enemyBase
             //Set walk animation speed
             anim.SetFloat("locomotion", Mathf.Lerp(anim.GetFloat("locomotion"), agent.velocity.normalized.magnitude, Time.deltaTime * 3));
 
-            //Target the player or the fire depending on line of sight
-            if (canSeePlayer())
-            {
-                targetDir = playerDir;
+            //Find current target
+            if(target != gameManager.instance.fireplace.transform.position)
+                findTarget();
 
-                agent.SetDestination(gameManager.instance.player.transform.position);
-            }
-            else
-            //Otherwise target the fire
-            {
-                if (agent.destination != target)
-                    agent.destination = target;
+            agent.SetDestination(target);
 
-                targetDir = target - transform.position;
-            }
-
-            //Rotate to face the target
-            if (agent.stoppingDistance >= agent.remainingDistance)
-            {
-                faceTarget();
-            }
+            targetDir = target - transform.position;
         }
     }
 
     //Find the fireplace
     public override void findTarget()
     {
-        target = GameObject.FindGameObjectWithTag("Fire").transform.position;
-    }
-
-    //Checks if player is in line of sight
-    bool canSeePlayer()
-    {
-        RaycastHit hit;
-
-        if(Physics.Raycast(eyes.transform.position, playerDir, out hit, viewRange))
+        if (spawnManager.instance.enemiesTargetingFire < spawnManager.instance.targetFireLimit)
         {
-            if (hit.collider.CompareTag("Player") && angle <= viewAngle)
-                return true;
-            else
-                return false;
+            target = gameManager.instance.fireplace.transform.position;
+            spawnManager.instance.enemiesTargetingFire++;
         }
         else
-            return false;
+            target = gameManager.instance.player.transform.position;
     }
 
     //Melee attack
@@ -88,6 +64,8 @@ public class phantomAi : enemyBase
         base.death();
 
         anim.SetTrigger("death");
+        if (target == gameManager.instance.fireplace.transform.position)
+            spawnManager.instance.enemiesTargetingFire--;
     }
 
     public override void TakeDamage(int dmg)
