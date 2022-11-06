@@ -5,6 +5,7 @@ public class WeaponSwapping : MonoBehaviour
     public int selectedWeapon = 0;
     public GameObject weapon;
     public static WeaponSwapping instance;
+    [SerializeField] Animator anim;
 
     public void Start()
     {
@@ -16,6 +17,7 @@ public class WeaponSwapping : MonoBehaviour
     {
         if (gameManager.instance.gunContainer.activeSelf)
             SwitchGun();
+        
     }
 
     public void Restock()
@@ -71,6 +73,7 @@ public class WeaponSwapping : MonoBehaviour
             {
                 SelectGun();
             }
+            anim.SetBool("LongGun", weapon.GetComponent<Gun>().isLongGun);
         }
     }
 }
