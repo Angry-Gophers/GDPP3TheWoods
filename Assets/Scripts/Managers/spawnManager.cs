@@ -23,7 +23,10 @@ public class spawnManager : MonoBehaviour
     [SerializeField] int maxElites;
     [SerializeField] float eliteRate;
     [SerializeField] int waveLength;
+    public int targetFireLimit;
+    [SerializeField] int maxFireTargetLimit;
 
+    public int enemiesTargetingFire;
     int enemiesInScene;
     int elitesInScene;
     bool spawning;
@@ -85,6 +88,9 @@ public class spawnManager : MonoBehaviour
 
             if (eliteLimit < maxElites)
                 eliteLimit++;
+
+            if(targetFireLimit < maxFireTargetLimit)
+                targetFireLimit++;
         }
 
         if (wave != 1 && enemyLimit < maxLimit)

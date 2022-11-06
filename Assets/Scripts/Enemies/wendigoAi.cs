@@ -9,7 +9,7 @@ public class wendigoAi : enemyBase
     {
         base.Update();
 
-        if(HP > 0)
+        if(HP > 0 && agent.enabled == true)
         {
             //update with new player location
             findTarget();
