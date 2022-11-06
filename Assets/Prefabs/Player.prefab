@@ -244,7 +244,7 @@ PrefabInstance:
     - target: {fileID: 250815241723360738, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
       propertyPath: shotAud
       value: 
-      objectReference: {fileID: 8300000, guid: c2df4f16f9b198f45813556726f03888, type: 3}
+      objectReference: {fileID: 8300000, guid: 1e96e18d09691b64093272c64745e565, type: 3}
     - target: {fileID: 250815241723360738, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
       propertyPath: shotVol
       value: 1

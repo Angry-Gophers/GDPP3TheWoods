@@ -49,6 +49,11 @@ public class gameManager : MonoBehaviour
     //  public TextMeshProUGUI bandageTracker;
     public bool isPaused;
 
+    [Header("---- Other components ----")]
+    public GameObject fireplace;
+    public GameObject shop;
+
+
     void Awake()
     {
         instanceGuns = new WeaponSwapping();
@@ -57,6 +62,8 @@ public class gameManager : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
         playerScript = player.GetComponent<PlayerController>();
         gunContainer = GameObject.FindGameObjectWithTag("Gun Contain");
+        fireplace = GameObject.FindGameObjectWithTag("Fire");
+        shop = GameObject.FindGameObjectWithTag("Shop Car");
     }
 
     // Update is called once per frame

@@ -54,10 +54,15 @@ public class enemyBase : MonoBehaviour, IDamage
             angle = Vector3.Angle(transform.forward, playerDir);
 
             //Check to see if in range for an attack
-            if (agent.enabled == true)
+            if (HP > 0 && agent.enabled == true)
             {
-                if (agent.stoppingDistance >= agent.remainingDistance && !isAttacking)
-                    StartCoroutine(attack());
+                if (agent.stoppingDistance >= agent.remainingDistance)
+                {
+                    faceTarget();
+
+                    if(!isAttacking)
+                        StartCoroutine(attack());
+                }
             }
         }
     }
