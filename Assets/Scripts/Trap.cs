@@ -18,6 +18,13 @@ public class Trap : MonoBehaviour
             
           
         }
+        else if (other.CompareTag("Enemy"))
+        {
+            if (other.GetComponent<enemyBase>() != null)
+            {
+                other.GetComponent<enemyBase>().TakeDamage(dmg);
+            }
+        }
     }
     void Start()
     {
@@ -43,4 +50,5 @@ public class Trap : MonoBehaviour
         yield return new WaitForSeconds(5.0f);
        
     }
+
 }
