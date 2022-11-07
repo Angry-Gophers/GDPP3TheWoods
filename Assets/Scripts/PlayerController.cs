@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour, IDamage
     [Header("---Components---")]
     [SerializeField] CharacterController playerController;
     [SerializeField] GameObject trap;
+    bool isHealing;
     
     public int maxTraps;
     public int trapsHeld;
@@ -40,6 +41,7 @@ public class PlayerController : MonoBehaviour, IDamage
         movement();
         jump();
         Interact();
+        StartCoroutine(BandageHeal());
         placeTrap();
         PickTrap();
     }
@@ -131,6 +133,21 @@ public class PlayerController : MonoBehaviour, IDamage
         }
     }
 
+    IEnumerator BandageHeal()
+    {
+        if (Input.GetKeyDown(KeyCode.Q) && !isHealing && bandagesHeld !=0)
+        {
+            bandagesHeld--;
+            isHealing = true;
+            Debug.Log("healing");
+            yield return new WaitForSeconds(1.5f);
+            Debug.Log("healing done");
+            HP = hpOriginal;
+            isHealing = false;
+
+        }
+
+    }
     IEnumerator heal()
     {
         yield return new WaitForSeconds(5.0f);
