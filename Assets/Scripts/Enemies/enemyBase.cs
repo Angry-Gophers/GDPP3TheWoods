@@ -21,12 +21,11 @@ public class enemyBase : MonoBehaviour, IDamage
     [Range(1, 10)] [SerializeField] protected int range;
     [Range(.25f, 1f)] [SerializeField] float sizeRandMin;
     [Range(1f, 2f)] [SerializeField] float sizeRandMax;
+    [Range (0.1f, 5f)][SerializeField] float staggerTime;
     [SerializeField] int corpseTime;
 
     protected float originalSpeed;
     protected Vector3 targetDir;
-    protected Vector3 playerDir;
-    protected float angle;
     protected bool isAttacking;
 
     // Start is called before the first frame update
@@ -49,13 +48,17 @@ public class enemyBase : MonoBehaviour, IDamage
     {
         if (HP > 0)
         {
-            //Gets the player direction based on local position, then gets the angle between the two
-            playerDir = gameManager.instance.player.transform.position - transform.position;
-            angle = Vector3.Angle(transform.forward, playerDir);
-
             //Check to see if in range for an attack
             if (HP > 0 && agent.enabled == true)
             {
+                //Find current target
+                if (target != gameManager.instance.fireplace.transform.position)
+                    findTarget();
+
+                agent.SetDestination(target);
+
+                targetDir = target - transform.position;
+
                 if (agent.stoppingDistance >= agent.remainingDistance)
                 {
                     faceTarget();
@@ -75,11 +78,13 @@ public class enemyBase : MonoBehaviour, IDamage
     {
         HP -= dmg;
 
-        agent.speed = 0;
-        agent.speed = originalSpeed;
-
         if (HP <= 0)
             death();
+        else
+        {
+            anim.SetTrigger("gotHit");
+            StartCoroutine(stagger());
+        }
     }
 
     public virtual void death()
@@ -91,7 +96,7 @@ public class enemyBase : MonoBehaviour, IDamage
         if (temp == 0 && drop != null && spawnManager.instance.inWave)
             Instantiate(drop, dropTrans.position, dropTrans.rotation);
 
-        spawnManager.instance.enemyDeath();
+        anim.SetTrigger("death");
         Destroy(gameObject, corpseTime);
     }
 
@@ -102,5 +107,12 @@ public class enemyBase : MonoBehaviour, IDamage
         targetDir.y = 0;
         Quaternion rotation = Quaternion.LookRotation(targetDir);
         transform.rotation = Quaternion.Lerp(transform.rotation, rotation, Time.deltaTime * 4);
+    }
+
+    IEnumerator stagger()
+    {
+        agent.speed = 0;
+        yield return new WaitForSeconds(staggerTime);
+        agent.speed = originalSpeed;
     }
 }

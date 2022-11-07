@@ -154,6 +154,11 @@ public class spawnManager : MonoBehaviour
         enemiesInScene--;
     }
 
+    public void eliteDeath()
+    {
+        elitesInScene--;
+    }
+
     void spawnEnemy(int location)
     {
         if(enemiesInScene < enemyLimit)

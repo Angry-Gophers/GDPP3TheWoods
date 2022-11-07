@@ -187,7 +187,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 609165476025440495}
   m_LocalRotation: {x: 0.5680014, y: 0.78316045, z: -0.25304973, w: 0.00000037512868}
-  m_LocalPosition: {x: -0.6600827, y: -0.91012067, z: 0.29407266}
+  m_LocalPosition: {x: -0.591, y: -1.023, z: 0.322}
   m_LocalScale: {x: 0.99999976, y: 0.9999996, z: 0.99999976}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -901,6 +901,7 @@ GameObject:
   - component: {fileID: -3586091710040100142}
   - component: {fileID: 1268880644}
   - component: {fileID: 1408138620549137004}
+  - component: {fileID: 1829445146}
   m_Layer: 0
   m_Name: Wendigo
   m_TagString: Enemy
@@ -939,15 +940,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eyes: {fileID: 1224120926107867303}
-  drop: {fileID: 4965894441874429130, guid: 5bc90c76bcad79f439670cc088f70c97, type: 3}
+  drop: {fileID: 6566900707521354800, guid: d53910e9da410684fb7096193514e2ce, type: 3}
   dropTrans: {fileID: 7322673467256483033}
-  HP: 15
-  attackSpeed: 0.74
-  damage: 2
+  HP: 20
+  attackSpeed: 1.73
+  damage: 3
   range: 4
   sizeRandMin: 0.8
   sizeRandMax: 1.2
-  corpseTime: 0
+  staggerTime: 1
+  corpseTime: 3
+  hand: {fileID: 5881809686406154355}
 --- !u!195 &1268880644
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -958,10 +961,10 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 2
+  m_Speed: 4
   m_Acceleration: 8
   avoidancePriority: 50
-  m_AngularSpeed: 120
+  m_AngularSpeed: 200
   m_StoppingDistance: 2
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 0
@@ -984,6 +987,26 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!95 &1829445146
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3243034810219371087}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: b0f941f2868d7c74883ec83b47732d49, type: 3}
+  m_Controller: {fileID: 9100000, guid: 0079b594beb8bf5429cb391768cea22d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3263109623421837958
 GameObject:
   m_ObjectHideFlags: 0
@@ -1570,6 +1593,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1089067282661136440}
+  - component: {fileID: 1553108398}
+  - component: {fileID: 1553108399}
   m_Layer: 0
   m_Name: hand_l
   m_TagString: Untagged
@@ -1597,6 +1622,34 @@ Transform:
   m_Father: {fileID: 4194684511747357319}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &1553108398
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5881809686406154355}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.1
+  m_Height: 0.5
+  m_Direction: 0
+  m_Center: {x: -0.28, y: 0, z: 0}
+--- !u!114 &1553108399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5881809686406154355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d913a5cf4f09a548932ba734133dec5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 0
+  playerhit: 0
 --- !u!1 &5934939126737615331
 GameObject:
   m_ObjectHideFlags: 0
