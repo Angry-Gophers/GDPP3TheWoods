@@ -9,11 +9,17 @@ public class enemyDrops : MonoBehaviour
     [SerializeField] float audioVol;
 
     AudioSource aud;
+    Collider col;
+    MeshRenderer mr;
+    Light light;
 
     // Start is called before the first frame update
     void Start()
     {
         aud = GetComponent<AudioSource>();
+        col = GetComponent<Collider>();
+        mr = GetComponent<MeshRenderer>();
+        light = GetComponent<Light>();
     }
 
     // Update is called once per frame
@@ -33,7 +39,10 @@ public class enemyDrops : MonoBehaviour
 
             gameManager.instance.UpdatePlayerHUD();
 
-            Destroy(gameObject);
+            col.enabled = false;
+            mr.enabled = false;
+            light.enabled = false;
+            Destroy(gameObject, 1f);
         }
     }
 }
