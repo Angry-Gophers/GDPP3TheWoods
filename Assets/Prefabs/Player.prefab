@@ -242,16 +242,24 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 6344215849434670609}
     - target: {fileID: 250815241723360738, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
+      propertyPath: bullets
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 250815241723360738, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
       propertyPath: shotAud
       value: 
       objectReference: {fileID: 8300000, guid: 1e96e18d09691b64093272c64745e565, type: 3}
     - target: {fileID: 250815241723360738, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
       propertyPath: shotVol
-      value: 1
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 250815241723360738, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
       propertyPath: fireRate
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 250815241723360738, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
+      propertyPath: magazine
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 250815241723360738, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
       propertyPath: isLongGun
@@ -263,7 +271,7 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: d0b46c22a793a674db105f27b2a618ef, type: 3}
     - target: {fileID: 250815241723360738, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
       propertyPath: reloadVol
-      value: 1
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 250815241723360738, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
       propertyPath: maxReserve
@@ -419,7 +427,7 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: 0a638d1224ee12c47974bedbe2e97f34, type: 3}
     - target: {fileID: 4248781450569676725, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
       propertyPath: shotVol
-      value: 1
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 4248781450569676725, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
       propertyPath: fireRate
@@ -431,7 +439,7 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: d0b46c22a793a674db105f27b2a618ef, type: 3}
     - target: {fileID: 4248781450569676725, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
       propertyPath: reloadVol
-      value: 1
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 4248781450569676725, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
       propertyPath: maxReserve
@@ -459,7 +467,7 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: 5aec0e63c3057ef4c812f96080e13f99, type: 3}
     - target: {fileID: 4442245107239736861, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
       propertyPath: shotVol
-      value: 1
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 4442245107239736861, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
       propertyPath: fireRate
@@ -479,7 +487,7 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: d0b46c22a793a674db105f27b2a618ef, type: 3}
     - target: {fileID: 4442245107239736861, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
       propertyPath: reloadVol
-      value: 1
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 4442245107239736861, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
       propertyPath: maxReserve

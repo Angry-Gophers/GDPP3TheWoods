@@ -21,13 +21,15 @@ public class enemyBase : MonoBehaviour, IDamage
     [Range(1, 10)] [SerializeField] protected int range;
     [Range(.25f, 1f)] [SerializeField] float sizeRandMin;
     [Range(1f, 2f)] [SerializeField] float sizeRandMax;
+    [Range (0.1f, 5f)][SerializeField] float staggerTime;
+    [Range(1, 4)] [SerializeField] int staggerChance;
     [SerializeField] int corpseTime;
+    [SerializeField] int trappedTime;
 
     protected float originalSpeed;
     protected Vector3 targetDir;
-    protected Vector3 playerDir;
-    protected float angle;
     protected bool isAttacking;
+    protected bool staggered = false;
 
     // Start is called before the first frame update
     protected void Start()
@@ -49,13 +51,17 @@ public class enemyBase : MonoBehaviour, IDamage
     {
         if (HP > 0)
         {
-            //Gets the player direction based on local position, then gets the angle between the two
-            playerDir = gameManager.instance.player.transform.position - transform.position;
-            angle = Vector3.Angle(transform.forward, playerDir);
-
             //Check to see if in range for an attack
             if (HP > 0 && agent.enabled == true)
             {
+                //Find current target
+                if (target != gameManager.instance.fireplace.transform.position)
+                    findTarget();
+
+                agent.SetDestination(target);
+
+                targetDir = target - transform.position;
+
                 if (agent.stoppingDistance >= agent.remainingDistance)
                 {
                     faceTarget();
@@ -75,11 +81,19 @@ public class enemyBase : MonoBehaviour, IDamage
     {
         HP -= dmg;
 
-        agent.speed = 0;
-        agent.speed = originalSpeed;
-
         if (HP <= 0)
             death();
+        else
+        {
+            int temp = Random.Range(0, 4);
+            staggered = false;
+
+            if (temp >= staggerChance || dmg >= 10)
+            {
+                StartCoroutine(stagger());
+                staggered = true;
+            }
+        }
     }
 
     public virtual void death()
@@ -91,7 +105,7 @@ public class enemyBase : MonoBehaviour, IDamage
         if (temp == 0 && drop != null && spawnManager.instance.inWave)
             Instantiate(drop, dropTrans.position, dropTrans.rotation);
 
-        spawnManager.instance.enemyDeath();
+        anim.SetTrigger("death");
         Destroy(gameObject, corpseTime);
     }
 
@@ -102,5 +116,29 @@ public class enemyBase : MonoBehaviour, IDamage
         targetDir.y = 0;
         Quaternion rotation = Quaternion.LookRotation(targetDir);
         transform.rotation = Quaternion.Lerp(transform.rotation, rotation, Time.deltaTime * 4);
+    }
+
+    public virtual IEnumerator stagger()
+    {
+        if (anim.GetBool("gotHit") == false)
+            anim.SetBool("gotHit", true);
+
+        agent.speed = 0;
+        yield return new WaitForSeconds(staggerTime);
+        agent.speed = originalSpeed;
+
+        anim.SetBool("gotHit", false);
+    }
+
+    public IEnumerator trapped(int dmg)
+    {
+        agent.speed = 0;
+        HP -= dmg;
+
+        if(HP < 0)
+            death();
+
+        yield return new WaitForSeconds(trappedTime);
+        agent.speed = originalSpeed;
     }
 }

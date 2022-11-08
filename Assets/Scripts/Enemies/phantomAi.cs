@@ -17,14 +17,6 @@ public class phantomAi : enemyBase
         {
             //Set walk animation speed
             anim.SetFloat("locomotion", Mathf.Lerp(anim.GetFloat("locomotion"), agent.velocity.normalized.magnitude, Time.deltaTime * 3));
-
-            //Find current target
-            if(target != gameManager.instance.fireplace.transform.position)
-                findTarget();
-
-            agent.SetDestination(target);
-
-            targetDir = target - transform.position;
         }
     }
 
@@ -63,15 +55,9 @@ public class phantomAi : enemyBase
     {
         base.death();
 
-        anim.SetTrigger("death");
         if (target == gameManager.instance.fireplace.transform.position)
             spawnManager.instance.enemiesTargetingFire--;
-    }
 
-    public override void TakeDamage(int dmg)
-    {
-        base.TakeDamage(dmg);
-
-        anim.SetTrigger("gotHit");
+        spawnManager.instance.enemyDeath();
     }
 }

@@ -6,23 +6,22 @@ public class Trap : MonoBehaviour
 {
     [SerializeField] int dmg;
     [SerializeField] Animator anim;
+    bool activated;
     // Start is called before the first frame update
 
     private void OnTriggerEnter(Collider other)
     {
-        anim.SetTrigger("clamp");
-        if (other.CompareTag("Player"))
+        if (!activated)
         {
-            gameManager.instance.player.GetComponent<CharacterController>().enabled = false;
-            StartCoroutine(TrappedTimePlayer());
-            
-          
-        }
-        else if (other.CompareTag("Enemy"))
-        {
-            if (other.GetComponent<enemyBase>() != null)
+            anim.SetTrigger("clamp");
+            if (other.CompareTag("Player"))
             {
-                other.GetComponent<enemyBase>().TakeDamage(dmg);
+                gameManager.instance.player.GetComponent<CharacterController>().enabled = false;
+                StartCoroutine(TrappedTimePlayer());
+            }
+            else if (other.CompareTag("Enemy"))
+            {
+                other.GetComponent<phantomAi>().trapped(dmg);
             }
         }
     }
@@ -43,12 +42,6 @@ public class Trap : MonoBehaviour
         yield return new WaitForSeconds(2.5f);
         gameManager.instance.player.GetComponent<CharacterController>().enabled = true;
         Destroy(gameObject);
-    }
-
-    IEnumerator TrappedTimeEnemy()
-    {
-        yield return new WaitForSeconds(5.0f);
-       
     }
 
 }
