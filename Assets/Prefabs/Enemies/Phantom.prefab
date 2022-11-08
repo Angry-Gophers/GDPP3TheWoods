@@ -6597,7 +6597,10 @@ MonoBehaviour:
   range: 3
   sizeRandMin: 0.75
   sizeRandMax: 1.25
+  staggerTime: 0
+  staggerChance: 1
   corpseTime: 5
+  trappedTime: 5
   viewAngle: 45
   viewRange: 5
 --- !u!195 &8149738876329093798

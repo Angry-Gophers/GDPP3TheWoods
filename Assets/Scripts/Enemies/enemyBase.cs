@@ -24,6 +24,7 @@ public class enemyBase : MonoBehaviour, IDamage
     [Range (0.1f, 5f)][SerializeField] float staggerTime;
     [Range(1, 4)] [SerializeField] int staggerChance;
     [SerializeField] int corpseTime;
+    [SerializeField] int trappedTime;
 
     protected float originalSpeed;
     protected Vector3 targetDir;
@@ -101,10 +102,8 @@ public class enemyBase : MonoBehaviour, IDamage
         agent.enabled = false;
 
         int temp = Random.Range(0, 2);
-        /*
         if (temp == 0 && drop != null && spawnManager.instance.inWave)
             Instantiate(drop, dropTrans.position, dropTrans.rotation);
-        */
 
         anim.SetTrigger("death");
         Destroy(gameObject, corpseTime);
@@ -129,5 +128,17 @@ public class enemyBase : MonoBehaviour, IDamage
         agent.speed = originalSpeed;
 
         anim.SetBool("gotHit", false);
+    }
+
+    public IEnumerator trapped(int dmg)
+    {
+        agent.speed = 0;
+        HP -= dmg;
+
+        if(HP < 0)
+            death();
+
+        yield return new WaitForSeconds(trappedTime);
+        agent.speed = originalSpeed;
     }
 }

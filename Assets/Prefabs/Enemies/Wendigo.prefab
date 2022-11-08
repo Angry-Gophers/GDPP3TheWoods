@@ -943,7 +943,7 @@ MonoBehaviour:
   eyes: {fileID: 1224120926107867303}
   drop: {fileID: 6566900707521354800, guid: d53910e9da410684fb7096193514e2ce, type: 3}
   dropTrans: {fileID: 7322673467256483033}
-  HP: 20
+  HP: 30
   attackSpeed: 1.73
   damage: 3
   range: 4
@@ -952,6 +952,7 @@ MonoBehaviour:
   staggerTime: 1
   staggerChance: 2
   corpseTime: 3
+  trappedTime: 5
   hand: {fileID: 5881809686406154355}
   attackWindow: 0.75
   preAttackWindow: 0.2

@@ -342,9 +342,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4587464124396111094}
   - component: {fileID: 4587464124403575556}
-  - component: {fileID: 4587464124011672191}
   - component: {fileID: 4587464124011672450}
   - component: {fileID: 8868133259536834876}
+  - component: {fileID: 4725552690711783426}
   m_Layer: 0
   m_Name: Trap
   m_TagString: Untagged
@@ -392,19 +392,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!135 &4587464124011672191
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4587464124396280022}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 8.21
-  m_Center: {x: -3.18, y: 7.32, z: 1.45}
 --- !u!114 &4587464124011672450
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -429,8 +416,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3554f3aa213221f4c9667ce05741c516, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dmg: 5
+  dmg: 1
   anim: {fileID: 4587464124403575556}
+--- !u!65 &4725552690711783426
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4587464124396280022}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 41.144722, y: 12.831889, z: 42.669144}
+  m_Center: {x: -2.6476853, y: 5.4721646, z: 1.7357014}
 --- !u!1 &4587464124396280024
 GameObject:
   m_ObjectHideFlags: 0

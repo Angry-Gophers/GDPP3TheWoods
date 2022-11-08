@@ -66,7 +66,7 @@ public class wendigoAi : enemyBase
         base.death();
 
         aud.PlayOneShot(deadAud, deadVol);
-        //spawnManager.instance.eliteDeath();
+        spawnManager.instance.eliteDeath();
     }
 
     IEnumerator WindowOfAttack()
