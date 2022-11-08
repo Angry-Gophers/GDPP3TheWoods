@@ -22,11 +22,13 @@ public class enemyBase : MonoBehaviour, IDamage
     [Range(.25f, 1f)] [SerializeField] float sizeRandMin;
     [Range(1f, 2f)] [SerializeField] float sizeRandMax;
     [Range (0.1f, 5f)][SerializeField] float staggerTime;
+    [Range(1, 4)] [SerializeField] int staggerChance;
     [SerializeField] int corpseTime;
 
     protected float originalSpeed;
     protected Vector3 targetDir;
     protected bool isAttacking;
+    protected bool staggered = false;
 
     // Start is called before the first frame update
     protected void Start()
@@ -82,8 +84,14 @@ public class enemyBase : MonoBehaviour, IDamage
             death();
         else
         {
-            anim.SetTrigger("gotHit");
-            StartCoroutine(stagger());
+            int temp = Random.Range(0, 4);
+            staggered = false;
+
+            if (temp >= staggerChance || dmg >= 10)
+            {
+                StartCoroutine(stagger());
+                staggered = true;
+            }
         }
     }
 
@@ -93,8 +101,10 @@ public class enemyBase : MonoBehaviour, IDamage
         agent.enabled = false;
 
         int temp = Random.Range(0, 2);
+        /*
         if (temp == 0 && drop != null && spawnManager.instance.inWave)
             Instantiate(drop, dropTrans.position, dropTrans.rotation);
+        */
 
         anim.SetTrigger("death");
         Destroy(gameObject, corpseTime);
@@ -109,10 +119,15 @@ public class enemyBase : MonoBehaviour, IDamage
         transform.rotation = Quaternion.Lerp(transform.rotation, rotation, Time.deltaTime * 4);
     }
 
-    IEnumerator stagger()
+    public virtual IEnumerator stagger()
     {
+        if (anim.GetBool("gotHit") == false)
+            anim.SetBool("gotHit", true);
+
         agent.speed = 0;
         yield return new WaitForSeconds(staggerTime);
         agent.speed = originalSpeed;
+
+        anim.SetBool("gotHit", false);
     }
 }

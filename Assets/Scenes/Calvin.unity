@@ -130,18 +130,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1268880644, guid: ba4e602437e19b544ad0153d4ac0f399, type: 3}
-      propertyPath: m_StoppingDistance
-      value: 2.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1553108398, guid: ba4e602437e19b544ad0153d4ac0f399, type: 3}
-      propertyPath: m_Height
-      value: 0.75
-      objectReference: {fileID: 0}
-    - target: {fileID: 1553108398, guid: ba4e602437e19b544ad0153d4ac0f399, type: 3}
-      propertyPath: m_Center.x
-      value: -0.37
-      objectReference: {fileID: 0}
     - target: {fileID: 2759090662542033141, guid: ba4e602437e19b544ad0153d4ac0f399, type: 3}
       propertyPath: m_RootOrder
       value: 1
