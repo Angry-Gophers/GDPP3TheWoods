@@ -19,9 +19,16 @@ public class Trap : MonoBehaviour
                 gameManager.instance.player.GetComponent<CharacterController>().enabled = false;
                 StartCoroutine(TrappedTimePlayer());
             }
-            else if (other.CompareTag("Enemy"))
+            if (other.CompareTag("Enemy"))
             {
-                other.GetComponent<phantomAi>().trapped(dmg);
+                Debug.Log("Enemy detected");
+                if(other.GetComponent<enemyBase>()!= null)
+                {
+                    StartCoroutine(other.GetComponent<enemyBase>().trapped(dmg));
+
+                }
+               
+                
             }
         }
     }

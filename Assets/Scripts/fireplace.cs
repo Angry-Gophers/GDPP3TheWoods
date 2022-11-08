@@ -6,7 +6,7 @@ public class fireplace : MonoBehaviour, IDamage
 {
     Light fireLight;
 
-    [Range(1, 50)][SerializeField] int HP;
+    [Range(1, 50)][SerializeField] public int HP;
 
     int maxHP;
     float intensity;
