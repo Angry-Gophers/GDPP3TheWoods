@@ -4,9 +4,7 @@ using UnityEngine;
 
 public class phantomAi : enemyBase
 {
-    [Header("----- Phantom stats -----")]
-    [Range(25, 60)][SerializeField] int viewAngle;
-    [Range(1, 20)][SerializeField] int viewRange;
+    [SerializeField] float shopBuffer;
 
     // Update is called once per frame
     void Update()
@@ -27,9 +25,22 @@ public class phantomAi : enemyBase
         {
             target = gameManager.instance.fireplace.transform.position;
             spawnManager.instance.enemiesTargetingFire++;
+            agent.stoppingDistance = stoppingDis;
+            targetingPlayer = false;
+        }
+        else if (spawnManager.instance.enemiesTargetingShop < spawnManager.instance.shopLimit && gameManager.instance.shopAlive)
+        {
+            target = gameManager.instance.shop.transform.position;
+            spawnManager.instance.enemiesTargetingShop++;
+            agent.stoppingDistance = shopBuffer;
+            targetingPlayer = false;
         }
         else
+        {
             target = gameManager.instance.player.transform.position;
+            agent.stoppingDistance = stoppingDis;
+            targetingPlayer = true;
+        }
     }
 
     //Melee attack
@@ -37,14 +48,15 @@ public class phantomAi : enemyBase
     {
         isAttacking = true;
 
-        anim.SetTrigger("cast3");
-
         //Shoots a raycast and checks if the hit object can be damaged
         RaycastHit hit;
-        if(Physics.Raycast(transform.position, transform.forward, out hit, range))
+        if(Physics.Raycast(dropTrans.transform.position, transform.forward, out hit, range))
         {
             if (hit.collider.GetComponent<IDamage>() != null && hit.collider.tag != "Enemy")
+            {
+                anim.SetTrigger("cast3");
                 hit.collider.GetComponent<IDamage>().TakeDamage(damage);
+            }
         }
 
         yield return new WaitForSeconds(attackSpeed);
@@ -57,6 +69,8 @@ public class phantomAi : enemyBase
 
         if (target == gameManager.instance.fireplace.transform.position)
             spawnManager.instance.enemiesTargetingFire--;
+        else if (target == gameManager.instance.shop.transform.position)
+            spawnManager.instance.enemiesTargetingShop--;
 
         spawnManager.instance.enemyDeath();
     }

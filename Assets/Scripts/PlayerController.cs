@@ -89,17 +89,10 @@ public class PlayerController : MonoBehaviour, IDamage
         if(HP <= 0)
         {
             gameManager.instance.playerDeadMenu.active = true;
+            gameManager.instance.menuCurrentlyOpen = gameManager.instance.playerDeadMenu;
             gameManager.instance.deadText.text = "You have died";
             gameManager.instance.cursorLockPause();
         }
-        else if(HP < hpOriginal / 2)
-        {
-            StartCoroutine(heal());
-
-        }
-
-        
-
     }
 
     void placeTrap()
@@ -181,7 +174,8 @@ public class PlayerController : MonoBehaviour, IDamage
 
                 if (hit.collider.CompareTag("Shop Car") && !spawnManager.instance.inWave)
                 {
-                    gameManager.instance.ShopUI();
+                    if(hit.collider.GetComponent<ShopHealth>().HP > 0)
+                        gameManager.instance.ShopUI();
                 }
 
                 if(hit.collider.CompareTag("Ammo Box"))

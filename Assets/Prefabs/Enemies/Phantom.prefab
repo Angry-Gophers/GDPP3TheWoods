@@ -6592,17 +6592,16 @@ MonoBehaviour:
   drop: {fileID: 5470681425243767183, guid: 7ce1a296039fdc64fadac70cb07221e5, type: 3}
   dropTrans: {fileID: 3259018739722332655}
   HP: 5
-  attackSpeed: 2
+  attackSpeed: 4
   damage: 2
-  range: 3
+  range: 4
   sizeRandMin: 0.75
   sizeRandMax: 1.25
   staggerTime: 0
   staggerChance: 1
   corpseTime: 5
   trappedTime: 4
-  viewAngle: 45
-  viewRange: 5
+  shopBuffer: 4
 --- !u!195 &8149738876329093798
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -6617,7 +6616,7 @@ NavMeshAgent:
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 60
-  m_StoppingDistance: 3
+  m_StoppingDistance: 2
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 0
   m_AutoRepath: 1

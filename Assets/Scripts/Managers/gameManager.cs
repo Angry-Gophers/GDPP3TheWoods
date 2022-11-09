@@ -36,24 +36,22 @@ public class gameManager : MonoBehaviour
     public GameObject interactText;
     public GameObject notEnoughText;
     public GameObject healingText;
-    //  public GameObject menuCurrentlyOpen;
+    public GameObject menuCurrentlyOpen;
     //  public GameObject playerDamageFlash;
     public Image playerHPBar;
     public Image fire;
-    //  public Image ammo;
-    //  public Image traps;
-    //  public Image boards;
-    //  public Image bandages;
-    //  public TextMeshProUGUI fireHealthText;
     public TextMeshProUGUI ammoTracker;
     //  public TextMeshProUGUI boardsTracker;
     public TextMeshProUGUI trapsTracker;
     public TextMeshProUGUI bandageTracker;
+    public Image shopHealthBar;
+    public bool shopAlive;
     public bool isPaused;
 
     [Header("---- Other components ----")]
     public GameObject fireplace;
     public GameObject shop;
+    public ShopHealth shopScript;
 
     bool interact;
     bool reload;
@@ -70,22 +68,25 @@ public class gameManager : MonoBehaviour
         gunContainer = GameObject.FindGameObjectWithTag("Gun Contain");
         fireplace = GameObject.FindGameObjectWithTag("Fire");
         shop = GameObject.FindGameObjectWithTag("Shop Car");
+        shopScript = shop.GetComponent<ShopHealth>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Cancel") && playerDeadMenu.activeSelf != true && shopWindow.activeSelf != true) // check for deadMenu and shopMenu
+        if (Input.GetButtonDown("Cancel") && menuCurrentlyOpen == null) // check for deadMenu and shopMenu
         {
             isPaused = !isPaused;
             pauseMenu.SetActive(isPaused);
 
             if (isPaused)
             {
+                menuCurrentlyOpen = pauseMenu;
                 cursorLockPause();
             }
             else
             {
+                menuCurrentlyOpen = null;
                 cursorUnlockUnpause();
             }
         }
@@ -134,6 +135,7 @@ public class gameManager : MonoBehaviour
 
     public void ShopUI()
     {
+        menuCurrentlyOpen = shopWindow;
         cursorLockPause();
 
         shopEcto.text = "Ectoplasm: " + playerScript.ectoplasm;

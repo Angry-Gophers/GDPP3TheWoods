@@ -21,23 +21,28 @@ namespace TheWoods.TopLayer
     {
         public List<ShopItems> store { get; set; }
         [SerializeField] public List<Button> storeButtons = new List<Button>();
+        fireplace fire;
+        [SerializeField] int candleBonus;
+
         void Start()
         {
+            fire = gameManager.instance.fire.GetComponent<fireplace>();
+
             store = new List<ShopItems>() {
               new ShopItems() {
                 ItemName = "Bandage",
                 AntlerCost = 0,
-                EctoplasmCost = 10
+                EctoplasmCost = 5
               },
               new ShopItems() {
                 ItemName = "Trap",
-                AntlerCost = 1,
-                EctoplasmCost = 20
+                AntlerCost = 0,
+                EctoplasmCost = 5
               },
               new ShopItems() {
                 ItemName = "Candle",
                 AntlerCost = 5,
-                EctoplasmCost = 30
+                EctoplasmCost = 0
               }
             };
             CanBuy();
@@ -86,6 +91,9 @@ namespace TheWoods.TopLayer
                     gameManager.instance.playerScript.ectoplasm -= store[x].EctoplasmCost;
                 }
             }
+
+            gameManager.instance.shopEcto.text = "Ectoplasm: " + gameManager.instance.playerScript.ectoplasm;
+            gameManager.instance.shopAntler.text = "Antlers: " + gameManager.instance.playerScript.antlers;
             CanBuy();
             //update HUD display
         }
@@ -101,28 +109,43 @@ namespace TheWoods.TopLayer
                     gameManager.instance.playerScript.ectoplasm -= store[x].EctoplasmCost;
                 }
             }
+
+            gameManager.instance.shopEcto.text = "Ectoplasm: " + gameManager.instance.playerScript.ectoplasm;
+            gameManager.instance.shopAntler.text = "Antlers: " + gameManager.instance.playerScript.antlers;
             CanBuy();
             //update HUD
         }
 
         public void GetCandle()
         {
-            gameManager.instance.playerScript.candlesHeld++;
-            for (int x = 0; x < store.Count; x++)
+            if (fire.HP < fire.maxHP)
             {
-                if (store[x].ItemName == "Candle")
+                fire.HP += candleBonus;
+
+                if(fire.HP > fire.maxHP)
+                    fire.HP = fire.maxHP;
+
+                fire.UpdateFireHud();
+
+                for (int x = 0; x < store.Count; x++)
                 {
-                    gameManager.instance.playerScript.antlers -= store[x].AntlerCost;
-                    gameManager.instance.playerScript.ectoplasm -= store[x].EctoplasmCost;
+                    if (store[x].ItemName == "Candle")
+                    {
+                        gameManager.instance.playerScript.antlers -= store[x].AntlerCost;
+                        gameManager.instance.playerScript.ectoplasm -= store[x].EctoplasmCost;
+                    }
                 }
+
+                gameManager.instance.shopEcto.text = "Ectoplasm: " + gameManager.instance.playerScript.ectoplasm;
+                gameManager.instance.shopAntler.text = "Antlers: " + gameManager.instance.playerScript.antlers;
+                CanBuy();
             }
-            CanBuy();
-            //update HUD
         }
 
         public void CloseShop()
         {
             gameManager.instance.shopWindow.SetActive(false);
+            gameManager.instance.menuCurrentlyOpen = null;
             gameManager.instance.cursorUnlockUnpause();
         }
 
