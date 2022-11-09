@@ -6,6 +6,9 @@ public class Trap : MonoBehaviour
 {
     [SerializeField] int dmg;
     [SerializeField] Animator anim;
+    [SerializeField] AudioClip trapAud;
+    [SerializeField] float trapVol;
+    AudioSource aud;
     bool activated;
     // Start is called before the first frame update
 
@@ -13,6 +16,7 @@ public class Trap : MonoBehaviour
     {
         if (!activated)
         {
+            activated = true;
             anim.SetTrigger("clamp");
             if (other.CompareTag("Player"))
             {
@@ -21,19 +25,19 @@ public class Trap : MonoBehaviour
             }
             else if (other.CompareTag("Enemy"))
             {
-                other.GetComponent<phantomAi>().trapped(dmg);
+                if(other.GetComponent<enemyBase>() != null)
+                {
+                    StartCoroutine(other.GetComponent<enemyBase>().trapped(dmg));
+                }
             }
+
+            aud.PlayOneShot(trapAud, trapVol);
+            Destroy(gameObject, 5);
         }
     }
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        aud = GetComponent<AudioSource>();
     }
 
     IEnumerator TrappedTimePlayer()

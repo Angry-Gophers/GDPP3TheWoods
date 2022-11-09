@@ -903,6 +903,7 @@ GameObject:
   - component: {fileID: 1408138620549137004}
   - component: {fileID: 1829445146}
   - component: {fileID: 1239625730}
+  - component: {fileID: 1156954394569305210}
   m_Layer: 0
   m_Name: Wendigo
   m_TagString: Enemy
@@ -952,10 +953,11 @@ MonoBehaviour:
   staggerTime: 1
   staggerChance: 2
   corpseTime: 3
-  trappedTime: 5
+  trappedTime: 4
   hand: {fileID: 5881809686406154355}
   attackWindow: 0.75
   preAttackWindow: 0.2
+  spawnManagerDelayTime: 10
   staggerAud: {fileID: 8300000, guid: 664488323e435d942a7f6d2c1f60a1b5, type: 3}
   staggerVol: 1
   hurtAud: {fileID: 8300000, guid: 17f083b95cf37fb4c90eecd916261914, type: 3}
@@ -1116,6 +1118,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!54 &1156954394569305210
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3243034810219371087}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &3263109623421837958
 GameObject:
   m_ObjectHideFlags: 0

@@ -59,7 +59,7 @@ MonoBehaviour:
   eliteLimit: 1
   maxElites: 5
   eliteRate: 10
-  waveLength: 30
+  waveLength: 300
   targetFireLimit: 2
   maxFireTargetLimit: 5
   enemiesTargetingFire: 0
