@@ -173,7 +173,8 @@ public class PlayerController : MonoBehaviour, IDamage
 
                 if (hit.collider.CompareTag("Shop Car") && !spawnManager.instance.inWave)
                 {
-                    gameManager.instance.ShopUI();
+                    if(hit.collider.GetComponent<ShopHealth>().HP > 0)
+                        gameManager.instance.ShopUI();
                 }
 
                 if(hit.collider.CompareTag("Ammo Box"))

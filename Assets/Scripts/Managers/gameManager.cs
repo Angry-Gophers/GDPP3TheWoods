@@ -54,6 +54,7 @@ public class gameManager : MonoBehaviour
     [Header("---- Other components ----")]
     public GameObject fireplace;
     public GameObject shop;
+    ShopHealth shopScript;
 
     bool interact;
     bool reload;
@@ -70,6 +71,7 @@ public class gameManager : MonoBehaviour
         gunContainer = GameObject.FindGameObjectWithTag("Gun Contain");
         fireplace = GameObject.FindGameObjectWithTag("Fire");
         shop = GameObject.FindGameObjectWithTag("Shop Car");
+        shopScript = shop.GetComponent<ShopHealth>();
     }
 
     // Update is called once per frame
