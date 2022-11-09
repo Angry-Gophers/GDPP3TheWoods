@@ -40,20 +40,17 @@ public class gameManager : MonoBehaviour
     //  public GameObject playerDamageFlash;
     public Image playerHPBar;
     public Image fire;
-    //  public Image ammo;
-    //  public Image traps;
-    //  public Image boards;
-    //  public Image bandages;
-    //  public TextMeshProUGUI fireHealthText;
     public TextMeshProUGUI ammoTracker;
     //  public TextMeshProUGUI boardsTracker;
     public TextMeshProUGUI trapsTracker;
     public TextMeshProUGUI bandageTracker;
+    public Image shopHealthBar;
     public bool isPaused;
 
     [Header("---- Other components ----")]
     public GameObject fireplace;
     public GameObject shop;
+    public ShopHealth shopScript;
 
     bool interact;
     bool reload;
@@ -70,6 +67,7 @@ public class gameManager : MonoBehaviour
         gunContainer = GameObject.FindGameObjectWithTag("Gun Contain");
         fireplace = GameObject.FindGameObjectWithTag("Fire");
         shop = GameObject.FindGameObjectWithTag("Shop Car");
+        shopScript = shop.GetComponent<ShopHealth>();
     }
 
     // Update is called once per frame

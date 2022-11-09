@@ -57,7 +57,7 @@ public class enemyBase : MonoBehaviour, IDamage
         if (HP > 0 && agent.enabled == true)
         {
             //Find current target
-            if (target != gameManager.instance.fireplace.transform.position)
+            if (target != gameManager.instance.fire.transform.position)
                 findTarget();
 
             agent.SetDestination(target);
