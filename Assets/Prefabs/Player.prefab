@@ -166,11 +166,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerController: {fileID: 6344215850549535718}
-  trap: {fileID: 4587464124396280022, guid: 4034f2c8bca996d469826721a620d5a6, type: 3}
+  trap: {fileID: 6594053322656318611, guid: 5e1ba1718d6d1b2478e229017ed41d0b, type: 3}
   maxTraps: 2
+  maxBoards: 0
   trapsHeld: 2
   bandagesHeld: 0
   candlesHeld: 0
+  boardsHeld: 2
   HP: 10
   playerSpeed: 7
   jumpHeight: 10

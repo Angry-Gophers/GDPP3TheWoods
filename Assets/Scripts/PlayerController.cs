@@ -11,9 +11,11 @@ public class PlayerController : MonoBehaviour, IDamage
     int boardHeal = 5;
     
     public int maxTraps;
+    public int maxBoards;
     public int trapsHeld;
     public int bandagesHeld;
     public int candlesHeld;
+    public int boardsHeld;
 
     [Header("---Player Stats---")]
     [SerializeField] int HP;
@@ -43,7 +45,7 @@ public class PlayerController : MonoBehaviour, IDamage
         jump();
         Interact();
         StartCoroutine(BandageHeal());
-        //HealFire();
+        HealFire();
         placeTrap();
         PickTrap();
     }
@@ -153,7 +155,7 @@ public class PlayerController : MonoBehaviour, IDamage
 
     public void HealFire()
     {
-        if (Input.GetKeyDown(KeyCode.U))
+        if (Input.GetButtonDown("Interact") && boardsHeld > 0)
         {
             RaycastHit hit;
             if (Physics.Raycast(Camera.main.ViewportPointToRay(new Vector2(0.5f, 0.5f)), out hit, 5.0f))
@@ -161,6 +163,7 @@ public class PlayerController : MonoBehaviour, IDamage
                 if (hit.collider.GetComponent<fireplace>() != null)
                 {
                     hit.collider.GetComponent<fireplace>().HP += boardHeal;
+                    boardsHeld--;
                 }
             }
 
