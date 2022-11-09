@@ -6600,7 +6600,7 @@ MonoBehaviour:
   staggerTime: 0
   staggerChance: 1
   corpseTime: 5
-  trappedTime: 5
+  trappedTime: 4
   viewAngle: 45
   viewRange: 5
 --- !u!195 &8149738876329093798

@@ -64,27 +64,30 @@ public class Gun : MonoBehaviour
 
     public void Shoot()
     {
-        if (!fullAuto)
+        if (!gameManager.instance.playerScript.isHealing)
         {
-            if (Input.GetButtonDown("Shoot") && Time.time >= nextTimeToFire)
+            if (!fullAuto)
             {
-                nextTimeToFire = Time.time + 1f / fireRate;
-                FiredBulletRay();
-                aud.PlayOneShot(shotAud, shotVol);
-                anim.SetTrigger("Shoot");
-                bullets--;
+                if (Input.GetButtonDown("Shoot") && Time.time >= nextTimeToFire)
+                {
+                    nextTimeToFire = Time.time + 1f / fireRate;
+                    FiredBulletRay();
+                    aud.PlayOneShot(shotAud, shotVol);
+                    anim.SetTrigger("Shoot");
+                    bullets--;
+                }
             }
-        }
-        else
-        {
-            if (Input.GetButton("Shoot") && Time.time >= nextTimeToFire)
+            else
             {
-                nextTimeToFire = Time.time + 1f / fireRate;
-                FiredBulletRay();
-                aud.PlayOneShot(shotAud, shotVol);
-                anim.SetTrigger("Shoot");
+                if (Input.GetButton("Shoot") && Time.time >= nextTimeToFire)
+                {
+                    nextTimeToFire = Time.time + 1f / fireRate;
+                    FiredBulletRay();
+                    aud.PlayOneShot(shotAud, shotVol);
+                    anim.SetTrigger("Shoot");
 
-                bullets--;
+                    bullets--;
+                }
             }
         }
 

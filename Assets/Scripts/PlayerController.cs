@@ -9,6 +9,10 @@ public class PlayerController : MonoBehaviour, IDamage
     [SerializeField] GameObject trap;
     bool isHealing;
     int boardHeal = 5;
+    [SerializeField] AudioClip waveAud;
+    [SerializeField] float waveVol;
+    AudioSource aud;
+    public bool isHealing;
     
     public int maxTraps;
     public int maxBoards;
@@ -25,6 +29,9 @@ public class PlayerController : MonoBehaviour, IDamage
     [SerializeField] float gravityValue;
     [SerializeField] int hpOriginal;
     [SerializeField] int interactRange;
+    [SerializeField] float healTime;
+    [SerializeField] int bandageHealAmount;
+
     [Header("---Currency---")]
     [SerializeField] public int ectoplasm;
     [SerializeField] public int antlers;
@@ -36,6 +43,7 @@ public class PlayerController : MonoBehaviour, IDamage
     void Start()
     {
         HP = hpOriginal;
+        aud = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -46,6 +54,7 @@ public class PlayerController : MonoBehaviour, IDamage
         Interact();
         StartCoroutine(BandageHeal());
         HealFire();
+        BandageHeal();
         placeTrap();
         PickTrap();
     }
@@ -113,6 +122,8 @@ public class PlayerController : MonoBehaviour, IDamage
                     
                 }
             }
+
+            gameManager.instance.UpdatePlayerHUD();
             
         }
     }
@@ -137,18 +148,11 @@ public class PlayerController : MonoBehaviour, IDamage
         }
     }
 
-    IEnumerator BandageHeal()
+    void BandageHeal()
     {
-        if (Input.GetKeyDown(KeyCode.Q) && !isHealing && bandagesHeld !=0)
+        if (Input.GetKeyDown(KeyCode.Q) && !isHealing && bandagesHeld >0 && HP < hpOriginal)
         {
-            bandagesHeld--;
-            isHealing = true;
-            Debug.Log("healing");
-            yield return new WaitForSeconds(1.5f);
-            Debug.Log("healing done");
-            HP = hpOriginal;
-            isHealing = false;
-
+            StartCoroutine(heal());
         }
 
     }
@@ -172,9 +176,17 @@ public class PlayerController : MonoBehaviour, IDamage
     }
     IEnumerator heal()
     {
-        yield return new WaitForSeconds(5.0f);
-        HP = hpOriginal / 2;
-        Debug.Log("Healed");
+        isHealing = true;
+        gameManager.instance.healingText.SetActive(true);
+
+        yield return new WaitForSeconds(healTime);
+        HP += bandageHealAmount;
+
+        gameManager.instance.healingText.SetActive(false);
+        bandagesHeld--;
+        isHealing = false;
+        gameManager.instance.UpdatePlayerHUD();
+        gameManager.instance.playerHPBar.fillAmount = (float)HP / (float)hpOriginal;
     }
     public void Interact()
     {
@@ -187,6 +199,8 @@ public class PlayerController : MonoBehaviour, IDamage
                 if (hit.collider.CompareTag("Fire") && !spawnManager.instance.inWave)
                 {
                     spawnManager.instance.startWave();
+                    aud.PlayOneShot(waveAud, waveVol);
+                    StartCoroutine(gameManager.instance.NewWave());
                 }
 
                 if (hit.collider.CompareTag("Shop Car") && !spawnManager.instance.inWave)

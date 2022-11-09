@@ -8,6 +8,7 @@ public class wendigoAi : enemyBase
     [SerializeField] GameObject hand;
     [SerializeField] float attackWindow;
     [SerializeField] float preAttackWindow;
+    [SerializeField] float spawnManagerDelayTime;
     Collider handCol;
 
     [Header("----- Wendigo sounds -----")]
@@ -66,7 +67,7 @@ public class wendigoAi : enemyBase
         base.death();
 
         aud.PlayOneShot(deadAud, deadVol);
-        spawnManager.instance.eliteDeath();
+        StartCoroutine(spawnManagerDelay());
     }
 
     IEnumerator WindowOfAttack()
@@ -91,5 +92,11 @@ public class wendigoAi : enemyBase
             aud.PlayOneShot(staggerAud, staggerVol);
 
         return base.stagger();
+    }
+
+    IEnumerator spawnManagerDelay()
+    {
+        yield return new WaitForSeconds(spawnManagerDelayTime);
+        spawnManager.instance.eliteDeath();
     }
 }

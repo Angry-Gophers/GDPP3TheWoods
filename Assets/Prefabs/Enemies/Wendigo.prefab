@@ -947,15 +947,16 @@ MonoBehaviour:
   attackSpeed: 1.73
   damage: 3
   range: 4
-  sizeRandMin: 0.8
-  sizeRandMax: 1.2
+  sizeRandMin: 0.9
+  sizeRandMax: 1.3
   staggerTime: 1
   staggerChance: 2
   corpseTime: 3
-  trappedTime: 5
+  trappedTime: 4
   hand: {fileID: 5881809686406154355}
   attackWindow: 0.75
   preAttackWindow: 0.2
+  spawnManagerDelayTime: 10
   staggerAud: {fileID: 8300000, guid: 664488323e435d942a7f6d2c1f60a1b5, type: 3}
   staggerVol: 1
   hurtAud: {fileID: 8300000, guid: 17f083b95cf37fb4c90eecd916261914, type: 3}

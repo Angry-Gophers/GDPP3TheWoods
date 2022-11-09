@@ -30,6 +30,7 @@ public class enemyBase : MonoBehaviour, IDamage
     protected Vector3 targetDir;
     protected bool isAttacking;
     protected bool staggered = false;
+    bool isTrapped;
 
     // Start is called before the first frame update
     protected void Start()
@@ -125,20 +126,24 @@ public class enemyBase : MonoBehaviour, IDamage
 
         agent.speed = 0;
         yield return new WaitForSeconds(staggerTime);
-        agent.speed = originalSpeed;
+
+        if(!isTrapped)
+            agent.speed = originalSpeed;
 
         anim.SetBool("gotHit", false);
     }
 
     public IEnumerator trapped(int dmg)
     {
+        isTrapped = true;
         agent.speed = 0;
         HP -= dmg;
 
-        if(HP < 0)
+        if(HP <= 0)
             death();
 
         yield return new WaitForSeconds(trappedTime);
         agent.speed = originalSpeed;
+        isTrapped = false;
     }
 }
