@@ -45,6 +45,7 @@ public class gameManager : MonoBehaviour
     public TextMeshProUGUI trapsTracker;
     public TextMeshProUGUI bandageTracker;
     public Image shopHealthBar;
+    public bool shopAlive;
     public bool isPaused;
 
     [Header("---- Other components ----")]

@@ -337,7 +337,7 @@ PrefabInstance:
       objectReference: {fileID: 8613625615919028722}
     - target: {fileID: 250815241723360738, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
       propertyPath: range
-      value: 10
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 250815241723360738, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
       propertyPath: damage
@@ -361,7 +361,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 250815241723360738, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
       propertyPath: fireRate
-      value: 1
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 250815241723360738, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
       propertyPath: magazine
@@ -520,6 +520,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8613625615919028722}
     - target: {fileID: 4248781450569676725, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
+      propertyPath: range
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4248781450569676725, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
       propertyPath: damage
       value: 3
       objectReference: {fileID: 0}
@@ -551,6 +555,10 @@ PrefabInstance:
       propertyPath: maxReserve
       value: 60
       objectReference: {fileID: 0}
+    - target: {fileID: 4248781450569676725, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
+      propertyPath: reloadSpeed
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 4442245107239736861, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
       propertyPath: aud
       value: 
@@ -559,6 +567,10 @@ PrefabInstance:
       propertyPath: anim
       value: 
       objectReference: {fileID: 8613625615919028722}
+    - target: {fileID: 4442245107239736861, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
+      propertyPath: range
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 4442245107239736861, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
       propertyPath: damage
       value: 2

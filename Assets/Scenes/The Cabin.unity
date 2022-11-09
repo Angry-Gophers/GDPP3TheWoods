@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.0022178148, g: 0.002123161, b: 0.0020811863, a: 1}
+  m_IndirectSpecularColor: {r: 0.0022178253, g: 0.0021231056, b: 0.0020811167, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1142,8 +1142,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1002188491}
-  m_Father: {fileID: 1524027535}
-  m_RootOrder: 26
+  m_Father: {fileID: 0}
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -1231,6 +1231,10 @@ PrefabInstance:
       propertyPath: m_sharedMaterial
       value: 
       objectReference: {fileID: -5553698574708139753, guid: af53958882a83b446895034a602c99eb, type: 2}
+    - target: {fileID: 1228388806196852606, guid: 7366155a048f7a042b3463e90f4f80d2, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -91.3999
+      objectReference: {fileID: 0}
     - target: {fileID: 1585223003864894739, guid: 7366155a048f7a042b3463e90f4f80d2, type: 3}
       propertyPath: m_text
       value: You Died!

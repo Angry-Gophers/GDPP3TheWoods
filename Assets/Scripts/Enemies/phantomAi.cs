@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class phantomAi : enemyBase
 {
+    [SerializeField] float shopBuffer;
+
     // Update is called once per frame
     void Update()
     {
@@ -23,14 +25,22 @@ public class phantomAi : enemyBase
         {
             target = gameManager.instance.fireplace.transform.position;
             spawnManager.instance.enemiesTargetingFire++;
+            agent.stoppingDistance = stoppingDis;
+            targetingPlayer = false;
         }
-        else if(spawnManager.instance.enemiesTargetingShop < spawnManager.instance.shopLimit && gameManager.instance.shopScript.HP > 0)
+        else if (spawnManager.instance.enemiesTargetingShop < spawnManager.instance.shopLimit && gameManager.instance.shopAlive)
         {
             target = gameManager.instance.shop.transform.position;
             spawnManager.instance.enemiesTargetingShop++;
+            agent.stoppingDistance = shopBuffer;
+            targetingPlayer = false;
         }
         else
+        {
             target = gameManager.instance.player.transform.position;
+            agent.stoppingDistance = stoppingDis;
+            targetingPlayer = true;
+        }
     }
 
     //Melee attack

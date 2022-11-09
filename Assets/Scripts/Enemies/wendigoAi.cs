@@ -29,7 +29,8 @@ public class wendigoAi : enemyBase
         hand.GetComponent<collisionAttack>().damage = damage;
         handCol = hand.GetComponent<Collider>();
         aud = GetComponent<AudioSource>();
-        handCol.enabled = false;  
+        handCol.enabled = false;
+        targetingPlayer = true;
     }
 
     // Update is called once per frame

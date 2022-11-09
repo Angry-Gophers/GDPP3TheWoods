@@ -54,13 +54,16 @@ MonoBehaviour:
   wave: 0
   enemyLimit: 10
   maxLimit: 20
-  spawnRate: 5
+  spawnRate: 4
   atTheSameTime: 1
+  shopLimit: 1
+  maxShopLimit: 4
   eliteLimit: 1
   maxElites: 5
   eliteRate: 10
-  waveLength: 300
+  waveLength: 180
   targetFireLimit: 2
-  maxFireTargetLimit: 5
+  maxFireTargetLimit: 6
   enemiesTargetingFire: 0
+  enemiesTargetingShop: 0
   inWave: 0
