@@ -92,14 +92,6 @@ public class PlayerController : MonoBehaviour, IDamage
             gameManager.instance.deadText.text = "You have died";
             gameManager.instance.cursorLockPause();
         }
-        else if(HP < hpOriginal / 2)
-        {
-            StartCoroutine(heal());
-
-        }
-
-        
-
     }
 
     void placeTrap()

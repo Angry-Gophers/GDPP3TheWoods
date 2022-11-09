@@ -116,7 +116,7 @@ GameObject:
   - component: {fileID: 6344215850549535721}
   - component: {fileID: 6344215850549535718}
   - component: {fileID: 6344215850549535719}
-  - component: {fileID: 7211272820263854141}
+  - component: {fileID: 8113892572883589250}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -224,7 +224,7 @@ MonoBehaviour:
   excludeLayerName: 
   openDoorKey: 102
   crosshair: {fileID: 0}
---- !u!82 &7211272820263854141
+--- !u!82 &8113892572883589250
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
