@@ -34,7 +34,7 @@ public class fireplace : MonoBehaviour, IDamage
         }
         else
         {
-            gameManager.instance.playerDeadMenu.active = true;
+            gameManager.instance.playerDeadMenu.SetActive(true);
             gameManager.instance.deadText.text = "The fire has gone out";
             gameManager.instance.cursorLockPause();
         }

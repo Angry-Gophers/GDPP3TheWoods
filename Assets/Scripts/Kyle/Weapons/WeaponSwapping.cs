@@ -43,7 +43,7 @@ public class WeaponSwapping : MonoBehaviour
     }
     public void SwitchGun()
     {
-        if (weapon.GetComponent<Gun>().isReloading == false)
+        if (weapon.GetComponent<Gun>().isReloading == false && !gameManager.instance.isPaused)
         {
             int prevWeapon = selectedWeapon;
             if (Input.GetAxis("Mouse ScrollWheel") > 0f)

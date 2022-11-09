@@ -19,6 +19,8 @@ public class spawnManager : MonoBehaviour
     [SerializeField] int maxLimit;
     [SerializeField] float spawnRate;
     [SerializeField] int atTheSameTime;
+    public int shopLimit;
+    [SerializeField] int maxShopLimit;
     [SerializeField] int eliteLimit;
     [SerializeField] int maxElites;
     [SerializeField] float eliteRate;
@@ -27,6 +29,7 @@ public class spawnManager : MonoBehaviour
     [SerializeField] int maxFireTargetLimit;
 
     public int enemiesTargetingFire;
+    public int enemiesTargetingShop;
     int enemiesInScene;
     int elitesInScene;
     bool spawning;
@@ -91,6 +94,9 @@ public class spawnManager : MonoBehaviour
 
             if(targetFireLimit < maxFireTargetLimit)
                 targetFireLimit++;
+
+            if (shopLimit < maxShopLimit)
+                shopLimit++;
         }
 
         if (wave != 1 && enemyLimit < maxLimit)
