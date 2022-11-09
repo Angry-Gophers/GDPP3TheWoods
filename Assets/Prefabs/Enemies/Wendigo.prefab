@@ -903,7 +903,6 @@ GameObject:
   - component: {fileID: 1408138620549137004}
   - component: {fileID: 1829445146}
   - component: {fileID: 1239625730}
-  - component: {fileID: 1156954394569305210}
   m_Layer: 0
   m_Name: Wendigo
   m_TagString: Enemy
@@ -948,8 +947,8 @@ MonoBehaviour:
   attackSpeed: 1.73
   damage: 3
   range: 4
-  sizeRandMin: 0.8
-  sizeRandMax: 1.2
+  sizeRandMin: 0.9
+  sizeRandMax: 1.3
   staggerTime: 1
   staggerChance: 2
   corpseTime: 3
@@ -1118,22 +1117,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!54 &1156954394569305210
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3243034810219371087}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1 &3263109623421837958
 GameObject:
   m_ObjectHideFlags: 0
