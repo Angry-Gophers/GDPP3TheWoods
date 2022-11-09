@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour, IDamage
     [SerializeField] AudioClip waveAud;
     [SerializeField] float waveVol;
     AudioSource aud;
-    bool isHealing;
+    public bool isHealing;
     
     public int maxTraps;
     public int trapsHeld;
@@ -25,6 +25,9 @@ public class PlayerController : MonoBehaviour, IDamage
     [SerializeField] float gravityValue;
     [SerializeField] int hpOriginal;
     [SerializeField] int interactRange;
+    [SerializeField] float healTime;
+    [SerializeField] int bandageHealAmount;
+
     [Header("---Currency---")]
     [SerializeField] public int ectoplasm;
     [SerializeField] public int antlers;
@@ -45,7 +48,7 @@ public class PlayerController : MonoBehaviour, IDamage
         movement();
         jump();
         Interact();
-        StartCoroutine(BandageHeal());
+        BandageHeal();
         placeTrap();
         PickTrap();
     }
@@ -139,26 +142,27 @@ public class PlayerController : MonoBehaviour, IDamage
         }
     }
 
-    IEnumerator BandageHeal()
+    void BandageHeal()
     {
-        if (Input.GetKeyDown(KeyCode.Q) && !isHealing && bandagesHeld !=0)
+        if (Input.GetKeyDown(KeyCode.Q) && !isHealing && bandagesHeld >0 && HP < hpOriginal)
         {
-            bandagesHeld--;
-            isHealing = true;
-            Debug.Log("healing");
-            yield return new WaitForSeconds(1.5f);
-            Debug.Log("healing done");
-            HP = hpOriginal;
-            isHealing = false;
-
+            StartCoroutine(heal());
         }
 
     }
     IEnumerator heal()
     {
-        yield return new WaitForSeconds(5.0f);
-        HP = hpOriginal / 2;
-        Debug.Log("Healed");
+        isHealing = true;
+        gameManager.instance.healingText.SetActive(true);
+
+        yield return new WaitForSeconds(healTime);
+        HP += bandageHealAmount;
+
+        gameManager.instance.healingText.SetActive(false);
+        bandagesHeld--;
+        isHealing = false;
+        gameManager.instance.UpdatePlayerHUD();
+        gameManager.instance.playerHPBar.fillAmount = (float)HP / (float)hpOriginal;
     }
     public void Interact()
     {

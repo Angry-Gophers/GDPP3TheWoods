@@ -170,9 +170,10 @@ MonoBehaviour:
   trap: {fileID: 4587464124396280022, guid: 4034f2c8bca996d469826721a620d5a6, type: 3}
   waveAud: {fileID: 8300000, guid: 5ce419cc30961c1418304bc12c051d46, type: 3}
   waveVol: 1
+  isHealing: 0
   maxTraps: 2
   trapsHeld: 2
-  bandagesHeld: 0
+  bandagesHeld: 2
   candlesHeld: 0
   HP: 10
   playerSpeed: 7
@@ -181,6 +182,8 @@ MonoBehaviour:
   gravityValue: 25
   hpOriginal: 10
   interactRange: 5
+  healTime: 3
+  bandageHealAmount: 3
   ectoplasm: 0
   antlers: 0
   ammoCost: 10

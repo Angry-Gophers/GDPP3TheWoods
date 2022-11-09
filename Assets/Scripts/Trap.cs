@@ -14,7 +14,7 @@ public class Trap : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (!activated)
+        if (!activated && other.CompareTag("Player") || other.CompareTag("Enemy"))
         {
             activated = true;
             anim.SetTrigger("clamp");
