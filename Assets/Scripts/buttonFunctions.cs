@@ -10,11 +10,13 @@ public class buttonFunctions : MonoBehaviour
         gameManager.instance.cursorUnlockUnpause();
         gameManager.instance.pauseMenu.SetActive(false);
         gameManager.instance.isPaused = false;
+        gameManager.instance.menuCurrentlyOpen = null;
 
     }
     public void restart()
     {
         gameManager.instance.cursorUnlockUnpause();
+        gameManager.instance.menuCurrentlyOpen = null;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 
     }

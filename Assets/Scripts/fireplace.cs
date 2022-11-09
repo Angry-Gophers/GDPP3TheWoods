@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class fireplace : MonoBehaviour, IDamage
 {
-    [Range(1, 50)][SerializeField] int HP;
+    [Range(1, 50)] public int HP;
     [SerializeField] Light fireLight;
 
-    int maxHP;
+    public int maxHP;
     float intensity;
 
     // Start is called before the first frame update
@@ -28,9 +28,7 @@ public class fireplace : MonoBehaviour, IDamage
         if (HP > 0)
         {
             HP -= dmg;
-            float ratio = (float)HP / maxHP;
-            fireLight.intensity = intensity * ratio;
-            gameManager.instance.fire.fillAmount = ratio;
+            UpdateFireHud();
         }
         else
         {
@@ -38,5 +36,12 @@ public class fireplace : MonoBehaviour, IDamage
             gameManager.instance.deadText.text = "The fire has gone out";
             gameManager.instance.cursorLockPause();
         }
+    }
+
+    public void UpdateFireHud()
+    {
+        float ratio = (float)HP / maxHP;
+        fireLight.intensity = intensity * ratio;
+        gameManager.instance.fire.fillAmount = ratio;
     }
 }

@@ -64,7 +64,7 @@ public class Gun : MonoBehaviour
 
     public void Shoot()
     {
-        if (!gameManager.instance.playerScript.isHealing)
+        if (!gameManager.instance.playerScript.isHealing && gameManager.instance.menuCurrentlyOpen == null)
         {
             if (!fullAuto)
             {
