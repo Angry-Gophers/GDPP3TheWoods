@@ -35,6 +35,7 @@ public class gameManager : MonoBehaviour
     public GameObject reloadText;
     public GameObject interactText;
     public GameObject notEnoughText;
+    public GameObject healingText;
     //  public GameObject menuCurrentlyOpen;
     //  public GameObject playerDamageFlash;
     public Image playerHPBar;
