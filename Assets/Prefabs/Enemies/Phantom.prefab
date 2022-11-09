@@ -6592,7 +6592,7 @@ MonoBehaviour:
   drop: {fileID: 5470681425243767183, guid: 7ce1a296039fdc64fadac70cb07221e5, type: 3}
   dropTrans: {fileID: 3259018739722332655}
   HP: 5
-  attackSpeed: 2
+  attackSpeed: 4
   damage: 2
   range: 4
   sizeRandMin: 0.75
@@ -6601,6 +6601,7 @@ MonoBehaviour:
   staggerChance: 1
   corpseTime: 5
   trappedTime: 4
+  shopBuffer: 4
 --- !u!195 &8149738876329093798
 NavMeshAgent:
   m_ObjectHideFlags: 0

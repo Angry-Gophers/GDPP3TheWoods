@@ -89,6 +89,7 @@ public class PlayerController : MonoBehaviour, IDamage
         if(HP <= 0)
         {
             gameManager.instance.playerDeadMenu.active = true;
+            gameManager.instance.menuCurrentlyOpen = gameManager.instance.playerDeadMenu;
             gameManager.instance.deadText.text = "You have died";
             gameManager.instance.cursorLockPause();
         }

@@ -520,34 +520,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spawn Manager
       objectReference: {fileID: 0}
-    - target: {fileID: 1670646363782949918, guid: e615e31f463d295489a64d00746ccd5f, type: 3}
-      propertyPath: wave
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1670646363782949918, guid: e615e31f463d295489a64d00746ccd5f, type: 3}
-      propertyPath: shopLimit
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1670646363782949918, guid: e615e31f463d295489a64d00746ccd5f, type: 3}
-      propertyPath: waveLength
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 1670646363782949918, guid: e615e31f463d295489a64d00746ccd5f, type: 3}
-      propertyPath: maxShopLimit
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1670646363782949918, guid: e615e31f463d295489a64d00746ccd5f, type: 3}
-      propertyPath: targetFireLimit
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1670646363782949918, guid: e615e31f463d295489a64d00746ccd5f, type: 3}
-      propertyPath: enemiesTargetingFire
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1670646363782949918, guid: e615e31f463d295489a64d00746ccd5f, type: 3}
-      propertyPath: enemiesTargetingShop
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1670646363782949919, guid: e615e31f463d295489a64d00746ccd5f, type: 3}
       propertyPath: m_RootOrder
       value: 8

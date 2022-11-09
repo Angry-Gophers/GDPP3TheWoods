@@ -31,14 +31,14 @@ public class enemyBase : MonoBehaviour, IDamage
     protected bool isAttacking;
     protected bool staggered = false;
     bool isTrapped;
-
-    float stopping;
-    float remaining;
+    protected bool targetingPlayer;
+    protected float stoppingDis;
 
     // Start is called before the first frame update
     protected void Start()
     {
         agent = GetComponent<NavMeshAgent>();
+        stoppingDis = agent.stoppingDistance;
         anim = GetComponent<Animator>();
         col = GetComponent<Collider>();
         findTarget();
@@ -57,7 +57,7 @@ public class enemyBase : MonoBehaviour, IDamage
         if (HP > 0 && agent.enabled == true)
         {
             //Find current target
-            if (target != gameManager.instance.fire.transform.position)
+            if (targetingPlayer || target == gameManager.instance.shop.transform.position && !gameManager.instance.shopAlive)
                 findTarget();
 
             agent.SetDestination(target);

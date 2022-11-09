@@ -36,7 +36,7 @@ public class gameManager : MonoBehaviour
     public GameObject interactText;
     public GameObject notEnoughText;
     public GameObject healingText;
-    //  public GameObject menuCurrentlyOpen;
+    public GameObject menuCurrentlyOpen;
     //  public GameObject playerDamageFlash;
     public Image playerHPBar;
     public Image fire;
@@ -45,6 +45,7 @@ public class gameManager : MonoBehaviour
     public TextMeshProUGUI trapsTracker;
     public TextMeshProUGUI bandageTracker;
     public Image shopHealthBar;
+    public bool shopAlive;
     public bool isPaused;
 
     [Header("---- Other components ----")]
@@ -73,17 +74,19 @@ public class gameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Cancel") && playerDeadMenu.activeSelf != true && shopWindow.activeSelf != true) // check for deadMenu and shopMenu
+        if (Input.GetButtonDown("Cancel") && menuCurrentlyOpen == null) // check for deadMenu and shopMenu
         {
             isPaused = !isPaused;
             pauseMenu.SetActive(isPaused);
 
             if (isPaused)
             {
+                menuCurrentlyOpen = pauseMenu;
                 cursorLockPause();
             }
             else
             {
+                menuCurrentlyOpen = null;
                 cursorUnlockUnpause();
             }
         }
@@ -132,6 +135,7 @@ public class gameManager : MonoBehaviour
 
     public void ShopUI()
     {
+        menuCurrentlyOpen = shopWindow;
         cursorLockPause();
 
         shopEcto.text = "Ectoplasm: " + playerScript.ectoplasm;
