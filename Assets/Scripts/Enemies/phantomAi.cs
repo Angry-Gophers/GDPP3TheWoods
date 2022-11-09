@@ -24,6 +24,11 @@ public class phantomAi : enemyBase
             target = gameManager.instance.fireplace.transform.position;
             spawnManager.instance.enemiesTargetingFire++;
         }
+        else if(spawnManager.instance.enemiesTargetingShop < spawnManager.instance.shopLimit && gameManager.instance.shopScript.HP > 0)
+        {
+            target = gameManager.instance.shop.transform.position;
+            spawnManager.instance.enemiesTargetingShop++;
+        }
         else
             target = gameManager.instance.player.transform.position;
     }
@@ -54,6 +59,8 @@ public class phantomAi : enemyBase
 
         if (target == gameManager.instance.fireplace.transform.position)
             spawnManager.instance.enemiesTargetingFire--;
+        else if (target == gameManager.instance.shop.transform.position)
+            spawnManager.instance.enemiesTargetingShop--;
 
         spawnManager.instance.enemyDeath();
     }

@@ -9,13 +9,20 @@ public class ShopHealth : MonoBehaviour, IDamage
     [SerializeField] AudioClip wreckAud;
     [SerializeField] float wreckVol;
 
+    int maxHP;
+
+    void Start()
+    {
+        HP = maxHP;
+    }
+
     public virtual void TakeDamage(int dmg)
     {
-        HP -= dmg;
-
-        if(HP <= 0)
+        if(HP > 0)
         {
-            aud.PlayOneShot(wreckAud, wreckVol);
+            HP -= dmg;
+            float ratio = (float)HP / (float) maxHP;
+            gameManager.instance.shopHealthBar.fillAmount = ratio;
         }
     }
 }

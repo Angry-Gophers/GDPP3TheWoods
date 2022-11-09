@@ -40,21 +40,17 @@ public class gameManager : MonoBehaviour
     //  public GameObject playerDamageFlash;
     public Image playerHPBar;
     public Image fire;
-    //  public Image ammo;
-    //  public Image traps;
-    //  public Image boards;
-    //  public Image bandages;
-    //  public TextMeshProUGUI fireHealthText;
     public TextMeshProUGUI ammoTracker;
     //  public TextMeshProUGUI boardsTracker;
     public TextMeshProUGUI trapsTracker;
     public TextMeshProUGUI bandageTracker;
+    public Image shopHealthBar;
     public bool isPaused;
 
     [Header("---- Other components ----")]
     public GameObject fireplace;
     public GameObject shop;
-    ShopHealth shopScript;
+    public ShopHealth shopScript;
 
     bool interact;
     bool reload;
