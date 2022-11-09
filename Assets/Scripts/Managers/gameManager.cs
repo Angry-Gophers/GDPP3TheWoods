@@ -24,6 +24,7 @@ public class gameManager : MonoBehaviour
     public TextMeshProUGUI deadText;
     public GameObject nextWaveText;
     public TextMeshProUGUI waveText;
+    public GameObject newWaveText;
     //public GameObject instruction;
     //public GameObject trapsFullInstruction;
     public Animator anim;
@@ -45,13 +46,17 @@ public class gameManager : MonoBehaviour
     //  public TextMeshProUGUI fireHealthText;
     public TextMeshProUGUI ammoTracker;
     //  public TextMeshProUGUI boardsTracker;
-    //  public TextMeshProUGUI trapsTracker;
-    //  public TextMeshProUGUI bandageTracker;
+    public TextMeshProUGUI trapsTracker;
+    public TextMeshProUGUI bandageTracker;
     public bool isPaused;
 
     [Header("---- Other components ----")]
     public GameObject fireplace;
     public GameObject shop;
+
+    bool interact;
+    bool reload;
+    bool notEnough;
 
 
     void Awake()
@@ -105,12 +110,14 @@ public class gameManager : MonoBehaviour
         Time.timeScale = 0;
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.Confined;
+        ClearHud();
     }
     public void cursorUnlockUnpause()
     {
         Time.timeScale = 1;
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
+        RestoreHud();
     }
 
     public void UpdatePlayerHUD()
@@ -119,6 +126,9 @@ public class gameManager : MonoBehaviour
         ammoTracker.text = WeaponSwapping.instance.weapon.GetComponent<Gun>().bullets + " / " + WeaponSwapping.instance.weapon.GetComponent<Gun>().reserveAmmo;
         heldEcto.text = "Ectoplasm: " + playerScript.ectoplasm;
         heldAntlers.text = "Antlers: " + playerScript.antlers;
+        trapsTracker.text = playerScript.trapsHeld.ToString();
+        bandageTracker.text = playerScript.bandagesHeld.ToString();
+
     }
 
     public void ShopUI()
@@ -138,5 +148,44 @@ public class gameManager : MonoBehaviour
         yield return new WaitForSeconds(2);
 
         notEnoughText.SetActive(false);
+    }
+
+    public void ClearHud()
+    {
+        if (interactText.activeSelf == true)
+        {
+            interact = true;
+            interactText.SetActive(false);
+        }
+
+        if (reloadText.activeSelf == true)
+        {
+            reload = true;
+            reloadText.SetActive(false);
+        }
+
+        if (notEnoughText.activeSelf == true)
+        {
+            notEnough = true;
+            notEnoughText.SetActive(false);
+        }
+    }
+
+    public void RestoreHud()
+    {
+        interactText.SetActive(interact);
+        reloadText.SetActive(reload);
+        notEnoughText.SetActive(notEnough);
+
+        interact = false;
+        reload = false;
+        notEnough = false;
+    }
+
+    public IEnumerator NewWave()
+    {
+        newWaveText.SetActive(true);
+        yield return new WaitForSeconds(6);
+        newWaveText.SetActive(false);
     }
 }

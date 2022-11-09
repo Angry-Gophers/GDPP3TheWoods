@@ -7,6 +7,9 @@ public class PlayerController : MonoBehaviour, IDamage
     [Header("---Components---")]
     [SerializeField] CharacterController playerController;
     [SerializeField] GameObject trap;
+    [SerializeField] AudioClip waveAud;
+    [SerializeField] float waveVol;
+    AudioSource aud;
     bool isHealing;
     
     public int maxTraps;
@@ -33,6 +36,7 @@ public class PlayerController : MonoBehaviour, IDamage
     void Start()
     {
         HP = hpOriginal;
+        aud = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -109,6 +113,8 @@ public class PlayerController : MonoBehaviour, IDamage
                     
                 }
             }
+
+            gameManager.instance.UpdatePlayerHUD();
             
         }
     }
@@ -165,6 +171,8 @@ public class PlayerController : MonoBehaviour, IDamage
                 if (hit.collider.CompareTag("Fire") && !spawnManager.instance.inWave)
                 {
                     spawnManager.instance.startWave();
+                    aud.PlayOneShot(waveAud, waveVol);
+                    StartCoroutine(gameManager.instance.NewWave());
                 }
 
                 if (hit.collider.CompareTag("Shop Car") && !spawnManager.instance.inWave)
