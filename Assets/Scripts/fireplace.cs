@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class fireplace : MonoBehaviour, IDamage
 {
-    Light fireLight;
-
     [Range(1, 50)][SerializeField] int HP;
+    [SerializeField] Light fireLight;
 
     int maxHP;
     float intensity;
@@ -14,7 +13,6 @@ public class fireplace : MonoBehaviour, IDamage
     // Start is called before the first frame update
     void Start()
     {
-        fireLight = GetComponent<Light>();
         maxHP = HP;
         intensity = fireLight.intensity;
     }
