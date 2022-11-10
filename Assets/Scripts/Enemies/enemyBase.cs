@@ -32,6 +32,9 @@ public class enemyBase : MonoBehaviour, IDamage
     protected bool staggered = false;
     bool isTrapped;
 
+    float stopping;
+    float remaining;
+
     // Start is called before the first frame update
     protected void Start()
     {
@@ -50,26 +53,23 @@ public class enemyBase : MonoBehaviour, IDamage
 
     protected void Update()
     {
-        if (HP > 0)
+        //Check to see if in range for an attack
+        if (HP > 0 && agent.enabled == true)
         {
-            //Check to see if in range for an attack
-            if (HP > 0 && agent.enabled == true)
+            //Find current target
+            if (target != gameManager.instance.fireplace.transform.position)
+                findTarget();
+
+            agent.SetDestination(target);
+
+            targetDir = target - transform.position;
+
+            if (agent.stoppingDistance >= agent.remainingDistance)
             {
-                //Find current target
-                if (target != gameManager.instance.fireplace.transform.position)
-                    findTarget();
+                faceTarget();
 
-                agent.SetDestination(target);
-
-                targetDir = target - transform.position;
-
-                if (agent.stoppingDistance >= agent.remainingDistance)
-                {
-                    faceTarget();
-
-                    if(!isAttacking)
-                        StartCoroutine(attack());
-                }
+                if(!isAttacking)
+                    StartCoroutine(attack());
             }
         }
     }
