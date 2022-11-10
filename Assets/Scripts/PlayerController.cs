@@ -7,13 +7,11 @@ public class PlayerController : MonoBehaviour, IDamage
     [Header("---Components---")]
     [SerializeField] CharacterController playerController;
     [SerializeField] GameObject trap;
-    bool isHealing;
+    public bool isHealing;
     int boardHeal = 5;
     [SerializeField] AudioClip waveAud;
     [SerializeField] float waveVol;
     AudioSource aud;
-    public bool isHealing;
-    
     public int maxTraps;
     public int maxBoards;
     public int trapsHeld;
@@ -52,7 +50,7 @@ public class PlayerController : MonoBehaviour, IDamage
         movement();
         jump();
         Interact();
-        StartCoroutine(BandageHeal());
+        BandageHeal();
         HealFire();
         BandageHeal();
         placeTrap();
