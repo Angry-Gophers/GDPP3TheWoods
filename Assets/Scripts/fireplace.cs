@@ -33,7 +33,7 @@ public class fireplace : MonoBehaviour, IDamage
         else
         {
             gameManager.instance.playerDeadMenu.SetActive(true);
-            gameManager.instance.deadText.text = "The fire has gone out";
+            gameManager.instance.deadText.text = "The fire has gone out \nWaves Survived: " + spawnManager.instance.wave;
             gameManager.instance.cursorLockPause();
         }
     }

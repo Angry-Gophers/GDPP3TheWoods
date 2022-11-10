@@ -60,7 +60,7 @@ MonoBehaviour:
   maxShopLimit: 4
   eliteLimit: 1
   maxElites: 5
-  eliteRate: 10
+  eliteRate: 30
   waveLength: 180
   targetFireLimit: 2
   maxFireTargetLimit: 6

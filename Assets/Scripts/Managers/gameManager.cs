@@ -8,11 +8,9 @@ public class gameManager : MonoBehaviour
 {
     public static gameManager instance;
     public static WeaponSwapping instanceGuns;
-    public static MeleeSwapping instanceMelee;
     [Header("----- Player -----")]
     public GameObject player;
     public PlayerController playerScript;
-    public GameObject meleeContainer;
     public GameObject gunContainer;
     // public GameObject spawnPosition;
 
@@ -25,7 +23,7 @@ public class gameManager : MonoBehaviour
     public GameObject nextWaveText;
     public TextMeshProUGUI waveText;
     public GameObject newWaveText;
-    //public GameObject instruction;
+    public GameObject instruction;
     //public GameObject trapsFullInstruction;
     public Animator anim;
     public TextMeshProUGUI shopEcto;
@@ -61,7 +59,6 @@ public class gameManager : MonoBehaviour
     void Awake()
     {
         instanceGuns = new WeaponSwapping();
-        instanceMelee = new MeleeSwapping();
         instance = this;
         player = GameObject.FindGameObjectWithTag("Player");
         playerScript = player.GetComponent<PlayerController>();
@@ -69,6 +66,8 @@ public class gameManager : MonoBehaviour
         fireplace = GameObject.FindGameObjectWithTag("Fire");
         shop = GameObject.FindGameObjectWithTag("Shop Car");
         shopScript = shop.GetComponent<ShopHealth>();
+
+        StartCoroutine(BeginningText());
     }
 
     // Update is called once per frame
@@ -89,21 +88,6 @@ public class gameManager : MonoBehaviour
                 menuCurrentlyOpen = null;
                 cursorUnlockUnpause();
             }
-        }
-        if (Input.GetButtonDown("Melee"))
-        {
-            
-            gunContainer.SetActive(false);
-            meleeContainer.SetActive(true);
-            instanceMelee.SelectMelee();
-        }
-
-        if (Input.GetButtonDown("Guns"))
-        {
-            
-            gunContainer.SetActive(true);
-            meleeContainer.SetActive(false);
-            instanceGuns.SelectGun();
         }
     }
 
@@ -190,5 +174,12 @@ public class gameManager : MonoBehaviour
         newWaveText.SetActive(true);
         yield return new WaitForSeconds(6);
         newWaveText.SetActive(false);
+    }
+
+    public IEnumerator BeginningText()
+    {
+        instruction.SetActive(true);
+        yield return new WaitForSeconds(10);
+        instruction.SetActive(false);
     }
 }
