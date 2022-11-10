@@ -6748,10 +6748,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2980387294016171487}
     m_Modifications:
+    - target: {fileID: 2745788239905609, guid: 3f91b855f9b25d54e934eadc3f573f99, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2745788239905609, guid: 3f91b855f9b25d54e934eadc3f573f99, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 233bda4730f1f0c4c935d15957a98f59, type: 3}
+    - target: {fileID: 2745788239905609, guid: 3f91b855f9b25d54e934eadc3f573f99, type: 3}
+      propertyPath: m_Color.b
+      value: 0.7075472
+      objectReference: {fileID: 0}
+    - target: {fileID: 2745788239905609, guid: 3f91b855f9b25d54e934eadc3f573f99, type: 3}
+      propertyPath: m_Color.g
+      value: 0.7075472
+      objectReference: {fileID: 0}
+    - target: {fileID: 2745788239905609, guid: 3f91b855f9b25d54e934eadc3f573f99, type: 3}
+      propertyPath: m_Color.r
+      value: 0.7075472
+      objectReference: {fileID: 0}
     - target: {fileID: 518566389489087885, guid: 3f91b855f9b25d54e934eadc3f573f99, type: 3}
       propertyPath: m_TargetGraphic
       value: 
-      objectReference: {fileID: 1118639190731562882}
+      objectReference: {fileID: 1612269068}
     - target: {fileID: 518566389489087885, guid: 3f91b855f9b25d54e934eadc3f573f99, type: 3}
       propertyPath: m_Colors.m_PressedColor.b
       value: 1
@@ -6860,6 +6880,22 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 1180015270871906313, guid: 3f91b855f9b25d54e934eadc3f573f99, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: af53958882a83b446895034a602c99eb, type: 2}
+    - target: {fileID: 1180015270871906313, guid: 3f91b855f9b25d54e934eadc3f573f99, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -5553698574708139753, guid: af53958882a83b446895034a602c99eb, type: 2}
+    - target: {fileID: 2376104635703864080, guid: 3f91b855f9b25d54e934eadc3f573f99, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 4af843514a6c1d4429a256b0b62f7214, type: 2}
+    - target: {fileID: 2376104635703864080, guid: 3f91b855f9b25d54e934eadc3f573f99, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 7640817533809441822, guid: 4af843514a6c1d4429a256b0b62f7214, type: 2}
     - target: {fileID: 2489011951206859278, guid: 3f91b855f9b25d54e934eadc3f573f99, type: 3}
       propertyPath: m_Name
       value: ShopEssentials
@@ -6872,10 +6908,54 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Shop
       objectReference: {fileID: 0}
+    - target: {fileID: 2786108367602565180, guid: 3f91b855f9b25d54e934eadc3f573f99, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 4af843514a6c1d4429a256b0b62f7214, type: 2}
+    - target: {fileID: 2786108367602565180, guid: 3f91b855f9b25d54e934eadc3f573f99, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2786108367602565180, guid: 3f91b855f9b25d54e934eadc3f573f99, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2786108367602565180, guid: 3f91b855f9b25d54e934eadc3f573f99, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2786108367602565180, guid: 3f91b855f9b25d54e934eadc3f573f99, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 7640817533809441822, guid: 4af843514a6c1d4429a256b0b62f7214, type: 2}
+    - target: {fileID: 2786108367602565180, guid: 3f91b855f9b25d54e934eadc3f573f99, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190080
+      objectReference: {fileID: 0}
+    - target: {fileID: 3717273425216944958, guid: 3f91b855f9b25d54e934eadc3f573f99, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.4301937
+      objectReference: {fileID: 0}
+    - target: {fileID: 3717273425216944958, guid: 3f91b855f9b25d54e934eadc3f573f99, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.4301937
+      objectReference: {fileID: 0}
+    - target: {fileID: 3717273425216944958, guid: 3f91b855f9b25d54e934eadc3f573f99, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.4301937
+      objectReference: {fileID: 0}
     - target: {fileID: 4387644176447836097, guid: 3f91b855f9b25d54e934eadc3f573f99, type: 3}
       propertyPath: candleBonus
       value: 15
       objectReference: {fileID: 0}
+    - target: {fileID: 4511579728447746976, guid: 3f91b855f9b25d54e934eadc3f573f99, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: af53958882a83b446895034a602c99eb, type: 2}
+    - target: {fileID: 4511579728447746976, guid: 3f91b855f9b25d54e934eadc3f573f99, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -5553698574708139753, guid: af53958882a83b446895034a602c99eb, type: 2}
     - target: {fileID: 4746925484412095501, guid: 3f91b855f9b25d54e934eadc3f573f99, type: 3}
       propertyPath: m_Colors.m_PressedColor.b
       value: 1
@@ -6983,6 +7063,18 @@ PrefabInstance:
     - target: {fileID: 5348506640193073984, guid: 3f91b855f9b25d54e934eadc3f573f99, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5452024940299969526, guid: 3f91b855f9b25d54e934eadc3f573f99, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.947
+      objectReference: {fileID: 0}
+    - target: {fileID: 5452024940299969526, guid: 3f91b855f9b25d54e934eadc3f573f99, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.947
+      objectReference: {fileID: 0}
+    - target: {fileID: 5452024940299969526, guid: 3f91b855f9b25d54e934eadc3f573f99, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.947
       objectReference: {fileID: 0}
     - target: {fileID: 5518417655274446027, guid: 3f91b855f9b25d54e934eadc3f573f99, type: 3}
       propertyPath: m_Pivot.x
@@ -7104,6 +7196,34 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 6429565390685961573, guid: 3f91b855f9b25d54e934eadc3f573f99, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: af53958882a83b446895034a602c99eb, type: 2}
+    - target: {fileID: 6429565390685961573, guid: 3f91b855f9b25d54e934eadc3f573f99, type: 3}
+      propertyPath: m_fontStyle
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6429565390685961573, guid: 3f91b855f9b25d54e934eadc3f573f99, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6429565390685961573, guid: 3f91b855f9b25d54e934eadc3f573f99, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6429565390685961573, guid: 3f91b855f9b25d54e934eadc3f573f99, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6429565390685961573, guid: 3f91b855f9b25d54e934eadc3f573f99, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -5553698574708139753, guid: af53958882a83b446895034a602c99eb, type: 2}
+    - target: {fileID: 6429565390685961573, guid: 3f91b855f9b25d54e934eadc3f573f99, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190080
+      objectReference: {fileID: 0}
     - target: {fileID: 6609693249620530532, guid: 3f91b855f9b25d54e934eadc3f573f99, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -7132,6 +7252,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 7390966699498202430, guid: 3f91b855f9b25d54e934eadc3f573f99, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: af53958882a83b446895034a602c99eb, type: 2}
+    - target: {fileID: 7390966699498202430, guid: 3f91b855f9b25d54e934eadc3f573f99, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -5553698574708139753, guid: af53958882a83b446895034a602c99eb, type: 2}
     - target: {fileID: 7444359880044284955, guid: 3f91b855f9b25d54e934eadc3f573f99, type: 3}
       propertyPath: m_text
       value: x1 Candle
@@ -7139,7 +7267,7 @@ PrefabInstance:
     - target: {fileID: 7474505817888596864, guid: 3f91b855f9b25d54e934eadc3f573f99, type: 3}
       propertyPath: m_TargetGraphic
       value: 
-      objectReference: {fileID: 1118639190731562882}
+      objectReference: {fileID: 6877691316540026281}
     - target: {fileID: 7474505817888596864, guid: 3f91b855f9b25d54e934eadc3f573f99, type: 3}
       propertyPath: m_Colors.m_PressedColor.b
       value: 1
@@ -7220,6 +7348,30 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 7479430780228481413, guid: 3f91b855f9b25d54e934eadc3f573f99, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.90276
+      objectReference: {fileID: 0}
+    - target: {fileID: 7479430780228481413, guid: 3f91b855f9b25d54e934eadc3f573f99, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.90276
+      objectReference: {fileID: 0}
+    - target: {fileID: 7479430780228481413, guid: 3f91b855f9b25d54e934eadc3f573f99, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.90276
+      objectReference: {fileID: 0}
+    - target: {fileID: 8260961711417084576, guid: 3f91b855f9b25d54e934eadc3f573f99, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.4154
+      objectReference: {fileID: 0}
+    - target: {fileID: 8260961711417084576, guid: 3f91b855f9b25d54e934eadc3f573f99, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.4154
+      objectReference: {fileID: 0}
+    - target: {fileID: 8260961711417084576, guid: 3f91b855f9b25d54e934eadc3f573f99, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.4154
+      objectReference: {fileID: 0}
     - target: {fileID: 8374154033243094187, guid: 3f91b855f9b25d54e934eadc3f573f99, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -7248,6 +7400,34 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 8916586460063405990, guid: 3f91b855f9b25d54e934eadc3f573f99, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: af53958882a83b446895034a602c99eb, type: 2}
+    - target: {fileID: 8916586460063405990, guid: 3f91b855f9b25d54e934eadc3f573f99, type: 3}
+      propertyPath: m_fontStyle
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916586460063405990, guid: 3f91b855f9b25d54e934eadc3f573f99, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916586460063405990, guid: 3f91b855f9b25d54e934eadc3f573f99, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916586460063405990, guid: 3f91b855f9b25d54e934eadc3f573f99, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916586460063405990, guid: 3f91b855f9b25d54e934eadc3f573f99, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -5553698574708139753, guid: af53958882a83b446895034a602c99eb, type: 2}
+    - target: {fileID: 8916586460063405990, guid: 3f91b855f9b25d54e934eadc3f573f99, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190080
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f91b855f9b25d54e934eadc3f573f99, type: 3}
 --- !u!1 &27918132124973436 stripped
@@ -7255,17 +7435,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2489011951206859278, guid: 3f91b855f9b25d54e934eadc3f573f99, type: 3}
   m_PrefabInstance: {fileID: 2515700514457058162}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1118639190731562882 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3274015914925253872, guid: 3f91b855f9b25d54e934eadc3f573f99, type: 3}
-  m_PrefabInstance: {fileID: 2515700514457058162}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2165557882861843635 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4387644176447836097, guid: 3f91b855f9b25d54e934eadc3f573f99, type: 3}
@@ -7286,6 +7455,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6877691316540026281 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9051082525015987931, guid: 3f91b855f9b25d54e934eadc3f573f99, type: 3}
+  m_PrefabInstance: {fileID: 2515700514457058162}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!224 &7961462355456059321 stripped
