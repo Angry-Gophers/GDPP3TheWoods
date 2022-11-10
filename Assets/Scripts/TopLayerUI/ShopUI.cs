@@ -75,6 +75,7 @@ namespace TheWoods.TopLayer
                 if (button.name == item.ItemName)
                 {
                     button.interactable = isEnabled;
+                    button.enabled = isEnabled;
                 }
             }
         }
