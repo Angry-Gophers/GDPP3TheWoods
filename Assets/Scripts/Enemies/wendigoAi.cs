@@ -68,7 +68,7 @@ public class wendigoAi : enemyBase
         base.death();
 
         aud.PlayOneShot(deadAud, deadVol);
-        StartCoroutine(spawnManagerDelay());
+        spawnManager.instance.eliteDeath();
     }
 
     IEnumerator WindowOfAttack()
@@ -93,11 +93,5 @@ public class wendigoAi : enemyBase
             aud.PlayOneShot(staggerAud, staggerVol);
 
         return base.stagger();
-    }
-
-    IEnumerator spawnManagerDelay()
-    {
-        yield return new WaitForSeconds(spawnManagerDelayTime);
-        spawnManager.instance.eliteDeath();
     }
 }
