@@ -70,9 +70,11 @@ public class Gun : MonoBehaviour
             {
                 if (Input.GetButtonDown("Shoot") && Time.time >= nextTimeToFire)
                 {
+                    muzzleFlash.Play();
                     nextTimeToFire = Time.time + 1f / fireRate;
                     FiredBulletRay();
                     aud.PlayOneShot(shotAud, shotVol);
+                    
                     anim.SetTrigger("Shoot");
                     bullets--;
                 }
@@ -81,6 +83,7 @@ public class Gun : MonoBehaviour
             {
                 if (Input.GetButton("Shoot") && Time.time >= nextTimeToFire)
                 {
+                    muzzleFlash.Play();
                     nextTimeToFire = Time.time + 1f / fireRate;
                     FiredBulletRay();
                     aud.PlayOneShot(shotAud, shotVol);
