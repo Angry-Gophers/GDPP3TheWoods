@@ -13,6 +13,9 @@ public class CameraControls : MonoBehaviour
         // Lock cursor to center and make invisible
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+        invert = OptionsMenu.invert;
+        horSens *= OptionsMenu.sensetivity;
+        vertSens *= OptionsMenu.sensetivity;
     }
     void LateUpdate()
     {
@@ -21,11 +24,11 @@ public class CameraControls : MonoBehaviour
         float mouseY = Input.GetAxis("Mouse Y") * Time.deltaTime * vertSens;
         if (invert)
         {
-            xRotation -= mouseY;
+            xRotation += mouseY;
         }
         else
         {
-            xRotation += mouseY;
+            xRotation -= mouseY;
         }
         // Clamp xRotation
         xRotation = Mathf.Clamp(xRotation, lookVertMin, lookVertMax);

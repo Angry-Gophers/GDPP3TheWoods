@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour, IDamage
     [SerializeField] float waveVol;
     AudioSource aud;
     public bool isHealing;
+    bool inverted;
     
     public int maxTraps;
     public int trapsHeld;
