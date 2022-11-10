@@ -14,7 +14,7 @@ public class spawnManager : MonoBehaviour
     public static spawnManager instance;
 
     [Header("----- Wave stats -----")]
-    [SerializeField] int wave;
+    public int wave;
     [SerializeField] int enemyLimit;
     [SerializeField] int maxLimit;
     [SerializeField] float spawnRate;
