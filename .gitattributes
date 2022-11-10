@@ -5,3 +5,4 @@ Milestone[[:space:]]Build filter=lfs diff=lfs merge=lfs -text
 Milstone[[:space:]]Build/AngryGophers_TheWoods_AlphaBuild.zip
  filter=lfs diff=lfs merge=lfs -text
 Milestone[[:space:]]Build/AngryGophers_TheWoods_AlphaBuild.zip filter=lfs diff=lfs merge=lfs -text
+Milestone[[:space:]]Build/Beta[[:space:]]Builds filter=lfs diff=lfs merge=lfs -text
