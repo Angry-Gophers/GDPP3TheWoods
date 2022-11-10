@@ -8,11 +8,9 @@ public class gameManager : MonoBehaviour
 {
     public static gameManager instance;
     public static WeaponSwapping instanceGuns;
-    public static MeleeSwapping instanceMelee;
     [Header("----- Player -----")]
     public GameObject player;
     public PlayerController playerScript;
-    public GameObject meleeContainer;
     public GameObject gunContainer;
     // public GameObject spawnPosition;
 
@@ -61,7 +59,6 @@ public class gameManager : MonoBehaviour
     void Awake()
     {
         instanceGuns = new WeaponSwapping();
-        instanceMelee = new MeleeSwapping();
         instance = this;
         player = GameObject.FindGameObjectWithTag("Player");
         playerScript = player.GetComponent<PlayerController>();
@@ -91,21 +88,6 @@ public class gameManager : MonoBehaviour
                 menuCurrentlyOpen = null;
                 cursorUnlockUnpause();
             }
-        }
-        if (Input.GetButtonDown("Melee"))
-        {
-            
-            gunContainer.SetActive(false);
-            meleeContainer.SetActive(true);
-            instanceMelee.SelectMelee();
-        }
-
-        if (Input.GetButtonDown("Guns"))
-        {
-            
-            gunContainer.SetActive(true);
-            meleeContainer.SetActive(false);
-            instanceGuns.SelectGun();
         }
     }
 
