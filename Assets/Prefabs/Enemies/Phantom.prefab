@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3259018739722332655}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Drop Pos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329326494}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RobeSkirt038
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71,7 +71,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329269978}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeeperRCollarbone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -103,7 +103,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329295374}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeeperBrow_L3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -134,7 +134,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329288080}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeeperBrow_R1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -165,7 +165,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329347656}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeeperLFingerPinkieL2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -197,7 +197,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329330918}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RobeSkirt067
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -228,7 +228,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329338454}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeeperLCalf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -260,7 +260,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329342832}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeeperRThigh1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -292,7 +292,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329271336}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeeperRUpperarm2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -324,7 +324,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329363982}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RobeSkirt025
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -355,7 +355,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329369582}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeeperNose_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -386,7 +386,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329390892}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RobeSkirt074
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -417,7 +417,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329279648}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RobeSkirt042
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -448,7 +448,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329322052}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeeperRUpperarm1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -480,7 +480,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329267086}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RobeSkirt006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -512,7 +512,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8149738876329390432}
   - component: {fileID: 8149738876317635418}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Weeper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -681,7 +681,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329282966}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeeperSpine3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -714,7 +714,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329291410}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SleeveR1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -746,7 +746,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329333358}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeeperRFingerR3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -777,7 +777,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329334070}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeeperRThigh2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -809,7 +809,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329287622}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeeperRToe11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -840,7 +840,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329286846}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RobeSkirt013
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -871,7 +871,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329341512}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeeperNose_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -902,7 +902,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329267372}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeeperCheek_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -933,7 +933,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329282422}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeeperNeck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -967,7 +967,7 @@ GameObject:
   - component: {fileID: 8149738876329386600}
   - component: {fileID: 8149738876314174022}
   - component: {fileID: 8149738876315586542}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PComponent Rune Inner Circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5821,7 +5821,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329377276}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeeperPelvis
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5856,7 +5856,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329365518}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RobeSkirt021
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5887,7 +5887,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329373702}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RobeSkirt005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5919,7 +5919,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8149738876329290998}
   - component: {fileID: 8149738876317600636}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Robe02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6016,7 +6016,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329357802}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RobeSkirt040
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6047,7 +6047,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329359204}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeeperRThumbR3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6078,7 +6078,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329366522}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RobeSkirt081
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6110,7 +6110,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8149738876329390742}
   - component: {fileID: 8149738876323148384}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6203,7 +6203,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329392916}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeeperRFingerR2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6235,7 +6235,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329288452}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RobeSkirt011
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6266,7 +6266,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329285030}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RobeSkirt049
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6297,7 +6297,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329273322}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeeperRForearm3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6329,7 +6329,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329367550}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RobeHub
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6406,7 +6406,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329368178}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeeperLFingerPinkieL1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6438,7 +6438,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329371778}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeeperLCollarbone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6470,7 +6470,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329385396}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeeperLFingerRingL3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6501,7 +6501,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329322368}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeeperRCalf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6541,7 +6541,7 @@ GameObject:
   - component: {fileID: 8109863787321157460}
   - component: {fileID: 8110690428603391752}
   - component: {fileID: 972276110}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Phantom
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -6592,8 +6592,8 @@ MonoBehaviour:
   drop: {fileID: 5470681425243767183, guid: 7ce1a296039fdc64fadac70cb07221e5, type: 3}
   dropTrans: {fileID: 3259018739722332655}
   HP: 5
-  attackSpeed: 2
-  damage: 2
+  attackSpeed: 4
+  damage: 1
   range: 4
   sizeRandMin: 0.75
   sizeRandMax: 1.25
@@ -6601,6 +6601,7 @@ MonoBehaviour:
   staggerChance: 1
   corpseTime: 5
   trappedTime: 4
+  shopBuffer: 4
 --- !u!195 &8149738876329093798
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -7500,7 +7501,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329337110}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RobeSkirt054
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7531,7 +7532,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329370558}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeeperLThigh2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7563,7 +7564,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329348944}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeeperRFoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7595,7 +7596,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329376126}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RobeSkirt079
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7627,7 +7628,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8149738876329351044}
   - component: {fileID: 8149738876317552170}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RobeInside
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7758,7 +7759,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329367596}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RobeSkirt033
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7789,7 +7790,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329270948}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RobeSkirt050
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7820,7 +7821,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329284834}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RobeSkirt061
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7851,7 +7852,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329327296}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeeperSpine1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7883,7 +7884,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329366526}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeeperMouth_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7914,7 +7915,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329280778}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RobeSkirt028
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7945,7 +7946,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329282630}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeeperLThumbL3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7976,7 +7977,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329346220}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeeperRFingerRingR2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8008,7 +8009,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329330944}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SleeveL1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8042,7 +8043,7 @@ GameObject:
   - component: {fileID: 8149738876329275494}
   - component: {fileID: 8149738876314160450}
   - component: {fileID: 8149738876315609406}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PComponent Shell Rays Dark
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12828,7 +12829,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329274654}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeeperRForearm2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12860,7 +12861,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329381664}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeeperLThumbL2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12892,7 +12893,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329273276}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeeperRFingerRingR3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12923,7 +12924,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329273538}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeeperRFingerIndexR3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12954,7 +12955,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329340070}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeeperLFingerRingL1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12986,7 +12987,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329270776}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeeperRThumbR1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13018,7 +13019,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329274706}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeeperLFingerPinkieL3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13049,7 +13050,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329330746}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RobeSkirt065
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13082,7 +13083,7 @@ GameObject:
   - component: {fileID: 8149738876329357464}
   - component: {fileID: 8149738876314089562}
   - component: {fileID: 8149738876314107436}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Weeper Constant Particles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17850,7 +17851,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329269350}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeeperLForearm2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17882,7 +17883,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329343090}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeeperLUpperarm2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17914,7 +17915,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329391542}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RobeSkirt072
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17947,7 +17948,7 @@ GameObject:
   - component: {fileID: 8149738876329279744}
   - component: {fileID: 8149738876314080678}
   - component: {fileID: 8149738876314104416}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Weeper Movement Particles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22716,7 +22717,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329278294}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RobeSkirt031
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22748,7 +22749,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8149738876329271076}
   - component: {fileID: 8149738876317600698}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeeperHead
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22865,7 +22866,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329323226}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spell 3 Spawn Pos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22896,7 +22897,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329389388}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeeperMouth_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22927,7 +22928,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329326910}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeeperLThigh1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22959,7 +22960,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329341594}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RobeSkirt045
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22991,7 +22992,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8149738876329381344}
   - component: {fileID: 8149738876317648728}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cowl
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23089,7 +23090,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329361828}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spell 1 Spawn Pos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23120,7 +23121,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329367420}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RobeSkirt023
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23151,7 +23152,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329362792}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RobeSkirt057
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23182,7 +23183,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329385804}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RobeSkirt003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23213,7 +23214,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329322758}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeeperLToe11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23246,7 +23247,7 @@ GameObject:
   - component: {fileID: 8149738876329366018}
   - component: {fileID: 8149738876314078514}
   - component: {fileID: 8149738876315606168}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Weeper Spell 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27998,7 +27999,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329321112}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeeperRFingerPinkieR2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28030,7 +28031,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329329686}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeeperSpine2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28062,7 +28063,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329389928}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RobeSkirt083
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28093,7 +28094,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329340806}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeeperRForearm1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28125,7 +28126,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329378774}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeeperRFingerPinkieR1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28159,7 +28160,7 @@ GameObject:
   - component: {fileID: 8149738876329328294}
   - component: {fileID: 8149738876314180150}
   - component: {fileID: 8149738876315582140}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PComponent Rune Outer Circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33012,7 +33013,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329293612}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RobeSkirt047
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33043,7 +33044,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329350930}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeeperLFoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33075,7 +33076,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329337898}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RobeSkirt016
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33108,7 +33109,7 @@ GameObject:
   - component: {fileID: 8149738876329379548}
   - component: {fileID: 8149738876314157832}
   - component: {fileID: 8149738876314097454}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Particle Cold Beam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37858,7 +37859,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329291222}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeeperRFingerRingR1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37890,7 +37891,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329291790}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RobeSkirt044
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37921,7 +37922,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329388338}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeeperRFingerPinkieR3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37952,7 +37953,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329325454}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RobeSkirt030
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37983,7 +37984,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329276712}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RobeSkirt020
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38016,7 +38017,7 @@ GameObject:
   - component: {fileID: 8149738876329267014}
   - component: {fileID: 8149738876314119008}
   - component: {fileID: 8149738876314095942}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Weeper Spell 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42760,7 +42761,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329372250}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RobeSkirt036
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42791,7 +42792,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329328492}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SleeveR2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42823,7 +42824,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329326144}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeeperLFingerIndexL1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42855,7 +42856,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329349230}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeeperBrow_R2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42886,7 +42887,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329374330}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeeperLPalm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42924,7 +42925,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329375684}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeeperLThumbL1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42956,7 +42957,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329372778}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeeperRFingerR1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42988,7 +42989,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329289368}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeeperCheek_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43019,7 +43020,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329352058}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeeperRThumbR2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43051,7 +43052,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329391776}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeeperRPalm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43088,7 +43089,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329329782}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeeperLFingerL1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43120,7 +43121,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329327418}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RobeSkirt055
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43151,7 +43152,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329382680}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RobeSkirt068
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43182,7 +43183,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329273034}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeeperLForearm3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43214,7 +43215,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329336004}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RobeSkirt052
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43245,7 +43246,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329384802}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RobeSkirt008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43277,7 +43278,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8149738876329275276}
   - component: {fileID: 8149738876317538972}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Hands
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43399,7 +43400,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329324588}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeeperJaw
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43434,7 +43435,7 @@ GameObject:
   - component: {fileID: 8149738876329282892}
   - component: {fileID: 8149738876314189240}
   - component: {fileID: 8149738876315609842}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PComponent Tall Rays Dark
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48220,7 +48221,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329292704}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RobeSkirt076
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48251,7 +48252,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329277274}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeeperHead 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48293,7 +48294,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329332200}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeeperRFingerIndexR2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48325,7 +48326,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329268092}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RobeSkirt059
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48356,7 +48357,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329336254}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeeperLFingerL2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48388,7 +48389,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329387118}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeeperBrow_L2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48419,7 +48420,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329364176}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RobeSkirt070
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48450,7 +48451,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329373186}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RobeSkirt062
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48481,7 +48482,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329288718}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SleeveL2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48513,7 +48514,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329274974}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeeperLUpperarm1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48545,7 +48546,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329334484}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeeperLFingerL3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48576,7 +48577,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329338336}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeeperLFingerIndexL3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48607,7 +48608,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329285006}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RobeSkirt018
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48640,7 +48641,7 @@ GameObject:
   - component: {fileID: 8149738876329391906}
   - component: {fileID: 8149738876314159676}
   - component: {fileID: 8149738876315623700}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Weeper Ground Particles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53354,7 +53355,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329263822}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeeperBrow_L1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53385,7 +53386,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329335282}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RobeSkirt001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53416,7 +53417,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329333158}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SleeveL3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53447,7 +53448,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329362990}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeeperRibcage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53481,7 +53482,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329329108}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeeperLFingerRingL2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53513,7 +53514,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329290390}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeeperBrow_R3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53544,7 +53545,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329294014}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RobeSkirt035
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53575,7 +53576,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329279724}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeeperLFingerIndexL2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53607,7 +53608,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329341574}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SleeveR3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53638,7 +53639,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329271290}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RobeSkirt026
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53669,7 +53670,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329332970}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RobeSkirt010
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53700,7 +53701,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329334678}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeeperRFingerIndexR1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53732,7 +53733,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149738876329337226}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeeperLForearm1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

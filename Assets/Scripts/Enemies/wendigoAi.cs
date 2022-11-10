@@ -29,7 +29,8 @@ public class wendigoAi : enemyBase
         hand.GetComponent<collisionAttack>().damage = damage;
         handCol = hand.GetComponent<Collider>();
         aud = GetComponent<AudioSource>();
-        handCol.enabled = false;  
+        handCol.enabled = false;
+        targetingPlayer = true;
     }
 
     // Update is called once per frame
@@ -67,7 +68,7 @@ public class wendigoAi : enemyBase
         base.death();
 
         aud.PlayOneShot(deadAud, deadVol);
-        StartCoroutine(spawnManagerDelay());
+        spawnManager.instance.eliteDeath();
     }
 
     IEnumerator WindowOfAttack()
@@ -92,11 +93,5 @@ public class wendigoAi : enemyBase
             aud.PlayOneShot(staggerAud, staggerVol);
 
         return base.stagger();
-    }
-
-    IEnumerator spawnManagerDelay()
-    {
-        yield return new WaitForSeconds(spawnManagerDelayTime);
-        spawnManager.instance.eliteDeath();
     }
 }

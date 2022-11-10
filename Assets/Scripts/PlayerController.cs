@@ -93,7 +93,8 @@ public class PlayerController : MonoBehaviour, IDamage
         if(HP <= 0)
         {
             gameManager.instance.playerDeadMenu.active = true;
-            gameManager.instance.deadText.text = "You have died";
+            gameManager.instance.menuCurrentlyOpen = gameManager.instance.playerDeadMenu;
+            gameManager.instance.deadText.text = "You have died \nWaves Survived: " + spawnManager.instance.wave;
             gameManager.instance.cursorLockPause();
         }
     }
@@ -189,13 +190,14 @@ public class PlayerController : MonoBehaviour, IDamage
                 if (hit.collider.CompareTag("Fire") && !spawnManager.instance.inWave)
                 {
                     spawnManager.instance.startWave();
-                    aud.PlayOneShot(waveAud, waveVol);
+                    PlayWaveAudio();
                     StartCoroutine(gameManager.instance.NewWave());
                 }
 
                 if (hit.collider.CompareTag("Shop Car") && !spawnManager.instance.inWave)
                 {
-                    gameManager.instance.ShopUI();
+                    if(hit.collider.GetComponent<ShopHealth>().HP > 0)
+                        gameManager.instance.ShopUI();
                 }
 
                 if(hit.collider.CompareTag("Ammo Box"))
@@ -251,5 +253,11 @@ public class PlayerController : MonoBehaviour, IDamage
 
         }
 
+    }
+
+    public void PlayWaveAudio()
+    {
+        Debug.Log("New wave");
+        aud.PlayOneShot(waveAud, waveVol);
     }
 }

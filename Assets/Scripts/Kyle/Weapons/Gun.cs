@@ -64,15 +64,17 @@ public class Gun : MonoBehaviour
 
     public void Shoot()
     {
-        if (!gameManager.instance.playerScript.isHealing)
+        if (!gameManager.instance.playerScript.isHealing && gameManager.instance.menuCurrentlyOpen == null)
         {
             if (!fullAuto)
             {
                 if (Input.GetButtonDown("Shoot") && Time.time >= nextTimeToFire)
                 {
+                    muzzleFlash.Play();
                     nextTimeToFire = Time.time + 1f / fireRate;
                     FiredBulletRay();
                     aud.PlayOneShot(shotAud, shotVol);
+                    
                     anim.SetTrigger("Shoot");
                     bullets--;
                 }
@@ -81,6 +83,7 @@ public class Gun : MonoBehaviour
             {
                 if (Input.GetButton("Shoot") && Time.time >= nextTimeToFire)
                 {
+                    muzzleFlash.Play();
                     nextTimeToFire = Time.time + 1f / fireRate;
                     FiredBulletRay();
                     aud.PlayOneShot(shotAud, shotVol);
@@ -99,7 +102,7 @@ public class Gun : MonoBehaviour
         muzzleFlash.Play();
         RaycastHit hit;
         if(Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range)){
-            if (hit.collider.GetComponent<IDamage>() != null && !hit.collider.CompareTag("Fire"))
+            if (hit.collider.GetComponent<IDamage>() != null && hit.collider.CompareTag("Enemy"))
                 hit.collider.GetComponent<IDamage>().TakeDamage(damage);
         }
     }

@@ -66,7 +66,7 @@ public class DoorRaycast : MonoBehaviour
         }
         else
         {
-            crosshair.color = Color.black;
+            crosshair.color = Color.white;
             isCrossHairActive = false;
             gameManager.instance.interactText.SetActive(false);
         }
