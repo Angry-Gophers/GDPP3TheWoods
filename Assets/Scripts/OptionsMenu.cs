@@ -12,7 +12,7 @@ public class OptionsMenu : MonoBehaviour
 
     private void Start()
     {
-        
+        sensetivity = 1;
     }
     public void InvertCamera()
     {
