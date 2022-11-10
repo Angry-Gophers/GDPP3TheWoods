@@ -25,7 +25,7 @@ public class gameManager : MonoBehaviour
     public GameObject nextWaveText;
     public TextMeshProUGUI waveText;
     public GameObject newWaveText;
-    //public GameObject instruction;
+    public GameObject instruction;
     //public GameObject trapsFullInstruction;
     public Animator anim;
     public TextMeshProUGUI shopEcto;
@@ -69,6 +69,8 @@ public class gameManager : MonoBehaviour
         fireplace = GameObject.FindGameObjectWithTag("Fire");
         shop = GameObject.FindGameObjectWithTag("Shop Car");
         shopScript = shop.GetComponent<ShopHealth>();
+
+        StartCoroutine(BeginningText());
     }
 
     // Update is called once per frame
@@ -190,5 +192,12 @@ public class gameManager : MonoBehaviour
         newWaveText.SetActive(true);
         yield return new WaitForSeconds(6);
         newWaveText.SetActive(false);
+    }
+
+    public IEnumerator BeginningText()
+    {
+        instruction.SetActive(true);
+        yield return new WaitForSeconds(10);
+        instruction.SetActive(false);
     }
 }
