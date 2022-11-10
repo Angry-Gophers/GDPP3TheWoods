@@ -17,16 +17,16 @@ public class MyDoorController : MonoBehaviour
     {
         if (!doorOpen)
         {
-            //gameObject.GetComponent<Collider>().enabled = false;
+            gameObject.GetComponent<Collider>().enabled = false;
             doorAnim.Play("DoorOpen", 0, 0.0f);
-            //gameObject.GetComponent<Collider>().enabled = true;
+            gameObject.GetComponent<Collider>().enabled = true;
             doorOpen = true;
         }
         else
         {
-            //gameObject.GetComponent<Collider>().enabled = false;
+            gameObject.GetComponent<Collider>().enabled = false;
             doorAnim.Play("DoorClose", 0, 0.0f);
-            //gameObject.GetComponent<Collider>().enabled = true;
+            gameObject.GetComponent<Collider>().enabled = true;
             doorOpen = false;
         }
     }
