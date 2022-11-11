@@ -22,11 +22,12 @@ public class ShopHealth : MonoBehaviour, IDamage
 
     public virtual void TakeDamage(int dmg)
     {
+        HP -= dmg;
+
         if (HP > 0)
         {
-            HP -= dmg;
-            float ratio = (float)HP / (float) maxHP;
-            gameManager.instance.shopHealthBar.fillAmount = ratio;
+            UpdateHud();
+            StartCoroutine(gameManager.instance.ShopFlash());
         }
         else
         {
@@ -38,5 +39,19 @@ public class ShopHealth : MonoBehaviour, IDamage
                 brakelights.enabled = false;
             }
         }
+    }
+
+    public void UpdateHud()
+    {
+        float ratio = (float)HP / (float)maxHP;
+        gameManager.instance.shopHealthBar.fillAmount = ratio;
+    }
+
+    public void Heal()
+    {
+        HP = maxHP;
+        gameManager.instance.shopAlive = true;
+        headlights.enabled = true;
+        brakelights.enabled = true;
     }
 }

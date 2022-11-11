@@ -91,6 +91,7 @@ public class PlayerController : MonoBehaviour, IDamage
         {
             gameManager.instance.playerDeadMenu.active = true;
             gameManager.instance.menuCurrentlyOpen = gameManager.instance.playerDeadMenu;
+            gameManager.instance.ClearHud();
             gameManager.instance.deadText.text = "You have died \nWaves Survived: " + spawnManager.instance.wave;
             gameManager.instance.cursorLockPause();
         }
@@ -238,5 +239,10 @@ public class PlayerController : MonoBehaviour, IDamage
     {
         Debug.Log("New wave");
         aud.PlayOneShot(waveAud, waveVol);
+    }
+
+    public void Heal()
+    {
+        HP = hpOriginal;
     }
 }

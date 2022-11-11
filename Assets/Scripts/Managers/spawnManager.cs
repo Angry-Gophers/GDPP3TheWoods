@@ -74,6 +74,10 @@ public class spawnManager : MonoBehaviour
         wave++;
         firstSpawn = true;
 
+        gameManager.instance.playerScript.Heal();
+        gameManager.instance.shopScript.Heal();
+        //gameManager.instance.UpdatePlayerHUD();
+        gameManager.instance.shopScript.UpdateHud();
         gameManager.instance.waveText.text = "Wave: " + wave;
         gameManager.instance.anim.SetTrigger("NewWave");
 

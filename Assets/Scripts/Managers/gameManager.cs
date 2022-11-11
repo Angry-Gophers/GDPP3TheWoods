@@ -45,6 +45,8 @@ public class gameManager : MonoBehaviour
     public Image shopHealthBar;
     public bool shopAlive;
     public bool isPaused;
+    [SerializeField] Color fireFlashColor;
+    [SerializeField] Color shopFlashColor;
 
     [Header("---- Other components ----")]
     public GameObject fireplace;
@@ -54,6 +56,9 @@ public class gameManager : MonoBehaviour
     bool interact;
     bool reload;
     bool notEnough;
+    bool healing;
+    Color fireColor;
+    Color shopColor;
 
 
     void Awake()
@@ -66,6 +71,9 @@ public class gameManager : MonoBehaviour
         fireplace = GameObject.FindGameObjectWithTag("Fire");
         shop = GameObject.FindGameObjectWithTag("Shop Car");
         shopScript = shop.GetComponent<ShopHealth>();
+        Time.timeScale = 1;
+        shopColor = shopHealthBar.color;
+        fireColor = fire.color;
 
         StartCoroutine(BeginningText());
     }
@@ -156,6 +164,12 @@ public class gameManager : MonoBehaviour
             notEnough = true;
             notEnoughText.SetActive(false);
         }
+
+        if(healingText.activeSelf == true)
+        {
+            healing = true;
+            healingText.SetActive(false);
+        }
     }
 
     public void RestoreHud()
@@ -163,10 +177,12 @@ public class gameManager : MonoBehaviour
         interactText.SetActive(interact);
         reloadText.SetActive(reload);
         notEnoughText.SetActive(notEnough);
+        healingText.SetActive(healing);
 
         interact = false;
         reload = false;
         notEnough = false;
+        healing = false;
     }
 
     public IEnumerator NewWave()
@@ -181,5 +197,19 @@ public class gameManager : MonoBehaviour
         instruction.SetActive(true);
         yield return new WaitForSeconds(10);
         instruction.SetActive(false);
+    }
+
+    public IEnumerator FireFlash()
+    {
+        fire.color = fireFlashColor;
+        yield return new WaitForSeconds(0.2f);
+        fire.color = fireColor;
+    }
+
+    public IEnumerator ShopFlash()
+    {
+        shopHealthBar.color = shopFlashColor;
+        yield return new WaitForSeconds(0.2f);
+        shopHealthBar.color = shopColor;
     }
 }
