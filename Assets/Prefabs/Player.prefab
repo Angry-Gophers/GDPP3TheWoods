@@ -175,15 +175,15 @@ MonoBehaviour:
   trapsHeld: 2
   bandagesHeld: 2
   candlesHeld: 0
-  HP: 10
+  HP: 20
   playerSpeed: 7
   jumpHeight: 10
   maxJumps: 1
   gravityValue: 25
   hpOriginal: 10
   interactRange: 5
-  healTime: 3
-  bandageHealAmount: 3
+  healTime: 2
+  bandageHealAmount: 5
   ectoplasm: 0
   antlers: 0
   ammoCost: 10
@@ -387,6 +387,10 @@ PrefabInstance:
       propertyPath: muzzleFlash
       value: 
       objectReference: {fileID: 4469238634336642093}
+    - target: {fileID: 250815241723360738, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
+      propertyPath: reloadButton
+      value: 114
+      objectReference: {fileID: 0}
     - target: {fileID: 1220842204493974167, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.25063634
@@ -555,6 +559,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -0.0134
       objectReference: {fileID: 0}
+    - target: {fileID: 4248781450569676619, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4248781450569676725, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
       propertyPath: aud
       value: 
@@ -606,6 +614,10 @@ PrefabInstance:
     - target: {fileID: 4248781450569676725, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
       propertyPath: reloadSpeed
       value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4248781450569676725, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
+      propertyPath: reloadButton
+      value: 114
       objectReference: {fileID: 0}
     - target: {fileID: 4442245107239736861, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
       propertyPath: aud
@@ -663,6 +675,10 @@ PrefabInstance:
       propertyPath: muzzleFlash
       value: 
       objectReference: {fileID: 6653195914889015119}
+    - target: {fileID: 4442245107239736861, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
+      propertyPath: reloadButton
+      value: 114
+      objectReference: {fileID: 0}
     - target: {fileID: 4602604415946921758, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
       propertyPath: m_Name
       value: GunContainer
@@ -670,6 +686,10 @@ PrefabInstance:
     - target: {fileID: 4602604415946921758, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
       propertyPath: m_TagString
       value: Gun Contain
+      objectReference: {fileID: 0}
+    - target: {fileID: 4801411507445159807, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6620867641774533210, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
       propertyPath: m_IsActive
@@ -769,6 +789,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8041571617779118717, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8123614632756358780, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
+      propertyPath: m_CastShadows
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8433147927963036970, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
@@ -1150,6 +1174,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6344215849434670700}
     m_Modifications:
+    - target: {fileID: 625204607381643375, guid: 1dafc5251a036cd4b9c253fe37b41981, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1795191191862026634, guid: 1dafc5251a036cd4b9c253fe37b41981, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.04

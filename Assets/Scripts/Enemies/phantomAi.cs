@@ -46,20 +46,19 @@ public class phantomAi : enemyBase
     //Melee attack
     public override IEnumerator attack()
     {
-        isAttacking = true;
-
         //Shoots a raycast and checks if the hit object can be damaged
         RaycastHit hit;
         if(Physics.Raycast(dropTrans.transform.position, transform.forward, out hit, range))
         {
             if (hit.collider.GetComponent<IDamage>() != null && hit.collider.tag != "Enemy")
             {
+                isAttacking = true;
                 anim.SetTrigger("cast3");
                 hit.collider.GetComponent<IDamage>().TakeDamage(damage);
+                yield return new WaitForSeconds(attackSpeed);
             }
         }
 
-        yield return new WaitForSeconds(attackSpeed);
         isAttacking = false;
     }
 

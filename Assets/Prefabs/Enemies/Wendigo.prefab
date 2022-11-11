@@ -943,8 +943,8 @@ MonoBehaviour:
   eyes: {fileID: 1224120926107867303}
   drop: {fileID: 6566900707521354800, guid: d53910e9da410684fb7096193514e2ce, type: 3}
   dropTrans: {fileID: 7322673467256483033}
-  HP: 30
-  attackSpeed: 1.73
+  HP: 25
+  attackSpeed: 1.75
   damage: 3
   range: 4
   sizeRandMin: 0.9

@@ -4686,7 +4686,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   playerScript: {fileID: 0}
-  meleeContainer: {fileID: 0}
   gunContainer: {fileID: 0}
   pauseMenu: {fileID: 2980387295908859706}
   shopWindow: {fileID: 27918132124973436}
@@ -4715,6 +4714,8 @@ MonoBehaviour:
   shopHealthBar: {fileID: 7730708277988225129}
   shopAlive: 0
   isPaused: 0
+  fireFlashColor: {r: 1, g: 0.4669811, b: 0.4669811, a: 1}
+  shopFlashColor: {r: 0.6207598, g: 0.6792453, b: 0.5991456, a: 1}
   fireplace: {fileID: 0}
   shop: {fileID: 0}
   shopScript: {fileID: 0}

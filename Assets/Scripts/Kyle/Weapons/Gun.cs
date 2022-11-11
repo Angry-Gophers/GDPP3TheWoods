@@ -17,6 +17,7 @@ public class Gun : MonoBehaviour
     [SerializeField] float shotVol;
     [SerializeField] AudioClip reloadAud;
     [SerializeField] float reloadVol;
+    [SerializeField] KeyCode reloadButton;
     public bool isLongGun;
     [SerializeField] Animator anim;
     public bool isReloading;
@@ -30,9 +31,10 @@ public class Gun : MonoBehaviour
         {
             Shoot();
         }
-        else if(bullets == 0 && !isReloading && reserveAmmo > 0)
+        else if(bullets == 0 || Input.GetKeyDown(reloadButton))
         {
-            StartCoroutine(ReloadGun());
+            if(!isReloading && reserveAmmo > 0)
+                StartCoroutine(ReloadGun());
         }
         
     }
