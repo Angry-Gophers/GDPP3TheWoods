@@ -21,6 +21,12 @@ public class wendigoAi : enemyBase
     [Range(0f, 1f)] [SerializeField] float deadVol;
     [SerializeField] AudioClip attackAud;
     [Range(0f, 1f)] [SerializeField] float attackVol;
+    [SerializeField] AudioClip awakeAud;
+    [Range(0f, 1f)] [SerializeField] float awakeVol;
+    [SerializeField] List<AudioClip> idleSounds;
+    [Range (0f, 1f)] [SerializeField] float idleVol;
+
+    bool idle;
 
     private void Start()
     {
@@ -31,6 +37,7 @@ public class wendigoAi : enemyBase
         aud = GetComponent<AudioSource>();
         handCol.enabled = false;
         targetingPlayer = true;
+        aud.PlayOneShot(awakeAud, awakeVol);
     }
 
     // Update is called once per frame
@@ -42,6 +49,11 @@ public class wendigoAi : enemyBase
         {
             //Set walk animation speed
             anim.SetFloat("Speed", Mathf.Lerp(anim.GetFloat("Speed"), agent.velocity.normalized.magnitude, Time.deltaTime * 3));
+
+            if (!isAttacking && ! idle)
+            {
+                StartCoroutine(IdleSound());
+            }
         }
     }
 
@@ -49,6 +61,8 @@ public class wendigoAi : enemyBase
     {
         hand.GetComponent<collisionAttack>().playerhit = false;
         isAttacking = true;
+        idle = false;
+        aud.Stop();
 
         anim.SetTrigger("Attacking");
         aud.PlayOneShot(attackAud, attackVol);
@@ -93,5 +107,13 @@ public class wendigoAi : enemyBase
             aud.PlayOneShot(staggerAud, staggerVol);
 
         return base.stagger();
+    }
+
+    public IEnumerator IdleSound()
+    {
+        idle = true;
+        aud.PlayOneShot(idleSounds[Random.Range(0, idleSounds.Count)], idleVol);
+        yield return new WaitForSeconds(1.5f);
+        idle = false;
     }
 }

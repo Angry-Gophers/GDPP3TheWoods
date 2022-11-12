@@ -16,6 +16,7 @@ public class phantomAi : enemyBase
             //Set walk animation speed
             anim.SetFloat("locomotion", Mathf.Lerp(anim.GetFloat("locomotion"), agent.velocity.normalized.magnitude, Time.deltaTime * 3));
         }
+
     }
 
     //Find the fireplace
