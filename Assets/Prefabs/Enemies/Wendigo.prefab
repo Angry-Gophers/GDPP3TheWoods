@@ -965,6 +965,13 @@ MonoBehaviour:
   deadVol: 1
   attackAud: {fileID: 8300000, guid: e59f84b2cea80b24d9f43f1db888a163, type: 3}
   attackVol: 1
+  awakeAud: {fileID: 8300000, guid: 3bc1c3ed7a40f34458c37e968cfe73fe, type: 3}
+  awakeVol: 1
+  idleSounds:
+  - {fileID: 8300000, guid: c5db96f5882f5e74fb153761887d0e5a, type: 3}
+  - {fileID: 8300000, guid: ad4acaa758a3bd446983a7dee0a44a60, type: 3}
+  - {fileID: 8300000, guid: 65da96f29310eca42a981d83928f72bd, type: 3}
+  idleVol: 1
 --- !u!195 &1268880644
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1030,7 +1037,7 @@ AudioSource:
   m_GameObject: {fileID: 3243034810219371087}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: e85ce825097906242a4cf785646d54fb, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
