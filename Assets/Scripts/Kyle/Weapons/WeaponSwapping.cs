@@ -75,6 +75,8 @@ public class WeaponSwapping : MonoBehaviour
                 SelectGun();
             }
             anim.SetBool("LongGun", weapon.GetComponent<Gun>().isLongGun);
+
+            gameManager.instance.UpdateGunHud(weapon.GetComponent<Gun>().iconValue);
         }
     }
 }

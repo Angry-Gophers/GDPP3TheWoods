@@ -26,6 +26,7 @@ public class Gun : MonoBehaviour
     public ParticleSystem muzzleFlash;
     private float nextTimeToFire = 0f;
     float timeInReload;
+    public int iconValue;
 
     void Update()
     {
