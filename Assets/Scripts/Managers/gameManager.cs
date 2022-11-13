@@ -47,6 +47,7 @@ public class gameManager : MonoBehaviour
     public bool isPaused;
     [SerializeField] Color fireFlashColor;
     [SerializeField] Color shopFlashColor;
+    [SerializeField] List<Image> gunIcons;
 
     [Header("---- Other components ----")]
     public GameObject fireplace;
@@ -211,5 +212,16 @@ public class gameManager : MonoBehaviour
         shopHealthBar.color = shopFlashColor;
         yield return new WaitForSeconds(0.2f);
         shopHealthBar.color = shopColor;
+    }
+
+    public void UpdateGunHud(int selected)
+    {
+        for(int i = 0; i < gunIcons.Count; i++)
+        {
+            if (i == selected)
+                gunIcons[i].color = fireFlashColor;
+            else
+                gunIcons[i].color = fireColor;
+        }
     }
 }
