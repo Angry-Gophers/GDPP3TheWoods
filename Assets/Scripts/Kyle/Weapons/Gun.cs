@@ -25,16 +25,43 @@ public class Gun : MonoBehaviour
     public Camera fpsCam;
     public ParticleSystem muzzleFlash;
     private float nextTimeToFire = 0f;
+    float timeInReload;
+    public int iconValue;
+
     void Update()
     {
         if(bullets > 0 && !isReloading)
         {
             Shoot();
         }
-        else if(bullets == 0 || Input.GetKeyDown(reloadButton))
+        else if(bullets == 0 || Input.GetButtonDown("Reload"))
         {
             if(!isReloading && reserveAmmo > 0)
-                StartCoroutine(ReloadGun());
+                Reload();
+        }
+
+        if (isReloading)
+        {
+            timeInReload -= Time.deltaTime;
+            gameManager.instance.reloadText.SetActive(true);
+
+            if(timeInReload <= 0f)
+            {
+                if (reserveAmmo >= magazine)
+                {
+                    bullets = magazine;
+                    reserveAmmo -= magazine;
+                }
+                else if (reserveAmmo < magazine)
+                {
+                    bullets = reserveAmmo;
+                    reserveAmmo = 0;
+                }
+
+                gameManager.instance.reloadText.SetActive(false);
+                gameManager.instance.UpdatePlayerHUD();
+                isReloading = false;
+            }
         }
         
     }
@@ -47,21 +74,19 @@ public class Gun : MonoBehaviour
         gameManager.instance.reloadText.active = true;
         aud.PlayOneShot(reloadAud, reloadVol);
 
+        timeInReload = reloadSpeed;
+
         yield return new WaitForSeconds(reloadSpeed);
-        if(reserveAmmo >= magazine)
-        {
-            bullets = magazine;
-            reserveAmmo -= magazine;
-        }
-        else if(reserveAmmo < magazine)
-        {
-            bullets = reserveAmmo;
-            reserveAmmo = 0;
-        }
-            
-        gameManager.instance.reloadText.active = false;
-        gameManager.instance.UpdatePlayerHUD();
-        isReloading = false;
+    }
+
+    void Reload()
+    {
+        isReloading = true;
+
+        gameManager.instance.reloadText.SetActive(true);
+        aud.PlayOneShot(reloadAud, reloadVol);
+
+        timeInReload = reloadSpeed;
     }
 
     public void Shoot()
@@ -97,6 +122,16 @@ public class Gun : MonoBehaviour
         }
 
         gameManager.instance.UpdatePlayerHUD();
+    }
+
+    private void OnEnable()
+    {
+        if (isReloading)
+        {
+            aud.PlayOneShot(reloadAud, reloadVol);
+            timeInReload = reloadSpeed;
+        }
+
     }
 
     public void FiredBulletRay()

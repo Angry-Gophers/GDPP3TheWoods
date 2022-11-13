@@ -43,9 +43,10 @@ public class WeaponSwapping : MonoBehaviour
     }
     public void SwitchGun()
     {
-        if (weapon.GetComponent<Gun>().isReloading == false && !gameManager.instance.isPaused)
+        if (!gameManager.instance.isPaused)
         {
             int prevWeapon = selectedWeapon;
+            gameManager.instance.reloadText.SetActive(false);
             if (Input.GetAxis("Mouse ScrollWheel") > 0f)
             {
                 if (selectedWeapon >= transform.childCount - 1)
@@ -74,6 +75,8 @@ public class WeaponSwapping : MonoBehaviour
                 SelectGun();
             }
             anim.SetBool("LongGun", weapon.GetComponent<Gun>().isLongGun);
+
+            gameManager.instance.UpdateGunHud(weapon.GetComponent<Gun>().iconValue);
         }
     }
 }
