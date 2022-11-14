@@ -173,6 +173,7 @@ MonoBehaviour:
   waveVol: 1
   isHealing: 0
   maxTraps: 2
+  maxBoards: 0
   trapsHeld: 2
   bandagesHeld: 2
   candlesHeld: 0

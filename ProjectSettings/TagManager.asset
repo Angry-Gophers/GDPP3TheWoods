@@ -16,6 +16,8 @@ TagManager:
   - Reticle
   - Gun Contain
   - Ammo Box
+  - Floor
+  - Trapable
   layers:
   - Default
   - TransparentFX
