@@ -109,7 +109,7 @@ public class spawnManager : MonoBehaviour
         }
 
         if (wave != 1 && enemyLimit < maxLimit)
-            enemyLimit += 2;
+            enemyLimit++;
 
         //Spawn an enemy at every position
         for (int i = 0; i < spawnList.Count; i++)

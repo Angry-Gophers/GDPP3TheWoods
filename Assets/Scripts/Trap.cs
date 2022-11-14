@@ -23,7 +23,7 @@ public class Trap : MonoBehaviour
                 gameManager.instance.player.GetComponent<CharacterController>().enabled = false;
                 StartCoroutine(TrappedTimePlayer());
             }
-            else if (other.CompareTag("Enemy"))
+            if (other.CompareTag("Enemy"))
             {
                 if(other.GetComponent<enemyBase>() != null)
                 {

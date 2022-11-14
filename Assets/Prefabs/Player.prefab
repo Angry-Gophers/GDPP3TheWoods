@@ -173,6 +173,7 @@ MonoBehaviour:
   waveVol: 1
   isHealing: 0
   maxTraps: 2
+  maxBoards: 0
   trapsHeld: 2
   bandagesHeld: 2
   candlesHeld: 0
@@ -708,7 +709,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4248781450569676725, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
       propertyPath: fireRate
-      value: 4
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4248781450569676725, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
       propertyPath: reloadAud
