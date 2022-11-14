@@ -15,9 +15,11 @@ public class ShopHealth : MonoBehaviour, IDamage
 
     void Start()
     {
+        HP = 30;
         maxHP = HP;
         gameManager.instance.shopAlive = true;
         aud = gameObject.GetComponent<AudioSource>();
+        UpdateHud();
     }
 
     public virtual void TakeDamage(int dmg)
