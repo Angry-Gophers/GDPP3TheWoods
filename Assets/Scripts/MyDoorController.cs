@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MyDoorController : MonoBehaviour
 {
-    private Animator doorAnim;
+    public Animator doorAnim;
 
     private bool doorOpen = false;
 
@@ -29,5 +29,11 @@ public class MyDoorController : MonoBehaviour
             gameObject.GetComponent<Collider>().enabled = true;
             doorOpen = false;
         }
+    }
+
+    public bool AnimatorIsPlaying()
+    {
+        return doorAnim.GetCurrentAnimatorStateInfo(0).length >
+               doorAnim.GetCurrentAnimatorStateInfo(0).normalizedTime;
     }
 }

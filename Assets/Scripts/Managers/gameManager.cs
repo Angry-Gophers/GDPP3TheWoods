@@ -16,6 +16,7 @@ public class gameManager : MonoBehaviour
 
     [Header("----- UI -----")]
     public GameObject pauseMenu;
+    public GameObject optionsMenu;
     public GameObject shopWindow;
     public GameObject gunShopWindow;
     public GameObject playerDeadMenu;
@@ -86,6 +87,7 @@ public class gameManager : MonoBehaviour
         {
             isPaused = !isPaused;
             pauseMenu.SetActive(isPaused);
+            
 
             if (isPaused)
             {
@@ -95,8 +97,10 @@ public class gameManager : MonoBehaviour
             else
             {
                 menuCurrentlyOpen = null;
+                optionsMenu.SetActive(false);
                 cursorUnlockUnpause();
             }
+            
         }
     }
 

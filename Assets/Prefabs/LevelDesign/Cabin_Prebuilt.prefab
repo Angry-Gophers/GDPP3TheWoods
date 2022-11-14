@@ -6361,7 +6361,7 @@ GameObject:
   - component: {fileID: 4922348252940163083}
   - component: {fileID: 4912218017611418275}
   - component: {fileID: 4903342178901940763}
-  - component: {fileID: 4952280267041706269}
+  - component: {fileID: 933612802}
   m_Layer: 0
   m_Name: Cabin_Wall (2)
   m_TagString: Untagged
@@ -6434,8 +6434,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4952280267041706269
-MeshCollider:
+--- !u!65 &933612802
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -6444,10 +6444,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4925258730449297007
 GameObject:
   m_ObjectHideFlags: 0
@@ -9039,7 +9038,7 @@ GameObject:
   - component: {fileID: 4922592992679637569}
   - component: {fileID: 4910755051780372211}
   - component: {fileID: 4903605251645507729}
-  - component: {fileID: 4952562165095867935}
+  - component: {fileID: 1536886031}
   m_Layer: 0
   m_Name: Cabin_Wall (1)
   m_TagString: Untagged
@@ -9112,8 +9111,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4952562165095867935
-MeshCollider:
+--- !u!65 &1536886031
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -9122,10 +9121,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: 0.000006198883, y: 0, z: 0.0000076293945}
 --- !u!1 &4926588439988185211
 GameObject:
   m_ObjectHideFlags: 0
@@ -9137,7 +9135,7 @@ GameObject:
   - component: {fileID: 4926588439988185208}
   - component: {fileID: 4926588439988185159}
   - component: {fileID: 4926588439988185158}
-  - component: {fileID: 4926588439988185209}
+  - component: {fileID: 1298294914}
   m_Layer: 0
   m_Name: Cabin_Wall (12)
   m_TagString: Untagged
@@ -9210,8 +9208,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588439988185209
-MeshCollider:
+--- !u!65 &1298294914
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -9220,10 +9218,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4926588439995123990
 GameObject:
   m_ObjectHideFlags: 0
@@ -9235,7 +9232,7 @@ GameObject:
   - component: {fileID: 4926588439995123991}
   - component: {fileID: 4926588439995123986}
   - component: {fileID: 4926588439995123989}
-  - component: {fileID: 4926588439995123988}
+  - component: {fileID: 1735017760}
   m_Layer: 0
   m_Name: Cabin_Wall (55)
   m_TagString: Untagged
@@ -9308,8 +9305,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588439995123988
-MeshCollider:
+--- !u!65 &1735017760
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -9318,10 +9315,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: 0.000011444092, y: 0, z: 0.000005722046}
 --- !u!1 &4926588439996471183
 GameObject:
   m_ObjectHideFlags: 0
@@ -9430,7 +9426,7 @@ GameObject:
   - component: {fileID: 4926588439999848592}
   - component: {fileID: 4926588439999848607}
   - component: {fileID: 4926588439999848606}
-  - component: {fileID: 4926588439999848593}
+  - component: {fileID: 1217791237}
   m_Layer: 0
   m_Name: Cabin_Wall (7)
   m_TagString: Untagged
@@ -9503,8 +9499,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588439999848593
-MeshCollider:
+--- !u!65 &1217791237
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -9513,10 +9509,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: -0.000009059906, y: 0, z: -0.000012397766}
 --- !u!1 &4926588440004465311
 GameObject:
   m_ObjectHideFlags: 0
@@ -9627,7 +9622,7 @@ GameObject:
   - component: {fileID: 4926588440020888571}
   - component: {fileID: 4926588440020888518}
   - component: {fileID: 4926588440020888569}
-  - component: {fileID: 4926588440020888568}
+  - component: {fileID: 1093723485}
   m_Layer: 0
   m_Name: Cabin_Wall (57)
   m_TagString: Untagged
@@ -9700,8 +9695,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588440020888568
-MeshCollider:
+--- !u!65 &1093723485
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -9710,10 +9705,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: -0.0000023841858, y: 0, z: 0.000009536743}
 --- !u!1 &4926588440041831569
 GameObject:
   m_ObjectHideFlags: 0
@@ -10016,7 +10010,7 @@ GameObject:
   - component: {fileID: 4926588440064492993}
   - component: {fileID: 4926588440064493004}
   - component: {fileID: 4926588440064493007}
-  - component: {fileID: 4926588440064493006}
+  - component: {fileID: 2105013173}
   m_Layer: 0
   m_Name: Cabin_Wall (24)
   m_TagString: Untagged
@@ -10089,8 +10083,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588440064493006
-MeshCollider:
+--- !u!65 &2105013173
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -10099,10 +10093,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: -0.00000166893, y: 0, z: 0.0000038146973}
 --- !u!1 &4926588440069024467
 GameObject:
   m_ObjectHideFlags: 0
@@ -10890,7 +10883,7 @@ GameObject:
   - component: {fileID: 4926588440112615318}
   - component: {fileID: 4926588440112615317}
   - component: {fileID: 4926588440112615316}
-  - component: {fileID: 4926588440112615319}
+  - component: {fileID: 626509222}
   m_Layer: 0
   m_Name: Cabin_Wall (89)
   m_TagString: Untagged
@@ -10963,8 +10956,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588440112615319
-MeshCollider:
+--- !u!65 &626509222
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -10973,10 +10966,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: 0.000011444092, y: 0, z: 0.000002861023}
 --- !u!1 &4926588440123896732
 GameObject:
   m_ObjectHideFlags: 0
@@ -11281,7 +11273,7 @@ GameObject:
   - component: {fileID: 4926588440139567392}
   - component: {fileID: 4926588440139567407}
   - component: {fileID: 4926588440139567406}
-  - component: {fileID: 4926588440139567393}
+  - component: {fileID: 1036369651}
   m_Layer: 0
   m_Name: Cabin_Wall (31)
   m_TagString: Untagged
@@ -11354,8 +11346,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588440139567393
-MeshCollider:
+--- !u!65 &1036369651
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -11364,10 +11356,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: 0.000011444092, y: 0, z: 0.0000038146973}
 --- !u!1 &4926588440140979953
 GameObject:
   m_ObjectHideFlags: 0
@@ -11379,7 +11370,7 @@ GameObject:
   - component: {fileID: 4926588440140979966}
   - component: {fileID: 4926588440140979965}
   - component: {fileID: 4926588440140979964}
-  - component: {fileID: 4926588440140979967}
+  - component: {fileID: 1255734393}
   m_Layer: 0
   m_Name: Cabin_Wall (88)
   m_TagString: Untagged
@@ -11452,8 +11443,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588440140979967
-MeshCollider:
+--- !u!65 &1255734393
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -11462,10 +11453,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4926588440189270914
 GameObject:
   m_ObjectHideFlags: 0
@@ -11477,7 +11467,7 @@ GameObject:
   - component: {fileID: 4926588440189270915}
   - component: {fileID: 4926588440189270926}
   - component: {fileID: 4926588440189270913}
-  - component: {fileID: 4926588440189270912}
+  - component: {fileID: 920865197}
   m_Layer: 0
   m_Name: Cabin_Wall (18)
   m_TagString: Untagged
@@ -11550,8 +11540,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588440189270912
-MeshCollider:
+--- !u!65 &920865197
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -11560,10 +11550,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4926588440199579048
 GameObject:
   m_ObjectHideFlags: 0
@@ -12158,7 +12147,7 @@ GameObject:
   - component: {fileID: 4926588440234278997}
   - component: {fileID: 4926588440234278992}
   - component: {fileID: 4926588440234278995}
-  - component: {fileID: 4926588440234278994}
+  - component: {fileID: 677179259}
   m_Layer: 0
   m_Name: Cabin_Wall (42)
   m_TagString: Untagged
@@ -12231,8 +12220,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588440234278994
-MeshCollider:
+--- !u!65 &677179259
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -12241,10 +12230,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: 0.000011444092, y: 0, z: 0.000005722046}
 --- !u!1 &4926588440235084707
 GameObject:
   m_ObjectHideFlags: 0
@@ -12353,7 +12341,7 @@ GameObject:
   - component: {fileID: 4926588440238375581}
   - component: {fileID: 4926588440238375576}
   - component: {fileID: 4926588440238375579}
-  - component: {fileID: 4926588440238375578}
+  - component: {fileID: 1971228087}
   m_Layer: 0
   m_Name: Cabin_Wall (23)
   m_TagString: Untagged
@@ -12426,8 +12414,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588440238375578
-MeshCollider:
+--- !u!65 &1971228087
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -12436,10 +12424,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4926588440254197966
 GameObject:
   m_ObjectHideFlags: 0
@@ -12451,7 +12438,7 @@ GameObject:
   - component: {fileID: 4926588440254197967}
   - component: {fileID: 4926588440254197962}
   - component: {fileID: 4926588440254197965}
-  - component: {fileID: 4926588440254197964}
+  - component: {fileID: 696685260}
   m_Layer: 0
   m_Name: Cabin_Wall (78)
   m_TagString: Untagged
@@ -12524,8 +12511,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588440254197964
-MeshCollider:
+--- !u!65 &696685260
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -12534,10 +12521,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4926588440288424676
 GameObject:
   m_ObjectHideFlags: 0
@@ -12646,7 +12632,7 @@ GameObject:
   - component: {fileID: 4926588440292712381}
   - component: {fileID: 4926588440292712376}
   - component: {fileID: 4926588440292712379}
-  - component: {fileID: 4926588440292712378}
+  - component: {fileID: 1688216481}
   m_Layer: 0
   m_Name: Cabin_Wall (81)
   m_TagString: Untagged
@@ -12719,8 +12705,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588440292712378
-MeshCollider:
+--- !u!65 &1688216481
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -12729,10 +12715,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4926588440328783470
 GameObject:
   m_ObjectHideFlags: 0
@@ -12744,7 +12729,7 @@ GameObject:
   - component: {fileID: 4926588440328783471}
   - component: {fileID: 4926588440328783466}
   - component: {fileID: 4926588440328783469}
-  - component: {fileID: 4926588440328783468}
+  - component: {fileID: 384994738}
   m_Layer: 0
   m_Name: Cabin_Wall (72)
   m_TagString: Untagged
@@ -12817,8 +12802,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588440328783468
-MeshCollider:
+--- !u!65 &384994738
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -12827,10 +12812,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4926588440345122979
 GameObject:
   m_ObjectHideFlags: 0
@@ -13133,7 +13117,7 @@ GameObject:
   - component: {fileID: 4926588440403984543}
   - component: {fileID: 4926588440403984538}
   - component: {fileID: 4926588440403984541}
-  - component: {fileID: 4926588440403984540}
+  - component: {fileID: 1358473959}
   m_Layer: 0
   m_Name: Cabin_Wall (16)
   m_TagString: Untagged
@@ -13206,8 +13190,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588440403984540
-MeshCollider:
+--- !u!65 &1358473959
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -13216,10 +13200,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4926588440425079361
 GameObject:
   m_ObjectHideFlags: 0
@@ -13328,7 +13311,7 @@ GameObject:
   - component: {fileID: 4926588440425138233}
   - component: {fileID: 4926588440425138180}
   - component: {fileID: 4926588440425138183}
-  - component: {fileID: 4926588440425138182}
+  - component: {fileID: 1517277839}
   m_Layer: 0
   m_Name: Cabin_Wall (79)
   m_TagString: Untagged
@@ -13401,8 +13384,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588440425138182
-MeshCollider:
+--- !u!65 &1517277839
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -13411,10 +13394,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4926588440427890061
 GameObject:
   m_ObjectHideFlags: 0
@@ -13523,7 +13505,7 @@ GameObject:
   - component: {fileID: 4926588440428363643}
   - component: {fileID: 4926588440428363590}
   - component: {fileID: 4926588440428363641}
-  - component: {fileID: 4926588440428363640}
+  - component: {fileID: 386189616}
   m_Layer: 0
   m_Name: Cabin_Wall (25)
   m_TagString: Untagged
@@ -13596,8 +13578,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588440428363640
-MeshCollider:
+--- !u!65 &386189616
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -13606,10 +13588,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4926588440433375569
 GameObject:
   m_ObjectHideFlags: 0
@@ -13816,7 +13797,7 @@ GameObject:
   - component: {fileID: 4926588440468912158}
   - component: {fileID: 4926588440468912157}
   - component: {fileID: 4926588440468912156}
-  - component: {fileID: 4926588440468912159}
+  - component: {fileID: 1856944896}
   m_Layer: 0
   m_Name: Cabin_Wall (91)
   m_TagString: Untagged
@@ -13889,8 +13870,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588440468912159
-MeshCollider:
+--- !u!65 &1856944896
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -13899,10 +13880,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: -0.000009059906, y: 0, z: 0.0000038146973}
 --- !u!1 &4926588440503512915
 GameObject:
   m_ObjectHideFlags: 0
@@ -13914,7 +13894,7 @@ GameObject:
   - component: {fileID: 4926588440503512912}
   - component: {fileID: 4926588440503512927}
   - component: {fileID: 4926588440503512926}
-  - component: {fileID: 4926588440503512913}
+  - component: {fileID: 749812481}
   m_Layer: 0
   m_Name: Cabin_Wall (33)
   m_TagString: Untagged
@@ -13987,8 +13967,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588440503512913
-MeshCollider:
+--- !u!65 &749812481
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -13997,10 +13977,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: -0.0000038146973, y: 0, z: 0.00000667572}
 --- !u!1 &4926588440505519156
 GameObject:
   m_ObjectHideFlags: 0
@@ -14109,7 +14088,7 @@ GameObject:
   - component: {fileID: 4926588440513456502}
   - component: {fileID: 4926588440513456501}
   - component: {fileID: 4926588440513456500}
-  - component: {fileID: 4926588440513456503}
+  - component: {fileID: 1549331257}
   m_Layer: 0
   m_Name: Cabin_Wall (37)
   m_TagString: Untagged
@@ -14182,8 +14161,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588440513456503
-MeshCollider:
+--- !u!65 &1549331257
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -14192,10 +14171,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4926588440520721101
 GameObject:
   m_ObjectHideFlags: 0
@@ -14207,7 +14185,7 @@ GameObject:
   - component: {fileID: 4926588440520721098}
   - component: {fileID: 4926588440520721097}
   - component: {fileID: 4926588440520721096}
-  - component: {fileID: 4926588440520721099}
+  - component: {fileID: 1333440118}
   m_Layer: 0
   m_Name: Cabin_Wall (69)
   m_TagString: Untagged
@@ -14280,8 +14258,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588440520721099
-MeshCollider:
+--- !u!65 &1333440118
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -14290,10 +14268,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4926588440535545927
 GameObject:
   m_ObjectHideFlags: 0
@@ -14402,7 +14379,7 @@ GameObject:
   - component: {fileID: 4926588440541784457}
   - component: {fileID: 4926588440541784468}
   - component: {fileID: 4926588440541784471}
-  - component: {fileID: 4926588440541784470}
+  - component: {fileID: 556821722}
   m_Layer: 0
   m_Name: Cabin_Wall (56)
   m_TagString: Untagged
@@ -14475,8 +14452,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588440541784470
-MeshCollider:
+--- !u!65 &556821722
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -14485,10 +14462,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: -0.000008583069, y: 0, z: 0.000005722046}
 --- !u!1 &4926588440547897302
 GameObject:
   m_ObjectHideFlags: 0
@@ -14597,7 +14573,7 @@ GameObject:
   - component: {fileID: 4926588440560136257}
   - component: {fileID: 4926588440560136268}
   - component: {fileID: 4926588440560136271}
-  - component: {fileID: 4926588440560136270}
+  - component: {fileID: 1712890146}
   m_Layer: 0
   m_Name: Cabin_Wall (70)
   m_TagString: Untagged
@@ -14670,8 +14646,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588440560136270
-MeshCollider:
+--- !u!65 &1712890146
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -14680,10 +14656,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4926588440562561410
 GameObject:
   m_ObjectHideFlags: 0
@@ -14695,7 +14670,8 @@ GameObject:
   - component: {fileID: 4926588440562561411}
   - component: {fileID: 4926588440562561422}
   - component: {fileID: 4926588440562561409}
-  - component: {fileID: 4926588440562561408}
+  - component: {fileID: 1221470891}
+  - component: {fileID: 1221470892}
   m_Layer: 0
   m_Name: Cabin_Wall (49)
   m_TagString: Untagged
@@ -14768,8 +14744,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588440562561408
-MeshCollider:
+--- !u!65 &1221470891
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -14778,10 +14754,22 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: 0.000006198883, y: 0, z: 0.000008583069}
+--- !u!65 &1221470892
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4926588440562561410}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: 0.000006198883, y: 0, z: 0.000008583069}
 --- !u!1 &4926588440562799395
 GameObject:
   m_ObjectHideFlags: 0
@@ -14890,7 +14878,7 @@ GameObject:
   - component: {fileID: 4926588440569790541}
   - component: {fileID: 4926588440569790536}
   - component: {fileID: 4926588440569790539}
-  - component: {fileID: 4926588440569790538}
+  - component: {fileID: 1824108246}
   m_Layer: 0
   m_Name: Cabin_Wall (36)
   m_TagString: Untagged
@@ -14963,8 +14951,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588440569790538
-MeshCollider:
+--- !u!65 &1824108246
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -14973,10 +14961,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4926588440571067275
 GameObject:
   m_ObjectHideFlags: 0
@@ -15280,7 +15267,7 @@ GameObject:
   - component: {fileID: 4926588440631752519}
   - component: {fileID: 4926588440631752514}
   - component: {fileID: 4926588440631752517}
-  - component: {fileID: 4926588440631752516}
+  - component: {fileID: 1913179285}
   m_Layer: 0
   m_Name: Cabin_Wall (4)
   m_TagString: Untagged
@@ -15353,8 +15340,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588440631752516
-MeshCollider:
+--- !u!65 &1913179285
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -15363,10 +15350,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4926588440634681080
 GameObject:
   m_ObjectHideFlags: 0
@@ -15767,7 +15753,7 @@ GameObject:
   - component: {fileID: 4926588440645870032}
   - component: {fileID: 4926588440645870047}
   - component: {fileID: 4926588440645870046}
-  - component: {fileID: 4926588440645870033}
+  - component: {fileID: 788687533}
   m_Layer: 0
   m_Name: Cabin_Wall (34)
   m_TagString: Untagged
@@ -15840,8 +15826,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588440645870033
-MeshCollider:
+--- !u!65 &788687533
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -15850,10 +15836,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: -0.000008583069, y: 0, z: 0.000005722046}
 --- !u!1 &4926588440645889695
 GameObject:
   m_ObjectHideFlags: 0
@@ -16156,7 +16141,7 @@ GameObject:
   - component: {fileID: 4926588440679955933}
   - component: {fileID: 4926588440679955928}
   - component: {fileID: 4926588440679955931}
-  - component: {fileID: 4926588440679955930}
+  - component: {fileID: 855001917}
   m_Layer: 0
   m_Name: Cabin_Wall (9)
   m_TagString: Untagged
@@ -16229,8 +16214,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588440679955930
-MeshCollider:
+--- !u!65 &855001917
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -16239,10 +16224,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: 0.0000014305115, y: 0, z: 0.000002861023}
 --- !u!1 &4926588440710225494
 GameObject:
   m_ObjectHideFlags: 0
@@ -16837,7 +16821,7 @@ GameObject:
   - component: {fileID: 4926588440793182897}
   - component: {fileID: 4926588440793182908}
   - component: {fileID: 4926588440793182911}
-  - component: {fileID: 4926588440793182910}
+  - component: {fileID: 1156377536}
   m_Layer: 0
   m_Name: Cabin_Wall (75)
   m_TagString: Untagged
@@ -16910,8 +16894,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588440793182910
-MeshCollider:
+--- !u!65 &1156377536
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -16920,10 +16904,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4926588440802190411
 GameObject:
   m_ObjectHideFlags: 0
@@ -17033,7 +17016,7 @@ GameObject:
   - component: {fileID: 4926588440821902216}
   - component: {fileID: 4926588440821902231}
   - component: {fileID: 4926588440821902230}
-  - component: {fileID: 4926588440821902217}
+  - component: {fileID: 2019368537}
   m_Layer: 0
   m_Name: Cabin_Wall (67)
   m_TagString: Untagged
@@ -17106,8 +17089,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588440821902217
-MeshCollider:
+--- !u!65 &2019368537
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -17116,10 +17099,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: 0, y: 0, z: 0.000020205975}
 --- !u!1 &4926588440822467582
 GameObject:
   m_ObjectHideFlags: 0
@@ -17228,7 +17210,7 @@ GameObject:
   - component: {fileID: 4926588440823088222}
   - component: {fileID: 4926588440823088221}
   - component: {fileID: 4926588440823088220}
-  - component: {fileID: 4926588440823088223}
+  - component: {fileID: 382048796}
   m_Layer: 0
   m_Name: Cabin_Wall (32)
   m_TagString: Untagged
@@ -17301,8 +17283,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588440823088223
-MeshCollider:
+--- !u!65 &382048796
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -17311,10 +17293,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4926588440838443090
 GameObject:
   m_ObjectHideFlags: 0
@@ -17718,7 +17699,7 @@ GameObject:
   - component: {fileID: 4926588440890697891}
   - component: {fileID: 4926588440890697902}
   - component: {fileID: 4926588440890697889}
-  - component: {fileID: 4926588440890697888}
+  - component: {fileID: 2044905800}
   m_Layer: 0
   m_Name: Cabin_Wall (5)
   m_TagString: Untagged
@@ -17791,8 +17772,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588440890697888
-MeshCollider:
+--- !u!65 &2044905800
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -17801,10 +17782,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4926588440897295795
 GameObject:
   m_ObjectHideFlags: 0
@@ -17816,7 +17796,7 @@ GameObject:
   - component: {fileID: 4926588440897295792}
   - component: {fileID: 4926588440897295807}
   - component: {fileID: 4926588440897295806}
-  - component: {fileID: 4926588440897295793}
+  - component: {fileID: 2143217170}
   m_Layer: 0
   m_Name: Cabin_Wall (27)
   m_TagString: Untagged
@@ -17889,8 +17869,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588440897295793
-MeshCollider:
+--- !u!65 &2143217170
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -17899,10 +17879,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4926588440897512320
 GameObject:
   m_ObjectHideFlags: 0
@@ -18011,7 +17990,7 @@ GameObject:
   - component: {fileID: 4926588440906608904}
   - component: {fileID: 4926588440906608919}
   - component: {fileID: 4926588440906608918}
-  - component: {fileID: 4926588440906608905}
+  - component: {fileID: 1107127350}
   m_Layer: 0
   m_Name: Cabin_Wall (65)
   m_TagString: Untagged
@@ -18084,8 +18063,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588440906608905
-MeshCollider:
+--- !u!65 &1107127350
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -18094,10 +18073,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: -0.000002861023, y: 0, z: 0.0000076293945}
 --- !u!1 &4926588440920427789
 GameObject:
   m_ObjectHideFlags: 0
@@ -18206,7 +18184,7 @@ GameObject:
   - component: {fileID: 4926588440926212056}
   - component: {fileID: 4926588440926212007}
   - component: {fileID: 4926588440926212006}
-  - component: {fileID: 4926588440926212057}
+  - component: {fileID: 562683191}
   m_Layer: 0
   m_Name: Cabin_Wall (92)
   m_TagString: Untagged
@@ -18279,8 +18257,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588440926212057
-MeshCollider:
+--- !u!65 &562683191
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -18289,10 +18267,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: 0.000011444092, y: 0, z: 0.0000038146973}
 --- !u!1 &4926588440943490437
 GameObject:
   m_ObjectHideFlags: 0
@@ -18595,7 +18572,8 @@ GameObject:
   - component: {fileID: 4926588440959322578}
   - component: {fileID: 4926588440959322577}
   - component: {fileID: 4926588440959322576}
-  - component: {fileID: 4926588440959322579}
+  - component: {fileID: 1139087338}
+  - component: {fileID: 1139087339}
   m_Layer: 0
   m_Name: Cabin_Wall (53)
   m_TagString: Untagged
@@ -18668,8 +18646,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588440959322579
-MeshCollider:
+--- !u!65 &1139087338
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -18678,10 +18656,22 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: 0.000006198883, y: 0, z: 0.000009536743}
+--- !u!65 &1139087339
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4926588440959322581}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: 0.000006198883, y: 0, z: 0.000009536743}
 --- !u!1 &4926588440969662324
 GameObject:
   m_ObjectHideFlags: 0
@@ -18887,7 +18877,7 @@ GameObject:
   - component: {fileID: 4926588440981481013}
   - component: {fileID: 4926588440981481008}
   - component: {fileID: 4926588440981481011}
-  - component: {fileID: 4926588440981481010}
+  - component: {fileID: 1820856239}
   m_Layer: 0
   m_Name: Cabin_Wall (54)
   m_TagString: Untagged
@@ -18960,8 +18950,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588440981481010
-MeshCollider:
+--- !u!65 &1820856239
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -18970,10 +18960,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: 0.0000023841858, y: 0, z: 0.0000076293945}
 --- !u!1 &4926588440987938912
 GameObject:
   m_ObjectHideFlags: 0
@@ -19278,7 +19267,7 @@ GameObject:
   - component: {fileID: 4926588441003147496}
   - component: {fileID: 4926588441003147511}
   - component: {fileID: 4926588441003147510}
-  - component: {fileID: 4926588441003147497}
+  - component: {fileID: 1426071690}
   m_Layer: 0
   m_Name: Cabin_Wall (10)
   m_TagString: Untagged
@@ -19351,8 +19340,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588441003147497
-MeshCollider:
+--- !u!65 &1426071690
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -19361,10 +19350,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: -0.000009059906, y: 0, z: 0.0000038146973}
 --- !u!1 &4926588441016902328
 GameObject:
   m_ObjectHideFlags: 0
@@ -19765,7 +19753,7 @@ GameObject:
   - component: {fileID: 4926588441057390907}
   - component: {fileID: 4926588441057390854}
   - component: {fileID: 4926588441057390905}
-  - component: {fileID: 4926588441057390904}
+  - component: {fileID: 339048402}
   m_Layer: 0
   m_Name: Cabin_Wall (11)
   m_TagString: Untagged
@@ -19838,8 +19826,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588441057390904
-MeshCollider:
+--- !u!65 &339048402
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -19848,10 +19836,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: 0.000011444092, y: 0, z: 0.0000038146973}
 --- !u!1 &4926588441059391710
 GameObject:
   m_ObjectHideFlags: 0
@@ -19863,7 +19850,7 @@ GameObject:
   - component: {fileID: 4926588441059391711}
   - component: {fileID: 4926588441059391706}
   - component: {fileID: 4926588441059391709}
-  - component: {fileID: 4926588441059391708}
+  - component: {fileID: 772895439}
   m_Layer: 0
   m_Name: Cabin_Wall (59)
   m_TagString: Untagged
@@ -19936,8 +19923,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588441059391708
-MeshCollider:
+--- !u!65 &772895439
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -19946,10 +19933,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: 0.000002861023, y: 0, z: 0.0000076293945}
 --- !u!1 &4926588441075523907
 GameObject:
   m_ObjectHideFlags: 0
@@ -20060,7 +20046,7 @@ GameObject:
   - component: {fileID: 4926588441079757622}
   - component: {fileID: 4926588441079757621}
   - component: {fileID: 4926588441079757620}
-  - component: {fileID: 4926588441079757623}
+  - component: {fileID: 1577466012}
   m_Layer: 0
   m_Name: Cabin_Wall (60)
   m_TagString: Untagged
@@ -20133,8 +20119,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588441079757623
-MeshCollider:
+--- !u!65 &1577466012
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -20143,10 +20129,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: 0.000011444092, y: 0, z: 0.0000076293945}
 --- !u!1 &4926588441081840523
 GameObject:
   m_ObjectHideFlags: 0
@@ -20255,7 +20240,7 @@ GameObject:
   - component: {fileID: 4926588441094531602}
   - component: {fileID: 4926588441094531601}
   - component: {fileID: 4926588441094531600}
-  - component: {fileID: 4926588441094531603}
+  - component: {fileID: 1622383269}
   m_Layer: 0
   m_Name: Cabin_Wall (38)
   m_TagString: Untagged
@@ -20328,8 +20313,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588441094531603
-MeshCollider:
+--- !u!65 &1622383269
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -20338,10 +20323,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4926588441099160389
 GameObject:
   m_ObjectHideFlags: 0
@@ -20548,7 +20532,7 @@ GameObject:
   - component: {fileID: 4926588441111309420}
   - component: {fileID: 4926588441111309419}
   - component: {fileID: 4926588441111309418}
-  - component: {fileID: 4926588441111309421}
+  - component: {fileID: 932053683}
   m_Layer: 0
   m_Name: Cabin_Wall (46)
   m_TagString: Untagged
@@ -20621,8 +20605,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588441111309421
-MeshCollider:
+--- !u!65 &932053683
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -20631,10 +20615,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4926588441112799048
 GameObject:
   m_ObjectHideFlags: 0
@@ -20646,7 +20629,7 @@ GameObject:
   - component: {fileID: 4926588441112799049}
   - component: {fileID: 4926588441112799060}
   - component: {fileID: 4926588441112799063}
-  - component: {fileID: 4926588441112799062}
+  - component: {fileID: 980372119}
   m_Layer: 0
   m_Name: Cabin_Wall (62)
   m_TagString: Untagged
@@ -20719,8 +20702,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588441112799062
-MeshCollider:
+--- !u!65 &980372119
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -20729,10 +20712,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: 0.0000071525574, y: 0, z: 0.000009536743}
 --- !u!1 &4926588441122067306
 GameObject:
   m_ObjectHideFlags: 0
@@ -20843,7 +20825,7 @@ GameObject:
   - component: {fileID: 4926588441124259420}
   - component: {fileID: 4926588441124259419}
   - component: {fileID: 4926588441124259418}
-  - component: {fileID: 4926588441124259421}
+  - component: {fileID: 574129940}
   m_Layer: 0
   m_Name: Cabin_Wall (63)
   m_TagString: Untagged
@@ -20916,8 +20898,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588441124259421
-MeshCollider:
+--- !u!65 &574129940
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -20926,10 +20908,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: 0.0000076293945, y: 0, z: 0.000009536743}
 --- !u!1 &4926588441129538310
 GameObject:
   m_ObjectHideFlags: 0
@@ -20941,7 +20922,7 @@ GameObject:
   - component: {fileID: 4926588441129538311}
   - component: {fileID: 4926588441129538306}
   - component: {fileID: 4926588441129538309}
-  - component: {fileID: 4926588441129538308}
+  - component: {fileID: 1499552080}
   m_Layer: 0
   m_Name: Cabin_Wall (74)
   m_TagString: Untagged
@@ -21014,8 +20995,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588441129538308
-MeshCollider:
+--- !u!65 &1499552080
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -21024,10 +21005,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4926588441148451805
 GameObject:
   m_ObjectHideFlags: 0
@@ -22208,7 +22188,8 @@ GameObject:
   - component: {fileID: 4926588441193605494}
   - component: {fileID: 4926588441193605493}
   - component: {fileID: 4926588441193605492}
-  - component: {fileID: 4926588441193605495}
+  - component: {fileID: 693005786}
+  - component: {fileID: 693005787}
   m_Layer: 0
   m_Name: Cabin_Wall (51)
   m_TagString: Untagged
@@ -22281,8 +22262,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588441193605495
-MeshCollider:
+--- !u!65 &693005786
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -22291,10 +22272,22 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: 0.000006198883, y: 0, z: 0.000009536743}
+--- !u!65 &693005787
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4926588441193605481}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: 0.000006198883, y: 0, z: 0.000009536743}
 --- !u!1 &4926588441197605742
 GameObject:
   m_ObjectHideFlags: 0
@@ -22306,7 +22299,7 @@ GameObject:
   - component: {fileID: 4926588441197605743}
   - component: {fileID: 4926588441197605738}
   - component: {fileID: 4926588441197605741}
-  - component: {fileID: 4926588441197605740}
+  - component: {fileID: 268636257}
   m_Layer: 0
   m_Name: Cabin_Wall (29)
   m_TagString: Untagged
@@ -22379,8 +22372,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588441197605740
-MeshCollider:
+--- !u!65 &268636257
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -22389,10 +22382,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4926588441199903156
 GameObject:
   m_ObjectHideFlags: 0
@@ -22792,7 +22784,7 @@ GameObject:
   - component: {fileID: 4926588441245116667}
   - component: {fileID: 4926588441245116614}
   - component: {fileID: 4926588441245116665}
-  - component: {fileID: 4926588441245116664}
+  - component: {fileID: 1668937518}
   m_Layer: 0
   m_Name: Cabin_Wall (80)
   m_TagString: Untagged
@@ -22865,8 +22857,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588441245116664
-MeshCollider:
+--- !u!65 &1668937518
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -22875,10 +22867,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: 0, y: 0, z: -0.0000064373016}
 --- !u!1 &4926588441262479031
 GameObject:
   m_ObjectHideFlags: 0
@@ -22987,7 +22978,7 @@ GameObject:
   - component: {fileID: 4926588441271711936}
   - component: {fileID: 4926588441271711951}
   - component: {fileID: 4926588441271711950}
-  - component: {fileID: 4926588441271711937}
+  - component: {fileID: 1370158995}
   m_Layer: 0
   m_Name: Cabin_Wall (30)
   m_TagString: Untagged
@@ -23060,8 +23051,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588441271711937
-MeshCollider:
+--- !u!65 &1370158995
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -23070,10 +23061,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: -0.000009059906, y: 0, z: 0.0000038146973}
 --- !u!1 &4926588441279482004
 GameObject:
   m_ObjectHideFlags: 0
@@ -23085,7 +23075,7 @@ GameObject:
   - component: {fileID: 4926588441279482005}
   - component: {fileID: 4926588441279482000}
   - component: {fileID: 4926588441279482003}
-  - component: {fileID: 4926588441279482002}
+  - component: {fileID: 56932682}
   m_Layer: 0
   m_Name: Cabin_Wall (8)
   m_TagString: Untagged
@@ -23158,8 +23148,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588441279482002
-MeshCollider:
+--- !u!65 &56932682
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -23168,10 +23158,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: 0, y: 0, z: 0.0000011920929}
 --- !u!1 &4926588441283361757
 GameObject:
   m_ObjectHideFlags: 0
@@ -23477,7 +23466,7 @@ GameObject:
   - component: {fileID: 4926588441304526908}
   - component: {fileID: 4926588441304526907}
   - component: {fileID: 4926588441304526906}
-  - component: {fileID: 4926588441304526909}
+  - component: {fileID: 1803934355}
   m_Layer: 0
   m_Name: Cabin_Wall (28)
   m_TagString: Untagged
@@ -23550,8 +23539,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588441304526909
-MeshCollider:
+--- !u!65 &1803934355
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -23560,10 +23549,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: 0.0000014305115, y: 0, z: 0.000002861023}
 --- !u!1 &4926588441318972914
 GameObject:
   m_ObjectHideFlags: 0
@@ -23769,7 +23757,7 @@ GameObject:
   - component: {fileID: 4926588441328462395}
   - component: {fileID: 4926588441328462342}
   - component: {fileID: 4926588441328462393}
-  - component: {fileID: 4926588441328462392}
+  - component: {fileID: 1371205307}
   m_Layer: 0
   m_Name: Cabin_Wall (86)
   m_TagString: Untagged
@@ -23842,8 +23830,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588441328462392
-MeshCollider:
+--- !u!65 &1371205307
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -23852,10 +23840,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: -0.00000166893, y: 0, z: 0.000005722046}
 --- !u!1 &4926588441338427177
 GameObject:
   m_ObjectHideFlags: 0
@@ -24354,7 +24341,7 @@ GameObject:
   - component: {fileID: 4926588441371468757}
   - component: {fileID: 4926588441371468752}
   - component: {fileID: 4926588441371468755}
-  - component: {fileID: 4926588441371468754}
+  - component: {fileID: 53573091}
   m_Layer: 0
   m_Name: Cabin_Wall (52)
   m_TagString: Untagged
@@ -24427,8 +24414,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588441371468754
-MeshCollider:
+--- !u!65 &53573091
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -24437,10 +24424,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: -0.0000038146973, y: 0, z: 0.000009536743}
 --- !u!1 &4926588441395649943
 GameObject:
   m_ObjectHideFlags: 0
@@ -24452,7 +24438,7 @@ GameObject:
   - component: {fileID: 4926588441395649940}
   - component: {fileID: 4926588441395649939}
   - component: {fileID: 4926588441395649938}
-  - component: {fileID: 4926588441395649941}
+  - component: {fileID: 264163239}
   m_Layer: 0
   m_Name: Cabin_Wall (19)
   m_TagString: Untagged
@@ -24525,8 +24511,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588441395649941
-MeshCollider:
+--- !u!65 &264163239
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -24535,10 +24521,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: -0.0000009536743, y: 0, z: 0.0000076293945}
 --- !u!1 &4926588441404929983
 GameObject:
   m_ObjectHideFlags: 0
@@ -24744,7 +24729,7 @@ GameObject:
   - component: {fileID: 4926588441420356223}
   - component: {fileID: 4926588441420356218}
   - component: {fileID: 4926588441420356221}
-  - component: {fileID: 4926588441420356220}
+  - component: {fileID: 1283735696}
   m_Layer: 0
   m_Name: Cabin_Wall (21)
   m_TagString: Untagged
@@ -24817,8 +24802,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588441420356220
-MeshCollider:
+--- !u!65 &1283735696
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -24827,10 +24812,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4926588441424433054
 GameObject:
   m_ObjectHideFlags: 0
@@ -24842,7 +24826,7 @@ GameObject:
   - component: {fileID: 4926588441424433055}
   - component: {fileID: 4926588441424433050}
   - component: {fileID: 4926588441424433053}
-  - component: {fileID: 4926588441424433052}
+  - component: {fileID: 747304940}
   m_Layer: 0
   m_Name: Cabin_Wall (41)
   m_TagString: Untagged
@@ -24915,8 +24899,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588441424433052
-MeshCollider:
+--- !u!65 &747304940
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -24925,10 +24909,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: -0.000008583069, y: 0, z: 0.000005722046}
 --- !u!1 &4926588441435526931
 GameObject:
   m_ObjectHideFlags: 0
@@ -24940,7 +24923,7 @@ GameObject:
   - component: {fileID: 4926588441435526928}
   - component: {fileID: 4926588441435526943}
   - component: {fileID: 4926588441435526942}
-  - component: {fileID: 4926588441435526929}
+  - component: {fileID: 1950265205}
   m_Layer: 0
   m_Name: Cabin_Wall (44)
   m_TagString: Untagged
@@ -25013,8 +24996,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588441435526929
-MeshCollider:
+--- !u!65 &1950265205
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -25023,10 +25006,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6}
+  m_Center: {x: 0.0000019073486, y: 0, z: 0.000034332275}
 --- !u!1 &4926588441437917156
 GameObject:
   m_ObjectHideFlags: 0
@@ -25054,7 +25036,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4926588441437917156}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 246.04999, y: 1.8718616, z: 261.45}
+  m_LocalPosition: {x: 246.04999, y: 1.8718616, z: 261.546}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -25136,7 +25118,7 @@ GameObject:
   - component: {fileID: 4926588441442336885}
   - component: {fileID: 4926588441442336880}
   - component: {fileID: 4926588441442336883}
-  - component: {fileID: 4926588441442336882}
+  - component: {fileID: 1614569536}
   m_Layer: 0
   m_Name: Cabin_Wall (17)
   m_TagString: Untagged
@@ -25209,8 +25191,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588441442336882
-MeshCollider:
+--- !u!65 &1614569536
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -25219,10 +25201,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4926588441447094675
 GameObject:
   m_ObjectHideFlags: 0
@@ -25331,7 +25312,7 @@ GameObject:
   - component: {fileID: 4926588441447767884}
   - component: {fileID: 4926588441447767883}
   - component: {fileID: 4926588441447767882}
-  - component: {fileID: 4926588441447767885}
+  - component: {fileID: 246202589}
   m_Layer: 0
   m_Name: Cabin_Wall (20)
   m_TagString: Untagged
@@ -25404,8 +25385,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588441447767885
-MeshCollider:
+--- !u!65 &246202589
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -25414,10 +25395,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4926588441448504255
 GameObject:
   m_ObjectHideFlags: 0
@@ -25429,7 +25409,7 @@ GameObject:
   - component: {fileID: 4926588441448504252}
   - component: {fileID: 4926588441448504251}
   - component: {fileID: 4926588441448504250}
-  - component: {fileID: 4926588441448504253}
+  - component: {fileID: 2117025324}
   m_Layer: 0
   m_Name: Cabin_Wall (84)
   m_TagString: Untagged
@@ -25502,8 +25482,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588441448504253
-MeshCollider:
+--- !u!65 &2117025324
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -25512,10 +25492,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: -0.0000019073486, y: 0, z: 0.0000038146973}
 --- !u!1 &4926588441455300235
 GameObject:
   m_ObjectHideFlags: 0
@@ -25527,7 +25506,7 @@ GameObject:
   - component: {fileID: 4926588441455300232}
   - component: {fileID: 4926588441455300247}
   - component: {fileID: 4926588441455300246}
-  - component: {fileID: 4926588441455300233}
+  - component: {fileID: 1939429071}
   m_Layer: 0
   m_Name: Cabin_Wall (83)
   m_TagString: Untagged
@@ -25600,8 +25579,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588441455300233
-MeshCollider:
+--- !u!65 &1939429071
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -25610,10 +25589,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: 0, y: 0, z: -0.0000047683716}
 --- !u!1 &4926588441461149752
 GameObject:
   m_ObjectHideFlags: 0
@@ -25722,7 +25700,7 @@ GameObject:
   - component: {fileID: 4926588441462935261}
   - component: {fileID: 4926588441462935256}
   - component: {fileID: 4926588441462935259}
-  - component: {fileID: 4926588441462935258}
+  - component: {fileID: 1791516796}
   m_Layer: 0
   m_Name: Cabin_Wall (73)
   m_TagString: Untagged
@@ -25795,8 +25773,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588441462935258
-MeshCollider:
+--- !u!65 &1791516796
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -25805,10 +25783,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4926588441486008047
 GameObject:
   m_ObjectHideFlags: 0
@@ -25917,7 +25894,7 @@ GameObject:
   - component: {fileID: 4926588441494144706}
   - component: {fileID: 4926588441494144705}
   - component: {fileID: 4926588441494144704}
-  - component: {fileID: 4926588441494144707}
+  - component: {fileID: 1095676359}
   m_Layer: 0
   m_Name: Cabin_Wall (90)
   m_TagString: Untagged
@@ -25990,8 +25967,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588441494144707
-MeshCollider:
+--- !u!65 &1095676359
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -26000,10 +25977,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: 0.0000014305115, y: 0, z: 0.000002861023}
 --- !u!1 &4926588441501848545
 GameObject:
   m_ObjectHideFlags: 0
@@ -26308,7 +26284,7 @@ GameObject:
   - component: {fileID: 4926588441516420742}
   - component: {fileID: 4926588441516420741}
   - component: {fileID: 4926588441516420740}
-  - component: {fileID: 4926588441516420743}
+  - component: {fileID: 415686954}
   m_Layer: 0
   m_Name: Cabin_Wall (94)
   m_TagString: Untagged
@@ -26381,8 +26357,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588441516420743
-MeshCollider:
+--- !u!65 &415686954
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -26391,10 +26367,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: -0.00000667572, y: 0, z: 0.000005722046}
 --- !u!1 &4926588441516613403
 GameObject:
   m_ObjectHideFlags: 0
@@ -26503,7 +26478,7 @@ GameObject:
   - component: {fileID: 4926588441518827726}
   - component: {fileID: 4926588441518827725}
   - component: {fileID: 4926588441518827724}
-  - component: {fileID: 4926588441518827727}
+  - component: {fileID: 1126534892}
   m_Layer: 0
   m_Name: Cabin_Wall (26)
   m_TagString: Untagged
@@ -26576,8 +26551,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588441518827727
-MeshCollider:
+--- !u!65 &1126534892
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -26586,10 +26561,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: 0.000011444092, y: 0, z: 0.000002861023}
 --- !u!1 &4926588441524883537
 GameObject:
   m_ObjectHideFlags: 0
@@ -26601,7 +26575,7 @@ GameObject:
   - component: {fileID: 4926588441524883550}
   - component: {fileID: 4926588441524883549}
   - component: {fileID: 4926588441524883548}
-  - component: {fileID: 4926588441524883551}
+  - component: {fileID: 1702347482}
   m_Layer: 0
   m_Name: Cabin_Wall (96)
   m_TagString: Untagged
@@ -26674,8 +26648,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588441524883551
-MeshCollider:
+--- !u!65 &1702347482
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -26684,10 +26658,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: -0.0000038146973, y: 0, z: 0.00000667572}
 --- !u!1 &4926588441542660347
 GameObject:
   m_ObjectHideFlags: 0
@@ -26699,7 +26672,7 @@ GameObject:
   - component: {fileID: 4926588441542660344}
   - component: {fileID: 4926588441542660295}
   - component: {fileID: 4926588441542660294}
-  - component: {fileID: 4926588441542660345}
+  - component: {fileID: 1485686764}
   m_Layer: 0
   m_Name: Cabin_Wall (15)
   m_TagString: Untagged
@@ -26772,8 +26745,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588441542660345
-MeshCollider:
+--- !u!65 &1485686764
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -26782,10 +26755,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4926588441543873343
 GameObject:
   m_ObjectHideFlags: 0
@@ -26894,7 +26866,7 @@ GameObject:
   - component: {fileID: 4926588441559280784}
   - component: {fileID: 4926588441559280799}
   - component: {fileID: 4926588441559280798}
-  - component: {fileID: 4926588441559280785}
+  - component: {fileID: 1891182705}
   m_Layer: 0
   m_Name: Cabin_Wall (58)
   m_TagString: Untagged
@@ -26967,8 +26939,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588441559280785
-MeshCollider:
+--- !u!65 &1891182705
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -26977,10 +26949,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: -0.000009536743, y: 0, z: 0.000005722046}
 --- !u!1 &4926588441586884760
 GameObject:
   m_ObjectHideFlags: 0
@@ -26992,7 +26963,7 @@ GameObject:
   - component: {fileID: 4926588441586884761}
   - component: {fileID: 4926588441586884964}
   - component: {fileID: 4926588441586884967}
-  - component: {fileID: 4926588441586884966}
+  - component: {fileID: 895487488}
   m_Layer: 0
   m_Name: Cabin_Wall (71)
   m_TagString: Untagged
@@ -27065,8 +27036,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588441586884966
-MeshCollider:
+--- !u!65 &895487488
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -27075,10 +27046,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4926588441590241152
 GameObject:
   m_ObjectHideFlags: 0
@@ -27577,7 +27547,7 @@ GameObject:
   - component: {fileID: 4926588441648733579}
   - component: {fileID: 4926588441648733590}
   - component: {fileID: 4926588441648733577}
-  - component: {fileID: 4926588441648733576}
+  - component: {fileID: 1298652635}
   m_Layer: 0
   m_Name: Cabin_Wall (68)
   m_TagString: Untagged
@@ -27650,8 +27620,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588441648733576
-MeshCollider:
+--- !u!65 &1298652635
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -27660,10 +27630,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4926588441651036341
 GameObject:
   m_ObjectHideFlags: 0
@@ -28160,7 +28129,7 @@ GameObject:
   - component: {fileID: 4926588441685585772}
   - component: {fileID: 4926588441685585771}
   - component: {fileID: 4926588441685585770}
-  - component: {fileID: 4926588441685585773}
+  - component: {fileID: 1613995706}
   m_Layer: 0
   m_Name: Cabin_Wall (76)
   m_TagString: Untagged
@@ -28233,8 +28202,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588441685585773
-MeshCollider:
+--- !u!65 &1613995706
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -28243,10 +28212,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4926588441691054075
 GameObject:
   m_ObjectHideFlags: 0
@@ -28355,7 +28323,7 @@ GameObject:
   - component: {fileID: 4926588441707168981}
   - component: {fileID: 4926588441707168976}
   - component: {fileID: 4926588441707168979}
-  - component: {fileID: 4926588441707168978}
+  - component: {fileID: 1115483045}
   m_Layer: 0
   m_Name: Cabin_Wall (6)
   m_TagString: Untagged
@@ -28428,8 +28396,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588441707168978
-MeshCollider:
+--- !u!65 &1115483045
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -28438,10 +28406,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4926588441712777288
 GameObject:
   m_ObjectHideFlags: 0
@@ -29331,7 +29298,7 @@ GameObject:
   - component: {fileID: 4926588441766755672}
   - component: {fileID: 4926588441766755623}
   - component: {fileID: 4926588441766755622}
-  - component: {fileID: 4926588441766755673}
+  - component: {fileID: 1934788738}
   m_Layer: 0
   m_Name: Cabin_Wall (14)
   m_TagString: Untagged
@@ -29404,8 +29371,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588441766755673
-MeshCollider:
+--- !u!65 &1934788738
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -29414,10 +29381,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: 0.000006198883, y: 0, z: 0.0000076293945}
 --- !u!1 &4926588441769162365
 GameObject:
   m_ObjectHideFlags: 0
@@ -29526,7 +29492,7 @@ GameObject:
   - component: {fileID: 4926588441773816296}
   - component: {fileID: 4926588441773816311}
   - component: {fileID: 4926588441773816310}
-  - component: {fileID: 4926588441773816297}
+  - component: {fileID: 1345047752}
   m_Layer: 0
   m_Name: Cabin_Wall (35)
   m_TagString: Untagged
@@ -29599,8 +29565,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588441773816297
-MeshCollider:
+--- !u!65 &1345047752
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -29609,10 +29575,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: 0.0000064373016, y: 0, z: -0.0000076293945}
 --- !u!1 &4926588441779956457
 GameObject:
   m_ObjectHideFlags: 0
@@ -29915,7 +29880,7 @@ GameObject:
   - component: {fileID: 4926588441792977160}
   - component: {fileID: 4926588441792977175}
   - component: {fileID: 4926588441792977174}
-  - component: {fileID: 4926588441792977161}
+  - component: {fileID: 1561079650}
   m_Layer: 0
   m_Name: Cabin_Wall (48)
   m_TagString: Untagged
@@ -29988,8 +29953,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588441792977161
-MeshCollider:
+--- !u!65 &1561079650
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -29998,10 +29963,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4926588441794300500
 GameObject:
   m_ObjectHideFlags: 0
@@ -30013,7 +29977,7 @@ GameObject:
   - component: {fileID: 4926588441794300501}
   - component: {fileID: 4926588441794300496}
   - component: {fileID: 4926588441794300499}
-  - component: {fileID: 4926588441794300498}
+  - component: {fileID: 17789625}
   m_Layer: 0
   m_Name: Cabin_Wall (13)
   m_TagString: Untagged
@@ -30086,8 +30050,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588441794300498
-MeshCollider:
+--- !u!65 &17789625
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -30096,10 +30060,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: 0.0000011920929, y: 0, z: 0.0000076293945}
 --- !u!1 &4926588441797665038
 GameObject:
   m_ObjectHideFlags: 0
@@ -30210,7 +30173,7 @@ GameObject:
   - component: {fileID: 4926588441798293157}
   - component: {fileID: 4926588441798293152}
   - component: {fileID: 4926588441798293155}
-  - component: {fileID: 4926588441798293154}
+  - component: {fileID: 874191949}
   m_Layer: 0
   m_Name: Cabin_Wall (61)
   m_TagString: Untagged
@@ -30283,8 +30246,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588441798293154
-MeshCollider:
+--- !u!65 &874191949
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -30293,10 +30256,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: -0.0000038146973, y: 0, z: 0.000008583069}
 --- !u!1 &4926588441809103772
 GameObject:
   m_ObjectHideFlags: 0
@@ -30308,7 +30270,7 @@ GameObject:
   - component: {fileID: 4926588441809103773}
   - component: {fileID: 4926588441809103768}
   - component: {fileID: 4926588441809103771}
-  - component: {fileID: 4926588441809103770}
+  - component: {fileID: 1520555167}
   m_Layer: 0
   m_Name: Cabin_Wall (47)
   m_TagString: Untagged
@@ -30381,8 +30343,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588441809103770
-MeshCollider:
+--- !u!65 &1520555167
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -30391,10 +30353,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4926588441828033103
 GameObject:
   m_ObjectHideFlags: 0
@@ -30406,7 +30367,7 @@ GameObject:
   - component: {fileID: 4926588441828033100}
   - component: {fileID: 4926588441828033099}
   - component: {fileID: 4926588441828033098}
-  - component: {fileID: 4926588441828033101}
+  - component: {fileID: 2105054115}
   m_Layer: 0
   m_Name: Cabin_Wall (22)
   m_TagString: Untagged
@@ -30479,8 +30440,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588441828033101
-MeshCollider:
+--- !u!65 &2105054115
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -30489,10 +30450,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000006}
+  m_Center: {x: 0, y: 0, z: -0.0000166893}
 --- !u!1 &4926588441828856205
 GameObject:
   m_ObjectHideFlags: 0
@@ -30990,7 +30950,7 @@ GameObject:
   - component: {fileID: 4926588441870651604}
   - component: {fileID: 4926588441870651603}
   - component: {fileID: 4926588441870651602}
-  - component: {fileID: 4926588441870651605}
+  - component: {fileID: 1281357997}
   m_Layer: 0
   m_Name: Cabin_Wall (77)
   m_TagString: Untagged
@@ -31063,8 +31023,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588441870651605
-MeshCollider:
+--- !u!65 &1281357997
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -31073,10 +31033,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4926588441894490353
 GameObject:
   m_ObjectHideFlags: 0
@@ -31088,7 +31047,7 @@ GameObject:
   - component: {fileID: 4926588441894490366}
   - component: {fileID: 4926588441894490365}
   - component: {fileID: 4926588441894490364}
-  - component: {fileID: 4926588441894490367}
+  - component: {fileID: 463790409}
   m_Layer: 0
   m_Name: Cabin_Wall (39)
   m_TagString: Untagged
@@ -31161,8 +31120,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588441894490367
-MeshCollider:
+--- !u!65 &463790409
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -31171,10 +31130,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4926588441898463130
 GameObject:
   m_ObjectHideFlags: 0
@@ -31381,7 +31339,8 @@ GameObject:
   - component: {fileID: 4926588441905112279}
   - component: {fileID: 4926588441905112274}
   - component: {fileID: 4926588441905112277}
-  - component: {fileID: 4926588441905112276}
+  - component: {fileID: 595544856}
+  - component: {fileID: 595544857}
   m_Layer: 0
   m_Name: Cabin_Wall (50)
   m_TagString: Untagged
@@ -31454,8 +31413,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588441905112276
-MeshCollider:
+--- !u!65 &595544856
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -31464,10 +31423,22 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: 0.0000014305115, y: 0, z: 0.000008583069}
+--- !u!65 &595544857
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4926588441905112278}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: 0.0000014305115, y: 0, z: 0.000008583069}
 --- !u!1 &4926588441912284691
 GameObject:
   m_ObjectHideFlags: 0
@@ -31576,7 +31547,7 @@ GameObject:
   - component: {fileID: 4926588441919743912}
   - component: {fileID: 4926588441919743927}
   - component: {fileID: 4926588441919743926}
-  - component: {fileID: 4926588441919743913}
+  - component: {fileID: 116436645}
   m_Layer: 0
   m_Name: Cabin_Wall (45)
   m_TagString: Untagged
@@ -31649,8 +31620,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588441919743913
-MeshCollider:
+--- !u!65 &116436645
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -31659,10 +31630,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4926588441933253882
 GameObject:
   m_ObjectHideFlags: 0
@@ -31868,7 +31838,7 @@ GameObject:
   - component: {fileID: 4926588441943567658}
   - component: {fileID: 4926588441943567657}
   - component: {fileID: 4926588441943567656}
-  - component: {fileID: 4926588441943567659}
+  - component: {fileID: 1408467816}
   m_Layer: 0
   m_Name: Cabin_Wall (95)
   m_TagString: Untagged
@@ -31941,8 +31911,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588441943567659
-MeshCollider:
+--- !u!65 &1408467816
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -31951,10 +31921,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: 0.00000333786, y: 0, z: 0.00000667572}
 --- !u!1 &4926588441945970585
 GameObject:
   m_ObjectHideFlags: 0
@@ -32258,7 +32227,7 @@ GameObject:
   - component: {fileID: 4926588441986788090}
   - component: {fileID: 4926588441986788089}
   - component: {fileID: 4926588441986788088}
-  - component: {fileID: 4926588441986788091}
+  - component: {fileID: 847741114}
   m_Layer: 0
   m_Name: Cabin_Wall (64)
   m_TagString: Untagged
@@ -32331,8 +32300,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588441986788091
-MeshCollider:
+--- !u!65 &847741114
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -32341,10 +32310,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: 0.0000023841858, y: 0, z: 0.0000076293945}
 --- !u!1 &4926588441993561293
 GameObject:
   m_ObjectHideFlags: 0
@@ -32356,7 +32324,7 @@ GameObject:
   - component: {fileID: 4926588441993561290}
   - component: {fileID: 4926588441993561289}
   - component: {fileID: 4926588441993561288}
-  - component: {fileID: 4926588441993561291}
+  - component: {fileID: 2050218448}
   m_Layer: 0
   m_Name: Cabin_Wall (93)
   m_TagString: Untagged
@@ -32429,8 +32397,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588441993561291
-MeshCollider:
+--- !u!65 &2050218448
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -32439,10 +32407,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: 0.0000009536743, y: 0, z: 0.0000038146973}
 --- !u!1 &4926588442001512530
 GameObject:
   m_ObjectHideFlags: 0
@@ -32551,7 +32518,7 @@ GameObject:
   - component: {fileID: 4926588442005662936}
   - component: {fileID: 4926588442005662887}
   - component: {fileID: 4926588442005662886}
-  - component: {fileID: 4926588442005662937}
+  - component: {fileID: 986199177}
   m_Layer: 0
   m_Name: Cabin_Wall (40)
   m_TagString: Untagged
@@ -32624,8 +32591,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588442005662937
-MeshCollider:
+--- !u!65 &986199177
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -32634,10 +32601,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: 0.0000009536743, y: 0, z: 0.000005722046}
 --- !u!1 &4926588442006900155
 GameObject:
   m_ObjectHideFlags: 0
@@ -32843,7 +32809,7 @@ GameObject:
   - component: {fileID: 4926588442035267534}
   - component: {fileID: 4926588442035267533}
   - component: {fileID: 4926588442035267532}
-  - component: {fileID: 4926588442035267535}
+  - component: {fileID: 1976621398}
   m_Layer: 0
   m_Name: Cabin_Wall (82)
   m_TagString: Untagged
@@ -32916,8 +32882,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588442035267535
-MeshCollider:
+--- !u!65 &1976621398
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -32926,10 +32892,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4926588442047261042
 GameObject:
   m_ObjectHideFlags: 0
@@ -32941,7 +32906,7 @@ GameObject:
   - component: {fileID: 4926588442047261043}
   - component: {fileID: 4926588442047261054}
   - component: {fileID: 4926588442047261041}
-  - component: {fileID: 4926588442047261040}
+  - component: {fileID: 706639611}
   m_Layer: 0
   m_Name: Cabin_Wall (43)
   m_TagString: Untagged
@@ -33014,8 +32979,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588442047261040
-MeshCollider:
+--- !u!65 &706639611
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -33024,10 +32989,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: -0.000009536743, y: 0, z: 0.000005722046}
 --- !u!1 &4926588442048583509
 GameObject:
   m_ObjectHideFlags: 0
@@ -33235,7 +33199,7 @@ GameObject:
   - component: {fileID: 4926588442055778458}
   - component: {fileID: 4926588442055778457}
   - component: {fileID: 4926588442055778456}
-  - component: {fileID: 4926588442055778459}
+  - component: {fileID: 1699644903}
   m_Layer: 0
   m_Name: Cabin_Wall (85)
   m_TagString: Untagged
@@ -33308,8 +33272,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588442055778459
-MeshCollider:
+--- !u!65 &1699644903
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -33318,10 +33282,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: -0.00000166893, y: 0, z: 0.000005722046}
 --- !u!1 &4926588442056981907
 GameObject:
   m_ObjectHideFlags: 0
@@ -33915,7 +33878,7 @@ GameObject:
   - component: {fileID: 4926588442133930953}
   - component: {fileID: 4926588442133930964}
   - component: {fileID: 4926588442133930967}
-  - component: {fileID: 4926588442133930966}
+  - component: {fileID: 1533958160}
   m_Layer: 0
   m_Name: Cabin_Wall (66)
   m_TagString: Untagged
@@ -33988,8 +33951,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4926588442133930966
-MeshCollider:
+--- !u!65 &1533958160
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -33998,10 +33961,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4938827042655608224
 GameObject:
   m_ObjectHideFlags: 0
@@ -34560,7 +34522,7 @@ GameObject:
   - component: {fileID: 6158464593209875261}
   - component: {fileID: 6192723536807570532}
   - component: {fileID: 7211063336454699498}
-  - component: {fileID: 6652520421797853553}
+  - component: {fileID: 1227921577}
   m_Layer: 0
   m_Name: Cabin_Wall (87)
   m_TagString: Untagged
@@ -34633,8 +34595,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &6652520421797853553
-MeshCollider:
+--- !u!65 &1227921577
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -34643,10 +34605,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300012, guid: 12e9e0884cb29d943810889886f94c2c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.48000002, y: 3.7437232, z: 3.6000001}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &2608695791392702844
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34714,13 +34675,32 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 64241383394901210, guid: 8be66c43a1d37f14ab60c25158804e03, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8be66c43a1d37f14ab60c25158804e03, type: 3}
 --- !u!4 &2603825098928800032 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4879776684769372, guid: 8be66c43a1d37f14ab60c25158804e03, type: 3}
   m_PrefabInstance: {fileID: 2608695791392702844}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2609019514440989584 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1946603453020908, guid: 8be66c43a1d37f14ab60c25158804e03, type: 3}
+  m_PrefabInstance: {fileID: 2608695791392702844}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1221425847
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2609019514440989584}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.48000008, y: 0.46796545, z: 3.6000006}
+  m_Center: {x: 0.0000038146973, y: 0, z: -0.0000032186508}
 --- !u!1001 &4721701848535504839
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34788,8 +34768,27 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 64241383394901210, guid: 8be66c43a1d37f14ab60c25158804e03, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8be66c43a1d37f14ab60c25158804e03, type: 3}
+--- !u!1 &4719825995209010475 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1946603453020908, guid: 8be66c43a1d37f14ab60c25158804e03, type: 3}
+  m_PrefabInstance: {fileID: 4721701848535504839}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &666378317
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4719825995209010475}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.48000008, y: 0.46796545, z: 3.6000006}
+  m_Center: {x: 0.0000038146973, y: 0, z: -0.000012636185}
 --- !u!4 &4726401300707841947 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4879776684769372, guid: 8be66c43a1d37f14ab60c25158804e03, type: 3}
