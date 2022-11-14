@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 112866075923159175}
   - component: {fileID: 6558573564699742583}
   - component: {fileID: 4904484793054270636}
-  - component: {fileID: 4904484793054270637}
+  - component: {fileID: 1125671611}
   m_Layer: 0
   m_Name: Object004
   m_TagString: Ammo Box
@@ -84,8 +84,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4904484793054270637
-MeshCollider:
+--- !u!65 &1125671611
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -94,10 +94,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 45fb3b613218da844b047d1f9349e0d6, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 1282.2863, y: 719.42444, z: 406.82083}
+  m_Center: {x: 0, y: -0.0009765625, z: -0.0005187988}
 --- !u!1 &6848845211724691734
 GameObject:
   m_ObjectHideFlags: 0
@@ -122,7 +121,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6848845211724691734}
-  m_LocalRotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -15.443121, y: 0.26218992, z: -8.359607}
   m_LocalScale: {x: 0.001, y: 0.001, z: 0.001}
   m_ConstrainProportionsScale: 0
@@ -158,7 +157,7 @@ GameObject:
   - component: {fileID: 9179961549681473105}
   - component: {fileID: 8575279277262800609}
   - component: {fileID: 2508848283104929988}
-  - component: {fileID: 8575279277262800610}
+  - component: {fileID: 512316439}
   m_Layer: 0
   m_Name: Object005
   m_TagString: Ammo Box
@@ -231,8 +230,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &8575279277262800610
-MeshCollider:
+--- !u!65 &512316439
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -241,7 +240,6 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300002, guid: 45fb3b613218da844b047d1f9349e0d6, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 1173.7632, y: 758.7626, z: 263.37527}
+  m_Center: {x: -2.7148895e-12, y: -382.08783, z: -37.8747}

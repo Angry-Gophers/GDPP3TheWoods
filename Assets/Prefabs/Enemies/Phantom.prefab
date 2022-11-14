@@ -6592,9 +6592,9 @@ MonoBehaviour:
   drop: {fileID: 5470681425243767183, guid: 7ce1a296039fdc64fadac70cb07221e5, type: 3}
   dropTrans: {fileID: 3259018739722332655}
   HP: 5
-  attackSpeed: 4
+  attackSpeed: 3.5
   damage: 1
-  range: 4
+  range: 5
   sizeRandMin: 0.75
   sizeRandMax: 1.25
   staggerTime: 0
@@ -6653,7 +6653,7 @@ AudioSource:
   m_GameObject: {fileID: 8149738876329093800}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: e85ce825097906242a4cf785646d54fb, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1

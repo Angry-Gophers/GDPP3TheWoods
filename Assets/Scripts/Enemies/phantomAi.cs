@@ -16,6 +16,7 @@ public class phantomAi : enemyBase
             //Set walk animation speed
             anim.SetFloat("locomotion", Mathf.Lerp(anim.GetFloat("locomotion"), agent.velocity.normalized.magnitude, Time.deltaTime * 3));
         }
+
     }
 
     //Find the fireplace
@@ -46,20 +47,19 @@ public class phantomAi : enemyBase
     //Melee attack
     public override IEnumerator attack()
     {
-        isAttacking = true;
-
         //Shoots a raycast and checks if the hit object can be damaged
         RaycastHit hit;
         if(Physics.Raycast(dropTrans.transform.position, transform.forward, out hit, range))
         {
             if (hit.collider.GetComponent<IDamage>() != null && hit.collider.tag != "Enemy")
             {
+                isAttacking = true;
                 anim.SetTrigger("cast3");
                 hit.collider.GetComponent<IDamage>().TakeDamage(damage);
+                yield return new WaitForSeconds(attackSpeed);
             }
         }
 
-        yield return new WaitForSeconds(attackSpeed);
         isAttacking = false;
     }
 

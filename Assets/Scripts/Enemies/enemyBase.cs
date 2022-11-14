@@ -23,7 +23,7 @@ public class enemyBase : MonoBehaviour, IDamage
     [Range(1f, 2f)] [SerializeField] float sizeRandMax;
     [Range (0.1f, 5f)][SerializeField] float staggerTime;
     [Range(1, 4)] [SerializeField] int staggerChance;
-    [SerializeField] int corpseTime;
+    [SerializeField] protected int corpseTime;
     [SerializeField] int trappedTime;
 
     protected float originalSpeed;
@@ -49,6 +49,8 @@ public class enemyBase : MonoBehaviour, IDamage
         gameObject.transform.transform.localScale = new Vector3(size, size, size);
         agent.speed *= 1 / size;
         originalSpeed = agent.speed;
+        float HPmod = (float)HP * size;
+        HP = (int)HPmod + 1;
     }
 
     protected void Update()

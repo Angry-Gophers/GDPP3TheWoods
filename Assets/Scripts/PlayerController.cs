@@ -12,6 +12,9 @@ public class PlayerController : MonoBehaviour, IDamage
     [SerializeField] AudioClip waveAud;
     [SerializeField] float waveVol;
     AudioSource aud;
+    public bool isHealing;
+    bool inverted;
+    
     public int maxTraps;
     public int maxBoards;
     public int trapsHeld;
@@ -35,6 +38,10 @@ public class PlayerController : MonoBehaviour, IDamage
     [SerializeField] public int antlers;
     [SerializeField] int ammoCost;
     Vector3 playervelocity;
+
+    [Header("---Audio---")]
+    [SerializeField] List<AudioClip> hurtAud;
+    [Range(0f, 1f)] [SerializeField] float hurtVol;
 
     int timesJumped;
     // Start is called before the first frame update
@@ -87,15 +94,19 @@ public class PlayerController : MonoBehaviour, IDamage
     public void TakeDamage(int dmg)
     {
         HP -= dmg;
+        gameManager.instance.playerHPBar.fillAmount = (float)HP / (float)hpOriginal;
 
-        gameManager.instance.playerHPBar.fillAmount = (float)HP / (float) hpOriginal;
-
-        if(HP <= 0)
+        if (HP <= 0)
         {
             gameManager.instance.playerDeadMenu.active = true;
             gameManager.instance.menuCurrentlyOpen = gameManager.instance.playerDeadMenu;
+            gameManager.instance.ClearHud();
             gameManager.instance.deadText.text = "You have died \nWaves Survived: " + spawnManager.instance.wave;
             gameManager.instance.cursorLockPause();
+        }
+        else
+        {
+            aud.PlayOneShot(hurtAud[Random.Range(0, hurtAud.Count)], hurtVol);
         }
     }
 
@@ -259,5 +270,10 @@ public class PlayerController : MonoBehaviour, IDamage
     {
         Debug.Log("New wave");
         aud.PlayOneShot(waveAud, waveVol);
+    }
+
+    public void Heal()
+    {
+        HP = hpOriginal;
     }
 }
