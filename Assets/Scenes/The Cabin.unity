@@ -703,6 +703,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d59a9dac96c6d3f4abcd74d303399c78, type: 3}
+--- !u!1 &909541617 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7049469740908534062, guid: bec35a541f185064ab5877e29b9f0193, type: 3}
+  m_PrefabInstance: {fileID: 412985496}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &967915822
 GameObject:
   m_ObjectHideFlags: 0
@@ -1017,6 +1022,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2980387295509691897, guid: 7366155a048f7a042b3463e90f4f80d2, type: 3}
+      propertyPath: shop
+      value: 
+      objectReference: {fileID: 909541617}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7366155a048f7a042b3463e90f4f80d2, type: 3}
 --- !u!4 &1541202034 stripped

@@ -104,11 +104,10 @@ GameObject:
   m_Component:
   - component: {fileID: 7049469740908037390}
   - component: {fileID: 7049469740899019518}
-  - component: {fileID: 1149791645}
   - component: {fileID: 163645031}
   m_Layer: 3
   m_Name: Shop Car
-  m_TagString: Shop Car
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -153,23 +152,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1149791645
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7049469740908534062}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98c50bc4d5f118141b402ef32e89e282, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  HP: 50
-  wreckAud: {fileID: 8300000, guid: 6f9d84ab3851bfd4987469d92f61a58e, type: 3}
-  wreckVol: 1
-  headlights: {fileID: 6101392928102297179}
-  brakelights: {fileID: 7127919104572018447}
 --- !u!82 &163645031
 AudioSource:
   m_ObjectHideFlags: 0
@@ -278,6 +260,7 @@ GameObject:
   - component: {fileID: 7049469740905137456}
   - component: {fileID: 7049469740906268660}
   - component: {fileID: 1427129520}
+  - component: {fileID: 8973926799003953759}
   m_Layer: 3
   m_Name: Truck_body
   m_TagString: Shop Car
@@ -367,6 +350,23 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: fd9e6a546ec98d944b5064d303288236, type: 3}
+--- !u!114 &8973926799003953759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7049469740908534064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98c50bc4d5f118141b402ef32e89e282, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HP: 30
+  wreckAud: {fileID: 8300000, guid: 6f9d84ab3851bfd4987469d92f61a58e, type: 3}
+  wreckVol: 1
+  headlights: {fileID: 6101392928102297179}
+  brakelights: {fileID: 7127919104572018447}
 --- !u!1 &7049469740908534066
 GameObject:
   m_ObjectHideFlags: 0
