@@ -6,8 +6,11 @@ public class MyDoorController : MonoBehaviour
 {
     public Animator doorAnim;
 
-    private bool doorOpen = false;
+    [SerializeField] AudioSource audioSource;
+    [SerializeField] AudioClip[] doorNoises;
+    [Range(0, 1)] [SerializeField] float doorNoisesAudVolume;
 
+    private bool doorOpen = false;
     private void Awake()
     {
         doorAnim = gameObject.GetComponent<Animator>();
@@ -19,6 +22,7 @@ public class MyDoorController : MonoBehaviour
         {
             gameObject.GetComponent<Collider>().enabled = false;
             doorAnim.Play("DoorOpen", 0, 0.0f);
+            audioSource.PlayOneShot(doorNoises[1], doorNoisesAudVolume);
             gameObject.GetComponent<Collider>().enabled = true;
             doorOpen = true;
         }
@@ -26,6 +30,7 @@ public class MyDoorController : MonoBehaviour
         {
             gameObject.GetComponent<Collider>().enabled = false;
             doorAnim.Play("DoorClose", 0, 0.0f);
+            audioSource.PlayOneShot(doorNoises[0], doorNoisesAudVolume);
             gameObject.GetComponent<Collider>().enabled = true;
             doorOpen = false;
         }
