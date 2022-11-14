@@ -36,6 +36,7 @@ public class spawnManager : MonoBehaviour
     bool eliteSpawn;
     bool firstSpawn;
     public bool inWave;
+    bool everyOther;
 
     void Start()
     {
@@ -76,13 +77,15 @@ public class spawnManager : MonoBehaviour
 
         gameManager.instance.playerScript.Heal();
         gameManager.instance.shopScript.Heal();
-        //gameManager.instance.UpdatePlayerHUD();
+
+        if(wave != 1)
+            gameManager.instance.UpdatePlayerHUD();
         gameManager.instance.shopScript.UpdateHud();
         gameManager.instance.waveText.text = "Wave: " + wave;
         gameManager.instance.anim.SetTrigger("NewWave");
 
         //Increase difficulty
-        if (wave % 3 == 0)
+        if (wave % 4 == 0)
         {
             if (spawnRate > 1)
                 spawnRate -= .5f;
@@ -93,7 +96,7 @@ public class spawnManager : MonoBehaviour
             if (eliteRate > 3)
                 eliteRate -= 0.5f;
 
-            if (eliteLimit < maxElites)
+            if (eliteLimit < maxElites && everyOther)
                 eliteLimit++;
 
             if(targetFireLimit < maxFireTargetLimit)
@@ -101,6 +104,8 @@ public class spawnManager : MonoBehaviour
 
             if (shopLimit < maxShopLimit)
                 shopLimit++;
+
+            everyOther = !everyOther;
         }
 
         if (wave != 1 && enemyLimit < maxLimit)
