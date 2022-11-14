@@ -730,7 +730,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -438, y: 76}
+  m_AnchoredPosition: {x: -438, y: 233}
   m_SizeDelta: {x: 223.8251, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &211524687
@@ -755,7 +755,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Development Team\r\n\nJake Wilson - Level Design/UI\r\nCalvin Schmidt
     \u2013 Enemy AI\r\nTerrance Hall \u2013 Player Character\r\nKyle Coger \u2013
-    Weapons/Shop\n\n"
+    Weapons/Shop\n\n\n\nQA \n\nShemaiah Nelson\n David Tarnowski\nNicholas Taveras\nAustin
+    Anderson\nPatrick Thayer\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 90002a30397c0de4285d067a48b27af4, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 90002a30397c0de4285d067a48b27af4, type: 2}
