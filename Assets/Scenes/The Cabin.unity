@@ -1026,18 +1026,6 @@ PrefabInstance:
       propertyPath: shop
       value: 
       objectReference: {fileID: 909541617}
-    - target: {fileID: 5841294614468220975, guid: 7366155a048f7a042b3463e90f4f80d2, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -90
-      objectReference: {fileID: 0}
-    - target: {fileID: 5841294614468220975, guid: 7366155a048f7a042b3463e90f4f80d2, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -59
-      objectReference: {fileID: 0}
-    - target: {fileID: 7294960995462500936, guid: 7366155a048f7a042b3463e90f4f80d2, type: 3}
-      propertyPath: m_PreserveAspect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7366155a048f7a042b3463e90f4f80d2, type: 3}
 --- !u!4 &1541202034 stripped
