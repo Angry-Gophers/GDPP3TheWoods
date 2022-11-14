@@ -41,10 +41,10 @@ public class DoorRaycast : MonoBehaviour
                 
                 isCrossHairActive = true;
                 doOnce = true;
-
                 if (Input.GetKeyDown(openDoorKey))
                 {
-                    raycastedObj.PlayAnimation();
+                    if(raycastedObj.AnimatorIsPlaying() == false)
+                        raycastedObj.PlayAnimation();
                 }
             }
         }
