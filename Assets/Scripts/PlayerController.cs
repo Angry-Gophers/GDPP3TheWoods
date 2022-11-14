@@ -12,7 +12,6 @@ public class PlayerController : MonoBehaviour, IDamage
     [SerializeField] AudioClip waveAud;
     [SerializeField] float waveVol;
     AudioSource aud;
-    public bool isHealing;
     bool inverted;
     
     public int maxTraps;
@@ -117,7 +116,7 @@ public class PlayerController : MonoBehaviour, IDamage
             RaycastHit hit;
             if(Physics.Raycast(Camera.main.ViewportPointToRay(new Vector2(0.5f,0.5f)), out hit, 6.0f))
             {
-                if(hit.collider.GetComponent<IDamage>() == null)
+                if (hit.collider.GetComponent<IDamage>() == null && hit.collider.CompareTag("Trapable"))
                 {
                     trapsHeld--;
                     Instantiate(trap, hit.point, trap.transform.rotation);
