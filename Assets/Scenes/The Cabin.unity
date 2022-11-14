@@ -1668,6 +1668,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cabin_Prebuilt
       objectReference: {fileID: 0}
+    - target: {fileID: 4926588440059977485, guid: fc05ef68c0ae8484a9e00b843cb96ae1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 255.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 4926588440234278997, guid: fc05ef68c0ae8484a9e00b843cb96ae1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 244.141
+      objectReference: {fileID: 0}
+    - target: {fileID: 4926588440288424677, guid: fc05ef68c0ae8484a9e00b843cb96ae1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 255.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 4926588440288424677, guid: fc05ef68c0ae8484a9e00b843cb96ae1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 244.693
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc05ef68c0ae8484a9e00b843cb96ae1, type: 3}
 --- !u!1001 &7251056003588016956
