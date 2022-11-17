@@ -50,7 +50,7 @@ public class wendigoAi : enemyBase
             //Set walk animation speed
             anim.SetFloat("Speed", Mathf.Lerp(anim.GetFloat("Speed"), agent.velocity.normalized.magnitude, Time.deltaTime * 3));
 
-            if (!isAttacking && ! idle)
+            if (!isAttacking && !idle && aud.isPlaying == false)
             {
                 StartCoroutine(IdleSound());
             }
@@ -98,13 +98,19 @@ public class wendigoAi : enemyBase
         base.TakeDamage(dmg);
 
         if (!staggered && HP > 0)
+        {
+            aud.Stop();
             aud.PlayOneShot(hurtAud, hurtVol);
+        }
     }
 
     public override IEnumerator stagger()
     {
-        if(HP > 0)
+        if (HP > 0)
+        {
+            aud.Stop();
             aud.PlayOneShot(staggerAud, staggerVol);
+        }
 
         return base.stagger();
     }
