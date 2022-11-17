@@ -20,6 +20,7 @@ public class enemyDrops : MonoBehaviour
         col = GetComponent<Collider>();
         mr = GetComponent<MeshRenderer>();
         light = GetComponent<Light>();
+        Destroy(gameObject, 60);
     }
 
     // Update is called once per frame

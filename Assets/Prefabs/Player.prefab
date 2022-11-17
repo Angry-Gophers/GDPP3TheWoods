@@ -169,9 +169,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerController: {fileID: 6344215850549535718}
   trap: {fileID: 4587464124396280022, guid: 4034f2c8bca996d469826721a620d5a6, type: 3}
+  isHealing: 0
   waveAud: {fileID: 8300000, guid: 5ce419cc30961c1418304bc12c051d46, type: 3}
   waveVol: 1
-  isHealing: 0
   maxTraps: 2
   maxBoards: 0
   trapsHeld: 2
@@ -469,12 +469,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 250815241723360738, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
       propertyPath: maxReserve
-      value: 30
+      value: 38
       objectReference: {fileID: 0}
     - target: {fileID: 250815241723360738, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
       propertyPath: muzzleFlash
       value: 
       objectReference: {fileID: 4469238634336642093}
+    - target: {fileID: 250815241723360738, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
+      propertyPath: reserveAmmo
+      value: 38
+      objectReference: {fileID: 0}
     - target: {fileID: 250815241723360738, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
       propertyPath: reloadButton
       value: 114
@@ -709,7 +713,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4248781450569676725, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
       propertyPath: fireRate
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4248781450569676725, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
       propertyPath: reloadAud
@@ -721,7 +725,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4248781450569676725, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
       propertyPath: maxReserve
-      value: 60
+      value: 108
       objectReference: {fileID: 0}
     - target: {fileID: 4248781450569676725, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
       propertyPath: muzzleFlash
@@ -730,6 +734,10 @@ PrefabInstance:
     - target: {fileID: 4248781450569676725, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
       propertyPath: reloadSpeed
       value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4248781450569676725, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
+      propertyPath: reserveAmmo
+      value: 108
       objectReference: {fileID: 0}
     - target: {fileID: 4248781450569676725, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
       propertyPath: reloadButton
@@ -789,12 +797,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4442245107239736861, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
       propertyPath: maxReserve
-      value: 240
+      value: 420
       objectReference: {fileID: 0}
     - target: {fileID: 4442245107239736861, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
       propertyPath: muzzleFlash
       value: 
       objectReference: {fileID: 6653195914889015119}
+    - target: {fileID: 4442245107239736861, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
+      propertyPath: reserveAmmo
+      value: 420
+      objectReference: {fileID: 0}
     - target: {fileID: 4442245107239736861, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
       propertyPath: reloadButton
       value: 114

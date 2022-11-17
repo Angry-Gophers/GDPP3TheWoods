@@ -26,7 +26,7 @@ namespace TheWoods.TopLayer
 
         void Start()
         {
-            fire = gameManager.instance.fire.GetComponent<fireplace>();
+            fire = gameManager.instance.fireplace.GetComponent<fireplace>();
 
             store = new List<ShopItems>() {
               new ShopItems() {
@@ -48,9 +48,9 @@ namespace TheWoods.TopLayer
             CanBuy();
         }
 
-        // Update is called once per frame
-        void Update()
+        private void OnEnable()
         {
+            CanBuy();
         }
 
         private void CanBuy()
@@ -95,6 +95,7 @@ namespace TheWoods.TopLayer
             gameManager.instance.shopEcto.text = "Ectoplasm: " + gameManager.instance.playerScript.ectoplasm;
             gameManager.instance.shopAntler.text = "Antlers: " + gameManager.instance.playerScript.antlers;
             CanBuy();
+            gameManager.instance.UpdatePlayerHUD();
             //update HUD display
         }
 
@@ -113,6 +114,7 @@ namespace TheWoods.TopLayer
             gameManager.instance.shopEcto.text = "Ectoplasm: " + gameManager.instance.playerScript.ectoplasm;
             gameManager.instance.shopAntler.text = "Antlers: " + gameManager.instance.playerScript.antlers;
             CanBuy();
+            gameManager.instance.UpdatePlayerHUD();
             //update HUD
         }
 

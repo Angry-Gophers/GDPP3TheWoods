@@ -25,10 +25,10 @@ public class ShopHealth : MonoBehaviour, IDamage
     public virtual void TakeDamage(int dmg)
     {
         HP -= dmg;
+        UpdateHud();
 
         if (HP > 0)
         {
-            UpdateHud();
             StartCoroutine(gameManager.instance.ShopFlash());
         }
         else

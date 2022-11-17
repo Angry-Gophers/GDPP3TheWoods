@@ -26,10 +26,10 @@ public class fireplace : MonoBehaviour, IDamage
     public void TakeDamage(int dmg)
     {
         HP -= dmg;
+        UpdateFireHud();
 
         if (HP > 0)
         {
-            UpdateFireHud();
             StartCoroutine(gameManager.instance.FireFlash());
         }
         else
