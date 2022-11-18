@@ -367,6 +367,7 @@ MonoBehaviour:
   wreckVol: 1
   headlights: {fileID: 6101392928102297179}
   brakelights: {fileID: 7127919104572018447}
+  upgradeBonus: 10
 --- !u!1 &7049469740908534066
 GameObject:
   m_ObjectHideFlags: 0

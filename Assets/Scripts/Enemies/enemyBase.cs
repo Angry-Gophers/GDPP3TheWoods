@@ -104,8 +104,8 @@ public class enemyBase : MonoBehaviour, IDamage
         col.enabled = false;
         agent.enabled = false;
 
-        int temp = Random.Range(0, 2);
-        if (temp == 0 && drop != null && spawnManager.instance.inWave)
+        int temp = Random.Range(0, 3);
+        if (temp <= 1 && drop != null && spawnManager.instance.inWave)
             Instantiate(drop, dropTrans.position, dropTrans.rotation);
 
         anim.SetTrigger("death");

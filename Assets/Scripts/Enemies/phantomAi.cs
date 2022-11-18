@@ -5,6 +5,7 @@ using UnityEngine;
 public class phantomAi : enemyBase
 {
     [SerializeField] float shopBuffer;
+    [SerializeField] float attackAngle;
 
     // Update is called once per frame
     void Update()
@@ -47,11 +48,14 @@ public class phantomAi : enemyBase
     //Melee attack
     public override IEnumerator attack()
     {
+        Vector3 targetDir = target - dropTrans.position;
+        float angle = Vector3.Angle(targetDir, transform.forward);
+
         //Shoots a raycast and checks if the hit object can be damaged
         RaycastHit hit;
-        if(Physics.Raycast(dropTrans.transform.position, transform.forward, out hit, range))
+        if(Physics.Raycast(dropTrans.transform.position, targetDir, out hit, range))
         {
-            if (hit.collider.GetComponent<IDamage>() != null && hit.collider.tag != "Enemy")
+            if (hit.collider.GetComponent<IDamage>() != null && hit.collider.tag != "Enemy" && angle <= attackAngle)
             {
                 isAttacking = true;
                 anim.SetTrigger("cast3");

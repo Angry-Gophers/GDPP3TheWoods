@@ -10,6 +10,7 @@ public class ShopHealth : MonoBehaviour, IDamage
     [SerializeField] float wreckVol;
     [SerializeField] Light headlights;
     [SerializeField] Light brakelights;
+    [SerializeField] int upgradeBonus;
 
     int maxHP;
 
@@ -55,5 +56,10 @@ public class ShopHealth : MonoBehaviour, IDamage
         gameManager.instance.shopAlive = true;
         headlights.enabled = true;
         brakelights.enabled = true;
+    }
+
+    public void Upgrade()
+    {
+        maxHP += upgradeBonus;
     }
 }

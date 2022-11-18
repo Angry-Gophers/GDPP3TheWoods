@@ -24,6 +24,8 @@ namespace TheWoods.TopLayer
         fireplace fire;
         [SerializeField] int candleBonus;
 
+        bool reloadUpgraded;
+
         void Start()
         {
             fire = gameManager.instance.fireplace.GetComponent<fireplace>();
@@ -43,6 +45,17 @@ namespace TheWoods.TopLayer
                 ItemName = "Candle",
                 AntlerCost = 5,
                 EctoplasmCost = 0
+              },
+              new ShopItems()
+              {
+                  ItemName = "Weapons Training",
+                  AntlerCost = 0,
+                  EctoplasmCost = 20
+              },
+              new ShopItems() {
+                  ItemName = "Thicker Metal",
+                  AntlerCost = 5,
+                  EctoplasmCost = 0
               }
             };
             CanBuy();
@@ -64,6 +77,15 @@ namespace TheWoods.TopLayer
                 else
                 {
                     EnabledButton(item, false);
+                }
+            }
+
+            foreach(Button button in storeButtons)
+            {
+                if(button.name == "Weapons Training" && reloadUpgraded)
+                {
+                    button.interactable = false;
+                    button.enabled = false;
                 }
             }
         }
@@ -142,6 +164,46 @@ namespace TheWoods.TopLayer
                 gameManager.instance.shopAntler.text = "Antlers: " + gameManager.instance.playerScript.antlers;
                 CanBuy();
             }
+        }
+
+        public void WeaponHandling()
+        {
+            gameManager.instance.reloadSpeed = .75f;
+            reloadUpgraded = true;
+            for (int x = 0; x < store.Count; x++)
+            {
+                if (store[x].ItemName == "Weapons Training")
+                {
+                    gameManager.instance.playerScript.antlers -= store[x].AntlerCost;
+                    gameManager.instance.playerScript.ectoplasm -= store[x].EctoplasmCost;
+                }
+            }
+
+            gameManager.instance.shopEcto.text = "Ectoplasm: " + gameManager.instance.playerScript.ectoplasm;
+            gameManager.instance.shopAntler.text = "Antlers: " + gameManager.instance.playerScript.antlers;
+            CanBuy();
+            gameManager.instance.UpdatePlayerHUD();
+            //update HUD
+        }
+
+        public void UpgradeCar()
+        {
+            gameManager.instance.shopScript.Upgrade();
+            gameManager.instance.shopScript.UpdateHud();
+            for (int x = 0; x < store.Count; x++)
+            {
+                if (store[x].ItemName == "Thicker Metal")
+                {
+                    gameManager.instance.playerScript.antlers -= store[x].AntlerCost;
+                    gameManager.instance.playerScript.ectoplasm -= store[x].EctoplasmCost;
+                }
+            }
+
+            gameManager.instance.shopEcto.text = "Ectoplasm: " + gameManager.instance.playerScript.ectoplasm;
+            gameManager.instance.shopAntler.text = "Antlers: " + gameManager.instance.playerScript.antlers;
+            CanBuy();
+            gameManager.instance.UpdatePlayerHUD();
+            //update HUD
         }
 
         public void CloseShop()

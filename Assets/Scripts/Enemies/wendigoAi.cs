@@ -59,17 +59,22 @@ public class wendigoAi : enemyBase
 
     public override IEnumerator attack()
     {
-        hand.GetComponent<collisionAttack>().playerhit = false;
-        isAttacking = true;
-        idle = false;
-        aud.Stop();
+        float playerDis = Vector3.Distance(transform.position, gameManager.instance.player.transform.position);
 
-        anim.SetTrigger("Attacking");
-        aud.PlayOneShot(attackAud, attackVol);
+        if (playerDis <= range)
+        {
+            hand.GetComponent<collisionAttack>().playerhit = false;
+            isAttacking = true;
+            idle = false;
+            aud.Stop();
 
-        StartCoroutine(WindowOfAttack());
-        yield return new WaitForSeconds(attackSpeed);
-        isAttacking = false;
+            anim.SetTrigger("Attacking");
+            aud.PlayOneShot(attackAud, attackVol);
+
+            StartCoroutine(WindowOfAttack());
+            yield return new WaitForSeconds(attackSpeed);
+            isAttacking = false;
+        }
     }
 
     public override void findTarget()
