@@ -54,6 +54,7 @@ public class gameManager : MonoBehaviour
     public GameObject fireplace;
     public GameObject shop;
     public ShopHealth shopScript;
+    public float reloadSpeed;
 
     bool interact;
     bool reload;
@@ -65,6 +66,7 @@ public class gameManager : MonoBehaviour
 
     void Awake()
     {
+        reloadSpeed = 1;
         instanceGuns = new WeaponSwapping();
         instance = this;
         player = GameObject.FindGameObjectWithTag("Player");
@@ -128,6 +130,7 @@ public class gameManager : MonoBehaviour
     public void UpdatePlayerHUD()
     {
         // ammo, bandages, boards, traps, fire health, anything else? night time left? 
+        playerHPBar.fillAmount = playerScript.getHP() / playerScript.GetMaxHP();
         ammoTracker.text = WeaponSwapping.instance.weapon.GetComponent<Gun>().bullets + " / " + WeaponSwapping.instance.weapon.GetComponent<Gun>().reserveAmmo;
         heldEcto.text = "Ectoplasm: " + playerScript.ectoplasm;
         heldAntlers.text = "Antlers: " + playerScript.antlers;

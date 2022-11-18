@@ -66,19 +66,6 @@ public class Gun : MonoBehaviour
         
     }
 
-    IEnumerator ReloadGun()
-    {
-        if (reserveAmmo <= 0) yield return new WaitForEndOfFrame();
-        isReloading = true;
-
-        gameManager.instance.reloadText.active = true;
-        aud.PlayOneShot(reloadAud, reloadVol);
-
-        timeInReload = reloadSpeed;
-
-        yield return new WaitForSeconds(reloadSpeed);
-    }
-
     void Reload()
     {
         isReloading = true;
@@ -86,7 +73,7 @@ public class Gun : MonoBehaviour
         gameManager.instance.reloadText.SetActive(true);
         aud.PlayOneShot(reloadAud, reloadVol);
 
-        timeInReload = reloadSpeed;
+        timeInReload = reloadSpeed * gameManager.instance.reloadSpeed;
     }
 
     public void Shoot()

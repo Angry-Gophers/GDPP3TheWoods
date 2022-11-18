@@ -7,7 +7,7 @@ public class CameraControls : MonoBehaviour
     [SerializeField] float lookVertMax;
     [SerializeField] float lookVertMin;
     float xRotation;
-     public bool invert = true;
+     public bool invert;
     void Start()
     {
         // Lock cursor to center and make invisible

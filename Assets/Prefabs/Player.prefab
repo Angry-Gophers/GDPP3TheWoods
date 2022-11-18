@@ -174,8 +174,8 @@ MonoBehaviour:
   waveVol: 1
   maxTraps: 2
   maxBoards: 0
-  trapsHeld: 2
-  bandagesHeld: 2
+  trapsHeld: 1
+  bandagesHeld: 1
   candlesHeld: 0
   HP: 20
   playerSpeed: 7
@@ -188,7 +188,7 @@ MonoBehaviour:
   bandageHealAmount: 5
   ectoplasm: 0
   antlers: 0
-  ammoCost: 10
+  ammoCost: 5
   hurtAud:
   - {fileID: 8300000, guid: 3c81c0c12a5d84842a5bbfeccd4e9cdb, type: 3}
   - {fileID: 8300000, guid: 15a74bd83ecbd144082ef528bbf9349c, type: 3}
@@ -425,7 +425,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 250815241723360738, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
       propertyPath: damage
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 250815241723360738, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
       propertyPath: fpsCam
@@ -445,7 +445,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 250815241723360738, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
       propertyPath: fireRate
-      value: 1.2
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 250815241723360738, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
       propertyPath: magazine
@@ -475,6 +475,10 @@ PrefabInstance:
       propertyPath: muzzleFlash
       value: 
       objectReference: {fileID: 4469238634336642093}
+    - target: {fileID: 250815241723360738, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
+      propertyPath: reloadSpeed
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 250815241723360738, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
       propertyPath: reserveAmmo
       value: 38
@@ -803,6 +807,10 @@ PrefabInstance:
       propertyPath: muzzleFlash
       value: 
       objectReference: {fileID: 6653195914889015119}
+    - target: {fileID: 4442245107239736861, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
+      propertyPath: reloadSpeed
+      value: 1.75
+      objectReference: {fileID: 0}
     - target: {fileID: 4442245107239736861, guid: 3d87dcd47c1ab1c4bafed098402f95a1, type: 3}
       propertyPath: reserveAmmo
       value: 420

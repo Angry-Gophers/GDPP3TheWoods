@@ -34,7 +34,7 @@ public class OptionsMenu : MonoBehaviour
     }
     public void InvertCamera()
     {
-        invert = !invert;
+        invert = invertButton.isOn;
     }
 
     public void SetSensitivity()

@@ -68,21 +68,22 @@ public class PlayerController : MonoBehaviour, IDamage
         }
 
         Vector3 move = transform.right * (Input.GetAxis("Horizontal")) + transform.forward * (Input.GetAxis("Vertical"));
-        playerController.Move(move * Time.deltaTime * playerSpeed);
+        if(playerController.enabled)
+            playerController.Move(move * Time.deltaTime * playerSpeed);
     }
 
     void jump()
     {
-
         if(Input.GetButton("Jump")&& timesJumped < maxJumps)
         {
             timesJumped++;
             playervelocity.y = jumpHeight;
         }
+
         playervelocity.y -= gravityValue * Time.deltaTime;
-        playerController.Move(playervelocity * Time.deltaTime);
 
-
+        if(playerController.enabled)
+            playerController.Move(playervelocity * Time.deltaTime);
     }
     
 
@@ -147,7 +148,7 @@ public class PlayerController : MonoBehaviour, IDamage
 
     void BandageHeal()
     {
-        if (Input.GetKeyDown(KeyCode.Q) && !isHealing && bandagesHeld >0 && HP < hpOriginal)
+        if (Input.GetKeyDown(KeyCode.Q) && !isHealing && bandagesHeld > 0 && HP < hpOriginal)
         {
             StartCoroutine(heal());
         }
@@ -166,7 +167,6 @@ public class PlayerController : MonoBehaviour, IDamage
         bandagesHeld--;
         isHealing = false;
         gameManager.instance.UpdatePlayerHUD();
-        gameManager.instance.playerHPBar.fillAmount = (float)HP / (float)hpOriginal;
     }
     public void Interact()
     {
@@ -253,5 +253,20 @@ public class PlayerController : MonoBehaviour, IDamage
     public void Heal()
     {
         HP = hpOriginal;
+    }
+
+    public float getHP()
+    {
+        return (float)HP;
+    }
+
+    public float GetMaxHP()
+    {
+        return (float) hpOriginal;
+    }
+
+    public void SetYVel(float newVel)
+    {
+        playervelocity.y = newVel;
     }
 }
