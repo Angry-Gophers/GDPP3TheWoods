@@ -51,7 +51,12 @@ namespace TheWoods.TopLayer
                   ItemName = "Weapons Training",
                   AntlerCost = 0,
                   EctoplasmCost = 20
-              } 
+              },
+              new ShopItems() {
+                  ItemName = "Thicker Metal",
+                  AntlerCost = 5,
+                  EctoplasmCost = 0
+              }
             };
             CanBuy();
         }
@@ -168,6 +173,26 @@ namespace TheWoods.TopLayer
             for (int x = 0; x < store.Count; x++)
             {
                 if (store[x].ItemName == "Weapons Training")
+                {
+                    gameManager.instance.playerScript.antlers -= store[x].AntlerCost;
+                    gameManager.instance.playerScript.ectoplasm -= store[x].EctoplasmCost;
+                }
+            }
+
+            gameManager.instance.shopEcto.text = "Ectoplasm: " + gameManager.instance.playerScript.ectoplasm;
+            gameManager.instance.shopAntler.text = "Antlers: " + gameManager.instance.playerScript.antlers;
+            CanBuy();
+            gameManager.instance.UpdatePlayerHUD();
+            //update HUD
+        }
+
+        public void UpgradeCar()
+        {
+            gameManager.instance.shopScript.Upgrade();
+            gameManager.instance.shopScript.UpdateHud();
+            for (int x = 0; x < store.Count; x++)
+            {
+                if (store[x].ItemName == "Thicker Metal")
                 {
                     gameManager.instance.playerScript.antlers -= store[x].AntlerCost;
                     gameManager.instance.playerScript.ectoplasm -= store[x].EctoplasmCost;
