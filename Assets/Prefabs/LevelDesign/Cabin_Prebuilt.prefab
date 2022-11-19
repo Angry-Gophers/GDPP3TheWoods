@@ -1601,7 +1601,7 @@ GameObject:
   - component: {fileID: 2080621725486347583}
   m_Layer: 0
   m_Name: Floors
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -2607,7 +2607,7 @@ GameObject:
   - component: {fileID: 4952172889787278409}
   m_Layer: 0
   m_Name: Cabin_Floor
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -6766,7 +6766,7 @@ GameObject:
   - component: {fileID: 4950829195804352627}
   m_Layer: 0
   m_Name: Cabin_Floor (1)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -7154,7 +7154,7 @@ GameObject:
   - component: {fileID: 4952114084460076045}
   m_Layer: 0
   m_Name: Cabin_Floor (2)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -7251,7 +7251,7 @@ GameObject:
   - component: {fileID: 4951471614559300925}
   m_Layer: 0
   m_Name: Cabin_Floor (3)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -9934,7 +9934,7 @@ GameObject:
   - component: {fileID: 4926588439996471181}
   m_Layer: 0
   m_Name: Cabin_Floor (87)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -10324,7 +10324,7 @@ GameObject:
   - component: {fileID: 4926588440041831583}
   m_Layer: 0
   m_Name: Cabin_Floor (9)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -10421,7 +10421,7 @@ GameObject:
   - component: {fileID: 4926588440046661305}
   m_Layer: 0
   m_Name: Cabin_Floor (42)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -10518,7 +10518,7 @@ GameObject:
   - component: {fileID: 4926588440059977482}
   m_Layer: 0
   m_Name: Cabin_Floor (78)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -10712,7 +10712,7 @@ GameObject:
   - component: {fileID: 4926588440069024465}
   m_Layer: 0
   m_Name: Cabin_Floor (82)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -10906,7 +10906,7 @@ GameObject:
   - component: {fileID: 4926588440079402202}
   m_Layer: 0
   m_Name: Cabin_Floor (37)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -11003,7 +11003,7 @@ GameObject:
   - component: {fileID: 4926588440082941360}
   m_Layer: 0
   m_Name: Cabin_Floor (26)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -11197,7 +11197,7 @@ GameObject:
   - component: {fileID: 4926588440093567812}
   m_Layer: 0
   m_Name: Cabin_Floor (53)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -11391,7 +11391,7 @@ GameObject:
   - component: {fileID: 4926588440112396957}
   m_Layer: 0
   m_Name: Cabin_Floor (27)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -11684,7 +11684,7 @@ GameObject:
   - component: {fileID: 4926588440127392968}
   m_Layer: 0
   m_Name: Cabin_Floor (35)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -11781,7 +11781,7 @@ GameObject:
   - component: {fileID: 4926588440132439595}
   m_Layer: 0
   m_Name: Cabin_Floor (50)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -12169,7 +12169,7 @@ GameObject:
   - component: {fileID: 4926588440199579062}
   m_Layer: 0
   m_Name: Cabin_Floor (39)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -12266,7 +12266,7 @@ GameObject:
   - component: {fileID: 4926588440203610751}
   m_Layer: 0
   m_Name: Cabin_Floor (103)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -12363,7 +12363,7 @@ GameObject:
   - component: {fileID: 4926588440222205605}
   m_Layer: 0
   m_Name: Cabin_Floor (98)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -12460,7 +12460,7 @@ GameObject:
   - component: {fileID: 4926588440223585217}
   m_Layer: 0
   m_Name: Cabin_Floor (19)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -12557,7 +12557,7 @@ GameObject:
   - component: {fileID: 4926588440230584599}
   m_Layer: 0
   m_Name: Cabin_Floor (94)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -12849,7 +12849,7 @@ GameObject:
   - component: {fileID: 4926588440235084705}
   m_Layer: 0
   m_Name: Cabin_Floor (108)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -13140,7 +13140,7 @@ GameObject:
   - component: {fileID: 4926588440288424674}
   m_Layer: 0
   m_Name: Cabin_Floor (80)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -13431,7 +13431,7 @@ GameObject:
   - component: {fileID: 4926588440345122977}
   m_Layer: 0
   m_Name: Cabin_Floor (16)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -13528,7 +13528,7 @@ GameObject:
   - component: {fileID: 4926588440345228150}
   m_Layer: 0
   m_Name: Cabin_Floor (31)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -13625,7 +13625,7 @@ GameObject:
   - component: {fileID: 4926588440401569940}
   m_Layer: 0
   m_Name: Cabin_Floor (59)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -13819,7 +13819,7 @@ GameObject:
   - component: {fileID: 4926588440425079375}
   m_Layer: 0
   m_Name: Cabin_Floor (102)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -14013,7 +14013,7 @@ GameObject:
   - component: {fileID: 4926588440427890059}
   m_Layer: 0
   m_Name: Cabin_Floor (49)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -14207,7 +14207,7 @@ GameObject:
   - component: {fileID: 4926588440433375583}
   m_Layer: 0
   m_Name: Cabin_Floor (48)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -14887,7 +14887,7 @@ GameObject:
   - component: {fileID: 4926588440535545925}
   m_Layer: 0
   m_Name: Cabin_Floor (84)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -15386,7 +15386,7 @@ GameObject:
   - component: {fileID: 4926588440562799393}
   m_Layer: 0
   m_Name: Cabin_Floor (11)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -15580,7 +15580,7 @@ GameObject:
   - component: {fileID: 4926588440571067273}
   m_Layer: 0
   m_Name: Cabin_Floor (15)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -15775,7 +15775,7 @@ GameObject:
   - component: {fileID: 4926588440608842106}
   m_Layer: 0
   m_Name: Cabin_Floor (95)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -15969,7 +15969,7 @@ GameObject:
   - component: {fileID: 4926588440634681030}
   m_Layer: 0
   m_Name: Cabin_Floor (41)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -16066,7 +16066,7 @@ GameObject:
   - component: {fileID: 4926588440642395629}
   m_Layer: 0
   m_Name: Cabin_Floor (36)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -16163,7 +16163,7 @@ GameObject:
   - component: {fileID: 4926588440642801736}
   m_Layer: 0
   m_Name: Cabin_Floor (51)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -16455,7 +16455,7 @@ GameObject:
   - component: {fileID: 4926588440645889693}
   m_Layer: 0
   m_Name: Cabin_Floor (111)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -16552,7 +16552,7 @@ GameObject:
   - component: {fileID: 4926588440653297511}
   m_Layer: 0
   m_Name: Cabin_Floor (12)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -16649,7 +16649,7 @@ GameObject:
   - component: {fileID: 4926588440666283995}
   m_Layer: 0
   m_Name: Cabin_Floor (21)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -16941,7 +16941,7 @@ GameObject:
   - component: {fileID: 4926588440728572230}
   m_Layer: 0
   m_Name: Cabin_Floor (91)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -17038,7 +17038,7 @@ GameObject:
   - component: {fileID: 4926588440731433785}
   m_Layer: 0
   m_Name: Cabin_Floor (46)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -17135,7 +17135,7 @@ GameObject:
   - component: {fileID: 4926588440762386772}
   m_Layer: 0
   m_Name: Cabin_Floor (54)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -17232,7 +17232,7 @@ GameObject:
   - component: {fileID: 4926588440772964489}
   m_Layer: 0
   m_Name: Cabin_Floor (10)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -17329,7 +17329,7 @@ GameObject:
   - component: {fileID: 4926588440783239659}
   m_Layer: 0
   m_Name: Cabin_Floor (65)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -17718,7 +17718,7 @@ GameObject:
   - component: {fileID: 4926588440822467580}
   m_Layer: 0
   m_Name: Cabin_Floor (106)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -18011,7 +18011,7 @@ GameObject:
   - component: {fileID: 4926588440849764655}
   m_Layer: 0
   m_Name: Cabin_Floor (58)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -18207,7 +18207,7 @@ GameObject:
   - component: {fileID: 4926588440868622012}
   m_Layer: 0
   m_Name: Cabin_Floor (75)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -18498,7 +18498,7 @@ GameObject:
   - component: {fileID: 4926588440897512334}
   m_Layer: 0
   m_Name: Cabin_Floor (55)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -18692,7 +18692,7 @@ GameObject:
   - component: {fileID: 4926588440920427787}
   m_Layer: 0
   m_Name: Cabin_Floor (110)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -18983,7 +18983,7 @@ GameObject:
   - component: {fileID: 4926588440953303057}
   m_Layer: 0
   m_Name: Cabin_Floor (60)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -19080,7 +19080,7 @@ GameObject:
   - component: {fileID: 4926588440953997478}
   m_Layer: 0
   m_Name: Cabin_Floor (38)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -19288,7 +19288,7 @@ GameObject:
   - component: {fileID: 4926588440969662322}
   m_Layer: 0
   m_Name: Cabin_Floor (112)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -19385,7 +19385,7 @@ GameObject:
   - component: {fileID: 4926588440975717462}
   m_Layer: 0
   m_Name: Cabin_Floor (6)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -19969,7 +19969,7 @@ GameObject:
   - component: {fileID: 4926588441016902278}
   m_Layer: 0
   m_Name: Cabin_Floor (85)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -20164,7 +20164,7 @@ GameObject:
   - component: {fileID: 4926588441034046840}
   m_Layer: 0
   m_Name: Cabin_Floor (33)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -20261,7 +20261,7 @@ GameObject:
   - component: {fileID: 4926588441037014677}
   m_Layer: 0
   m_Name: Cabin_Floor (43)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -20748,7 +20748,7 @@ GameObject:
   - component: {fileID: 4926588441081840521}
   m_Layer: 0
   m_Name: Cabin_Floor (92)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -21040,7 +21040,7 @@ GameObject:
   - component: {fileID: 4926588441102435716}
   m_Layer: 0
   m_Name: Cabin_Floor (29)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -21624,7 +21624,7 @@ GameObject:
   - component: {fileID: 4926588441148451803}
   m_Layer: 0
   m_Name: Cabin_Floor (68)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -22014,7 +22014,7 @@ GameObject:
   - component: {fileID: 4926588441164730234}
   m_Layer: 0
   m_Name: Cabin_Floor (115)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -22209,7 +22209,7 @@ GameObject:
   - component: {fileID: 4926588441186817008}
   m_Layer: 0
   m_Name: Cabin_Floor (73)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -22404,7 +22404,7 @@ GameObject:
   - component: {fileID: 4926588441189974171}
   m_Layer: 0
   m_Name: Cabin_Floor (40)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -22501,7 +22501,7 @@ GameObject:
   - component: {fileID: 4926588441190955080}
   m_Layer: 0
   m_Name: Cabin_Floor (123)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -22696,7 +22696,7 @@ GameObject:
   - component: {fileID: 4926588441192761861}
   m_Layer: 0
   m_Name: Cabin_Floor (69)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -23001,7 +23001,7 @@ GameObject:
   - component: {fileID: 4926588441199903154}
   m_Layer: 0
   m_Name: Cabin_Floor (90)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -23098,7 +23098,7 @@ GameObject:
   - component: {fileID: 4926588441207400080}
   m_Layer: 0
   m_Name: Cabin_Floor (99)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -23195,7 +23195,7 @@ GameObject:
   - component: {fileID: 4926588441214228575}
   m_Layer: 0
   m_Name: Cabin_Floor (7)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -23292,7 +23292,7 @@ GameObject:
   - component: {fileID: 4926588441216131325}
   m_Layer: 0
   m_Name: Cabin_Floor (74)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -23486,7 +23486,7 @@ GameObject:
   - component: {fileID: 4926588441262479029}
   m_Layer: 0
   m_Name: Cabin_Floor (100)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -23974,7 +23974,7 @@ GameObject:
   - component: {fileID: 4926588441289433594}
   m_Layer: 0
   m_Name: Cabin_Floor (88)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -24168,7 +24168,7 @@ GameObject:
   - component: {fileID: 4926588441318972912}
   m_Layer: 0
   m_Name: Cabin_Floor (57)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -24265,7 +24265,7 @@ GameObject:
   - component: {fileID: 4926588441324875575}
   m_Layer: 0
   m_Name: Cabin_Floor (30)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -24459,7 +24459,7 @@ GameObject:
   - component: {fileID: 4926588441338427191}
   m_Layer: 0
   m_Name: Cabin_Floor (61)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -24556,7 +24556,7 @@ GameObject:
   - component: {fileID: 4926588441339162707}
   m_Layer: 0
   m_Name: Cabin_Floor (32)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -24752,7 +24752,7 @@ GameObject:
   - component: {fileID: 4926588441353707418}
   m_Layer: 0
   m_Name: Cabin_Floor (66)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -24849,7 +24849,7 @@ GameObject:
   - component: {fileID: 4926588441366819749}
   m_Layer: 0
   m_Name: Cabin_Floor (20)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -25140,7 +25140,7 @@ GameObject:
   - component: {fileID: 4926588441404929981}
   m_Layer: 0
   m_Name: Cabin_Floor (4)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -25237,7 +25237,7 @@ GameObject:
   - component: {fileID: 4926588441416747676}
   m_Layer: 0
   m_Name: Cabin_Floor (47)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -25820,7 +25820,7 @@ GameObject:
   - component: {fileID: 4926588441447094673}
   m_Layer: 0
   m_Name: Cabin_Floor (62)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -26402,7 +26402,7 @@ GameObject:
   - component: {fileID: 4926588441486008045}
   m_Layer: 0
   m_Name: Cabin_Floor (89)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -26596,7 +26596,7 @@ GameObject:
   - component: {fileID: 4926588441501848559}
   m_Layer: 0
   m_Name: Cabin_Floor (13)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -26986,7 +26986,7 @@ GameObject:
   - component: {fileID: 4926588441516613401}
   m_Layer: 0
   m_Name: Cabin_Floor (107)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -27374,7 +27374,7 @@ GameObject:
   - component: {fileID: 4926588441543873341}
   m_Layer: 0
   m_Name: Cabin_Floor (56)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -27665,7 +27665,7 @@ GameObject:
   - component: {fileID: 4926588441590241166}
   m_Layer: 0
   m_Name: Cabin_Floor (96)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -27762,7 +27762,7 @@ GameObject:
   - component: {fileID: 4926588441596654230}
   m_Layer: 0
   m_Name: Cabin_Floor (93)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -27859,7 +27859,7 @@ GameObject:
   - component: {fileID: 4926588441602649740}
   m_Layer: 0
   m_Name: Cabin_Floor (76)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -27956,7 +27956,7 @@ GameObject:
   - component: {fileID: 4926588441605726492}
   m_Layer: 0
   m_Name: Cabin_Floor (25)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -28249,7 +28249,7 @@ GameObject:
   - component: {fileID: 4926588441651036339}
   m_Layer: 0
   m_Name: Cabin_Floor (109)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -28346,7 +28346,7 @@ GameObject:
   - component: {fileID: 4926588441655340848}
   m_Layer: 0
   m_Name: Cabin_Floor (70)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -28443,7 +28443,7 @@ GameObject:
   - component: {fileID: 4926588441657022571}
   m_Layer: 0
   m_Name: Cabin_Floor (24)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -28540,7 +28540,7 @@ GameObject:
   - component: {fileID: 4926588441657239374}
   m_Layer: 0
   m_Name: Cabin_Floor (97)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -28637,7 +28637,7 @@ GameObject:
   - component: {fileID: 4926588441672371132}
   m_Layer: 0
   m_Name: Cabin_Floor (116)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -28831,7 +28831,7 @@ GameObject:
   - component: {fileID: 4926588441691054073}
   m_Layer: 0
   m_Name: Cabin_Floor (81)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -29025,7 +29025,7 @@ GameObject:
   - component: {fileID: 4926588441712777302}
   m_Layer: 0
   m_Name: Cabin_Floor (44)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -29514,7 +29514,7 @@ GameObject:
   - component: {fileID: 4926588441743722068}
   m_Layer: 0
   m_Name: Cabin_Floor (101)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -29709,7 +29709,7 @@ GameObject:
   - component: {fileID: 4926588441752223705}
   m_Layer: 0
   m_Name: Cabin_Floor (83)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -29806,7 +29806,7 @@ GameObject:
   - component: {fileID: 4926588441762772704}
   m_Layer: 0
   m_Name: Cabin_Floor (86)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -30000,7 +30000,7 @@ GameObject:
   - component: {fileID: 4926588441769162363}
   m_Layer: 0
   m_Name: Cabin_Floor (22)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -30194,7 +30194,7 @@ GameObject:
   - component: {fileID: 4926588441779956471}
   m_Layer: 0
   m_Name: Cabin_Floor (23)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -30291,7 +30291,7 @@ GameObject:
   - component: {fileID: 4926588441785603685}
   m_Layer: 0
   m_Name: Cabin_Floor (72)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -30388,7 +30388,7 @@ GameObject:
   - component: {fileID: 4926588441788048355}
   m_Layer: 0
   m_Name: Cabin_Floor (8)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -31167,7 +31167,7 @@ GameObject:
   - component: {fileID: 4926588441829039728}
   m_Layer: 0
   m_Name: Cabin_Floor (105)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -31264,7 +31264,7 @@ GameObject:
   - component: {fileID: 4926588441839733051}
   m_Layer: 0
   m_Name: Cabin_Floor (120)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -31361,7 +31361,7 @@ GameObject:
   - component: {fileID: 4926588441841942015}
   m_Layer: 0
   m_Name: Cabin_Floor (14)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -31458,7 +31458,7 @@ GameObject:
   - component: {fileID: 4926588441842696519}
   m_Layer: 0
   m_Name: Cabin_Floor (34)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -31749,7 +31749,7 @@ GameObject:
   - component: {fileID: 4926588441898463128}
   m_Layer: 0
   m_Name: Cabin_Floor (17)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -32055,7 +32055,7 @@ GameObject:
   - component: {fileID: 4926588441912284689}
   m_Layer: 0
   m_Name: Cabin_Floor (104)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -32249,7 +32249,7 @@ GameObject:
   - component: {fileID: 4926588441933253880}
   m_Layer: 0
   m_Name: Cabin_Floor (119)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -32346,7 +32346,7 @@ GameObject:
   - component: {fileID: 4926588441943114953}
   m_Layer: 0
   m_Name: Cabin_Floor (18)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -32540,7 +32540,7 @@ GameObject:
   - component: {fileID: 4926588441945969767}
   m_Layer: 0
   m_Name: Cabin_Floor (5)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -32637,7 +32637,7 @@ GameObject:
   - component: {fileID: 4926588441979341865}
   m_Layer: 0
   m_Name: Cabin_Floor (71)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -33026,7 +33026,7 @@ GameObject:
   - component: {fileID: 4926588442001512528}
   m_Layer: 0
   m_Name: Cabin_Floor (45)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -33317,7 +33317,7 @@ GameObject:
   - component: {fileID: 4926588442012182059}
   m_Layer: 0
   m_Name: Cabin_Floor (67)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -33707,7 +33707,7 @@ GameObject:
   - component: {fileID: 4926588442052719541}
   m_Layer: 0
   m_Name: Cabin_Floor (79)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -33901,7 +33901,7 @@ GameObject:
   - component: {fileID: 4926588442056981905}
   m_Layer: 0
   m_Name: Cabin_Floor (63)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -33998,7 +33998,7 @@ GameObject:
   - component: {fileID: 4926588442070485685}
   m_Layer: 0
   m_Name: Cabin_Floor (64)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -34095,7 +34095,7 @@ GameObject:
   - component: {fileID: 4926588442108691979}
   m_Layer: 0
   m_Name: Cabin_Floor (28)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -34289,7 +34289,7 @@ GameObject:
   - component: {fileID: 4926588442127615167}
   m_Layer: 0
   m_Name: Cabin_Floor (52)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -34386,7 +34386,7 @@ GameObject:
   - component: {fileID: 4926588442129601502}
   m_Layer: 0
   m_Name: Cabin_Floor (77)
-  m_TagString: Untagged
+  m_TagString: Trapable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
