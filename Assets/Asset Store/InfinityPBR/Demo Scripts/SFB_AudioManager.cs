@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Audio;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -9,7 +10,8 @@ public class SFB_AudioManager : MonoBehaviour {
 	public bool pitchByTimescale = true;							// Adjust pitch by timescale?
 
 	private AudioSource audioSource;								// AudioSource component
-	private Animator animator;										// Animator component
+	private Animator animator;                                      // Animator component
+	private AudioMixerGroup mixer;
 
 	private bool pitchBySpeed = false;								// Adjust pitch by speed?
 	private bool volumeBySpeed = false;								// Adjust volume by speed?
@@ -45,6 +47,10 @@ public class SFB_AudioManager : MonoBehaviour {
 		if (!animator){												// If we haven't assigned this...
 			animator = GetComponent<Animator>();					// Cache the component
 		}
+        if (!mixer)
+        {
+			mixer = GetComponent<AudioSource>().outputAudioMixerGroup;
+        }
 	}
 
 	void Update(){
@@ -106,6 +112,11 @@ public class SFB_AudioManager : MonoBehaviour {
 				// Clamp the volume
 				volume = Mathf.Clamp (volume * Mathf.Abs (animator.GetFloat ("locomotion")), audioClips [index].minVolume, audioClips [index].volume);
 			}
+
+			bool value = mixer.audioMixer.GetFloat("MasterVol", out float vol);
+			vol = Mathf.Pow(10f, vol / 20);
+			volume *= vol;
+
 			AudioSource.PlayClipAtPoint(audioClip, transform.position, volume);									// Play the clip at point
 		}
 	}
