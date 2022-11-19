@@ -31,7 +31,7 @@ public class DoorRaycast : MonoBehaviour
 
         if (Physics.Raycast(transform.position, fwd, out hit, rayLength, mask))
         {
-            if (hit.collider.CompareTag(interactableTag) || hit.collider.CompareTag("Shop Car") && !spawnManager.instance.inWave || hit.collider.CompareTag("Fire") && !spawnManager.instance.inWave)
+            if (hit.collider.CompareTag(interactableTag) || hit.collider.CompareTag("Ammo Box") || hit.collider.CompareTag("Shop Car") && !spawnManager.instance.inWave || hit.collider.CompareTag("Fire") && !spawnManager.instance.inWave)
             {
                 if (!doOnce)
                 {
